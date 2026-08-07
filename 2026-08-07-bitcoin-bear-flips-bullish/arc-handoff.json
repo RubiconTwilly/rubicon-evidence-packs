@@ -90,66 +90,66 @@
     },
     {
       "order": 9,
-      "section": "PRE-BULLISH",
-      "role": "prepared_visual",
-      "label": "09 PRE-BULLISH | $60K VALUE ZONE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone",
-      "inspect": "February and July tests of the low-$60K zone",
-      "why": "Shows where the behaviour begins changing before the purchase receipts."
-    },
-    {
-      "order": 10,
-      "section": "PRE-BULLISH",
+      "section": "BEAR",
       "role": "core_receipt",
-      "label": "10 PRE-BULLISH | KROWN VALUE + MONEY IN",
-      "url": "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s",
-      "inspect": "00:00-00:28; 06:01-06:13; 10:48-11:03",
-      "why": "Shows long-term allocation beginning while the tactical downside bias remains."
-    },
-    {
-      "order": 11,
-      "section": "PRE-BULLISH",
-      "role": "core_receipt",
-      "label": "11 PRE-BULLISH | COWEN 2025 SALE",
+      "label": "09 BEAR | COWEN 2025 SALE",
       "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s",
       "inspect": "18:15 onward",
       "why": "Turns Cowen's bearish commentary into the sell side of the later sell-to-buy story."
     },
     {
-      "order": 12,
-      "section": "PRE-BULLISH",
+      "order": 10,
+      "section": "BEAR",
       "role": "prepared_visual",
-      "label": "12 PRE-BULLISH | H1 BEARISH BRIDGE",
+      "label": "10 BEAR | H1 BEARISH BRIDGE",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=8#stance-change",
       "inspect": "Cowen and Krown stance lanes through H1 2026",
       "why": "Prevents the story from jumping directly from old bearish calls to later buying."
     },
     {
-      "order": 13,
-      "section": "PRE-BULLISH",
+      "order": 11,
+      "section": "BEAR",
       "role": "core_receipt",
-      "label": "13 PRE-BULLISH | KROWN BUY PLAN BELOW $70K",
-      "url": "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s",
-      "inspect": "01:10-01:42; 02:42-03:03; 07:01-07:29",
-      "why": "Shows Krown staying bearish while publicly defining the lower level he wanted to buy."
-    },
-    {
-      "order": 14,
-      "section": "PRE-BULLISH",
-      "role": "core_receipt",
-      "label": "14 PRE-BULLISH | COWEN STAGE 3 BEAR",
+      "label": "11 BEAR | COWEN STAGE 3 BEAR",
       "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
       "inspect": "00:04-00:16; 05:20-05:39",
       "why": "Shows Cowen still explicitly bearish in June before disclosing re-entry."
     },
     {
-      "order": 15,
-      "section": "PRE-BULLISH",
+      "order": 12,
+      "section": "BEAR",
       "role": "core_receipt",
-      "label": "15 PRE-BULLISH | KROWN RETEST LOWS",
+      "label": "12 BEAR | KROWN RETEST LOWS",
       "url": "https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s",
       "inspect": "00:00-00:26",
       "why": "Provides Krown's last clear short-term bearish receipt before the July buy disclosure."
+    },
+    {
+      "order": 13,
+      "section": "PRE-BULLISH",
+      "role": "prepared_visual",
+      "label": "13 PRE-BULLISH | $60K VALUE ZONE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone",
+      "inspect": "February and July tests of the low-$60K zone",
+      "why": "Shows where the behaviour begins changing before the purchase receipts."
+    },
+    {
+      "order": 14,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "14 PRE-BULLISH | KROWN VALUE + MONEY IN",
+      "url": "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s",
+      "inspect": "00:00-00:28; 06:01-06:13; 10:48-11:03",
+      "why": "Shows long-term allocation beginning while the tactical downside bias remains."
+    },
+    {
+      "order": 15,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "15 PRE-BULLISH | KROWN BUY PLAN BELOW $70K",
+      "url": "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s",
+      "inspect": "01:10-01:42; 02:42-03:03; 07:01-07:29",
+      "why": "Shows Krown staying bearish while publicly defining the lower level he wanted to buy."
     },
     {
       "order": 16,
@@ -207,9 +207,9 @@
     },
     {
       "order": 22,
-      "section": "NOW",
+      "section": "POST-BULLISH",
       "role": "prepared_visual",
-      "label": "22 NOW | WHERE BITCOIN IS",
+      "label": "22 POST-BULLISH | WHERE BITCOIN IS NOW",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=13#price-story",
       "inspect": "Current price, both buy markers and the present split",
       "why": "Returns to the complete price line for the final current-state visual."
