@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTC Evidence Chart | Cowen + Krown</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070707;
+      --panel: #11100e;
+      --panel-2: #17130e;
+      --line: rgba(255, 255, 255, .11);
+      --ink: #fffaf0;
+      --body: #d3c9b8;
+      --muted: #8e867a;
+      --gold: #ffb718;
+      --gold-soft: #ffe69a;
+      --red: #ff4d4d;
+      --coral: #ff806a;
+      --green: #50ef8b;
+      --blue: #6cc4ff;
+      --cowen: #6cc4ff;
+      --krown: #ffb718;
+      --plot-min: 1440px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 10% 0, rgba(185, 17, 17, .19), transparent 32rem),
+        radial-gradient(circle at 92% 8%, rgba(255, 171, 0, .14), transparent 35rem),
+        linear-gradient(180deg, #090806 0, var(--bg) 38rem);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body.export-main { min-height: 1000px; background: #070707; }
+    body.export-main .hero,
+    body.export-main main > :not(.chart-shell),
+    body.export-main footer { display: none !important; }
+    body.export-main main.wrap { width: 1600px; margin: 0; }
+    body.export-main .chart-shell { width: 1600px; min-height: 1000px; border: 0; border-radius: 0; box-shadow: none; }
+    body.export-main .chart-head { min-height: 0; padding: 20px 34px 8px; }
+    body.export-main .chart-head h2 { font-size: 35px; }
+    body.export-main .chart-head p { margin-top: 6px; font-size: 11px; }
+    body.export-main .legend { max-width: 680px; }
+    body.export-main .legend span { padding: 6px 9px; font-size: 9px; }
+    body.export-main .graph-story { grid-template-columns: 170px minmax(0,1fr); gap: 12px; margin: 0 34px 8px; padding: 9px 11px; }
+    body.export-main .graph-story li { min-height: 48px; padding-block: 6px; }
+    body.export-main .graph-story span { margin-top: 3px; }
+    body.export-main .plot-scroll { overflow: hidden; padding: 0 18px; }
+    body.export-main #price-chart { width: 100%; min-width: 0; height: 690px; }
+    body.export-main .chart-foot { padding: 10px 34px 12px; font-size: 10px; }
+    body.export-main .scroll-cue { display: none; }
+
+    body.embed-main {
+      min-height: 0;
+      overflow-x: hidden;
+      background: #070707;
+    }
+    body.embed-main .hero,
+    body.embed-main main > :not(.chart-shell),
+    body.embed-main footer { display: none !important; }
+    body.embed-main main.wrap { width: 100%; margin: 0; }
+    body.embed-main .chart-shell { border: 0; border-radius: 0; box-shadow: none; }
+    body.embed-main .chart-head { padding-top: 22px; }
+    body.embed-main .chart-foot { padding-bottom: 16px; }
+
+    a { color: inherit; }
+    .wrap { width: min(1540px, calc(100% - 56px)); margin: 0 auto; }
+    .back { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 19px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; color: var(--body); font-size: 11px; font-weight: 850; text-decoration: none; }
+    .back:hover { border-color: rgba(255, 183, 24, .52); color: var(--gold-soft); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 40px;
+      align-items: end;
+      padding: 58px 0 32px;
+    }
+
+    .eyebrow {
+      margin: 0 0 13px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 930px;
+      margin: 0;
+      font-size: clamp(42px, 6vw, 90px);
+      line-height: .92;
+      letter-spacing: -.065em;
+    }
+
+    h1 em { color: var(--green); font-style: normal; }
+
+    .hero-copy {
+      max-width: 850px;
+      margin: 22px 0 0;
+      color: var(--body);
+      font-size: clamp(16px, 1.45vw, 21px);
+      line-height: 1.52;
+    }
+
+    .current {
+      width: 260px;
+      border: 1px solid rgba(255, 183, 24, .3);
+      border-radius: 18px;
+      padding: 18px 20px;
+      background: linear-gradient(145deg, rgba(255, 183, 24, .13), rgba(255, 255, 255, .025));
+      text-decoration: none;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, .35);
+    }
+
+    .current span { display: block; color: var(--muted); font-size: 11px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+    .current strong { display: block; margin: 5px 0 2px; font-size: 42px; line-height: 1; letter-spacing: -.045em; }
+    .current small { color: var(--body); font-size: 12px; }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .metric {
+      min-height: 108px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: rgba(17, 16, 14, .82);
+    }
+
+    .metric span { display: block; color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+    .metric strong { display: block; margin-top: 8px; font-size: clamp(24px, 2.3vw, 34px); line-height: 1; letter-spacing: -.035em; }
+    .metric small { display: block; margin-top: 7px; color: var(--body); font-size: 11px; line-height: 1.35; }
+    .metric.red strong { color: var(--red); }
+    .metric.gold strong { color: var(--gold); }
+    .metric.green strong { color: var(--green); }
+
+    .chart-shell {
+      overflow: hidden;
+      border: 1px solid rgba(255, 183, 24, .2);
+      border-radius: 20px;
+      background:
+        linear-gradient(180deg, rgba(255, 183, 24, .055), transparent 22%),
+        rgba(10, 10, 9, .96);
+      box-shadow: 0 40px 110px rgba(0, 0, 0, .52);
+    }
+
+    .chart-head {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 27px 28px 16px;
+    }
+
+    .chart-head h2,
+    .section-head h2 { margin: 0; font-size: clamp(28px, 3vw, 44px); letter-spacing: -.04em; }
+    .chart-head p,
+    .section-head p { max-width: 690px; margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+    .graph-story {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+      margin: 2px 28px 16px;
+      border: 1px solid rgba(255, 183, 24, .17);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background:
+        linear-gradient(90deg, rgba(255, 77, 77, .035), rgba(255, 183, 24, .045) 55%, rgba(80, 239, 139, .025)),
+        rgba(8,8,7,.7);
+    }
+
+    .graph-story h3 { margin: 0; font-size: 16px; letter-spacing: -.02em; }
+    .graph-story p { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.4; }
+    .graph-story ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .graph-story li { position: relative; min-height: 61px; border: 1px solid rgba(255,255,255,.055); border-left: 3px solid var(--story); border-radius: 9px; padding: 9px 10px 9px 12px; background: rgba(255,255,255,.025); }
+    .graph-story li::after { content: "›"; position: absolute; top: 50%; right: -8px; z-index: 2; transform: translateY(-50%); color: var(--muted); font-size: 17px; }
+    .graph-story li:last-child::after { display: none; }
+    .graph-story b { display: block; color: var(--story); font-size: 9.5px; letter-spacing: .07em; line-height: 1.15; text-transform: uppercase; }
+    .graph-story span { display: block; margin-top: 5px; color: var(--body); font-size: 9.5px; line-height: 1.3; }
+
+    .legend { display: flex; flex-wrap: wrap; justify-content: end; gap: 7px; max-width: 600px; }
+    .legend span { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; color: var(--body); font-size: 10px; font-weight: 800; }
+    .legend i { width: 9px; height: 9px; border-radius: 50%; background: var(--key); box-shadow: 0 0 12px color-mix(in srgb, var(--key) 70%, transparent); }
+    .legend i.shape-view { border: 2px solid var(--body); background: transparent; box-shadow: none; }
+    .legend i.shape-action { border: 2px solid var(--body); border-radius: 2px; background: transparent; box-shadow: none; }
+
+    .plot-scroll { overflow-x: auto; overflow-y: hidden; padding: 0 12px 8px; scrollbar-color: var(--gold) #17130e; }
+    #price-chart,
+    #value-chart,
+    #cycle-chart { display: block; width: 100%; min-width: var(--plot-min); height: auto; }
+    .scroll-cue { display: none; padding: 0 26px 18px; color: var(--muted); font-size: 11px; }
+
+    .chart-marker { outline: none; cursor: pointer; }
+    .chart-marker > * { pointer-events: none; }
+    .chart-marker > .marker-hit,
+    .chart-marker .marker-caption rect { pointer-events: all; }
+    .chart-marker .marker-core { transition: stroke-width .12s ease, filter .12s ease; }
+    .chart-marker:hover .marker-core,
+    .chart-marker:focus-visible .marker-core,
+    .chart-marker.is-selected .marker-core { stroke: #fff; stroke-width: 3.5; filter: drop-shadow(0 0 8px currentColor); }
+    .chart-marker:hover .marker-caption rect,
+    .chart-marker:focus .marker-caption rect,
+    .chart-marker.is-selected .marker-caption rect { stroke-opacity: 1; fill: #17130e; }
+    .marker-caption { pointer-events: all; }
+    .marker-caption text { pointer-events: none; }
+
+    .chart-inspector {
+      --inspector: var(--gold);
+      display: grid;
+      grid-template-columns: 58px minmax(220px, .72fr) minmax(300px, 1.28fr) auto;
+      gap: 16px;
+      align-items: center;
+      min-height: 108px;
+      margin: 8px 26px 18px;
+      border: 1px solid color-mix(in srgb, var(--inspector) 46%, transparent);
+      border-left: 4px solid var(--inspector);
+      border-radius: 13px;
+      padding: 14px 16px;
+      background:
+        linear-gradient(105deg, color-mix(in srgb, var(--inspector) 9%, transparent), transparent 48%),
+        rgba(15, 15, 13, .98);
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+    .inspector-num { display: grid; place-items: center; width: 48px; height: 48px; border: 2px solid var(--inspector); border-radius: 50%; color: var(--inspector); font-size: 18px; font-weight: 950; }
+    .inspector-meta { color: var(--inspector); font-size: 9px; font-weight: 950; letter-spacing: .09em; text-transform: uppercase; }
+    .chart-inspector h3 { margin: 5px 0 0; font-size: 17px; line-height: 1.15; }
+    .inspector-copy { margin: 0; color: var(--body); font-size: 12px; line-height: 1.45; }
+    .inspector-copy b { color: var(--ink); }
+    .inspector-open { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; border: 1px solid color-mix(in srgb, var(--inspector) 55%, transparent); border-radius: 9px; padding: 9px 12px; color: var(--inspector); font-size: 10px; font-weight: 950; letter-spacing: .06em; text-align: center; text-decoration: none; text-transform: uppercase; }
+    .inspector-open:hover { background: color-mix(in srgb, var(--inspector) 10%, transparent); }
+    .inspector-help { grid-column: 2 / -1; margin-top: -8px; color: var(--muted); font-size: 9px; }
+
+    .chart-foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 15px 26px 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .chart-foot strong { color: var(--body); }
+    .chart-foot a { color: var(--gold-soft); text-decoration: none; }
+
+    .visual-section { padding-top: 54px; }
+
+    .state-shell {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 14% 0, rgba(108, 196, 255, .1), transparent 30%),
+        radial-gradient(circle at 86% 0, rgba(255, 183, 24, .1), transparent 30%),
+        rgba(10, 10, 9, .96);
+    }
+
+    .state-scroll { overflow-x: auto; padding: 4px 24px 24px; scrollbar-color: var(--gold) #17130e; }
+    .state-inner { min-width: 1120px; }
+    .lane { display: grid; grid-template-columns: 120px repeat(12, minmax(104px, 1fr)); gap: 10px; align-items: stretch; }
+    .lane + .lane { margin-top: 11px; }
+    .lane-name { display: flex; flex-direction: column; justify-content: center; border: 1px solid color-mix(in srgb, var(--lane) 45%, transparent); border-radius: 13px; padding: 14px; background: color-mix(in srgb, var(--lane) 8%, #0b0b0a); }
+    .lane-name strong { color: var(--lane); font-size: 19px; }
+    .lane-name span { margin-top: 5px; color: var(--muted); font-size: 9px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+    .state-node { position: relative; display: flex; flex-direction: column; min-height: 114px; border: 1px solid var(--line); border-radius: 13px; padding: 13px; background: rgba(17, 16, 14, .92); text-decoration: none; }
+    .state-node::before { content: ""; position: absolute; top: 50%; left: -11px; width: 10px; height: 1px; background: var(--lane); opacity: .5; }
+    .state-node.first::before { display: none; }
+    .state-node:hover { border-color: color-mix(in srgb, var(--lane) 58%, #fff 8%); }
+    .state-node time { color: var(--lane); font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .state-node strong { margin-top: 9px; font-size: 13px; line-height: 1.2; }
+    .state-node span { margin-top: auto; padding-top: 10px; color: var(--muted); font-size: 9px; line-height: 1.3; }
+    .state-node.counter { border-color: rgba(255, 77, 77, .5); box-shadow: inset 0 0 0 1px rgba(255, 77, 77, .1); }
+    .state-node.action { background: linear-gradient(150deg, color-mix(in srgb, var(--lane) 11%, transparent), rgba(17, 16, 14, .95)); }
+    .state-node.now { border-color: rgba(80, 239, 139, .5); box-shadow: inset 0 -3px 0 rgba(80, 239, 139, .7); }
+
+    .two-up { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(360px, .85fr); gap: 14px; }
+    .mini-shell { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: rgba(10, 10, 9, .96); }
+    .mini-shell .chart-head { min-height: 140px; }
+    .mini-shell .plot-scroll { padding-inline: 8px; }
+    .mini-shell #value-chart,
+    .mini-shell #cycle-chart { min-width: 760px; }
+
+    .cycle-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 18px 18px; }
+    .cycle-stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: rgba(255,255,255,.025); }
+    .cycle-stat span { display: block; color: var(--muted); font-size: 8px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+    .cycle-stat strong { display: block; margin-top: 5px; color: var(--cycle); font-size: 19px; }
+    .cycle-stat small { display: block; margin-top: 4px; color: var(--body); font-size: 8px; line-height: 1.25; }
+
+    .evidence { padding: 54px 0 70px; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 34px; margin-bottom: 18px; }
+    .section-head .eyebrow { margin-bottom: 8px; }
+
+    .event-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; }
+
+    .event-card {
+      position: relative;
+      min-height: 224px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 18px 18px 15px 19px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--key) 9%, transparent), transparent 58%),
+        var(--panel);
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .event-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--key) 62%, #fff 8%); }
+    .event-card::after { content: ""; position: absolute; inset: auto 0 0; height: 3px; background: var(--key); opacity: .82; }
+    .event-top { display: flex; justify-content: space-between; gap: 14px; align-items: start; }
+    .event-num { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; border: 1px solid color-mix(in srgb, var(--key) 65%, #fff 10%); border-radius: 50%; color: var(--key); font-size: 13px; font-weight: 950; box-shadow: 0 0 22px color-mix(in srgb, var(--key) 25%, transparent); }
+    .event-date { color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+    .event-card h3 { margin: 14px 0 8px; font-size: 19px; line-height: 1.12; letter-spacing: -.018em; }
+    .event-card p { margin: 0; color: var(--body); font-size: 12px; line-height: 1.45; }
+    .event-why { margin-top: 11px; border-top: 1px solid var(--line); padding-top: 9px; color: var(--muted); font-size: 10px; line-height: 1.35; }
+    .event-why b { margin-right: 5px; color: var(--ink); font-weight: 900; }
+    .event-source { display: inline-flex; margin-top: 12px; color: var(--key); font-size: 10px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .event-inspect { display: block; margin-top: 9px; color: var(--gold-soft); font-size: 10px; font-weight: 800; }
+
+    .source-note {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 70px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 18px 20px;
+      background: linear-gradient(90deg, rgba(255, 183, 24, .07), rgba(80, 239, 139, .035));
+      color: var(--body);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .source-note a,
+    .source-note .data-file { border: 1px solid rgba(255, 183, 24, .3); border-radius: 9px; padding: 9px 12px; color: var(--gold-soft); font-weight: 850; text-decoration: none; white-space: nowrap; }
+    .source-note .data-file { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; white-space: normal; overflow-wrap: anywhere; }
+    .method-links { display: grid; gap: 7px; }
+    .method-links a { font-size: 9px; white-space: normal; overflow-wrap: anywhere; }
+
+    footer { padding: 0 0 32px; color: var(--muted); font-size: 10px; }
+
+    @media (max-width: 1080px) {
+      .hero { grid-template-columns: 1fr; align-items: start; }
+      .current { width: 100%; display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: center; }
+      .current span, .current small { grid-column: 2; }
+      .current strong { grid-column: 1; grid-row: 1 / 3; margin: 0; }
+      .metric-row { grid-template-columns: repeat(2, 1fr); }
+      .chart-head, .section-head { flex-direction: column; align-items: start; }
+      .legend { justify-content: start; }
+      .event-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .two-up { grid-template-columns: 1fr; }
+      .scroll-cue { display: block; }
+      .graph-story { grid-template-columns: 1fr; gap: 11px; }
+      .graph-story ul { grid-template-columns: repeat(5, 180px); overflow-x: auto; padding-bottom: 7px; scrollbar-color: var(--gold) #17130e; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 28px, 1540px); }
+      .hero { padding-top: 34px; gap: 24px; }
+      h1 { font-size: 47px; }
+      .hero-copy { font-size: 15px; }
+      .metric-row, .event-grid { grid-template-columns: 1fr; }
+      .metric { min-height: auto; }
+      .chart-head { padding: 20px 18px 12px; }
+      .chart-head h2 { font-size: 30px; }
+      .legend { gap: 6px; }
+      .legend span { padding: 6px 8px; font-size: 9px; }
+      .chart-foot { padding: 14px 18px 18px; flex-direction: column; }
+      .plot-scroll { padding-inline: 5px; }
+      .scroll-cue { padding-inline: 18px; }
+      .graph-story { margin-inline: 18px; padding: 13px; }
+      .graph-story ul { grid-template-columns: repeat(5, 166px); }
+      .graph-story li { min-height: 66px; }
+      .chart-inspector { grid-template-columns: 48px 1fr; margin-inline: 12px; }
+      .inspector-copy, .inspector-open, .inspector-help { grid-column: 1 / -1; }
+      .inspector-help { margin-top: -4px; }
+      .event-card { min-height: 0; }
+      .evidence { padding-top: 42px; }
+      .source-note { grid-template-columns: 1fr; }
+      .visual-section { padding-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero wrap">
+    <div>
+      <a class="back" href="console.html" target="_top">← Back to evidence dashboard</a>
+      <p class="eyebrow">Cowen + Krown | Bearish near the top to buying near $60K | 12 Aug 2025 to 6 Aug 2026</p>
+      <h1>They went bearish. <em>Then they bought.</em></h1>
+      <p class="hero-copy">Thirteen public receipts show the full change: both were bearish around the top, the downside case persisted through the first half of 2026, both began buying around the $60K zone, and their expectations now split.</p>
+    </div>
+    <div class="current">
+      <span>6 Aug close</span>
+      <strong id="current-price">$64.3K</strong>
+      <small>Coinbase BTC-USD daily candle</small>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="metric-row" aria-label="Market context summary">
+      <article class="metric gold"><span>Window high</span><strong>$126.3K</strong><small>6 Oct 2025 Coinbase intraday high</small></article>
+      <article class="metric red"><span>Later undercut</span><strong>$57.7K</strong><small>1 Jul 2026 Coinbase intraday low</small></article>
+      <article class="metric red"><span>Measured top-to-low drawdown</span><strong>-54.3%</strong><small>6 Oct Coinbase high to 1 Jul intraday low</small></article>
+      <article class="metric green"><span>Observed shift</span><strong>Bear case → both bought</strong><small>Krown expects no new lows; Cowen still allows a later bottom</small></article>
+    </section>
+
+    <section class="chart-shell" id="price-story">
+      <div class="chart-head">
+        <div>
+          <p class="eyebrow">The 13 receipts on one price line</p>
+          <h2>They went bearish near the top, then bought near $60K</h2>
+          <p>Read left to right. Circles are market views; squares are disclosures. A disclosure date is never presented as the unknown trade date.</p>
+        </div>
+        <div class="legend" aria-label="Marker legend">
+          <span style="--key:var(--cowen)"><i></i>Cowen</span>
+          <span style="--key:var(--krown)"><i></i>Krown</span>
+          <span><i class="shape-view"></i>Circle = market view or plan</span>
+          <span><i class="shape-action"></i>Square = capital disclosure</span>
+        </div>
+      </div>
+
+      <div class="graph-story">
+        <div>
+          <h3>What this graph shows</h3>
+          <p>The whole story without opening a tooltip.</p>
+        </div>
+        <ul>
+          <li style="--story:var(--red)"><b>Bearish near the top</b><span>Cowen flags a Q4 top; Krown warns of a long correction.</span></li>
+          <li style="--story:var(--coral)"><b>BTC sold off</b><span>The market falls from $126.3K toward $60K as the bear case firms.</span></li>
+          <li style="--story:var(--gold)"><b>H1 stayed bearish</b><span>They kept expecting lower; Krown planned to buy below $70K anyway.</span></li>
+          <li style="--story:var(--green)"><b>Both bought near $60K</b><span>Krown and Cowen each disclose buying around or below the same zone.</span></li>
+          <li style="--story:var(--blue)"><b>Current split</b><span>Krown: no new lows. Cowen: buying, but still allows lower.</span></li>
+        </ul>
+      </div>
+
+      <div class="plot-scroll">
+        <svg id="price-chart" viewBox="0 0 1440 680" role="img" aria-labelledby="chart-title chart-desc">
+          <title id="chart-title">Bitcoin price with Cowen and Krown evidence markers</title>
+          <desc id="chart-desc">Coinbase BTC-USD daily price from August 2025 to August 2026 with 13 source-linked public receipts showing Cowen and Krown moving from bearish views, through first-half 2026 downside calls, toward disclosed buying and different current expectations.</desc>
+        </svg>
+      </div>
+      <div class="scroll-cue">Scroll the chart sideways to inspect every marker.</div>
+
+      <aside class="chart-inspector" id="chart-inspector" aria-live="polite">
+        <span class="inspector-num" id="inspector-num">1</span>
+        <div><div class="inspector-meta" id="inspector-meta">Cowen · 12 Aug 2025 · Early warning</div><h3 id="inspector-title">Forecasts a Q4 cycle top and bear market</h3></div>
+        <p class="inspector-copy"><b id="inspector-meaning">Cowen identifies the Q4 top window before Bitcoin reaches its October high.</b><br><span id="inspector-inspect">Inspect 02:38-03:08.</span></p>
+        <a class="inspector-open" id="inspector-open" href="https://youtu.be/il089bNt-4g?t=158" target="_blank" rel="noreferrer">Open source ↗</a>
+        <span class="inspector-help">Hover or focus any numbered marker or its label. The selection stays here so the explanation never vanishes under your cursor.</span>
+      </aside>
+
+      <div class="chart-foot">
+        <span><strong>Reading rule:</strong> numbered circles are dated market views or conditional plans. Dashed square badges are publication or disclosure dates only. Cowen's 2025 sale, Krown's July buying and Cowen's current buying have unknown execution dates; Krown's February badge is a value call and allocation disclosure, not a trade dot at $60,001.</span>
+        <span><a href="https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles" target="_blank" rel="noreferrer">Open Coinbase candle documentation</a></span>
+      </div>
+    </section>
+
+    <section class="evidence" id="evidence-cards">
+      <div class="section-head">
+        <div><p class="eyebrow">The same order as the final links</p><h2>What each number proves</h2></div>
+        <p>Every numbered marker opens its original public receipt. Hover or focus a marker for the plain-English meaning and exact inspection point; on touch, tap once to reveal it and again to open the source.</p>
+      </div>
+      <div class="event-grid" id="event-grid"></div>
+    </section>
+
+    <section class="visual-section" id="stance-change">
+      <div class="state-shell">
+        <div class="chart-head">
+          <div><p class="eyebrow">Before and after</p><h2>The change is the action, not perfect timing</h2><p>Both moved from a defensive bear case toward buying. Their present views are different: Krown expects no new lows; Cowen is accumulating while still allowing a later bottom.</p></div>
+          <div class="legend"><span style="--key:var(--cowen)"><i></i>Cowen lane</span><span style="--key:var(--krown)"><i></i>Krown lane</span><span style="--key:var(--green)"><i></i>Capital deployed or buying</span><span style="--key:var(--red)"><i></i>Still conditional</span></div>
+        </div>
+        <div class="state-scroll"><div class="state-inner" id="state-lanes"></div></div>
+      </div>
+    </section>
+
+    <section class="visual-section two-up">
+      <article class="mini-shell" id="value-zone">
+        <div class="chart-head">
+          <div><p class="eyebrow">2026 value-zone zoom</p><h2>The value zone was tested twice</h2><p>February's $60,001 wick was undercut in July by 3.81%. The later buy disclosures sit inside that same low-$60K conversation.</p></div>
+        </div>
+        <div class="plot-scroll">
+          <svg id="value-chart" viewBox="0 0 1040 500" role="img" aria-labelledby="value-title value-desc"><title id="value-title">Bitcoin value-zone tests and buy disclosures</title><desc id="value-desc">Coinbase BTC-USD from January to August 2026 with February and July lows, Krown buying disclosure and Cowen buying disclosure.</desc></svg>
+        </div>
+        <div class="chart-foot"><span><strong>Bands quote Krown's public ranges.</strong> They are source-labelled context, not asserted fair value.</span><span><a href="https://www.youtube.com/watch?v=e8jcSvurVQ0&amp;t=0s" target="_blank" rel="noreferrer">Open February source</a></span></div>
+      </article>
+
+      <article class="mini-shell" id="cycle-context">
+        <div class="chart-head">
+          <div><p class="eyebrow">Optional cycle context</p><h2>Post-ATH drawdown at the same age</h2><p>Lines are daily closes measured from each cycle's intraday ATH; dots are each window's deepest intraday low. Its precise job is to reject the lazy claim that this bear has already matched prior-cycle depth: day 304 in 2025 is materially shallower than 2017 and 2021. It is not a bottom signal, does not prove a four-year-cycle forecast and does not explain either purchase.</p></div>
+        </div>
+        <div class="plot-scroll">
+          <svg id="cycle-chart" viewBox="0 0 820 500" role="img" aria-labelledby="cycle-title cycle-desc"><title id="cycle-title">Post-ATH Bitcoin drawdown comparison</title><desc id="cycle-desc">Daily close drawdowns for the 2017, 2021 and 2025 Bitcoin all-time highs through day 304 using Coinbase BTC-USD candles.</desc></svg>
+        </div>
+        <div class="cycle-summary" id="cycle-summary"></div>
+      </article>
+    </section>
+
+    <aside class="source-note" id="price-method">
+      <span><strong>Price method:</strong> Coinbase Exchange BTC-USD daily UTC candles, fetched in sub-300-candle chunks and shown through the completed 6 August 2026 candle. The line uses daily closes; highlighted peak and low values use the cited daily high and low. Analyst execution prices are not inferred from the market line.</span>
+      <span class="method-links"><a href="assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js">Local daily-candle dataset</a><a href="assets/btc-post-ath-drawdowns-coinbase.js">Local post-ATH dataset</a><a href="https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles" target="_blank" rel="noreferrer">Coinbase candle methodology</a></span>
+    </aside>
+  </main>
+
+  <footer class="wrap">Local research visualization for the selected Cowen + Krown record pack. This is not a script, recording flow or editing document.</footer>
+
+  <script src="assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js"></script>
+  <script src="assets/btc-post-ath-drawdowns-coinbase.js"></script>
+  <script>
+    const PAGE_PARAMS = new URLSearchParams(location.search);
+    if (PAGE_PARAMS.get('export') === 'main') document.body.classList.add('export-main');
+    if (PAGE_PARAMS.get('embed') === 'main') document.body.classList.add('embed-main');
+    const COINBASE_DOCS = 'https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles';
+    const EVENTS = [
+      {n:1,date:'2025-08-12',type:'forecast',who:'Cowen',title:'Forecasts a Q4 cycle top and bear market',short:'Q4 TOP + BEAR',caption:true,detail:'Cowen forecasts a September pullback followed by a Q4 post-halving-year cycle top and bear market.',meaning:'Cowen identifies the Q4 top window before Bitcoin reaches its October high.',why:'This establishes Cowen\'s advance bearish framework near the eventual top.',inspect:'02:38-03:08',url:'https://www.youtube.com/watch?v=il089bNt-4g&t=158s',source:'YouTube 02:38',dx:-8,dy:-46,labelSide:'right'},
+      {n:2,date:'2025-08-16',type:'forecast',who:'Krown',title:'Warns of a four-to-seven-month correction',short:'4-7 MONTH CORRECTION',caption:true,detail:'Krown forecasts an 8-15 September reversal followed by a four-to-seven-month correction. The final high came later.',meaning:'Krown warns early that a prolonged correction is approaching.',why:'This gives the story a second advance bearish call near the top.',inspect:'Complete post',url:'https://x.com/KrownCryptoCave/status/1956714271032877064',source:'Official X post',dx:36,dy:46,labelSide:'right'},
+      {n:3,date:'2025-11-17',type:'confirmation',who:'Cowen',title:'Top-in odds rise to 60-70%',short:'TOP-IN ODDS 60-70%',detail:'After the first weekly close below the 50-week moving average, Cowen raises the probability that the top is in to 60-70%.',meaning:'Cowen confirms the bear case after Bitcoin breaks below the 50-week average.',why:'This bridges the advance top framework to a materially bearish post-break view.',inspect:'03:52-04:20',url:'https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s',source:'YouTube 03:52',dx:-24,dy:-48,labelSide:'left'},
+      {n:4,date:'2025-12-30',type:'confirmation',who:'Krown',title:'Bounce expected to fail',short:'BOUNCE EXPECTED TO FAIL',caption:true,detail:'Krown expects the bounce to fail and price to move lower unless his weekly reversal conditions appear.',meaning:'Krown is still defensive and expects lower prices absent a reversal.',why:'This shows the bearish stance persisted as Bitcoin sold off toward $60K.',inspect:'01:25-01:41',url:'https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s',source:'YouTube 01:25',dx:0,dy:-54,labelSide:'right'},
+      {n:5,date:'2026-02-06',type:'allocation',who:'Krown',title:'Major value, money deployed, but downside bias remains',short:'VALUE + MONEY IN',caption:true,detail:'Krown calls the low-$60K area major value and says long-term money was deployed, while still allowing the low $50Ks and retaining a downside bias below $80K.',meaning:'Long-term value and tactical bearishness coexist: money moves before he calls the bottom.',why:'This is the first public bridge from downside analysis toward allocation without pretending the bear case vanished.',inspect:'00:00-00:28; 06:01-06:13; 10:48-11:03',url:'https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s',source:'YouTube 00:00 + 06:01 + 10:48',disclosureOnly:true,badgeY:124,dx:-18,labelSide:'right'},
+      {n:6,date:'2026-03-14',type:'disclosure',who:'Cowen',title:'2025 Bitcoin sale disclosed',short:'2025 SALE DISCLOSED',detail:'Cowen retrospectively discloses selling a substantial amount during 2025. The execution dates, prices and exact quantity remain unknown.',meaning:'Cowen reveals that his defensive bear view was backed by a real sale.',why:'This turns bearish commentary into a disclosed capital decision.',inspect:'18:15-19:28',url:'https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s',source:'YouTube 18:15',disclosureOnly:true,badgeY:70,dx:18,labelSide:'right'},
+      {n:7,date:'2026-05-26',type:'transition',who:'Krown',title:'Still downside-biased; plans to buy at $70K or below',short:'BUY PLAN BELOW $70K',caption:true,detail:'Krown remains short-term downside-biased, then says he will buy Bitcoin at $70K or below as a long-term hold without expecting an immediate rise.',meaning:'His bearish analysis and long-term buy plan exist at the same time; this is a plan, not an executed purchase.',why:'This makes the later buy legible and shows that buying did not require a perfect bottom call.',inspect:'01:10-01:42; 02:42-03:03; 07:01-07:29',url:'https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s',source:'YouTube 01:10 + 07:01',dx:-36,dy:-66,labelSide:'left'},
+      {n:8,date:'2026-06-07',type:'confirmation',who:'Cowen',title:'Calls it the third and final stage of the bear market',short:'STAGE 3 BEAR MARKET',caption:true,detail:'Cowen says Bitcoin has entered the third and final stage of the bear market and that stage two has completed.',meaning:'Cowen is still explicitly bearish in H1 2026, shortly before his later buying disclosure.',why:'This restores the missing Cowen bridge between his 2025 sale and his August re-entry.',inspect:'00:04-00:16; 05:20-05:39',url:'https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s',source:'YouTube 00:04',dx:6,dy:35,labelSide:'left'},
+      {n:9,date:'2026-06-18',type:'confirmation',who:'Krown',title:'Short-term bearish; expects a retest of the lows',short:'SHORT-TERM: RETEST LOWS',detail:'After a rejected rally, Krown expects Bitcoin to revisit the current lows and possibly wick slightly lower.',meaning:'Krown remains tactically bearish immediately before the July low-$60Ks purchase disclosure.',why:'This is the last clean bearish receipt before his disclosed buy and August directional flip.',inspect:'00:00-00:26',url:'https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s',source:'YouTube 00:00',dx:30,dy:-62,labelSide:'left'},
+      {n:10,date:'2026-07-03',type:'disclosure',who:'Krown',title:'Explicit Bitcoin buying disclosed',short:'BOUGHT LOW $60Ks',caption:true,detail:'Krown explicitly says he has been buying Bitcoin in the low $60Ks. The exact execution dates are not supplied.',meaning:'Krown directly names Bitcoin as the asset he has been buying.',why:'This is the direct receipt behind the first half of BOTH BOUGHT.',inspect:'01:07-01:29',url:'https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s',source:'YouTube 01:07',disclosureOnly:true,badgeY:138,dx:-24,labelSide:'left'},
+      {n:11,date:'2026-08-05',type:'current',who:'Krown',title:'No longer bearish; no new lows expected',short:'NO NEW LOWS EXPECTED',caption:true,detail:'Krown says he is no longer bearish on Bitcoin and does not expect the market to make fresh lows.',meaning:'Krown explicitly moves away from the fresh-low bear case.',why:'This is the clearest direct statement that his directional view changed.',inspect:'02:18-02:22',url:'https://www.youtube.com/watch?v=R94SC48JeH0&t=138s',source:'YouTube 02:18',dx:-82,dy:-5,labelSide:'left'},
+      {n:12,date:'2026-08-06',type:'counter',who:'Cowen',title:'Still allows a later bottom',short:'LATER BOTTOM STILL POSSIBLE',detail:'Cowen gives a likely late-September to mid-December bottom window. He is not calling the current price the final low.',meaning:'Cowen still expects a later bottom even as he starts accumulating.',why:'This defines the current split: Krown expects no new lows, while Cowen still allows one.',inspect:'12:26-13:42',url:'https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s',source:'YouTube 12:26',dx:-70,dy:65,labelSide:'left'},
+      {n:13,date:'2026-08-06',type:'disclosure',who:'Cowen',title:'Buying below $60K disclosed',short:'BOUGHT BELOW $60K',caption:true,detail:'Cowen says he started buying a little below $60K, then immediately says Bitcoin will probably go lower. The exact buy dates are unknown.',meaning:'Cowen is buying for the next cycle without calling the bottom.',why:'This is the second direct receipt behind BOTH BOUGHT.',inspect:'18:29-19:49',url:'https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s',source:'YouTube 18:29',disclosureOnly:true,badgeY:68,dx:-144,labelSide:'left'}
+    ];
+
+    const TYPE = {
+      forecast:{label:'Early warning'},
+      counter:{label:'Still conditional'},
+      confirmation:{label:'Bear confirmed'},
+      transition:{label:'Downside + buy plan'},
+      allocation:{label:'Value call + allocation disclosure'},
+      disclosure:{label:'Action disclosed'},
+      current:{label:'Current stance'}
+    };
+    const PERSON = {Cowen:'#6cc4ff',Krown:'#ffb718',Market:'#9bdcff'};
+
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.getElementById('price-chart');
+    const rows = window.BTC_CHART_DATA.rows;
+    const byDate = new Map(rows.map(row => [row.date, row]));
+    const W = 1440, H = 680;
+    const M = {l:86,r:46,t:42,b:78};
+    const innerW = W - M.l - M.r, innerH = H - M.t - M.b;
+    const start = Date.parse(rows[0].date + 'T00:00:00Z');
+    const end = Date.parse(rows.at(-1).date + 'T00:00:00Z');
+    const yMin = 52000, yMax = 132000;
+
+    const x = date => M.l + (Date.parse(date + 'T00:00:00Z') - start) / (end - start) * innerW;
+    const y = value => M.t + (yMax - value) / (yMax - yMin) * innerH;
+    const money = value => '$' + (value / 1000).toFixed(value >= 100000 ? 0 : 1).replace('.0','') + 'K';
+    const el = (name, attrs={}, text='') => {
+      const node = document.createElementNS(ns, name);
+      Object.entries(attrs).forEach(([key,value]) => node.setAttribute(key, value));
+      if (text) node.textContent = text;
+      return node;
+    };
+
+    const defs = el('defs');
+    const area = el('linearGradient',{id:'area-fill',x1:'0',y1:'0',x2:'0',y2:'1'});
+    area.append(el('stop',{offset:'0%','stop-color':'#ffb718','stop-opacity':'.28'}), el('stop',{offset:'62%','stop-color':'#b31f1f','stop-opacity':'.09'}), el('stop',{offset:'100%','stop-color':'#070707','stop-opacity':'0'}));
+    const line = el('linearGradient',{id:'line-stroke',x1:'0',y1:'0',x2:'1',y2:'0'});
+    line.append(el('stop',{offset:'0%','stop-color':'#ffcb45'}), el('stop',{offset:'45%','stop-color':'#ff9d18'}), el('stop',{offset:'72%','stop-color':'#ff655b'}), el('stop',{offset:'100%','stop-color':'#50ef8b'}));
+    const glow = el('filter',{id:'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'});
+    glow.append(el('feGaussianBlur',{stdDeviation:'4',result:'blur'}),el('feMerge'));
+    glow.lastChild.append(el('feMergeNode',{in:'blur'}),el('feMergeNode',{in:'SourceGraphic'}));
+    defs.append(area,line,glow);
+    svg.append(defs);
+
+    [60000,80000,100000,120000].forEach(value => {
+      svg.append(el('line',{x1:M.l,y1:y(value),x2:W-M.r,y2:y(value),stroke:'rgba(255,255,255,.09)','stroke-width':'1'}));
+      svg.append(el('text',{x:M.l-16,y:y(value)+4,fill:'#8e867a','font-size':'12','text-anchor':'end'},money(value)));
+    });
+
+    ['2025-08-01','2025-10-01','2025-12-01','2026-02-01','2026-04-01','2026-06-01','2026-08-01'].forEach(date => {
+      const label = new Intl.DateTimeFormat('en-AU',{month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'));
+      svg.append(el('line',{x1:x(date),y1:M.t,x2:x(date),y2:H-M.b,stroke:'rgba(255,255,255,.035)','stroke-width':'1'}));
+      svg.append(el('text',{x:x(date),y:H-40,fill:'#8e867a','font-size':'12','text-anchor':date==='2025-08-01'?'start':date==='2026-08-01'?'end':'middle'},label));
+    });
+
+    const points = rows.map(row => [x(row.date),y(row.close)]);
+    const lineD = points.map((point,index) => (index?'L':'M') + point[0].toFixed(2) + ',' + point[1].toFixed(2)).join(' ');
+    const areaD = lineD + ` L ${points.at(-1)[0].toFixed(2)},${(H-M.b).toFixed(2)} L ${points[0][0].toFixed(2)},${(H-M.b).toFixed(2)} Z`;
+    svg.append(el('path',{d:areaD,fill:'url(#area-fill)'}));
+    svg.append(el('path',{d:lineD,fill:'none',stroke:'rgba(255,183,24,.24)','stroke-width':'9',filter:'url(#glow)','stroke-linejoin':'round','stroke-linecap':'round'}));
+    svg.append(el('path',{d:lineD,fill:'none',stroke:'url(#line-stroke)','stroke-width':'3.2','stroke-linejoin':'round','stroke-linecap':'round'}));
+
+    const peak = byDate.get('2025-10-06');
+    svg.append(el('circle',{cx:x(peak.date),cy:y(peak.high),r:'5',fill:'#ffb718',stroke:'#fff1b2','stroke-width':'2'}));
+    svg.append(el('text',{x:x(peak.date)-11,y:y(peak.high)-14,fill:'#ffe69a','font-size':'12','font-weight':'900','text-anchor':'end'},'MARKET HIGH  $126.3K'));
+    const low = byDate.get('2026-07-01');
+    svg.append(el('circle',{cx:x(low.date),cy:y(low.low),r:'5',fill:'#9bdcff',stroke:'#e8f7ff','stroke-width':'2'}));
+    svg.append(el('text',{x:x(low.date)-9,y:y(low.low)+27,fill:'#9bdcff','font-size':'11','font-weight':'900','text-anchor':'end'},'PRICE CONTEXT  ·  JUL 1 LOW  $57.7K'));
+    svg.append(el('text',{x:x(low.date)-9,y:y(low.low)+43,fill:'#8e867a','font-size':'9','font-weight':'800','text-anchor':'end'},'3.81% BELOW THE FEBRUARY WICK'));
+
+    function drawMarker(group,event,bx,by,color,small=false) {
+      const size = small ? 5 : 16;
+      const coreClass = small ? '' : 'marker-core';
+      if (event.type === 'counter') {
+        group.append(el('circle',{class:coreClass,cx:bx,cy:by,r:String(size),fill:'#0b0b0a',stroke:'#ff4d4d','stroke-width':small?'2.2':'3'}));
+        if (small) group.append(el('circle',{cx:bx,cy:by,r:'2.3',fill:color}));
+      } else if (event.type === 'action' || event.type === 'allocation' || event.type === 'disclosure') {
+        group.append(el('rect',{class:coreClass,x:bx-size,y:by-size,width:size*2,height:size*2,rx:small?'1.5':'4',fill:'#0b0b0a',stroke:color,'stroke-width':small?'2':'2.5'}));
+      } else if (event.type === 'context') {
+        group.append(el('path',{class:coreClass,d:`M ${bx} ${by-size} L ${bx+size} ${by} L ${bx} ${by+size} L ${bx-size} ${by} Z`,fill:'#0b0b0a',stroke:color,'stroke-width':small?'2':'2.5'}));
+      } else {
+        group.append(el('circle',{class:coreClass,cx:bx,cy:by,r:String(size),fill:'#0b0b0a',stroke:color,'stroke-width':small?'2':'2.5'}));
+        if (event.type === 'current') group.append(el('circle',{cx:bx,cy:by,r:String(size+4),fill:'none',stroke:'#50ef8b','stroke-opacity':'.58','stroke-width':'2'}));
+      }
+    }
+
+    const clamp = (value,min,max) => Math.max(min,Math.min(max,value));
+    const displayDate = date => new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'));
+    function drawCaption(group,event,bx,by,color) {
+      const width=clamp(event.short.length*6.15+20,108,196);
+      const left=event.labelSide==='left' ? bx-22-width : bx+22;
+      const pill=el('g',{class:'marker-caption'});
+      pill.append(el('rect',{x:left,y:by-13,width,height:26,rx:'8',fill:'rgba(8,8,7,.92)',stroke:color,'stroke-opacity':'.34'}));
+      pill.append(el('text',{x:left+10,y:by+3.5,fill:color,'font-size':'9.5','font-weight':'900','letter-spacing':'.35'},event.short));
+      group.append(pill);
+    }
+
+    const markerLayer = el('g',{id:'marker-layer',class:'marker-layer'});
+    const inspector = document.getElementById('chart-inspector');
+    const inspectorNum = document.getElementById('inspector-num');
+    const inspectorMeta = document.getElementById('inspector-meta');
+    const inspectorTitle = document.getElementById('inspector-title');
+    const inspectorMeaning = document.getElementById('inspector-meaning');
+    const inspectorInspect = document.getElementById('inspector-inspect');
+    const inspectorOpen = document.getElementById('inspector-open');
+    let selectedEventNumber = null;
+
+    function selectEvent(event,group) {
+      selectedEventNumber = event.n;
+      svg.querySelectorAll('.chart-marker.is-selected').forEach(marker=>marker.classList.remove('is-selected'));
+      if(group?.parentNode===markerLayer) markerLayer.append(group);
+      group?.classList.add('is-selected');
+      const color=PERSON[event.who];
+      inspector.style.setProperty('--inspector',color);
+      inspectorNum.textContent=event.n;
+      inspectorMeta.textContent=`${event.who} · ${displayDate(event.date)} · ${TYPE[event.type].label}`;
+      inspectorTitle.textContent=event.title;
+      inspectorMeaning.textContent=event.meaning;
+      inspectorInspect.textContent=`Inspect ${event.inspect}.`;
+      inspectorOpen.href=event.url;
+      inspectorOpen.setAttribute('aria-label',`Open source ${event.n}: ${event.title}`);
+    }
+
+    EVENTS.forEach(event => {
+      const row = byDate.get(event.date);
+      const color = PERSON[event.who];
+      const px=x(event.date);
+      const group = el('a',{class:'chart-marker','data-marker':String(event.n),href:event.url,target:'_blank',rel:'noreferrer',tabindex:'0',focusable:'true','aria-label':`${event.n}. ${event.who}, ${displayDate(event.date)}. ${event.meaning}. Inspect ${event.inspect}. Click to open source.`});
+      let bx, by;
+      if (event.disclosureOnly) {
+        bx=px+event.dx; by=event.badgeY;
+        group.append(el('line',{x1:bx,y1:by+18,x2:px,y2:H-M.b,stroke:color,'stroke-opacity':'.32','stroke-width':'1.2','stroke-dasharray':'5 6'}));
+      } else {
+        const value = event.priceMode==='high' ? row.high : event.priceMode==='low' ? row.low : row.close;
+        const py=y(value); bx=px+event.dx; by=py+event.dy;
+        group.append(el('line',{x1:px,y1:py,x2:bx,y2:by,stroke:color,'stroke-opacity':'.56','stroke-width':'1.4','stroke-dasharray':'3 3'}));
+        drawMarker(group,event,px,py,color,true);
+      }
+      group.append(el('circle',{class:'marker-hit',cx:bx,cy:by,r:'35',fill:'transparent'}));
+      drawMarker(group,event,bx,by,color,false);
+      group.append(el('text',{x:bx,y:by+4.5,fill:color,'font-size':'13','font-weight':'950','text-anchor':'middle','pointer-events':'none'},String(event.n)));
+      if(event.caption) drawCaption(group,event,bx,by,color);
+      group.addEventListener('pointerenter',pointerEvent=>{
+        if(pointerEvent.pointerType==='touch') return;
+        selectEvent(event,group);
+      });
+      group.addEventListener('focus',()=>selectEvent(event,group));
+      group.addEventListener('click',clickEvent=>{
+        const touchLike=clickEvent.detail>0&&window.matchMedia('(hover: none), (pointer: coarse)').matches;
+        if(touchLike&&selectedEventNumber!==event.n){
+          clickEvent.preventDefault();
+          selectEvent(event,group);
+          group.focus({preventScroll:true});
+        }
+      });
+      markerLayer.append(group);
+    });
+    svg.append(markerLayer);
+    const requestedFocus = Number(PAGE_PARAMS.get('focus'));
+    const initialEvent = EVENTS.find(event=>event.n===requestedFocus) || EVENTS[0];
+    selectEvent(initialEvent,svg.querySelector(`.chart-marker[data-marker="${initialEvent.n}"]`));
+
+    const latest = rows.at(-1);
+    document.getElementById('current-price').textContent = money(latest.close);
+
+    const grid = document.getElementById('event-grid');
+    EVENTS.forEach(event => {
+      const color=PERSON[event.who];
+      const card=document.createElement('a');
+      card.className='event-card';
+      card.href=event.url;
+      card.target='_blank';
+      card.rel='noreferrer';
+      card.style.setProperty('--key',color);
+      const date=displayDate(event.date);
+      card.innerHTML=`<div class="event-top"><span class="event-num">${event.n}</span><span class="event-date">${date} | ${TYPE[event.type].label}</span></div><h3>${event.who}: ${event.title}</h3><p>${event.detail}</p><span class="event-inspect">Inspect ${event.inspect}</span><div class="event-why"><b>Why here</b>${event.why}</div><span class="event-source">Open ${event.source}</span>`;
+      grid.append(card);
+    });
+
+    const STATE_LANES = [
+      {name:'Cowen',color:PERSON.Cowen,nodes:[
+        {col:1,n:1,label:'Q4 top + bear market',note:'Advance framework'},
+        {col:3,n:3,label:'60-70% top-in',note:'Post-break confirmation'},
+        {col:5,n:6,label:'2025 sale disclosed',note:'Execution dates unknown',cls:'action'},
+        {col:8,n:8,label:'Stage-three bear market',note:'7 June 2026',cls:'counter'},
+        {col:11,n:12,label:'Later bottom possible',note:'Still expects lower',cls:'counter'},
+        {col:12,n:13,label:'Buying below $60K',note:'Execution dates unknown',cls:'now'}
+      ]},
+      {name:'Krown',color:PERSON.Krown,nodes:[
+        {col:1,n:2,label:'4-7 month correction',note:'Advance warning'},
+        {col:3,n:4,label:'Bounce expected to fail',note:'Still defensive'},
+        {col:5,n:5,label:'Value + downside bias',note:'Money moves before bottom',cls:'action'},
+        {col:7,n:7,label:'Buy plan below $70K',note:'Not yet an executed buy'},
+        {col:9,n:9,label:'Short-term: retest lows',note:'18 June 2026',cls:'counter'},
+        {col:10,n:10,label:'BTC buying disclosed',note:'Low $60Ks',cls:'action'},
+        {col:12,n:11,label:'No new lows expected',note:'No longer bearish',cls:'now'}
+      ]}
+    ];
+
+    const lanes=document.getElementById('state-lanes');
+    STATE_LANES.forEach(lane => {
+      const laneEl=document.createElement('div'); laneEl.className='lane'; laneEl.style.setProperty('--lane',lane.color);
+      laneEl.innerHTML=`<div class="lane-name"><strong>${lane.name}</strong><span>Public stance + action</span></div>`;
+      lane.nodes.forEach((node,index) => {
+        const event=EVENTS.find(item=>item.n===node.n);
+        const link=document.createElement('a'); link.className=`state-node ${node.cls||''} ${index===0?'first':''}`; link.style.gridColumn=String(node.col+1); link.href=event.url; link.target='_blank'; link.rel='noreferrer';
+        link.innerHTML=`<time>${event.date}</time><strong>${node.label}</strong><span>${node.note}</span>`;
+        laneEl.append(link);
+      });
+      lanes.append(laneEl);
+    });
+
+    function renderValueChart() {
+      const vsvg=document.getElementById('value-chart');
+      const vr=rows.filter(row=>row.date>='2026-01-15');
+      const VW=1040,VH=500,VM={l:72,r:32,t:38,b:60};
+      const vx0=Date.parse(vr[0].date+'T00:00:00Z'), vx1=Date.parse(vr.at(-1).date+'T00:00:00Z');
+      const vx=date=>VM.l+(Date.parse(date+'T00:00:00Z')-vx0)/(vx1-vx0)*(VW-VM.l-VM.r);
+      const vy=value=>VM.t+(80000-value)/30000*(VH-VM.t-VM.b);
+      const vdefs=el('defs');
+      const vg=el('linearGradient',{id:'value-area',x1:'0',y1:'0',x2:'0',y2:'1'});
+      vg.append(el('stop',{offset:'0%','stop-color':'#50ef8b','stop-opacity':'.25'}),el('stop',{offset:'100%','stop-color':'#070707','stop-opacity':'0'})); vdefs.append(vg); vsvg.append(vdefs);
+      [50000,60000,70000,80000].forEach(value=>{vsvg.append(el('line',{x1:VM.l,y1:vy(value),x2:VW-VM.r,y2:vy(value),stroke:'rgba(255,255,255,.09)'}));vsvg.append(el('text',{x:VM.l-12,y:vy(value)+4,fill:'#8e867a','font-size':'11','text-anchor':'end'},money(value)));});
+      ['2026-02-01','2026-04-01','2026-06-01','2026-08-01'].forEach(date=>{vsvg.append(el('line',{x1:vx(date),y1:VM.t,x2:vx(date),y2:VH-VM.b,stroke:'rgba(255,255,255,.035)'}));vsvg.append(el('text',{x:vx(date),y:VH-30,fill:'#8e867a','font-size':'11','text-anchor':'middle'},new Intl.DateTimeFormat('en-AU',{month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'))));});
+      const vp=vr.map(row=>[vx(row.date),vy(row.close)]); const vd=vp.map((p,i)=>(i?'L':'M')+p[0].toFixed(2)+','+p[1].toFixed(2)).join(' '); const va=vd+` L ${vp.at(-1)[0]},${VH-VM.b} L ${vp[0][0]},${VH-VM.b} Z`;
+      vsvg.append(el('path',{d:va,fill:'url(#value-area)'}));vsvg.append(el('path',{d:vd,fill:'none',stroke:'#ffb718','stroke-width':'3','stroke-linejoin':'round'}));
+      const brackets=[
+        {date:'2026-02-06',low:52000,high:60001,label:'FEB SOURCE RANGE: ~$60K TO LOW $50Ks',url:'https://youtu.be/e8jcSvurVQ0?t=0',color:'#ffb718',side:'right'},
+        {date:'2026-07-03',low:55000,high:63000,label:'JUL SOURCE RANGE: LOW $60Ks TO MID $50Ks',url:'https://youtu.be/L9Z5KrXG_ak?t=87',color:'#50ef8b',side:'left'}
+      ];
+      brackets.forEach(mark=>{const px=vx(mark.date),top=vy(mark.high),bottom=vy(mark.low),dir=mark.side==='right'?1:-1;const a=el('a',{href:mark.url,target:'_blank',rel:'noreferrer'});a.append(el('line',{x1:px,y1:top,x2:px,y2:bottom,stroke:mark.color,'stroke-width':'1.5','stroke-dasharray':'5 4'}));a.append(el('line',{x1:px,y1:top,x2:px+dir*14,y2:top,stroke:mark.color,'stroke-width':'2'}));a.append(el('line',{x1:px,y1:bottom,x2:px+dir*14,y2:bottom,stroke:mark.color,'stroke-width':'2'}));a.append(el('text',{x:px+dir*20,y:(top+bottom)/2+4,fill:mark.color,'font-size':'9','font-weight':'900','text-anchor':dir===1?'start':'end'},mark.label));vsvg.append(a);});
+      const lows=[{date:'2026-02-06',label:'FEB LOW  $60,001',url:COINBASE_DOCS,color:'#6cc4ff'},{date:'2026-07-01',label:'JUL LOW  $57,717',url:COINBASE_DOCS,color:'#6cc4ff'}];
+      lows.forEach((mark,i)=>{const row=byDate.get(mark.date);const a=el('a',{href:mark.url,target:'_blank',rel:'noreferrer'});a.append(el('circle',{cx:vx(mark.date),cy:vy(row.low),r:'6',fill:mark.color,stroke:'#fff','stroke-width':'1.5'}));a.append(el('text',{x:vx(mark.date)+(i?8:-8),y:vy(row.low)+22,fill:mark.color,'font-size':'10','font-weight':'900','text-anchor':i?'start':'end'},mark.label));vsvg.append(a);});
+      [{date:'2026-02-06',label:'KROWN VALUE CALL + ALLOCATION DISCLOSURE',url:'https://youtu.be/e8jcSvurVQ0?t=0',color:PERSON.Krown,xoff:180,yoff:66},{date:'2026-07-03',label:'KROWN BUYING DISCLOSED',url:'https://youtu.be/L9Z5KrXG_ak?t=87',color:PERSON.Krown,xoff:-24,yoff:70},{date:'2026-08-06',label:'COWEN BUYING DISCLOSED',url:'https://youtu.be/CmGkfyot8qY?t=1109',color:PERSON.Cowen,xoff:-130,yoff:115}].forEach(mark=>{const px=vx(mark.date),bx=px+mark.xoff,by=mark.yoff;const a=el('a',{href:mark.url,target:'_blank',rel:'noreferrer'});a.append(el('line',{x1:bx,y1:by+9,x2:px,y2:VH-VM.b,stroke:mark.color,'stroke-opacity':'.35','stroke-dasharray':'5 5'}));a.append(el('rect',{x:bx-7,y:by-7,width:'14',height:'14',rx:'2',fill:'#0b0b0a',stroke:mark.color,'stroke-width':'2'}));a.append(el('text',{x:bx-10,y:by+4,fill:mark.color,'font-size':'10','font-weight':'900','text-anchor':'end'},mark.label));vsvg.append(a);});
+    }
+
+    function renderCycleChart() {
+      const csvg=document.getElementById('cycle-chart');
+      const CW=820,CH=500,CM={l:64,r:28,t:34,b:58};
+      const cx=day=>CM.l+day/304*(CW-CM.l-CM.r); const cy=pct=>CM.t+(0-pct)/80*(CH-CM.t-CM.b);
+      csvg.append(el('text',{x:CM.l,y:18,fill:'#8e867a','font-size':'9','font-weight':'850','letter-spacing':'.8'},'LINES = DAILY CLOSE FROM INTRADAY ATH  |  DOTS = DEEPEST INTRADAY LOW'));
+      [0,-20,-40,-60,-80].forEach(value=>{csvg.append(el('line',{x1:CM.l,y1:cy(value),x2:CW-CM.r,y2:cy(value),stroke:'rgba(255,255,255,.09)'}));csvg.append(el('text',{x:CM.l-10,y:cy(value)+4,fill:'#8e867a','font-size':'10','text-anchor':'end'},value+'%'));});
+      [0,100,200,304].forEach(day=>{csvg.append(el('line',{x1:cx(day),y1:CM.t,x2:cx(day),y2:CH-CM.b,stroke:'rgba(255,255,255,.035)'}));csvg.append(el('text',{x:cx(day),y:CH-30,fill:'#8e867a','font-size':'10','text-anchor':day===0?'start':day===304?'end':'middle'},'DAY '+day));});
+      const colors=['#ff806a','#8e867a','#50ef8b']; const labelDy=[-13,15,0];
+      window.BTC_CYCLE_DATA.cycles.forEach((cycle,index)=>{const color=colors[index];const d=cycle.rows.map((row,i)=>(i?'L':'M')+cx(row.day).toFixed(2)+','+cy(row.drawdown_close_pct).toFixed(2)).join(' ');csvg.append(el('path',{d,fill:'none',stroke:color,'stroke-width':index===2?'3.5':'2.2','stroke-opacity':index===2?'1':'.8','stroke-linejoin':'round'}));const last=cycle.rows.at(-1);csvg.append(el('text',{x:cx(304)-6,y:cy(last.drawdown_close_pct)+labelDy[index],fill:color,'font-size':'11','font-weight':'900','text-anchor':'end'},`${cycle.label}  ${last.drawdown_close_pct.toFixed(1)}%`));const deepest=cycle.rows.reduce((a,b)=>a.drawdown_low_pct<b.drawdown_low_pct?a:b);csvg.append(el('circle',{cx:cx(deepest.day),cy:cy(deepest.drawdown_low_pct),r:index===2?'4.5':'3.5',fill:color,stroke:'#080808','stroke-width':'1.5'}));});
+      const summary=document.getElementById('cycle-summary');
+      window.BTC_CYCLE_DATA.cycles.forEach((cycle,index)=>{const last=cycle.rows.at(-1);const deepest=cycle.rows.reduce((a,b)=>a.drawdown_low_pct<b.drawdown_low_pct?a:b);const item=document.createElement('div');item.className='cycle-stat';item.style.setProperty('--cycle',colors[index]);item.innerHTML=`<span>${cycle.label} day 304 close</span><strong>${last.drawdown_close_pct.toFixed(1)}%</strong><small>Deepest intraday low ${deepest.drawdown_low_pct.toFixed(1)}%</small>`;summary.append(item);});
+    }
+
+    renderValueChart();
+    renderCycleChart();
+
+    function reportEmbedHeight() {
+      if (!document.body.classList.contains('embed-main') || window.parent===window) return;
+      window.parent.postMessage({type:'rubicon-chart-height',height:Math.ceil(document.documentElement.scrollHeight)},'*');
+    }
+    requestAnimationFrame(()=>requestAnimationFrame(reportEmbedHeight));
+    setTimeout(reportEmbedHeight,180);
+    setTimeout(reportEmbedHeight,700);
+    window.addEventListener('resize',reportEmbedHeight);
+  </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+{
+  "schema": "rubicon.arc-handoff",
+  "version": 3,
+  "folder_name": "RUBICON - 2026-08-07 - THESE BEARS JUST FLIPPED BULLISH - RECORD ORDER",
+  "story_thesis": "Both published bearish top-or-correction frameworks around the 2025 high, stayed bearish as Bitcoin sold off toward $60K, then both disclosed buying around that zone before arriving at different current views.",
+  "public_pack_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/",
+  "snapshot_url": "",
+  "shared_at": "",
+  "source_count": 13,
+  "navigation_tab_count": 22,
+  "sections": [
+    {"order": 1, "label": "CALL OF TOP"},
+    {"order": 2, "label": "BEAR"},
+    {"order": 3, "label": "PRE-BULLISH"},
+    {"order": 4, "label": "NOW"},
+    {"order": 5, "label": "POST-BULLISH"}
+  ],
+  "tabs": [
+    {
+      "order": 1,
+      "section": "CALL OF TOP",
+      "role": "prepared_visual",
+      "label": "01 CALL OF TOP | STORY MAP",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/",
+      "inspect": "Selected title, thumbnail and five-stage evidence summary",
+      "why": "Gives Benji the whole evidence relationship before he begins opening receipts."
+    },
+    {
+      "order": 2,
+      "section": "CALL OF TOP",
+      "role": "prepared_visual",
+      "label": "02 CALL OF TOP | BOTH CALLS ON PRICE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=1#price-story",
+      "inspect": "Markers 1-2 against the 2025 price line",
+      "why": "Shows both early bearish frameworks together before separating into their original receipts."
+    },
+    {
+      "order": 3,
+      "section": "CALL OF TOP",
+      "role": "core_receipt",
+      "label": "03 CALL OF TOP | COWEN Q4 WINDOW",
+      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=158s",
+      "inspect": "02:38 for the framework; 08:04 for the exact-top caveat",
+      "why": "Establishes Cowen's bearish cycle framework before the final high."
+    },
+    {
+      "order": 4,
+      "section": "CALL OF TOP",
+      "role": "core_receipt",
+      "label": "04 CALL OF TOP | KROWN 4-7 MONTH CORRECTION",
+      "url": "https://x.com/KrownCryptoCave/status/1956714271032877064",
+      "inspect": "Complete post",
+      "why": "Establishes Krown's prolonged-correction warning before the final high."
+    },
+    {
+      "order": 5,
+      "section": "BEAR",
+      "role": "prepared_visual",
+      "label": "05 BEAR | THE BREAK ON PRICE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=4#price-story",
+      "inspect": "The high, sell-off and markers 3-4",
+      "why": "Returns to the price line so the confirmation receipts have visible market context."
+    },
+    {
+      "order": 6,
+      "section": "BEAR",
+      "role": "core_receipt",
+      "label": "06 BEAR | COWEN TOP-IN ODDS",
+      "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s",
+      "inspect": "03:52 onward",
+      "why": "Shows Cowen materially strengthening the bear case after the breakdown."
+    },
+    {
+      "order": 7,
+      "section": "BEAR",
+      "role": "core_receipt",
+      "label": "07 BEAR | KROWN BOUNCE FAIL",
+      "url": "https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s",
+      "inspect": "01:25-01:41",
+      "why": "Shows Krown still expecting lower prices going into 2026."
+    },
+    {
+      "order": 8,
+      "section": "BEAR",
+      "role": "prepared_visual",
+      "label": "08 BEAR | PULLBACK VS PRIOR CYCLES",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html#cycle-context",
+      "inspect": "Same-age post-ATH drawdown comparison",
+      "why": "Provides a prepared pullback comparison without opening a generic chart tab."
+    },
+    {
+      "order": 9,
+      "section": "PRE-BULLISH",
+      "role": "prepared_visual",
+      "label": "09 PRE-BULLISH | $60K VALUE ZONE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone",
+      "inspect": "February and July tests of the low-$60K zone",
+      "why": "Shows where the behaviour begins changing before the purchase receipts."
+    },
+    {
+      "order": 10,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "10 PRE-BULLISH | KROWN VALUE + MONEY IN",
+      "url": "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s",
+      "inspect": "00:00-00:28; 06:01-06:13; 10:48-11:03",
+      "why": "Shows long-term allocation beginning while the tactical downside bias remains."
+    },
+    {
+      "order": 11,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "11 PRE-BULLISH | COWEN 2025 SALE",
+      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s",
+      "inspect": "18:15 onward",
+      "why": "Turns Cowen's bearish commentary into the sell side of the later sell-to-buy story."
+    },
+    {
+      "order": 12,
+      "section": "PRE-BULLISH",
+      "role": "prepared_visual",
+      "label": "12 PRE-BULLISH | H1 BEARISH BRIDGE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=8#stance-change",
+      "inspect": "Cowen and Krown stance lanes through H1 2026",
+      "why": "Prevents the story from jumping directly from old bearish calls to later buying."
+    },
+    {
+      "order": 13,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "13 PRE-BULLISH | KROWN BUY PLAN BELOW $70K",
+      "url": "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s",
+      "inspect": "01:10-01:42; 02:42-03:03; 07:01-07:29",
+      "why": "Shows Krown staying bearish while publicly defining the lower level he wanted to buy."
+    },
+    {
+      "order": 14,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "14 PRE-BULLISH | COWEN STAGE 3 BEAR",
+      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
+      "inspect": "00:04-00:16; 05:20-05:39",
+      "why": "Shows Cowen still explicitly bearish in June before disclosing re-entry."
+    },
+    {
+      "order": 15,
+      "section": "PRE-BULLISH",
+      "role": "core_receipt",
+      "label": "15 PRE-BULLISH | KROWN RETEST LOWS",
+      "url": "https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s",
+      "inspect": "00:00-00:26",
+      "why": "Provides Krown's last clear short-term bearish receipt before the July buy disclosure."
+    },
+    {
+      "order": 16,
+      "section": "NOW",
+      "role": "prepared_visual",
+      "label": "16 NOW | BOTH BOUGHT NEAR $60K",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=10#value-zone",
+      "inspect": "The value-zone chart and both buy disclosures",
+      "why": "Combines the two purchase claims visually before opening each receipt."
+    },
+    {
+      "order": 17,
+      "section": "NOW",
+      "role": "core_receipt",
+      "label": "17 NOW | KROWN BOUGHT LOW $60Ks",
+      "url": "https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s",
+      "inspect": "01:07-01:29",
+      "why": "Direct first-person proof that Krown bought Bitcoin in the low $60Ks."
+    },
+    {
+      "order": 18,
+      "section": "NOW",
+      "role": "core_receipt",
+      "label": "18 NOW | COWEN BOUGHT BELOW $60K",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s",
+      "inspect": "18:29-18:50",
+      "why": "Completes the central BOTH BOUGHT evidence."
+    },
+    {
+      "order": 19,
+      "section": "POST-BULLISH",
+      "role": "prepared_visual",
+      "label": "19 POST-BULLISH | CURRENT SPLIT",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=11#stance-change",
+      "inspect": "Krown expects no new lows; Cowen still allows lower",
+      "why": "Shows that the purchases led to different current views rather than one identical bottom call."
+    },
+    {
+      "order": 20,
+      "section": "POST-BULLISH",
+      "role": "core_receipt",
+      "label": "20 POST-BULLISH | KROWN NO NEW LOWS",
+      "url": "https://www.youtube.com/watch?v=R94SC48JeH0&t=138s",
+      "inspect": "02:18-02:22",
+      "why": "Makes Krown's directional change explicit."
+    },
+    {
+      "order": 21,
+      "section": "POST-BULLISH",
+      "role": "context",
+      "label": "21 POST-BULLISH | COWEN STILL ALLOWS LOWER",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s",
+      "inspect": "12:26-13:42",
+      "why": "Shows that Cowen's re-entry is accumulation, not a declaration that the final low is in."
+    },
+    {
+      "order": 22,
+      "section": "NOW",
+      "role": "prepared_visual",
+      "label": "22 NOW | WHERE BITCOIN IS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=13#price-story",
+      "inspect": "Current price, both buy markers and the present split",
+      "why": "Returns to the complete price line for the final current-state visual."
+    }
+  ],
+  "private_items": [],
+  "manual_steps": [
+    "Create one Arc folder with the manifest folder_name",
+    "Keep the 22 tabs in order and retain the CALL OF TOP, BEAR, PRE-BULLISH, NOW and POST-BULLISH label prefixes",
+    "Rename the tabs from their manifest labels",
+    "Walk the visual-to-receipt sequence once",
+    "Use Share Folder",
+    "Save the new snapshot URL and shared_at time here"
+  ]
+}

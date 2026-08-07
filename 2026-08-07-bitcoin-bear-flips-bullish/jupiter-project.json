@@ -1,0 +1,53 @@
+{
+  "schema": "rubicon.video-project",
+  "schema_version": 2,
+  "project_id": "2026-08-07-bitcoin-bear-flips-bullish",
+  "brand": "rubicon",
+  "updated_at": "2026-08-07T09:04:00Z",
+  "stage": "evidence_ready_cta_pending",
+  "recording_blocked": false,
+  "blocking_reason": null,
+  "selected_title": "These Bears Just Flipped Bullish",
+  "thumbnail_text": "BOTH BOUGHT",
+  "thumbnail_concept": "Outlier-led mock: huge clean Cowen and Krown cutouts, oversized glowing Bitcoin in the centre, saturated red-to-gold tension, and large bottom-anchored BOTH BOUGHT copy.",
+  "promise": "Show how Cowen and Krown published bearish top-or-correction frameworks around the 2025 high, stayed bearish through H1 2026 as Bitcoin moved toward $60K, then both began buying around that zone before arriving at different current views.",
+  "cta": {
+    "status": "deferred_by_user",
+    "text": null,
+    "destination": null,
+    "video_slug": null,
+    "tracking_url": null,
+    "tracking_verified": false
+  },
+  "measurement": {
+    "destination": "Jupiter",
+    "video_level_attribution_required": true,
+    "checkout_path_verified": false,
+    "outcomes_due": [
+      "24h",
+      "72h",
+      "7d"
+    ]
+  },
+  "evidence_order": [
+    "01 Bearish around the top",
+    "02 Bitcoin sells off toward $60K",
+    "03 Around $60K, money starts moving",
+    "04 H1 2026: both still publish bearish downside frameworks",
+    "05 Both begin buying around or below $60K",
+    "06 Current split: Krown expects no new lows, Cowen still allows a lower final bottom"
+  ],
+  "public_source_count": 13,
+  "console_ref": "console.html",
+  "charts_ref": "charts.html",
+  "chart_data_refs": [
+    "assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js",
+    "assets/btc-post-ath-drawdowns-coinbase.js"
+  ],
+  "thumbnail_ref": "thumbnail-mock.png",
+  "arc_handoff_ref": "arc-handoff.json",
+  "descript": {},
+  "youtube": {},
+  "published": {},
+  "outcomes": []
+}

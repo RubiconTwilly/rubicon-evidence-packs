@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Dashboard | These Bears Just Flipped Bullish</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111419;
+      --panel: #191e24;
+      --panel-2: #20262d;
+      --line: #303943;
+      --ink: #f4f6f2;
+      --body: #b8c2c5;
+      --muted: #859198;
+      --green: #49e98d;
+      --blue: #76b7ff;
+      --amber: #f4ba63;
+      --red: #f06b70;
+      --shadow: 0 22px 70px rgba(0, 0, 0, .32);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 50% -20%, #23303b 0, var(--bg) 42%);
+      color: var(--ink);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(17, 20, 25, .94);
+      backdrop-filter: blur(18px);
+    }
+    .topin {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1500px;
+      min-height: 66px;
+      margin: auto;
+      padding: 10px 28px;
+    }
+    .brand { font-size: 13px; font-weight: 950; letter-spacing: .1em; white-space: nowrap; }
+    .nav { display: flex; flex: 1; gap: 5px; overflow: auto; }
+    .nav a {
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav a:hover { background: var(--panel-2); color: var(--ink); }
+    .actions { display: flex; gap: 8px; }
+    .btn {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 9px 13px;
+      background: var(--panel-2);
+      color: var(--ink);
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .btn.primary { border-color: var(--green); background: var(--green); color: #07130d; }
+    .btn:hover { filter: brightness(1.08); }
+    .btn:focus-visible, a:focus-visible { outline: 3px solid rgba(73, 233, 141, .62); outline-offset: 3px; }
+
+    .wrap { max-width: 1500px; margin: auto; padding: 46px 28px 90px; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, .82fr);
+      gap: 34px;
+      align-items: center;
+      padding-bottom: 48px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(48px, 6.6vw, 104px);
+      line-height: .86;
+      letter-spacing: -.065em;
+    }
+    .deck { max-width: 780px; margin: 22px 0; color: var(--body); font-size: 19px; }
+    .thesis {
+      max-width: 820px;
+      border-left: 3px solid var(--green);
+      border-radius: 0 10px 10px 0;
+      padding: 13px 16px;
+      background: rgba(73, 233, 141, .05);
+      color: var(--body);
+      font-size: 14px;
+    }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: var(--panel);
+      color: var(--body);
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .pill.green { border-color: rgba(73, 233, 141, .4); color: var(--green); }
+    .mocklink {
+      display: block;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #0c0f13;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+    }
+    .mocklink img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .mockbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 14px;
+      color: var(--body);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .section { padding: 56px 0; border-top: 1px solid var(--line); }
+    .sectionhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .sectionhead h2 { margin: 0; font-size: clamp(31px, 4vw, 56px); line-height: .95; letter-spacing: -.045em; }
+    .sectionhead p { max-width: 650px; margin: 0; color: var(--muted); }
+
+    .story-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+    .plain-story {
+      display: grid;
+      gap: 8px;
+      margin: 0 0 18px;
+      border-left: 3px solid var(--green);
+      padding: 14px 18px 14px 36px;
+      background: rgba(73, 233, 141, .035);
+      color: var(--body);
+    }
+    .plain-story li { padding-left: 4px; }
+    .plain-story strong { color: var(--ink); }
+    .story-step {
+      --accent: var(--green);
+      position: relative;
+      min-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 17px;
+      background: linear-gradient(145deg, rgba(73, 233, 141, .035), transparent 60%), var(--panel);
+    }
+    .story-step::before {
+      content: "";
+      position: absolute;
+      inset: 0 18px auto;
+      height: 3px;
+      border-radius: 0 0 3px 3px;
+      background: var(--accent);
+    }
+    .story-step.bear { --accent: var(--red); background: linear-gradient(145deg, rgba(240, 107, 112, .055), transparent 60%), var(--panel); }
+    .story-step.defensive { --accent: var(--amber); background: linear-gradient(145deg, rgba(244, 186, 99, .055), transparent 60%), var(--panel); }
+    .story-step.transition { --accent: #d6c178; }
+    .story-step.buy { --accent: var(--green); }
+    .story-step.split { --accent: var(--blue); background: linear-gradient(145deg, rgba(118, 183, 255, .055), transparent 60%), var(--panel); }
+    .story-step:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 37px;
+      right: -11px;
+      z-index: 2;
+      width: 11px;
+      height: 2px;
+      background: var(--green);
+    }
+    .step-num { color: var(--accent); font-size: 12px; font-weight: 950; letter-spacing: .1em; }
+    .story-step h3 { margin: 24px 0 9px; font-size: 20px; line-height: 1.08; }
+    .story-step p { margin: 0; color: var(--body); font-size: 13px; }
+    .step-sources {
+      display: inline-flex;
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 8px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .chartjobs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 14px; }
+    .chartjob { border: 1px solid var(--line); border-radius: 12px; padding: 15px; background: var(--panel); }
+    .chartjob b { display: block; color: var(--green); font-size: 10px; letter-spacing: .09em; text-transform: uppercase; }
+    .chartjob strong { display: block; margin: 7px 0 5px; font-size: 17px; }
+    .chartjob span { display: block; color: var(--muted); font-size: 12px; }
+    .chartstage { overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #080908; box-shadow: var(--shadow); }
+    .chartframe { display: block; width: 100%; height: 1040px; border: 0; background: #080908; transition: height .18s ease; }
+    .chartbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      border-top: 1px solid var(--line);
+      padding: 13px 15px;
+      background: var(--panel);
+    }
+    .chartbar span { color: var(--muted); font-size: 12px; }
+    .chartbar a {
+      border: 1px solid rgba(73, 233, 141, .4);
+      border-radius: 8px;
+      padding: 8px 11px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .source-intro { display: flex; flex-wrap: wrap; gap: 8px; margin: -4px 0 18px; }
+    .source-intro span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 9px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .ordered { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .source-card {
+      display: grid;
+      grid-template-columns: 50px minmax(0, 1fr);
+      gap: 14px;
+      min-height: 250px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .018), transparent 50%), var(--panel);
+      text-decoration: none;
+      transition: transform .16s ease, border-color .16s ease;
+    }
+    .source-card:hover { transform: translateY(-2px); border-color: #53616b; }
+    .source-card.defensive { border-left: 3px solid rgba(240, 107, 112, .7); }
+    .source-card.transition { border-left: 3px solid rgba(244, 186, 99, .75); }
+    .source-card.buy { border-left: 3px solid rgba(73, 233, 141, .72); }
+    .source-card.split { border-left: 3px solid rgba(118, 183, 255, .76); }
+    .source-num {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(73, 233, 141, .45);
+      border-radius: 50%;
+      color: var(--green);
+      font-size: 16px;
+      font-weight: 950;
+    }
+    .source-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+    .role {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 7px;
+      color: var(--amber);
+      font-size: 9px;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .source-date { color: var(--muted); font-size: 10px; font-weight: 850; text-transform: uppercase; }
+    .source-card h3 { margin: 10px 0 12px; font-size: 20px; line-height: 1.12; }
+    .source-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .source-field { border-top: 1px solid var(--line); padding-top: 8px; }
+    .source-field b {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .source-field span { display: block; color: var(--body); font-size: 11px; line-height: 1.38; }
+    .source-field.inspect span { color: var(--blue); font-weight: 850; }
+    .source-field.missing span { color: #c9b3b4; }
+    .source-open { display: inline-flex; margin-top: 12px; color: var(--green); font-size: 10px; font-weight: 900; text-transform: uppercase; }
+
+    .lineage-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .lineage-card {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--panel);
+      text-decoration: none;
+    }
+    .lineage-card img { width: 100%; height: 100%; min-height: 138px; object-fit: cover; }
+    .lineage-copy { padding: 14px; }
+    .lineage-copy b { color: var(--green); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+    .lineage-copy strong { display: block; margin: 5px 0; font-size: 16px; line-height: 1.15; }
+    .lineage-copy span { display: block; color: var(--body); font-size: 11px; }
+    .lineage-stat { margin-top: 8px; color: var(--amber) !important; font-weight: 900; }
+    .method { margin: 12px 0 0; color: var(--muted); font-size: 11px; }
+
+    .docs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .docs a { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; color: var(--body); font-size: 11px; text-decoration: none; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 35px; color: var(--muted); font-size: 11px; }
+    .toast {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      border-radius: 9px;
+      padding: 11px 14px;
+      background: var(--ink);
+      color: #111;
+      font-weight: 900;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: .2s;
+    }
+    .toast.show { opacity: 1; transform: none; }
+
+    @media (max-width: 1180px) {
+      .story-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .story-step:not(:last-child)::after { display: none; }
+      .chartjobs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      .ordered { grid-template-columns: 1fr; }
+      .sectionhead { flex-direction: column; align-items: start; }
+      .topin { padding-inline: 16px; }
+      .wrap { padding: 30px 16px 70px; }
+      .actions .btn:first-child { display: none; }
+      .chartframe { height: 720px; }
+    }
+    @media (max-width: 700px) {
+      .story-grid, .chartjobs, .lineage-grid { grid-template-columns: 1fr; }
+      .story-step { min-height: auto; }
+      .source-card { grid-template-columns: 42px minmax(0, 1fr); padding: 14px; }
+      .source-num { width: 38px; height: 38px; font-size: 13px; }
+      .source-fields { grid-template-columns: 1fr; }
+      .lineage-card { grid-template-columns: 116px minmax(0, 1fr); }
+      .chartbar { flex-direction: column; align-items: start; }
+      .chartframe { height: 640px; }
+      h1 { font-size: 52px; }
+      .topin { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+      .brand { max-width: 148px; font-size: 10px; line-height: 1.2; letter-spacing: .06em; white-space: normal; }
+      .actions .btn.primary { padding-inline: 10px; font-size: 11px; }
+      .mockbar, footer { flex-direction: column; gap: 4px; }
+      .source-card { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="topin">
+      <div class="brand">RECORDING CONSOLE | EVIDENCE ONLY</div>
+      <nav class="nav" aria-label="Evidence sections">
+        <a href="#s1">The story</a>
+        <a href="#s2">Charts</a>
+        <a href="#s3">Why each link</a>
+        <a href="#s4">Packaging lineage</a>
+      </nav>
+      <div class="actions">
+        <button id="copyButton" type="button" class="btn" onclick="copyDeck()">Copy source URLs</button>
+        <button type="button" class="btn primary" onclick="openDeck()">Open Arc deck</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Selected title | Benjamin Cowen + Eric Krown</p>
+        <h1>These Bears Just Flipped Bullish</h1>
+        <p class="deck">Both analysts had a cycle-top or deep-correction thesis around the high, stayed bearish through H1 2026, then disclosed buying around the $60K zone.</p>
+        <div class="thesis">The current split is simple: Krown no longer expects new lows, while Cowen is buying but still allows a later final bottom.</div>
+        <div class="pills">
+          <span class="pill green">13 public evidence sources</span>
+          <span class="pill green">22-tab Arc navigation</span>
+          <span class="pill">Numbered to the chart</span>
+          <span class="pill">Direct YouTube + X receipts</span>
+        </div>
+      </div>
+      <a class="mocklink" href="thumbnail-mock.html">
+        <img src="thumbnail-mock.png" alt="Thumbnail mock showing Benjamin Cowen and Eric Krown around a glowing Bitcoin with the words Both Bought">
+        <div class="mockbar"><span>Selected thumbnail premise</span><span>Open 1280 x 720 preview</span></div>
+      </a>
+    </section>
+
+    <section class="section sec" id="s1">
+      <div class="sectionhead">
+        <div><p class="eyebrow">Cold-read summary</p><h2>What this video is showing</h2></div>
+        <p>Five evidence stages explain the whole premise before any source is opened.</p>
+      </div>
+      <ul class="plain-story">
+        <li><strong>They were bearish around the top:</strong> Cowen forecast a Q4 cycle top; Krown warned that a long correction was coming.</li>
+        <li><strong>Bitcoin sold off toward $60K:</strong> the market fell from a $126.3K intraday high to a later $57.7K intraday low.</li>
+        <li><strong>The bear case continued through H1 2026:</strong> Cowen called it stage three of the bear market; Krown remained short-term bearish into 18 June.</li>
+        <li><strong>Buying started before a perfect bottom call:</strong> Krown deployed long-term money, then planned to buy below $70K while still expecting downside.</li>
+        <li><strong>Both started buying around the same zone:</strong> Krown disclosed buying in the low $60Ks; Cowen disclosed buying below $60K.</li>
+        <li><strong>The current split:</strong> Krown expects no new lows; Cowen is buying while still allowing a lower final bottom.</li>
+      </ul>
+      <div class="story-grid">
+        <article class="story-step bear">
+          <span class="step-num">01</span>
+          <h3>Both turn bearish around the top</h3>
+          <p>Cowen forecasts a Q4 cycle top. Krown warns that a long correction is coming.</p>
+          <span class="step-sources">Sources 1-2</span>
+        </article>
+        <article class="story-step defensive">
+          <span class="step-num">02</span>
+          <h3>Bitcoin sells off toward $60K</h3>
+          <p>Cowen raises his top-in odds after the breakdown. Krown still expects the bear-market bounce to fail.</p>
+          <span class="step-sources">Sources 3-4 + 6</span>
+        </article>
+        <article class="story-step transition">
+          <span class="step-num">03</span>
+          <h3>H1 stays bearish as buying plans begin</h3>
+          <p>Krown deploys long-term money and plans lower entries while both men continue publishing downside views.</p>
+          <span class="step-sources">Sources 5 + 7-9</span>
+        </article>
+        <article class="story-step buy">
+          <span class="step-num">04</span>
+          <h3>Both buy the $60K zone</h3>
+          <p>Krown says he has been buying Bitcoin in the low $60Ks. Cowen says he started buying a little below $60K.</p>
+          <span class="step-sources">Sources 10 + 13</span>
+        </article>
+        <article class="story-step split">
+          <span class="step-num">05</span>
+          <h3>They still disagree on the bottom</h3>
+          <p>Krown no longer expects new lows. Cowen is buying while still allowing a later final bottom.</p>
+          <span class="step-sources">Sources 11-13</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section sec" id="s2">
+      <div class="sectionhead">
+        <div><p class="eyebrow">Interactive evidence</p><h2>See the change against the price</h2></div>
+        <p>The chart suite connects public claims and disclosures to one Coinbase BTC-USD series. Disclosure dates are never presented as execution dates.</p>
+      </div>
+      <div class="chartjobs" aria-label="What the chart suite explains">
+        <article class="chartjob"><b>01 | Timeline</b><strong>Where each source landed</strong><span>The 13 numbered receipts against the Bitcoin move.</span></article>
+        <article class="chartjob"><b>02 | Behaviour</b><strong>What actually changed</strong><span>Separate Cowen and Krown lanes from downside conviction to buying.</span></article>
+        <article class="chartjob"><b>03 | Value zone</b><strong>Why $60K matters</strong><span>The February value call, July buying and later Cowen disclosure.</span></article>
+        <article class="chartjob"><b>04 | Cycle context</b><strong>How deep the decline is</strong><span>A same-age comparison with 2017 and 2021, shown as context rather than prediction.</span></article>
+      </div>
+      <div class="source-intro" aria-label="Arc navigation sections">
+        <span>01-04 Call of Top</span><span>05-08 Bear</span><span>09-15 Pre-Bullish</span><span>16-18 Now</span><span>19-21 Post-Bullish</span><span>22 Where Bitcoin Is</span>
+      </div>
+      <div class="chartstage">
+        <iframe class="chartframe" id="main-chart-frame" src="charts.html?embed=main" title="Cowen and Krown source-linked Bitcoin evidence timeline" loading="eager" scrolling="no"></iframe>
+        <div class="chartbar"><span>Every numbered marker and evidence card opens its public source.</span><a href="charts.html" target="_blank">Open chart suite full screen</a></div>
+      </div>
+    </section>
+
+    <section class="section sec" id="s3">
+      <div class="sectionhead">
+        <div><p class="eyebrow">Ordered public evidence deck</p><h2>Why every link is here</h2></div>
+        <p>Each card states what the source shows, why the story needs it, the exact moment to inspect, and what becomes unsupported without it.</p>
+      </div>
+      <div class="source-intro"><span>13 sources</span><span>Same order as chart markers</span><span>Evidence only</span></div>
+      <div class="ordered" id="ordered"></div>
+    </section>
+
+    <section class="section sec" id="s4">
+      <div class="sectionhead">
+        <div><p class="eyebrow">Compact packaging lineage</p><h2>Why this title and subject</h2></div>
+        <p>These videos explain the packaging decision and current subject demand. They are not evidence for the analyst claims above.</p>
+      </div>
+      <div class="lineage-grid">
+        <a class="lineage-card" href="https://www.youtube.com/watch?v=MDN4hzx0inw" target="_blank" rel="noreferrer">
+          <img src="https://i.ytimg.com/vi/MDN4hzx0inw/hqdefault.jpg" alt="This Bear Is Now Bullish on Bitcoin thumbnail">
+          <div class="lineage-copy"><b>Title precedent</b><strong>This Bear Is Now Bullish</strong><span>Supplied the named-bear reversal grammar.</span><span class="lineage-stat">12,888 views | 3.86x channel normal</span></div>
+        </a>
+        <a class="lineage-card" href="https://www.youtube.com/watch?v=2ThXmFN2ja8" target="_blank" rel="noreferrer">
+          <img src="https://i.ytimg.com/vi/2ThXmFN2ja8/hqdefault.jpg" alt="Everyone Is Wrong About the Bitcoin Bottom with Eric Krown thumbnail">
+          <div class="lineage-copy"><b>Fresh subject signal</b><strong>Everyone Is Wrong About the Bottom</strong><span>Supplied live demand for Krown and the bottom conversation.</span><span class="lineage-stat">3,291 views after 9h | 10.79x recent speed</span></div>
+        </a>
+      </div>
+      <p class="method">Figures captured during the 7 August 2026 pack research. Channel normal was 3,340 views; recent speed compares early views per hour with the channel's recent upload-speed baseline.</p>
+      <div class="docs">
+        <a href="charts.html">charts.html</a>
+        <a href="timeline.html">timeline.html</a>
+        <a href="sources.json">sources.json</a>
+        <a href="arc-handoff.json">arc-handoff.json</a>
+        <a href="research.md">research.md</a>
+        <a href="jupiter-project.json">jupiter-project.json</a>
+        <a href="transcripts/cowen-evidence-ledger.md">Cowen evidence ledger</a>
+        <a href="transcripts/krown-evidence-ledger.md">Krown evidence ledger</a>
+      </div>
+    </section>
+
+    <footer><span>Selected 7 August 2026 | Cowen + Krown</span><span>Evidence dashboard, not a script or editing document</span></footer>
+  </main>
+
+  <div class="toast" id="toast">Copied</div>
+
+  <script>
+    const SOURCE_DECK = [
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "Advance top forecast",
+        date: "12 Aug 2025",
+        label: "Cowen forecasts a Q4 cycle-top window",
+        url: "https://www.youtube.com/watch?v=il089bNt-4g&t=158s",
+        shows: "Before the final high, Cowen forecasts a September pullback followed by a Q4 cycle top and bear market. He later says the exact top cannot be known.",
+        why: "It establishes Cowen's cycle-top thesis in advance rather than beginning his story only after Bitcoin breaks down.",
+        inspect: "02:38 for the framework; 08:04 for the exact-top caveat",
+        missing: "Cowen has no advance top-cycle receipt in the visible story."
+      },
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "Early correction warning",
+        date: "16 Aug 2025",
+        label: "Krown warns of a four-to-seven-month correction",
+        url: "https://x.com/KrownCryptoCave/status/1956714271032877064",
+        shows: "Before the final high, Krown outlines an early September turn window leading into a four-to-seven-month correction.",
+        why: "It pairs Krown's advance downside thesis with Cowen's Q4 top framework, even though Krown's proposed turn window was early.",
+        inspect: "Complete 16 August 2025 post",
+        missing: "Only Cowen has an advance top or correction receipt."
+      },
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "Post-break confirmation",
+        date: "17 Nov 2025",
+        label: "Cowen raises the odds that the top is in",
+        url: "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s",
+        shows: "After Bitcoin loses an important weekly level, Cowen raises the probability that the cycle top is in to roughly 60-70%.",
+        why: "This shows Cowen moving from an advance top window to a materially bearish base case after the breakdown.",
+        inspect: "03:52 onward",
+        missing: "There is no dated bridge between Cowen's forecast and the later sell-off."
+      },
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "Defensive follow-through",
+        date: "30 Dec 2025",
+        label: "Krown expects the bear-market bounce to fail",
+        url: "https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s",
+        shows: "Absent a weekly reversal, Krown expects the bounce to fail before Bitcoin moves lower.",
+        why: "It proves the downside stance persisted into late December rather than ending with one social post.",
+        inspect: "01:25-01:41",
+        missing: "There is no face-and-voice evidence that Krown's defensive stance persisted into late December."
+      },
+      {
+        section: "s3",
+        phase: "transition",
+        role: "Value + allocation",
+        date: "6 Feb 2026",
+        label: "Krown sees major value but keeps a downside bias",
+        url: "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s",
+        shows: "Krown calls the area a potential major low, says long-term money is being deployed, allows the low $50Ks, and retains a downside bias below $80K.",
+        why: "This is the first public bridge from downside conviction toward capital deployment, and proves those two states overlapped.",
+        inspect: "00:00-00:28; 06:01-06:13; 10:48-11:03",
+        missing: "Krown's July buying appears abrupt, with no evidence of how the view began changing."
+      },
+      {
+        section: "s3",
+        phase: "transition",
+        role: "Retrospective action",
+        date: "14 Mar 2026",
+        label: "Cowen discloses a substantial 2025 Bitcoin sale",
+        url: "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s",
+        shows: "Cowen says he sold a substantial amount of Bitcoin during 2025. Exact execution dates, prices and size remain unknown.",
+        why: "It proves Cowen's defensive view affected capital allocation and creates the later sell-to-buy contrast.",
+        inspect: "18:15 onward",
+        missing: "Cowen's bearish chapter is commentary rather than observable portfolio behaviour."
+      },
+      {
+        section: "s3",
+        phase: "transition",
+        role: "Downside + buy plan",
+        date: "26 May 2026",
+        label: "Krown stays downside-biased but plans to buy at $70K or below",
+        url: "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s",
+        shows: "Krown keeps his short-term downside bias, then says he will buy Bitcoin at $70K or below for a long-term hold without expecting an immediate rise.",
+        why: "It proves bearish analysis and a long-term buy plan coexisted; buying did not require him to call the exact bottom first.",
+        inspect: "01:10-01:42; 02:42-03:03; 07:01-07:29",
+        missing: "The July purchase appears as an unexplained overnight change rather than the execution of an earlier plan."
+      },
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "H1 Cowen bear receipt",
+        date: "7 Jun 2026",
+        label: "Cowen calls it stage three of the bear market",
+        url: "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
+        shows: "Cowen says Bitcoin has entered the third and final stage of the bear market and that stage two has completed.",
+        why: "It restores the missing first-half 2026 bridge between Cowen's 2025 sale and his August buying disclosure.",
+        inspect: "00:04-00:16; 05:20-05:39",
+        missing: "Cowen appears to jump from a retrospective sale directly to buying, with no current H1 bearish stance."
+      },
+      {
+        section: "s3",
+        phase: "defensive",
+        role: "Last pre-buy bear receipt",
+        date: "18 Jun 2026",
+        label: "Krown remains short-term bearish and expects a retest of the lows",
+        url: "https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s",
+        shows: "After a rejected rally, Krown expects Bitcoin to revisit the current lows and possibly wick slightly lower.",
+        why: "It is the last clean bearish receipt before his disclosed low-$60Ks purchase and August no-new-lows view.",
+        inspect: "00:00-00:26",
+        missing: "The sharpness and timing of Krown's bearish-to-bought-to-bullish progression disappears."
+      },
+      {
+        section: "s3",
+        phase: "buy",
+        role: "Core buy receipt",
+        date: "3 Jul 2026",
+        label: "Krown says he has been buying Bitcoin in the low $60Ks",
+        url: "https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s",
+        shows: "Krown explicitly names Bitcoin and says he has been buying in the low $60Ks for a long-term hold.",
+        why: "This is the direct receipt that his move toward value became actual Bitcoin buying.",
+        inspect: "01:07-01:29; explicit buying at 01:26",
+        missing: "There is no direct proof that Krown bought Bitcoin."
+      },
+      {
+        section: "s3",
+        phase: "split",
+        role: "Current Krown stance",
+        date: "5 Aug 2026",
+        label: "Krown says he is no longer bearish and expects no new lows",
+        url: "https://www.youtube.com/watch?v=R94SC48JeH0&t=138s",
+        shows: "Krown says he is not really bearish on Bitcoin and does not expect it to make fresh lows.",
+        why: "It establishes the current Krown side of the split: buying value and no longer expecting another low.",
+        inspect: "02:18-02:22",
+        missing: "Krown has a buy receipt but no plain current change in directional view."
+      },
+      {
+        section: "s3",
+        phase: "split",
+        role: "Current Cowen nuance",
+        date: "6 Aug 2026",
+        label: "Cowen still allows a later final-bottom window",
+        url: "https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s",
+        shows: "Cowen still sees a possible final-bottom window from late September into mid-December despite already beginning to buy.",
+        why: "It makes clear that his re-entry is long-term scaling, not a claim that the exact bottom is already in.",
+        inspect: "12:26-13:42",
+        missing: "Cowen's buying can be misread as agreement with Krown that no new low is coming."
+      },
+      {
+        section: "s3",
+        phase: "buy",
+        role: "Core buy receipt",
+        date: "6 Aug 2026",
+        label: "Cowen says he started buying a little below $60K",
+        url: "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s",
+        shows: "Cowen says he started buying a little Bitcoin below $60K and connects it to positioning for the next bull market.",
+        why: "It completes the central behavioural change: both analysts put money back into Bitcoin around the same zone while retaining different bottom views.",
+        inspect: "18:29-18:50",
+        missing: "There is no direct proof that Cowen re-entered Bitcoin."
+      }
+    ];
+
+    const RECORD_DECK = [
+      {section:"s3",label:"01 CALL OF TOP | STORY MAP",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/"},
+      {section:"s3",label:"02 CALL OF TOP | BOTH CALLS ON PRICE",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=1#price-story"},
+      {section:"s3",label:"03 CALL OF TOP | COWEN Q4 WINDOW",url:"https://www.youtube.com/watch?v=il089bNt-4g&t=158s"},
+      {section:"s3",label:"04 CALL OF TOP | KROWN 4-7 MONTH CORRECTION",url:"https://x.com/KrownCryptoCave/status/1956714271032877064"},
+      {section:"s3",label:"05 BEAR | THE BREAK ON PRICE",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=4#price-story"},
+      {section:"s3",label:"06 BEAR | COWEN TOP-IN ODDS",url:"https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s"},
+      {section:"s3",label:"07 BEAR | KROWN BOUNCE FAIL",url:"https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s"},
+      {section:"s3",label:"08 BEAR | PULLBACK VS PRIOR CYCLES",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html#cycle-context"},
+      {section:"s3",label:"09 PRE-BULLISH | $60K VALUE ZONE",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone"},
+      {section:"s3",label:"10 PRE-BULLISH | KROWN VALUE + MONEY IN",url:"https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s"},
+      {section:"s3",label:"11 PRE-BULLISH | COWEN 2025 SALE",url:"https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s"},
+      {section:"s3",label:"12 PRE-BULLISH | H1 BEARISH BRIDGE",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=8#stance-change"},
+      {section:"s3",label:"13 PRE-BULLISH | KROWN BUY PLAN BELOW $70K",url:"https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s"},
+      {section:"s3",label:"14 PRE-BULLISH | COWEN STAGE 3 BEAR",url:"https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s"},
+      {section:"s3",label:"15 PRE-BULLISH | KROWN RETEST LOWS",url:"https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s"},
+      {section:"s3",label:"16 NOW | BOTH BOUGHT NEAR $60K",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=10#value-zone"},
+      {section:"s3",label:"17 NOW | KROWN BOUGHT LOW $60Ks",url:"https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s"},
+      {section:"s3",label:"18 NOW | COWEN BOUGHT BELOW $60K",url:"https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s"},
+      {section:"s3",label:"19 POST-BULLISH | CURRENT SPLIT",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=11#stance-change"},
+      {section:"s3",label:"20 POST-BULLISH | KROWN NO NEW LOWS",url:"https://www.youtube.com/watch?v=R94SC48JeH0&t=138s"},
+      {section:"s3",label:"21 POST-BULLISH | COWEN STILL ALLOWS LOWER",url:"https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s"},
+      {section:"s3",label:"22 NOW | WHERE BITCOIN IS",url:"https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=13#price-story"}
+    ];
+
+    const ordered = document.getElementById("ordered");
+    SOURCE_DECK.forEach((item, index) => {
+      const card = document.createElement("a");
+      card.className = `source-card ${item.phase}`;
+      card.href = item.url;
+      card.target = "_blank";
+      card.rel = "noreferrer";
+      card.innerHTML = `
+        <span class="source-num">${String(index + 1).padStart(2, "0")}</span>
+        <div>
+          <div class="source-meta"><span class="role">${item.role}</span><span class="source-date">${item.date}</span></div>
+          <h3>${item.label}</h3>
+          <div class="source-fields">
+            <div class="source-field"><b>Shows</b><span>${item.shows}</span></div>
+            <div class="source-field"><b>Why it matters</b><span>${item.why}</span></div>
+            <div class="source-field inspect"><b>Inspect</b><span>${item.inspect}</span></div>
+            <div class="source-field missing"><b>Without it</b><span>${item.missing}</span></div>
+          </div>
+          <span class="source-open">Open public source</span>
+        </div>`;
+      ordered.appendChild(card);
+    });
+
+    const mainChartFrame = document.getElementById("main-chart-frame");
+    window.addEventListener("message", event => {
+      if (event.source !== mainChartFrame?.contentWindow || event.data?.type !== "rubicon-chart-height") return;
+      const height = Math.max(760, Math.min(1400, Number(event.data.height) || 1040));
+      mainChartFrame.style.height = `${height}px`;
+    });
+
+    document.getElementById("copyButton").textContent = `Copy ${SOURCE_DECK.length} source URLs`;
+    const toast = document.getElementById("toast");
+    function flash(text) {
+      toast.textContent = text;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1500);
+    }
+    function openDeck() {
+      if (!RECORD_DECK.length) return;
+      RECORD_DECK.forEach(item => window.open(item.url, "_blank", "noopener"));
+      flash(`Opening ${RECORD_DECK.length} sources. Allow popups if asked.`);
+    }
+    async function copyDeck() {
+      const text = SOURCE_DECK.map(item => item.url).join("\n");
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+      }
+      flash(`Copied ${SOURCE_DECK.length} source URLs`);
+    }
+  </script>
+</body>
+</html>
