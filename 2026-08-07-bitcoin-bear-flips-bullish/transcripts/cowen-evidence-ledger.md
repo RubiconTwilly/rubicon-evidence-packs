@@ -2,9 +2,10 @@
 
 Checked: 9 August 2026
 
-This ledger preserves the exact passages used by the Cowen-only record pack. The five
-receipts below support one thesis: Cowen warned of the top, sold, stayed bearish, and has
-now begun buying below $60K for the next bull market while still allowing a final low.
+This ledger preserves the exact passages used by the Cowen-only record pack. The seven
+receipts below support one thesis: Cowen forecast a Q4 top, waited for confirmation at the
+high, later disclosed selling, stayed bearish, and has now begun buying below $60K for the
+next bull market while still allowing a final low.
 
 ## 12 August 2025: Q4 top and bear-market forecast
 
@@ -18,6 +19,30 @@ Source: https://www.youtube.com/watch?v=il089bNt-4g&t=151s
 > midterm-year bear market.”
 
 Evidence role: forecast before the final Q4 high.
+
+## 6 October 2025: at the high, still waiting for confirmation
+
+Source: https://www.youtube.com/watch?v=5812UUvIZDw&t=107s
+
+01:47-02:11:
+
+> “I'd like to see some daily closes actually above the prior wick high. We haven't
+> actually seen that yet.”
+
+Evidence role: decision-day context. His broad Q4 forecast was live, but he was not
+declaring that he had nailed the final top on the exact day.
+
+## 17 November 2025: top-in odds rise to 60-70%
+
+Source: https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s
+
+03:59-04:10:
+
+> “Given how late cycle it is, I would say there's probably a 60 to 70% chance that the
+> top is already in.”
+
+Evidence role: later technical confirmation. This is when the earlier forecast becomes a
+high-conviction top view in the visible chronology.
 
 ## 14 March 2026: retrospective sale disclosure
 
@@ -78,22 +103,3 @@ Evidence role: direct first-person buying disclosure and the behavioural reveal 
 the title and thumbnail.
 
 Boundary: exact execution date, average price, and quantity are not supplied.
-
-## Parked receipts
-
-These were checked but are not needed in the visible Cowen-only pack.
-
-### 6 October 2025: exact-high counterevidence
-
-Source: https://www.youtube.com/watch?v=5812UUvIZDw&t=99s
-
-Cowen still hoped for higher prices and said his weekly confirmation had not fired. The
-selected video claims a Q4 top call, not a perfect day-and-price call.
-
-### 17 November 2025: top-in odds rise
-
-Source: https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s
-
-At 03:52 he says there is probably a 60 to 70% chance that the top is already in after
-Bitcoin closes below the 50-week moving average. It is valid supporting evidence, but the
-five-receipt pack already proves the selected thin-slice thesis without it.

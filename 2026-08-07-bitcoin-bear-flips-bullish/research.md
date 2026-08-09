@@ -22,8 +22,8 @@ are original to the Cowen evidence.
 
 ## Two-sentence thesis
 
-Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed
-bearish into June 2026.
+Benjamin Cowen warned that Bitcoin would top in Q4 2025, later disclosed selling much of
+his own stack, and stayed bearish into June 2026.
 
 Now he is buying below $60K for the next bull market, even though he thinks the final
 cycle bottom may not arrive until October.
@@ -47,7 +47,31 @@ move lower.
 
 Why it matters: this establishes his bearish cycle thesis before the final Q4 high.
 
-### 2. He says his own portfolio followed that view
+### 2. At the October high, he still wanted confirmation
+
+**Source:** [Bitcoin: Bull Market Support Band, 01:47-02:11](https://www.youtube.com/watch?v=5812UUvIZDw&t=107s)
+
+**Published:** 6 October 2025
+
+> “I'd like to see some daily closes actually above the prior wick high. We haven't actually
+> seen that yet.”
+
+Why it matters: the broad Q4 forecast was real, but he did not claim the exact October high
+in real time. He still wanted follow-through.
+
+### 3. The later break raised his top-in odds to 60-70%
+
+**Source:** [Bitcoin Falls Below the 50 Week Moving Average, 03:59-04:10](https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s)
+
+**Published:** 17 November 2025
+
+> “Given how late cycle it is, I would say there's probably a 60 to 70% chance that the top
+> is already in.”
+
+Why it matters: this is the bridge between the earlier forecast and the high-conviction
+bearish position. Confirmation arrived after the high.
+
+### 4. He says his own portfolio followed that view
 
 **Source:** [Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen, 19:02-19:35](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)
 
@@ -62,7 +86,7 @@ Why it matters: the view changed his allocation, rather than remaining commentar
 This is a retrospective disclosure. The exact execution dates, prices, and quantity are not
 supplied in the source.
 
-### 3. He was still openly bearish in June
+### 5. He was still openly bearish in June
 
 **Source:** [Bitcoin Enters the 3rd Stage of the Bear Market, 00:04-00:16](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
 
@@ -74,7 +98,7 @@ supplied in the source.
 Why it matters: this bridges the old sale and the new buying disclosure. He did not simply
 turn bullish immediately after selling.
 
-### 4. He now sees the durable-bottom window approaching
+### 6. He now sees the durable-bottom window approaching
 
 **Source:** [Bitcoin: Where in the Cycle Are We?, 12:39-13:44](https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s)
 
@@ -91,7 +115,7 @@ At 13:30:
 Why it matters: this gives the timing logic behind beginning to position now. It is a
 forecast window, not a claim that the final low is already confirmed.
 
-### 5. He has started buying below $60,000
+### 7. He has started buying below $60,000
 
 **Source:** [Bitcoin: Where in the Cycle Are We?, 18:51-19:06](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s)
 
@@ -111,28 +135,34 @@ Open [Benjamin Cowen's Calls vs Bitcoin Price](assets/cowen-calls-vs-bitcoin.htm
 The chart has one job: let a non-expert see his changing position against the Bitcoin price
 without clicking, hovering, or remembering earlier clips.
 
-- He warned of a Q4 top and bear market.
+- He forecast a Q4 top and bear market.
+- At the October high, he still wanted confirmation.
+- By November, he put the odds at 60-70% that the top was in.
 - He later disclosed selling much of his Bitcoin.
 - He remained bearish into June.
 - Below $60,000, he started buying for the next bull market.
 - He still allows a final low, with October inside his expected bottom window.
 
-The chart uses Coinbase BTC-USD daily closes through 6 August 2026 for neutral price context.
+The chart uses Coinbase BTC-USD daily closes through a record-day snapshot on 9 August 2026
+for neutral price context.
 Publication dates and disclosed views are plotted; they are not represented as exact trade
 execution timestamps.
 
 ## Ordered recording deck
 
 1. [MODEL: This Bear Is Now Bullish](https://www.youtube.com/watch?v=MDN4hzx0inw)
-2. [CALL OF TOP: Q4 top and bear market](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
-3. [SOLD: his portfolio followed the view](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)
-4. [STILL BEARISH: final bear-market stage](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
-5. [BOTTOM WINDOW: October?](https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s)
-6. [HE'S BUYING: below $60K](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s)
+2. [ONE-GLANCE CHART: Cowen vs Bitcoin](assets/cowen-calls-vs-bitcoin.html)
+3. [FORECAST: Q4 top and bear market](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
+4. [AT THE HIGH: still wanted confirmation](https://www.youtube.com/watch?v=5812UUvIZDw&t=107s)
+5. [CONFIRMED: 60-70% top-in odds](https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s)
+6. [SOLD: his portfolio followed the view](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)
+7. [STILL BEARISH: final bear-market stage](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
+8. [BOTTOM WINDOW: October?](https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s)
+9. [HE'S BUYING: below $60K](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s)
 
-Every tab has a single job. The model is first so Benji understands the packaging. The five
-Cowen receipts then move from prior call, to action, to continued bearishness, to bottom
-window, to the current buying reveal.
+Every tab has a single job. The model comes first, the one-glance chart gives Benji the full
+mental model, and the seven Cowen receipts then run in chronological order from forecast to
+confirmation, sale, continued bearishness, bottom window, and current buying reveal.
 
 ## CTA handoff
 
@@ -140,8 +170,10 @@ The approved spoken CTA is in [`BENJI-CTA-READOUT.txt`](BENJI-CTA-READOUT.txt). 
 Cowen's earlier winter signal and current buying behaviour to the Inner Circle's distilled
 signals, trader research, wallet movements, and recent opportunities.
 
-The video-specific Jupiter tracking URL is still pending. It must be added and verified
-before publication.
+The prepared video-specific Jupiter path is
+`https://join.welcometorubicon.com/benjamin-cowen-just-flipped-bullish`. The live page accepts
+the path and its front-end checkout code carries that path as `source`, but end-to-end
+checkout attribution and the offer bridge still need verification before publication.
 
 ## Parked research, not discarded
 
@@ -158,12 +190,13 @@ video faster.
 
 | Claim | Evidence treatment |
 |---|---|
-| Cowen called the top | He forecast a Q4 2025 cycle top and bear market before the final high. |
+| Cowen called the top | He forecast a Q4 2025 cycle top before the high, still wanted confirmation at the October high, then moved to 60-70% top-in odds in November. |
 | Cowen sold | First-person retrospective disclosure; exact executions are unknown. |
 | Cowen stayed bearish | Direct June 2026 statement that Bitcoin was entering the final bear stage. |
 | Cowen flipped bullish | Strong packaging for the behavioural change; the video immediately shows that he is buying while still allowing one final low. |
 | Cowen bought below $60K | Direct first-person disclosure; exact average price and quantity are unknown. |
 
-## Current open item
+## Publication-only open item
 
-- Add and test the video-specific Jupiter tracking URL before the video is published.
+- Test the prepared Jupiter path through approved checkout attribution and confirm the sales
+  page is the intended Inner Circle offer before placing the link in YouTube.

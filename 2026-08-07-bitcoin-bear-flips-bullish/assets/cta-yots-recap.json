@@ -1,0 +1,10 @@
+{
+  "schema": "rubicon.cta-proof-receipt",
+  "version": 1,
+  "token": "YOTS",
+  "source_type": "released Rubicon video recap",
+  "public_video_url": "https://youtu.be/zm2QmUtBrGI",
+  "released_at": "2026-08-07",
+  "claim": "YOTS sat near entry for a day, moved from a $1.4M market cap to $5.6M, and later returned to entry.",
+  "boundary": "This released recap supports the named recent example and its round trip. It is not represented as the original alert receipt."
+}

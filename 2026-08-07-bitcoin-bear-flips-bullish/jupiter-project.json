@@ -3,29 +3,30 @@
   "schema_version": 2,
   "project_id": "2026-08-07-bitcoin-bear-flips-bullish",
   "brand": "rubicon",
-  "updated_at": "2026-08-08T23:12:59Z",
-  "stage": "evidence_ready_cta_tracking_pending",
+  "updated_at": "2026-08-09T02:17:12Z",
+  "stage": "handoff_ready",
   "recording_blocked": false,
   "blocking_reason": null,
+  "record_date": "2026-08-09",
   "selected_title": "Benjamin Cowen Just Flipped Bullish",
   "thumbnail_text": "HE'S BUYING",
   "thumbnail_concept": "Benjamin Cowen as the only recognisable face, a large Bitcoin, and one oversized behavioural reveal: HE'S BUYING.",
-  "promise": "Benjamin Cowen warned of a Q4 2025 cycle top, sold a substantial part of his Bitcoin, stayed bearish into June, and has now started buying below $60,000 while still allowing one final move lower.",
+  "promise": "Benjamin Cowen forecast a Q4 2025 cycle top, later disclosed selling a substantial part of his Bitcoin, stayed bearish into June, and has now started buying below $60,000 while still allowing one final move lower.",
   "packaging_model": {
     "title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
     "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
     "mechanism": "One recognised bear, one behavioural change, one instantly understood promise."
   },
   "thesis_sentences": [
-    "Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed bearish into June 2026.",
+    "Benjamin Cowen warned that Bitcoin would top in Q4 2025, later disclosed selling much of his own stack, and stayed bearish into June 2026.",
     "Now he is buying below $60K for the next bull market, even though he thinks the final cycle bottom may not arrive until October."
   ],
   "cta": {
-    "status": "approved_copy_tracking_pending",
-    "text": "Back in October and November, one of our Inner Circle quants shared the signals warning that a crypto winter was coming, just like Cowen. Inside the Inner Circle, we identify traders with profitable track records, then distil their market signals, wallet movements and narratives into information you can actually use. Even during this winter, our opportunities rivalled the green market of 2025: HYPE at $20, plus lower-cap runs in Make Aliens Great Again, Manifest and, just this week, YOTS. If the bear who called the top is now buying, the opportunities ahead could be absolutely insane. To learn the bottom signals, know when we believe they've hit and catch narratives before the mainstream and create asymmetric opportunities, join the Inner Circle using the link below.",
+    "status": "approved_for_recording_tracking_path_unverified",
+    "text": "Back in October and November, one of our Inner Circle quants shared the signals warning that a crypto winter was coming, just like Cowen. Inside the Inner Circle, we identify traders with profitable track records, then distil their market signals, wallet movements and narratives into information you can actually use. Even during this winter, our opportunities rivalled the green market of 2025: HYPE at $20, plus lower-cap runs in Make Aliens Great Again, Manifest and, just this week, YOTS. If the bear who warned about a Q4 top and sold most of his stack is now buying, the opportunities ahead could be absolutely insane. To learn the bottom signals, know when we believe they've hit and catch narratives before the mainstream and create asymmetric opportunities, join the Inner Circle using the link below.",
     "destination": "Rubicon Inner Circle via Jupiter",
     "video_slug": "benjamin-cowen-just-flipped-bullish",
-    "tracking_url": null,
+    "tracking_url": "https://join.welcometorubicon.com/benjamin-cowen-just-flipped-bullish",
     "tracking_verified": false,
     "readout_ref": "BENJI-CTA-READOUT.txt"
   },
@@ -40,23 +41,33 @@
     ]
   },
   "evidence_order": [
-    "01 Model the proven one-bear behavioural-change packaging",
-    "02 Cowen forecast a Q4 cycle top and bear market",
-    "03 Cowen says his portfolio followed the bearish view",
-    "04 Cowen remained openly bearish into June 2026",
-    "05 Cowen places the durable-bottom window from late September to mid-December, possibly October",
-    "06 Cowen discloses that he started buying below $60,000"
+    "01 Packaging model: one recognised bear plus one behavioural change",
+    "02 One-glance chart: Cowen's six dated moments against Bitcoin price",
+    "03 August forecast: Q4 cycle top and bear-market setup",
+    "04 October high: still waiting for confirmation",
+    "05 November confirmation: 60-70% chance the top was in",
+    "06 Retrospective action: Cowen says his portfolio followed the view",
+    "07 June stance: still openly bearish",
+    "08 Current timing: October remains inside his bottom window",
+    "09 Current action: started buying below $60,000"
   ],
-  "public_source_count": 6,
+  "public_source_count": 9,
   "console_ref": "console.html",
   "charts_ref": "charts.html",
   "chart_data_refs": [
-    "assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js"
+    "assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-09.js"
   ],
   "prepared_visual_ref": "assets/cowen-calls-vs-bitcoin.html",
   "thumbnail_ref": "thumbnail-cowen-only-v2.png",
   "arc_handoff_ref": "arc-handoff.json",
   "research_ref": "research.md",
+  "verification": {
+    "record_day_checked_at": "2026-08-09T01:45:08.912Z",
+    "desktop_rendered_at": "2026-08-09T02:17:12Z",
+    "mobile_rendered_at": "2026-08-09T02:17:12Z",
+    "arc_manifest_checked_at": "2026-08-09T02:17:12Z",
+    "tracking_path_checked_at": null
+  },
   "parked_research": [
     {
       "subject": "Eric Krown",

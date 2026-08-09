@@ -13,7 +13,7 @@
       --line: #303943;
       --ink: #f5f7f3;
       --body: #c4cdcf;
-      --muted: #8e9a9f;
+      --muted: #aeb9bc;
       --green: #52f29a;
       --green-dark: #0f3020;
       --red: #ff747b;
@@ -177,7 +177,7 @@
 
     .label {
       color: var(--muted);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 950;
       letter-spacing: .12em;
       text-transform: uppercase;
@@ -222,11 +222,23 @@
     }
 
     .model-card:hover { transform: translateY(-2px); border-color: rgba(82, 242, 154, .55); }
+    .model-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      min-height: 42px;
+      border-bottom: 1px solid var(--line);
+      padding: 11px 15px;
+      background: #151b20;
+    }
+    .model-label .label { color: var(--blue); }
+    .model-label span:last-child { color: var(--green); font-size: 12px; font-weight: 900; white-space: nowrap; }
     .model-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
     .model-copy { display: grid; gap: 10px; padding: 20px; }
     .model-copy h2 { margin: 0; font-size: clamp(24px, 2.2vw, 34px); line-height: 1.02; letter-spacing: -.035em; }
     .model-copy p { margin: 0; color: var(--body); font-size: 14px; }
-    .model-action { color: var(--green); font-size: 12px; font-weight: 900; }
+    .model-next { color: var(--muted); font-size: 12px; font-weight: 850; }
 
     .thesis-card {
       display: grid;
@@ -257,7 +269,7 @@
       margin-top: 16px;
     }
 
-    .launch-note { color: var(--muted); font-size: 11px; }
+    .launch-note { color: var(--muted); font-size: 12px; }
 
     .section {
       border-top: 1px solid var(--line);
@@ -367,7 +379,7 @@
       align-items: center;
       gap: 7px;
       color: var(--amber);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 950;
       letter-spacing: .11em;
       text-transform: uppercase;
@@ -376,7 +388,7 @@
     .role::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
     .role.action { color: var(--green); }
     .role.model { color: var(--blue); }
-    .time { color: var(--muted); font-size: 11px; font-weight: 850; }
+    .time { color: var(--muted); font-size: 12px; font-weight: 850; }
 
     .receipt h3 { margin: 0; padding: 0 18px 13px; font-size: 20px; line-height: 1.12; letter-spacing: -.025em; }
 
@@ -391,9 +403,31 @@
       line-height: 1.34;
     }
 
-    .receipt-bottom { display: grid; gap: 10px; padding: 16px 18px 18px; }
+    .receipt-bottom { display: grid; gap: 12px; padding: 16px 18px 18px; }
     .why { margin: 0; color: var(--body); font-size: 13px; }
     .why strong { color: var(--ink); }
+    .receipt-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 0;
+    }
+    .receipt-facts div {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, .025);
+    }
+    .receipt-facts dt {
+      margin: 0 0 3px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .receipt-facts dd { margin: 0; color: var(--body); font-size: 12px; line-height: 1.35; }
     .source-link { color: var(--green); font-size: 12px; font-weight: 900; text-decoration: none; }
 
     .cta-panel {
@@ -437,7 +471,7 @@
       border-radius: 999px;
       padding: 7px 11px;
       color: var(--muted);
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 850;
       text-decoration: none;
     }
@@ -467,8 +501,16 @@
 
     @media (max-width: 1050px) {
       .package-layout { grid-template-columns: 1fr; }
-      .model-card { display: grid; grid-template-columns: minmax(280px, .7fr) 1fr; }
-      .model-card img { height: 100%; aspect-ratio: auto; }
+      .model-card {
+        display: grid;
+        grid-template-columns: minmax(280px, .7fr) 1fr;
+        grid-template-areas:
+          "label label"
+          "image copy";
+      }
+      .model-label { grid-area: label; }
+      .model-card img { grid-area: image; height: 100%; aspect-ratio: auto; }
+      .model-copy { grid-area: copy; }
       .section-head { grid-template-columns: 60px minmax(0, 1fr); }
       .section-head p { grid-column: 2; }
       .visual-frame { height: 900px; }
@@ -479,7 +521,9 @@
       .nav { display: none; }
       .topbar .button { padding: 8px 10px; }
       .wrap { width: calc(100% - 24px); max-width: 1500px; }
-      .hero { min-height: auto; padding-top: 24px; }
+      .hero { min-height: auto; padding: 17px 0 44px; }
+      .hero-kicker { margin-bottom: 12px; font-size: 11px; }
+      .hero-kicker::before { width: 24px; }
       .package-layout,
       .selected-card,
       .selected-copy,
@@ -487,13 +531,29 @@
       .model-card,
       .thesis-card { width: 100%; min-width: 0; }
       .selected-card { min-height: 0; }
-      .selected-copy { display: block; }
+      .selected-copy { display: block; padding: 17px 18px 15px; }
       .selected-copy h1, .one-line { max-width: 100%; overflow-wrap: break-word; }
+      .selected-copy h1 { margin: 8px 0 0; font-size: clamp(33px, 9.6vw, 39px); line-height: .94; }
+      .selected-copy .one-line { display: none; }
       .selected-visual { min-height: 0; }
       .selected-visual img { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; }
-      .model-card { display: block; }
-      .model-card img { height: auto; aspect-ratio: 16 / 9; }
-      .thesis-card { grid-template-columns: 1fr; gap: 14px; padding: 20px; }
+      .package-layout { gap: 12px; }
+      .model-card {
+        grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+        grid-template-areas:
+          "label label"
+          "image copy";
+      }
+      .model-label { min-height: 38px; padding: 9px 11px; }
+      .model-label span:last-child { font-size: 11px; }
+      .model-card img { height: 100%; min-height: 105px; aspect-ratio: 16 / 9; }
+      .model-copy { align-content: center; gap: 7px; padding: 12px; }
+      .model-copy h2 { font-size: clamp(18px, 5.3vw, 23px); line-height: 1.04; }
+      .model-copy p { display: none; }
+      .model-next { line-height: 1.25; }
+      .thesis-card { grid-template-columns: 110px minmax(0, 1fr); gap: 12px; margin-top: 12px; padding: 16px; }
+      .thesis-label strong { font-size: 18px; }
+      .thesis-copy p { font-size: 15px; }
       .section { padding: 46px 0; }
       .section-head { grid-template-columns: 1fr; gap: 8px; }
       .section-head p { grid-column: auto; }
@@ -506,10 +566,10 @@
     }
 
     @media (max-width: 470px) {
-      h1 { font-size: 43px; }
       .glance-summary { grid-template-columns: 1fr; }
       .glance-step:not(:last-child)::after { display: none; }
       .visual-frame { height: 1940px; }
+      .receipt-facts { grid-template-columns: 1fr; }
       .hero-actions .button { width: 100%; }
     }
   </style>
@@ -526,7 +586,7 @@
         <a href="#s4">Now buying</a>
         <a href="#handoff">CTA</a>
       </nav>
-      <button class="button primary" type="button" onclick="openRecordDeck()">Open 6 tabs</button>
+      <button class="button primary" type="button" onclick="openRecordDeck()">Open 9 tabs</button>
     </div>
   </header>
 
@@ -549,30 +609,33 @@
         </article>
 
         <a class="model-card" href="https://www.youtube.com/watch?v=MDN4hzx0inw" target="_blank" rel="noopener">
+          <div class="model-label">
+            <div class="label">Packaging model | exact source video</div>
+            <span>Open source ↗</span>
+          </div>
           <img src="https://i.ytimg.com/vi/MDN4hzx0inw/maxresdefault.jpg" alt="Thumbnail for the packaging model This Bear Is Now Bullish on Bitcoin">
           <div class="model-copy">
-            <div class="label">Exact video being modelled</div>
             <h2>This Bear Is Now Bullish on Bitcoin</h2>
             <p>Borrow the proven mechanism: one recognisable bear plus one surprising change. The Cowen evidence and wording remain our own.</p>
-            <span class="model-action">Open the model video ↗</span>
+            <span class="model-next">Two-sentence thesis follows ↓</span>
           </div>
         </a>
       </div>
 
-      <div class="thesis-card">
+      <div class="thesis-card" id="thesis">
         <div class="thesis-label">
           <div class="label">The entire video</div>
           <strong>Two sentences</strong>
         </div>
         <div class="thesis-copy">
-          <p>Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed bearish into June 2026.</p>
+          <p>Benjamin Cowen warned that Bitcoin would top in Q4 2025, later disclosed selling much of his own stack, and stayed bearish into June 2026.</p>
           <p>Now he is buying below $60K for the next bull market, even though he thinks the final cycle bottom may not arrive until October.</p>
         </div>
       </div>
 
       <div class="hero-actions">
         <button class="button primary" type="button" onclick="openRecordDeck()">Open complete record deck</button>
-        <button class="button" type="button" onclick="copyRecordDeck()">Copy all 6 links</button>
+        <button class="button" type="button" onclick="copyRecordDeck()">Copy all 9 links</button>
         <a class="button" href="thumbnail-mock.html" target="_blank">Open thumbnail</a>
         <span class="launch-note">If only one tab opens, allow popups for this page and retry.</span>
       </div>
@@ -582,17 +645,17 @@
       <div class="section-head">
         <div class="section-number">THE STORY</div>
         <h2>Understand it in one glance</h2>
-        <p>Cowen warned, sold, stayed bearish, then began buying below $60K before his own bottom window fully ended.</p>
+        <p>Cowen forecast the Q4 top, waited for confirmation at the high, later disclosed selling, stayed bearish, then began buying below $60K.</p>
       </div>
 
       <div class="glance-summary" aria-label="Plain English chart summary">
         <div class="glance-step">
-          <b>Before the fall</b>
-          <strong>Warned of a Q4 top</strong>
+          <b>Before the high</b>
+          <strong>Forecast a Q4 top</strong>
         </div>
         <div class="glance-step">
-          <b>Positioning</b>
-          <strong>Sold much of his Bitcoin</strong>
+          <b>At and after the high</b>
+          <strong>Waited, confirmed, then disclosed selling</strong>
         </div>
         <div class="glance-step">
           <b>June 2026</b>
@@ -616,8 +679,8 @@
     <section class="sec section" id="s2">
       <div class="section-head">
         <div class="section-number">BEFORE</div>
-        <h2>He warned of the top, then sold</h2>
-        <p>First establish that the bear label meant something: Cowen forecast the Q4 setup, then said his own portfolio followed the view.</p>
+        <h2>He forecast the top, waited for proof, then sold</h2>
+        <p>The sequence is the point: an early Q4 forecast, no perfect day call at the high, later technical confirmation, then a disclosed portfolio move.</p>
       </div>
       <div class="receipts" id="receipts-s2"></div>
     </section>
@@ -645,14 +708,14 @@
         <div>
           <div class="label">Separate requested asset</div>
           <h2>Inner Circle CTA readout</h2>
-          <p>The CTA connects Cowen's winter signal and current buying behaviour to the profitable traders, distilled signals, wallet movements, narratives, and recent Inner Circle opportunities.</p>
+          <p>The approved readout connects Cowen's change to Inner Circle signals, wallets, narratives, and recent opportunities. Its evidence ledger is kept separate from the Cowen recording tabs.</p>
         </div>
         <a class="button primary" href="BENJI-CTA-READOUT.txt" target="_blank">Open CTA text</a>
       </div>
 
       <div class="preflight" id="preflight">
-        <strong>ONE PUBLICATION ITEM LEFT</strong>
-        <span>Add and verify the video-specific Jupiter tracking URL before the video is published.</span>
+        <strong>READY TO RECORD</strong>
+        <span>The video-specific Jupiter path is prepared. End-to-end attribution and offer recognition still need a publication check.</span>
       </div>
 
       <div class="artifact-links" aria-label="Supporting project files">
@@ -676,76 +739,113 @@
         url: "https://www.youtube.com/watch?v=MDN4hzx0inw",
         sourceTitle: "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
         quote: "This Bear Is Now Bullish on Bitcoin",
-        shows: "The proven single-bear behavioural-change packaging.",
-        why: "Benji needs to know exactly what successful framing this video is modelling before opening any evidence.",
+        shows: "Proven one-bear-to-bull packaging.",
+        why: "Sets the click mechanism before evidence.",
         inspect: "Title and thumbnail packaging",
-        missing: "Without it, the content has no clearly defined packaging model."
+        missing: "Benji has no proven packaging reference before the evidence."
+      },
+      {
+        section: "s5",
+        role: "visual",
+        label: "02 ONE-GLANCE CHART | COWEN VS BITCOIN",
+        url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/assets/cowen-calls-vs-bitcoin.html",
+        sourceTitle: "Benjamin Cowen's Calls vs Bitcoin Price",
+        quote: "Q4 top forecast. Confirmation arrived later. Sale disclosed. Bearish through June. Buying below $60K.",
+        shows: "The full sell-to-buy change against Bitcoin price.",
+        why: "Gives Benji the entire chronology in one glance.",
+        inspect: "Six dated moments | price data checked 9 Aug 2026",
+        missing: "The separate clips have to be combined mentally."
       },
       {
         section: "s2",
         role: "forecast",
-        label: "02 CALL OF TOP | Q4 TOP + BEAR MARKET",
+        label: "03 FORECAST | Q4 TOP + BEAR MARKET",
         url: "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
         sourceTitle: "Bitcoin: The Pattern That Historically Ended The Bull Market",
-        quote: "Bitcoin ... goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
-        shows: "Cowen forecasting the Q4 top and following bear market before the final high.",
-        why: "It establishes that his later buying follows a useful prior bearish call.",
+        quote: "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+        shows: "A Q4 top and bear-market forecast before the fall.",
+        why: "Establishes a credible prior bearish call.",
         inspect: "02:31-03:02 | 12 Aug 2025",
-        missing: "Without it, the story begins only after Bitcoin has already fallen."
+        missing: "The arc starts after the fall."
+      },
+      {
+        section: "s2",
+        role: "forecast",
+        label: "04 AT THE HIGH | STILL WANTED CONFIRMATION",
+        url: "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
+        sourceTitle: "Bitcoin: Bull Market Support Band",
+        quote: "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+        shows: "At the October high, he still wanted follow-through.",
+        why: "Makes the chronology credible instead of pretending he nailed the exact candle.",
+        inspect: "01:47-02:11 | 6 Oct 2025",
+        missing: "The Q4 forecast can sound like an exact-day top call."
+      },
+      {
+        section: "s2",
+        role: "forecast",
+        label: "05 CONFIRMED | 60-70% TOP-IN ODDS",
+        url: "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s",
+        sourceTitle: "Bitcoin Falls Below the 50 Week Moving Average",
+        quote: "Given how late cycle it is, I would say there's probably a 60 to 70% chance that the top is already in.",
+        shows: "His top view hardened after the later technical break.",
+        why: "Shows when the forecast became a high-conviction top call.",
+        inspect: "03:59-04:10 | 17 Nov 2025",
+        missing: "There is no bridge from forecast to conviction."
       },
       {
         section: "s2",
         role: "action",
-        label: "03 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
+        label: "06 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
         url: "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
-        sourceTitle: "Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen",
-        quote: "I ended up selling off approximately that amount of my Bitcoin stack last year ... I wanted my investment portfolio to reflect that.",
-        shows: "Cowen saying that his allocation followed his 70 to 80% bearish conviction.",
-        why: "It proves the bearish view changed his behaviour, not only his commentary.",
+        sourceTitle: "Everyone Thinks the Bitcoin Cycle Is Dead… They're Wrong | Benjamin Cowen",
+        quote: "And so because of that, I ended up selling off approximately that amount of my Bitcoin stack last year.",
+        shows: "His portfolio followed his 70 to 80% bearish conviction.",
+        why: "Turns commentary into disclosed behaviour.",
         inspect: "19:02-19:35 | 14 Mar 2026",
-        missing: "Without it, there is no supported sell-to-buy behavioural change."
+        missing: "The sell-to-buy change is unsupported."
       },
       {
         section: "s3",
         role: "forecast",
-        label: "04 STILL BEARISH | FINAL BEAR-MARKET STAGE",
+        label: "07 STILL BEARISH | FINAL BEAR-MARKET STAGE",
         url: "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
         sourceTitle: "Bitcoin Enters the 3rd Stage of the Bear Market",
-        quote: "Bitcoin ... has entered the third and what I think is the final stage of the bear market.",
-        shows: "Cowen remaining openly bearish into June 2026.",
-        why: "It bridges the old sale and current buying, showing that the change is genuinely recent.",
+        quote: "Today, we're going to talk about Bitcoin and how it has entered the third and what I think is the final stage of the bear market.",
+        shows: "He still called it the final bear-market stage in June.",
+        why: "Makes the reversal recent, not retrospective.",
         inspect: "00:04-00:16 | 7 Jun 2026",
-        missing: "Without it, the video jumps from an old sale directly to buying."
+        missing: "The arc skips the continued bearish phase."
       },
       {
         section: "s4",
         role: "forecast",
-        label: "05 BOTTOM WINDOW | OCTOBER?",
+        label: "08 BOTTOM WINDOW | OCTOBER?",
         url: "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
         sourceTitle: "Bitcoin: Where in the Cycle Are We?",
-        quote: "That would probably be like late September through mid-December ... Why not October? ... Could very well be October.",
-        shows: "Cowen's expected durable-bottom window, with October as a live possibility.",
-        why: "It explains why he can begin positioning now while still expecting price could fall further.",
+        quote: "Could very well be October.",
+        shows: "October remained inside his expected bottom window.",
+        why: "Explains why he can buy while allowing another low.",
         inspect: "12:39-13:44 | 6 Aug 2026",
-        missing: "Without it, the reasoning behind starting to buy now is unclear."
+        missing: "His remaining downside view is unclear."
       },
       {
         section: "s4",
         role: "action",
-        label: "06 HE'S BUYING | BELOW $60K",
+        label: "09 HE'S BUYING | BELOW $60K",
         url: "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s",
         sourceTitle: "Bitcoin: Where in the Cycle Are We?",
-        quote: "I started buying a little bit back when we went below 60K ... Who cares if it goes lower later in the year? It probably will.",
-        shows: "Cowen disclosing that he has started buying below $60K for the next bull market.",
-        why: "This is the behavioural reveal promised by the title and thumbnail.",
+        quote: "I started buying a little bit back when we went below 60K.",
+        shows: "He started buying after Bitcoin moved below $60K.",
+        why: "Delivers the title and thumbnail promise.",
         inspect: "18:51-19:06 | 6 Aug 2026",
-        missing: "Without it, the main promise of the video is unsupported."
+        missing: "The bullish behaviour change is unsupported."
       }
     ];
 
     function roleLabel(role) {
       if (role === "action") return "Disclosed action";
       if (role === "model") return "Packaging model";
+      if (role === "visual") return "Prepared visual";
       return "Forecast";
     }
 
@@ -764,7 +864,11 @@
               <h3>${item.sourceTitle}</h3>
               <blockquote class="quote">“${item.quote}”</blockquote>
               <div class="receipt-bottom">
-                <p class="why"><strong>Why this link is here:</strong> ${item.why}</p>
+                <dl class="receipt-facts">
+                  <div><dt>Shows</dt><dd>${item.shows}</dd></div>
+                  <div><dt>Without it</dt><dd>${item.missing}</dd></div>
+                </dl>
+                <p class="why"><strong>Why it matters:</strong> ${item.why}</p>
                 <a class="source-link" href="${item.url}" target="_blank" rel="noopener">Open at the exact moment ↗</a>
               </div>
             </article>
@@ -786,14 +890,14 @@
       RECORD_DECK.slice(1).forEach((item, index) => {
         window.setTimeout(() => window.open(item.url, "_blank", "noopener"), (index + 1) * 240);
       });
-      showToast("Opening all 6 tabs in recording order. Allow popups if your browser blocks the later tabs.");
+      showToast("Opening all 9 tabs in recording order. Allow popups if your browser blocks the later tabs.");
     }
 
     async function copyRecordDeck() {
       const text = RECORD_DECK.map(item => `${item.label}\n${item.sourceTitle}\n${item.url}`).join("\n\n");
       try {
         await navigator.clipboard.writeText(text);
-        showToast("Copied all 6 labelled links in recording order.");
+        showToast("Copied all 9 labelled links in recording order.");
       } catch (error) {
         showToast("Clipboard access was blocked. Open arc-notes.md for the same labelled list.");
       }

@@ -1,10 +1,12 @@
 {
   "schema": "rubicon.record-pack-sources",
   "version": 3,
-  "generated_at": "2026-08-08T23:12:59Z",
+  "generated_at": "2026-08-09T02:17:12Z",
+  "record_day_checked_at": "2026-08-09T01:45:08.912Z",
   "project": {
     "id": "2026-08-07-bitcoin-bear-flips-bullish",
-    "status": "record_ready_local_review",
+    "status": "handoff_ready",
+    "record_date": "2026-08-09",
     "title": "Benjamin Cowen Just Flipped Bullish",
     "thumbnail_text": "HE'S BUYING",
     "thumbnail_ref": "thumbnail-cowen-only-v2.png",
@@ -14,13 +16,13 @@
       "mechanism": "One recognised bear, one behavioural change, one instantly understood promise."
     },
     "thesis_sentences": [
-      "Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed bearish into June 2026.",
+      "Benjamin Cowen warned that Bitcoin would top in Q4 2025, later disclosed selling much of his own stack, and stayed bearish into June 2026.",
       "Now he is buying below $60K for the next bull market, even though he thinks the final cycle bottom may not arrive until October."
     ],
     "subjects": [
       "Benjamin Cowen"
     ],
-    "cta_status": "approved_copy_tracking_pending",
+    "cta_status": "approved_copy_tracking_path_prepared",
     "cta_ref": "BENJI-CTA-READOUT.txt"
   },
   "sections": [
@@ -31,21 +33,43 @@
         {
           "id": "model-this-bear-now-bullish",
           "type": "youtube",
-          "role": "packaging_model",
+          "role": "model",
           "label": "This Bear Is Now Bullish",
           "source_title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
           "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
           "source_date": "2026-07-10",
           "quote": "This Bear Is Now Bullish on Bitcoin",
+          "shows": "Proven one-bear-to-bull packaging.",
+          "why": "Sets the click mechanism before evidence.",
           "inspect": "Title and thumbnail packaging",
-          "why": "Models the single-recognisable-bear plus behavioural-change click mechanism.",
-          "missing": "Without it, Benji cannot immediately see what proven packaging this video is modelling."
+          "missing": "Benji has no proven packaging reference before the evidence."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "section": "One-glance visual",
+      "cards": [
+        {
+          "id": "cowen-calls-vs-bitcoin",
+          "type": "generated_asset",
+          "role": "visual",
+          "label": "Benjamin Cowen's Calls vs Bitcoin Price",
+          "source_title": "Benjamin Cowen's Calls vs Bitcoin Price",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/assets/cowen-calls-vs-bitcoin.html",
+          "local_ref": "assets/cowen-calls-vs-bitcoin.html",
+          "source_date": "2026-08-09",
+          "quote": "Q4 top forecast. Confirmation arrived later. Sale disclosed. Bearish through June. Buying below $60K.",
+          "shows": "The full sell-to-buy change against Bitcoin price.",
+          "why": "Gives Benji the entire chronology in one glance.",
+          "inspect": "Six dated moments | price data checked 9 Aug 2026",
+          "missing": "The separate clips have to be combined mentally."
         }
       ]
     },
     {
       "id": "s2",
-      "section": "He warned of the top, then sold",
+      "section": "Forecast, confirmation, and sale",
       "cards": [
         {
           "id": "cowen-q4-top-forecast",
@@ -55,24 +79,54 @@
           "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
           "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
           "source_date": "2025-08-12",
-          "quote": "Bitcoin ... goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
-          "inspect": "02:31-03:02",
-          "why": "Establishes the bearish cycle thesis before the final Q4 high.",
-          "missing": "Without it, the story begins after the market had already fallen."
+          "quote": "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+          "shows": "A Q4 top and bear-market forecast before the fall.",
+          "why": "Establishes a credible prior bearish call.",
+          "inspect": "02:31-03:02 | 12 Aug 2025",
+          "missing": "The arc starts after the fall."
+        },
+        {
+          "id": "cowen-exact-high-waiting",
+          "type": "youtube",
+          "role": "forecast",
+          "label": "At the October high, Cowen still wanted confirmation",
+          "source_title": "Bitcoin: Bull Market Support Band",
+          "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
+          "source_date": "2025-10-06",
+          "quote": "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+          "shows": "At the October high, he still wanted follow-through.",
+          "why": "Makes the chronology credible instead of pretending he nailed the exact candle.",
+          "inspect": "01:47-02:11 | 6 Oct 2025",
+          "missing": "The Q4 forecast can sound like an exact-day top call."
+        },
+        {
+          "id": "cowen-top-confirmation",
+          "type": "youtube",
+          "role": "forecast",
+          "label": "Cowen later raised top-in odds to 60-70%",
+          "source_title": "Bitcoin Falls Below the 50 Week Moving Average",
+          "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s",
+          "source_date": "2025-11-17",
+          "quote": "Given how late cycle it is, I would say there's probably a 60 to 70% chance that the top is already in.",
+          "shows": "His top view hardened after the later technical break.",
+          "why": "Shows when the forecast became a high-conviction top call.",
+          "inspect": "03:59-04:10 | 17 Nov 2025",
+          "missing": "There is no bridge from forecast to conviction."
         },
         {
           "id": "cowen-sale-disclosure",
           "type": "youtube",
-          "role": "action_disclosure",
+          "role": "action",
           "label": "Cowen says his portfolio followed the bearish view",
-          "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen",
+          "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead… They're Wrong | Benjamin Cowen",
           "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
           "source_date": "2026-03-14",
-          "quote": "I ended up selling off approximately that amount of my Bitcoin stack last year ... I wanted my investment portfolio to reflect that.",
-          "inspect": "19:02-19:35",
-          "why": "Shows that his bearish thesis changed his own allocation, not only his commentary.",
-          "missing": "Without it, the sell-to-buy behavioural change is unsupported.",
-          "caution": "This is a retrospective disclosure. Exact sale dates, prices and quantity are not supplied."
+          "quote": "And so because of that, I ended up selling off approximately that amount of my Bitcoin stack last year.",
+          "shows": "His portfolio followed his 70 to 80% bearish conviction.",
+          "why": "Turns commentary into disclosed behaviour.",
+          "inspect": "19:02-19:35 | 14 Mar 2026",
+          "missing": "The sell-to-buy change is unsupported.",
+          "caution": "This is a retrospective disclosure. Exact sale dates, prices, quantity, and transactions are not supplied."
         }
       ]
     },
@@ -88,10 +142,11 @@
           "source_title": "Bitcoin Enters the 3rd Stage of the Bear Market",
           "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
           "source_date": "2026-06-07",
-          "quote": "Bitcoin ... has entered the third and what I think is the final stage of the bear market.",
-          "inspect": "00:04-00:16",
-          "why": "Proves the bearish view persisted immediately before the buying disclosure.",
-          "missing": "Without it, the story jumps from an old sale directly to buying."
+          "quote": "Today, we're going to talk about Bitcoin and how it has entered the third and what I think is the final stage of the bear market.",
+          "shows": "He still called it the final bear-market stage in June.",
+          "why": "Makes the reversal recent, not retrospective.",
+          "inspect": "00:04-00:16 | 7 Jun 2026",
+          "missing": "The arc skips the continued bearish phase."
         }
       ]
     },
@@ -107,43 +162,61 @@
           "source_title": "Bitcoin: Where in the Cycle Are We?",
           "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
           "source_date": "2026-08-06",
-          "quote": "That would probably be like late September through mid-December ... Why not October? ... Could very well be October.",
-          "inspect": "12:39-13:44",
-          "why": "Defines the bottom window behind his new long-term positioning.",
-          "missing": "Without it, the reason he is willing to begin buying now is unclear.",
+          "quote": "Could very well be October.",
+          "shows": "October remained inside his expected bottom window.",
+          "why": "Explains why he can buy while allowing another low.",
+          "inspect": "12:39-13:44 | 6 Aug 2026",
+          "missing": "His remaining downside view is unclear.",
           "caution": "This is a forecast, not confirmation that the bottom is already in."
         },
         {
           "id": "cowen-buy-below-60k",
           "type": "youtube",
-          "role": "action_disclosure",
+          "role": "action",
           "label": "Cowen says he started buying below $60K",
           "source_title": "Bitcoin: Where in the Cycle Are We?",
           "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s",
           "source_date": "2026-08-06",
-          "quote": "I started buying a little bit back when we went below 60K ... Who cares if it goes lower later in the year? It probably will.",
-          "inspect": "18:51-19:06",
-          "why": "This is the behavioural reveal promised by the title and thumbnail.",
-          "missing": "Without it, there is no direct evidence that Cowen's behaviour changed.",
-          "caution": "Exact execution date, average price and quantity are not supplied."
+          "quote": "I started buying a little bit back when we went below 60K.",
+          "shows": "He started buying after Bitcoin moved below $60K.",
+          "why": "Delivers the title and thumbnail promise.",
+          "inspect": "18:51-19:06 | 6 Aug 2026",
+          "missing": "The bullish behaviour change is unsupported.",
+          "caution": "Exact execution date, average price, and quantity are not supplied."
         }
       ]
     },
     {
-      "id": "s5",
-      "section": "Prepared visual",
+      "id": "cta-proof",
+      "section": "CTA proof ledger",
       "cards": [
         {
-          "id": "cowen-calls-vs-bitcoin",
-          "type": "generated_asset",
-          "role": "prepared_visual",
-          "label": "Benjamin Cowen's Calls vs Bitcoin Price",
-          "local_ref": "assets/cowen-calls-vs-bitcoin.html",
-          "source_date": "2026-08-09",
-          "quote": "Warned. Sold. Stayed bearish. Started buying.",
-          "inspect": "All anchored callouts",
-          "why": "Lets a non-expert understand the entire thesis in one glance.",
-          "missing": "Without it, Benji must mentally combine separate clips and dates."
+          "id": "cta-own-hype-range",
+          "type": "youtube",
+          "role": "cta_proof",
+          "label": "Prior Rubicon HYPE statement",
+          "source_title": "Bitcoin’s top 5 Bull Market Signals are all pointing to one date... (don't miss it)",
+          "url": "https://www.youtube.com/watch?v=DDT5jXmTSQA&t=885s",
+          "source_date": "2026-07-02",
+          "quote": "Even in my inner circle, I've been talking about HYPE for so long since it was literally down in the $20 range.",
+          "shows": "Benji publicly linked Inner Circle coverage to HYPE in the $20 range.",
+          "why": "Supports the succinct HYPE line in the CTA.",
+          "inspect": "14:45-14:52 | 2 Jul 2026",
+          "missing": "The original contemporaneous Inner Circle post is not attached."
+        },
+        {
+          "id": "cta-own-winter-opportunity-ratio",
+          "type": "youtube",
+          "role": "cta_proof",
+          "label": "Prior Rubicon winter-opportunity statement",
+          "source_title": "Bitcoin’s top 5 Bull Market Signals are all pointing to one date... (don't miss it)",
+          "url": "https://www.youtube.com/watch?v=DDT5jXmTSQA&t=1033s",
+          "source_date": "2026-07-02",
+          "quote": "inside our inner circle, we've sent out opportunities almost at a higher ratio of success and multiples than last year when the market was green.",
+          "shows": "Benji previously made the winter-versus-green-market comparison in public.",
+          "why": "Provides the prior public basis for the comparative CTA line.",
+          "inspect": "17:13-17:24 | 2 Jul 2026",
+          "missing": "This is a retrospective statement, not an audited portfolio-return report."
         }
       ]
     }
@@ -152,83 +225,230 @@
     {
       "order": 1,
       "section_id": "s1",
-      "role": "packaging_model",
+      "role": "model",
       "label": "01 MODEL | THIS BEAR IS NOW BULLISH",
       "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
       "source_title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
       "quote": "This Bear Is Now Bullish on Bitcoin",
+      "shows": "Proven one-bear-to-bull packaging.",
+      "why": "Sets the click mechanism before evidence.",
       "inspect": "Title and thumbnail packaging",
-      "why": "Shows Benji the source packaging before the evidence.",
+      "missing": "Benji has no proven packaging reference before the evidence.",
       "card_id": "model-this-bear-now-bullish"
     },
     {
       "order": 2,
-      "section_id": "s2",
-      "role": "forecast",
-      "label": "02 CALL OF TOP | Q4 TOP + BEAR MARKET",
-      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
-      "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
-      "quote": "Bitcoin ... goes into the market cycle top in Q4 ... which sets up the midterm-year bear market.",
-      "inspect": "02:31-03:02",
-      "why": "Establishes the thesis before the final high.",
-      "card_id": "cowen-q4-top-forecast"
+      "section_id": "s5",
+      "role": "visual",
+      "label": "02 ONE-GLANCE CHART | COWEN VS BITCOIN",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/assets/cowen-calls-vs-bitcoin.html",
+      "source_title": "Benjamin Cowen's Calls vs Bitcoin Price",
+      "quote": "Q4 top forecast. Confirmation arrived later. Sale disclosed. Bearish through June. Buying below $60K.",
+      "shows": "The full sell-to-buy change against Bitcoin price.",
+      "why": "Gives Benji the entire chronology in one glance.",
+      "inspect": "Six dated moments | price data checked 9 Aug 2026",
+      "missing": "The separate clips have to be combined mentally.",
+      "card_id": "cowen-calls-vs-bitcoin"
     },
     {
       "order": 3,
       "section_id": "s2",
-      "role": "action_disclosure",
-      "label": "03 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
-      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
-      "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen",
-      "quote": "I ended up selling off approximately that amount of my Bitcoin stack last year.",
-      "inspect": "19:02-19:35",
-      "why": "Shows the thesis affected his own allocation.",
-      "card_id": "cowen-sale-disclosure"
+      "role": "forecast",
+      "label": "03 FORECAST | Q4 TOP + BEAR MARKET",
+      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
+      "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
+      "quote": "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+      "shows": "A Q4 top and bear-market forecast before the fall.",
+      "why": "Establishes a credible prior bearish call.",
+      "inspect": "02:31-03:02 | 12 Aug 2025",
+      "missing": "The arc starts after the fall.",
+      "card_id": "cowen-q4-top-forecast"
     },
     {
       "order": 4,
-      "section_id": "s3",
+      "section_id": "s2",
       "role": "forecast",
-      "label": "04 STILL BEARISH | FINAL BEAR-MARKET STAGE",
-      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
-      "source_title": "Bitcoin Enters the 3rd Stage of the Bear Market",
-      "quote": "Bitcoin ... has entered the third and what I think is the final stage of the bear market.",
-      "inspect": "00:04-00:16",
-      "why": "Proves the bearish view persisted into June.",
-      "card_id": "cowen-final-bear-stage"
+      "label": "04 AT THE HIGH | STILL WANTED CONFIRMATION",
+      "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
+      "source_title": "Bitcoin: Bull Market Support Band",
+      "quote": "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+      "shows": "At the October high, he still wanted follow-through.",
+      "why": "Makes the chronology credible instead of pretending he nailed the exact candle.",
+      "inspect": "01:47-02:11 | 6 Oct 2025",
+      "missing": "The Q4 forecast can sound like an exact-day top call.",
+      "card_id": "cowen-exact-high-waiting"
     },
     {
       "order": 5,
-      "section_id": "s4",
+      "section_id": "s2",
       "role": "forecast",
-      "label": "05 BOTTOM WINDOW | OCTOBER?",
-      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
-      "source_title": "Bitcoin: Where in the Cycle Are We?",
-      "quote": "Why not October? ... Could very well be October.",
-      "inspect": "12:39-13:44",
-      "why": "Defines the approaching durable-bottom window.",
-      "card_id": "cowen-bottom-window"
+      "label": "05 CONFIRMED | 60-70% TOP-IN ODDS",
+      "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s",
+      "source_title": "Bitcoin Falls Below the 50 Week Moving Average",
+      "quote": "Given how late cycle it is, I would say there's probably a 60 to 70% chance that the top is already in.",
+      "shows": "His top view hardened after the later technical break.",
+      "why": "Shows when the forecast became a high-conviction top call.",
+      "inspect": "03:59-04:10 | 17 Nov 2025",
+      "missing": "There is no bridge from forecast to conviction.",
+      "card_id": "cowen-top-confirmation"
     },
     {
       "order": 6,
+      "section_id": "s2",
+      "role": "action",
+      "label": "06 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
+      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
+      "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead… They're Wrong | Benjamin Cowen",
+      "quote": "And so because of that, I ended up selling off approximately that amount of my Bitcoin stack last year.",
+      "shows": "His portfolio followed his 70 to 80% bearish conviction.",
+      "why": "Turns commentary into disclosed behaviour.",
+      "inspect": "19:02-19:35 | 14 Mar 2026",
+      "missing": "The sell-to-buy change is unsupported.",
+      "card_id": "cowen-sale-disclosure"
+    },
+    {
+      "order": 7,
+      "section_id": "s3",
+      "role": "forecast",
+      "label": "07 STILL BEARISH | FINAL BEAR-MARKET STAGE",
+      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
+      "source_title": "Bitcoin Enters the 3rd Stage of the Bear Market",
+      "quote": "Today, we're going to talk about Bitcoin and how it has entered the third and what I think is the final stage of the bear market.",
+      "shows": "He still called it the final bear-market stage in June.",
+      "why": "Makes the reversal recent, not retrospective.",
+      "inspect": "00:04-00:16 | 7 Jun 2026",
+      "missing": "The arc skips the continued bearish phase.",
+      "card_id": "cowen-final-bear-stage"
+    },
+    {
+      "order": 8,
       "section_id": "s4",
-      "role": "action_disclosure",
-      "label": "06 HE'S BUYING | BELOW $60K",
+      "role": "forecast",
+      "label": "08 BOTTOM WINDOW | OCTOBER?",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
+      "source_title": "Bitcoin: Where in the Cycle Are We?",
+      "quote": "Could very well be October.",
+      "shows": "October remained inside his expected bottom window.",
+      "why": "Explains why he can buy while allowing another low.",
+      "inspect": "12:39-13:44 | 6 Aug 2026",
+      "missing": "His remaining downside view is unclear.",
+      "card_id": "cowen-bottom-window"
+    },
+    {
+      "order": 9,
+      "section_id": "s4",
+      "role": "action",
+      "label": "09 HE'S BUYING | BELOW $60K",
       "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s",
       "source_title": "Bitcoin: Where in the Cycle Are We?",
       "quote": "I started buying a little bit back when we went below 60K.",
-      "inspect": "18:51-19:06",
+      "shows": "He started buying after Bitcoin moved below $60K.",
       "why": "Delivers the title and thumbnail promise.",
+      "inspect": "18:51-19:06 | 6 Aug 2026",
+      "missing": "The bullish behaviour change is unsupported.",
       "card_id": "cowen-buy-below-60k"
     }
   ],
+  "claim_chronology": {
+    "subject": "Benjamin Cowen",
+    "checkpoints": [
+      {
+        "stage": "forecast",
+        "status": "evidenced",
+        "searched_window": "1 Aug 2025 to 30 Sep 2025",
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos and local transcripts",
+        "receipt_ids": ["cowen-q4-top-forecast"],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "decision_day",
+        "status": "evidenced",
+        "searched_window": "1 Oct 2025 to 10 Oct 2025",
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos around the Bitcoin high",
+        "receipt_ids": ["cowen-exact-high-waiting"],
+        "counter_receipt_ids": ["cowen-exact-high-waiting"],
+        "counter_search_status": "evidenced"
+      },
+      {
+        "stage": "confirmation",
+        "status": "evidenced",
+        "searched_window": "7 Oct 2025 to 30 Nov 2025",
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos and 50-week moving-average coverage",
+        "receipt_ids": ["cowen-top-confirmation"],
+        "counter_receipt_ids": ["cowen-top-confirmation"],
+        "counter_search_status": "evidenced"
+      },
+      {
+        "stage": "action",
+        "status": "evidenced",
+        "searched_window": "Q4 2025 through Mar 2026 retrospective disclosures",
+        "searched_surfaces": "Official interviews and Benjamin Cowen first-person disclosures",
+        "receipt_ids": ["cowen-sale-disclosure"],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "re_entry",
+        "status": "evidenced",
+        "searched_window": "1 Jun 2026 to 9 Aug 2026",
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos and current transcripts",
+        "receipt_ids": ["cowen-buy-below-60k"],
+        "counter_receipt_ids": ["cowen-bottom-window"]
+      },
+      {
+        "stage": "current_stance",
+        "status": "evidenced",
+        "searched_window": "1 Aug 2026 to record day 9 Aug 2026",
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos, current record-day search, and BTC price context",
+        "receipt_ids": ["cowen-bottom-window", "cowen-buy-below-60k"],
+        "counter_receipt_ids": []
+      }
+    ]
+  },
+  "cta": {
+    "status": "approved_for_recording",
+    "readout_ref": "BENJI-CTA-READOUT.txt",
+    "performance_claims": [
+      {
+        "claim": "HYPE at $20",
+        "proof_card_ids": ["cta-own-hype-range"],
+        "proof_asset_refs": ["transcripts/own-DDT5jXmTSQA.en.vtt"],
+        "approved": true,
+        "boundary": "The public receipt says HYPE in the $20 range; the owner approved the succinct $20 wording."
+      },
+      {
+        "claim": "our opportunities rivalled the green market of 2025",
+        "proof_card_ids": ["cta-own-winter-opportunity-ratio"],
+        "proof_asset_refs": ["transcripts/own-DDT5jXmTSQA.en.vtt"],
+        "approved": true,
+        "boundary": "Prior public retrospective statement, not an audited portfolio-return calculation."
+      },
+      {
+        "claim": "lower-cap runs in Make Aliens Great Again, Manifest and YOTS",
+        "proof_card_ids": [],
+        "proof_asset_refs": [
+          "assets/cta-maga-card.png",
+          "assets/cta-manifest-first-flag.png",
+          "assets/cta-yots-recap.json"
+        ],
+        "approved": true,
+        "boundary": "Owner-approved examples with supporting internal assets; original public call attribution is not represented as audited here."
+      }
+    ],
+    "non_performance_claims": [
+      {
+        "claim": "an Inner Circle quant shared winter-warning signals in October and November",
+        "status": "owner_approved_primary_receipt_not_attached",
+        "recording_boundary": "Use the approved readout. Do not display a fabricated screenshot or exact dated post."
+      }
+    ]
+  },
   "parked_for_future_video": {
     "subject": "Eric Krown",
     "reason": "Separate person and separate thesis. Retained in the existing Krown ledger for a future thin-slice pack.",
     "local_ref": "transcripts/krown-evidence-ledger.md"
   },
   "holes": [
-    "The public hosted console and chart have not yet been refreshed. Do not share the old snapshot as this Cowen-only version.",
-    "The spoken CTA is approved, but a video-specific tracking URL has not yet been supplied or verified."
+    "The video-specific Jupiter route is prepared, but end-to-end checkout attribution and the sales-page offer bridge are not verified for publication.",
+    "Some CTA examples rely on owner-approved internal evidence rather than attached original call receipts; the attached ledger records those boundaries."
   ]
 }

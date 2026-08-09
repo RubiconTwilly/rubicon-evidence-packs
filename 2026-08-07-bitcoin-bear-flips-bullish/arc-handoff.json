@@ -13,41 +13,59 @@
     },
     {
       "order": 2,
-      "section_id": "s2",
-      "label": "02 CALL OF TOP | Q4 TOP + BEAR MARKET",
-      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s"
+      "section_id": "s5",
+      "label": "02 ONE-GLANCE CHART | COWEN VS BITCOIN",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/assets/cowen-calls-vs-bitcoin.html"
     },
     {
       "order": 3,
       "section_id": "s2",
-      "label": "03 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
-      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s"
+      "label": "03 FORECAST | Q4 TOP + BEAR MARKET",
+      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s"
     },
     {
       "order": 4,
-      "section_id": "s3",
-      "label": "04 STILL BEARISH | FINAL BEAR-MARKET STAGE",
-      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s"
+      "section_id": "s2",
+      "label": "04 AT THE HIGH | STILL WANTED CONFIRMATION",
+      "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s"
     },
     {
       "order": 5,
-      "section_id": "s4",
-      "label": "05 BOTTOM WINDOW | OCTOBER?",
-      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s"
+      "section_id": "s2",
+      "label": "05 CONFIRMED | 60-70% TOP-IN ODDS",
+      "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s"
     },
     {
       "order": 6,
+      "section_id": "s2",
+      "label": "06 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
+      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s"
+    },
+    {
+      "order": 7,
+      "section_id": "s3",
+      "label": "07 STILL BEARISH | FINAL BEAR-MARKET STAGE",
+      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s"
+    },
+    {
+      "order": 8,
       "section_id": "s4",
-      "label": "06 HE'S BUYING | BELOW $60K",
+      "label": "08 BOTTOM WINDOW | OCTOBER?",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s"
+    },
+    {
+      "order": 9,
+      "section_id": "s4",
+      "label": "09 HE'S BUYING | BELOW $60K",
       "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s"
     }
   ],
   "private_items": [],
   "manual_steps": [
-    "Create a flat Arc folder",
-    "Open, rename, and order the public tabs from this manifest",
-    "Walk the sequence once",
-    "Use Share Folder",
-    "Save the new snapshot URL and shared_at time here"
+    "Create one flat Arc folder",
+    "Open, rename, and order the nine public tabs exactly as listed",
+    "Keep the chart beside the source clips so Benji can move back and forth",
+    "Walk the sequence once before recording",
+    "Use Share Folder and save the snapshot URL here"
   ]
 }

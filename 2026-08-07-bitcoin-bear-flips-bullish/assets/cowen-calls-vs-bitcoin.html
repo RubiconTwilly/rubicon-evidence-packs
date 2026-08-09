@@ -8,7 +8,7 @@
     :root {
       color-scheme: dark;
       --ink: #f6f2e8;
-      --muted: #aaa69e;
+      --muted: #c3beb4;
       --panel: #131313;
       --panel-2: #191816;
       --line: rgba(255, 255, 255, .11);
@@ -87,7 +87,7 @@
     .thesis {
       max-width: 920px;
       margin: 0;
-      color: #c5c0b7;
+      color: #d2cdc4;
       font-size: 17px;
       line-height: 1.45;
     }
@@ -137,8 +137,8 @@
       display: flex;
       align-items: center;
       gap: 18px;
-      color: #8f8b83;
-      font-size: 11px;
+      color: #bdb8ae;
+      font-size: 12px;
     }
 
     .legend {
@@ -179,16 +179,16 @@
     .date-label,
     .zone-label,
     .event-label {
-      fill: #8f8b83;
+      fill: #bdb8ae;
       font-family: inherit;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 800;
       letter-spacing: .05em;
     }
 
     .zone-label,
     .event-label {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 950;
       letter-spacing: .10em;
     }
@@ -249,8 +249,12 @@
 
     .callout.bottom { top: auto; bottom: var(--bottom); }
     .callout.red { --event-color: var(--red); }
+    .callout.blue { --event-color: var(--blue); }
     .callout.amber { --event-color: var(--amber); }
     .callout.green { --event-color: var(--green); }
+
+    .callout.compact blockquote { font-size: 13px; line-height: 1.25; }
+    .callout.compact .source-name { font-size: 10px; }
 
     .callout-head {
       display: flex;
@@ -263,8 +267,8 @@
     .phase { color: var(--event-color); }
 
     .callout time {
-      color: #8f8b83;
-      font-size: 11px;
+      color: #c4bfb5;
+      font-size: 12px;
       font-weight: 800;
       white-space: nowrap;
     }
@@ -280,9 +284,9 @@
 
     .callout .boundary {
       margin: -3px 0 9px;
-      color: #a6a198;
-      font-size: 10px;
-      line-height: 1.3;
+      color: #c4bfb5;
+      font-size: 12px;
+      line-height: 1.35;
     }
 
     .callout .dual {
@@ -308,19 +312,19 @@
       gap: 6px 10px;
     }
 
-    .source-label { color: #716e68; font-size: 9px; }
+    .source-label { color: #c9c4ba; font-size: 11px; }
 
     .source-name {
       flex: 1 1 100%;
-      color: #aaa69e;
-      font-size: 9px;
+      color: #d0cbc1;
+      font-size: 11px;
       font-weight: 760;
-      line-height: 1.25;
+      line-height: 1.35;
     }
 
     .sources a {
       color: color-mix(in srgb, var(--event-color) 80%, white);
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 850;
       text-underline-offset: 3px;
     }
@@ -332,7 +336,7 @@
       right: 21px;
       top: 470px;
       display: grid;
-      grid-template-columns: 1.05fr 1fr 1.15fr;
+      grid-template-columns: .9fr .95fr 1.1fr 1.2fr;
       gap: 8px;
       pointer-events: none;
     }
@@ -346,7 +350,7 @@
       border: 1px solid color-mix(in srgb, var(--rail) 22%, transparent);
       background: color-mix(in srgb, var(--rail) 8%, rgba(13,13,13,.85));
       color: color-mix(in srgb, var(--rail) 77%, white);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 950;
       letter-spacing: .11em;
       text-align: center;
@@ -361,12 +365,14 @@
       justify-content: space-between;
       gap: 30px;
       padding: 14px 8px 0;
-      color: #716e68;
-      font-size: 10px;
+      color: #bdb8ae;
+      font-size: 12px;
       line-height: 1.4;
     }
 
-    .foot strong { color: #98938a; }
+    .foot strong { color: #eee8dc; }
+
+    .mobile-visual { display: none; }
 
     @media (max-width: 980px) {
       body { padding: 0; }
@@ -374,7 +380,92 @@
       .hero { grid-template-columns: 1fr; align-items: start; }
       .one-line { width: 100%; }
       .chart-panel { height: auto; min-height: 0; padding: 0 12px 18px; }
-      #price-chart { position: relative; display: block; height: 390px; margin-bottom: 12px; }
+      #price-chart { display: none; }
+      .mobile-visual {
+        display: block;
+        padding: 16px 2px 7px;
+      }
+      .mobile-visual-head {
+        margin-bottom: 14px;
+        border: 1px solid rgba(69, 220, 141, .28);
+        border-radius: 14px;
+        padding: 14px;
+        background: rgba(69, 220, 141, .06);
+      }
+      .mobile-visual-head span {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--green);
+        font-size: 11px;
+        font-weight: 950;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+      }
+      .mobile-visual-head strong { display: block; font-size: 17px; line-height: 1.3; }
+      .mobile-story { margin: 0; padding: 0; list-style: none; }
+      .mobile-moment {
+        --event-color: var(--amber);
+        position: relative;
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 11px;
+        padding-bottom: 12px;
+      }
+      .mobile-moment::before {
+        content: "";
+        position: absolute;
+        top: 29px;
+        bottom: -2px;
+        left: 14px;
+        width: 2px;
+        background: linear-gradient(var(--event-color), rgba(255, 255, 255, .13));
+      }
+      .mobile-moment:last-child::before { display: none; }
+      .mobile-moment.red { --event-color: var(--red); }
+      .mobile-moment.green { --event-color: var(--green); }
+      .mobile-node {
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        border: 2px solid var(--event-color);
+        border-radius: 50%;
+        background: #111;
+        color: var(--event-color);
+        font-size: 11px;
+        font-weight: 950;
+      }
+      .mobile-moment.disclosure .mobile-node { border-radius: 8px; }
+      .mobile-moment-card {
+        border: 1px solid color-mix(in srgb, var(--event-color) 28%, rgba(255, 255, 255, .09));
+        border-radius: 13px;
+        padding: 12px 13px;
+        background: color-mix(in srgb, var(--event-color) 5%, #151513);
+      }
+      .mobile-moment-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 5px;
+        color: #c4bfb5;
+        font-size: 11px;
+        font-weight: 850;
+      }
+      .mobile-moment-meta span { color: var(--event-color); text-align: right; }
+      .mobile-moment-card strong { display: block; font-size: 16px; line-height: 1.24; }
+      .mobile-moment-card p { margin: 4px 0 0; color: #c9c4ba; font-size: 13px; line-height: 1.35; }
+      .mobile-change {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 8px;
+        align-items: center;
+        margin: 3px 0 10px 41px;
+        border-radius: 13px;
+        padding: 11px 12px;
+        background: linear-gradient(105deg, rgba(239, 190, 98, .09), rgba(69, 220, 141, .11));
+      }
+      .mobile-change span { color: #c9c4ba; font-size: 11px; font-weight: 850; line-height: 1.3; }
+      .mobile-change strong { color: var(--green); font-size: 17px; }
       .callout,
       .callout.bottom {
         position: relative;
@@ -382,11 +473,19 @@
         width: 100%;
         margin: 10px 0;
       }
-      .takeaway-rail { position: relative; inset: auto; margin: 8px 0 12px; grid-template-columns: 1fr; }
-      .takeaway-rail div { border-radius: 10px !important; }
+      .takeaway-rail { display: none; }
       .chart-meta { position: relative; inset: auto; flex-direction: column; align-items: flex-start; margin: 16px 2px 0; }
       #connectors { display: none; }
       .foot { flex-direction: column; gap: 4px; }
+    }
+
+    @media (max-width: 560px) {
+      .stage { padding: 20px 14px; }
+      .hero { gap: 20px; padding: 0 2px 20px; }
+      h1 { font-size: clamp(35px, 11vw, 48px); }
+      .thesis { font-size: 16px; }
+      .callout .dual { grid-template-columns: 1fr; }
+      .mobile-change { grid-template-columns: 1fr auto 1fr; margin-left: 0; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -400,18 +499,18 @@
       <div>
         <p class="kicker">One-glance evidence | Cowen only</p>
         <h1>Benjamin Cowen's Calls <span>vs Bitcoin Price</span></h1>
-        <p class="thesis">He warned of a Q4 top, later disclosed selling much of his Bitcoin, stayed bearish into June, then started buying below $60K.</p>
+        <p class="thesis">He forecast a Q4 top, waited for confirmation at the high, later disclosed selling much of his Bitcoin, stayed bearish into June, then started buying below $60K.</p>
       </div>
       <aside class="one-line" aria-label="One line summary">
         <span>One-line read</span>
-        <strong>Warned &rarr; sold &rarr; stayed bearish &rarr; now buying</strong>
+        <strong>Forecast &rarr; confirmed &rarr; sold &rarr; stayed bearish &rarr; buying</strong>
       </aside>
     </header>
 
     <section class="chart-panel" id="chart-panel" aria-labelledby="chart-title">
       <svg id="price-chart" viewBox="0 0 1500 696" role="img" aria-labelledby="chart-title chart-desc">
         <title id="chart-title">Benjamin Cowen's calls compared with the price of Bitcoin</title>
-        <desc id="chart-desc">Coinbase Bitcoin daily closing price from August 2025 to August 2026, followed by an unpriced forecast window through October 2026. Four source-linked Cowen moments show a Q4 top warning, a retrospective 2025 sale disclosure, a bearish June stance, and an August disclosure of buying below sixty thousand dollars while considering an October bottom.</desc>
+        <desc id="chart-desc">Coinbase Bitcoin daily closing price from August 2025 to August 2026, followed by an unpriced forecast window through October 2026. Six source-linked Cowen moments show an early Q4 top forecast, his view at the October high, later top confirmation, a retrospective 2025 sale disclosure, a bearish June stance, and an August disclosure of buying below sixty thousand dollars while considering an October bottom.</desc>
         <defs>
           <linearGradient id="area-gradient" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stop-color="#f7a735" stop-opacity=".22"></stop>
@@ -431,13 +530,93 @@
         <g id="markers"></g>
       </svg>
 
-      <article class="callout red" style="--left:1.3%;--top:18px;--width:290px" data-date="2025-08-12" data-anchor="price" data-color="#ff5d5d">
+      <div class="mobile-visual" aria-label="Mobile story map of Benjamin Cowen's calls and actions">
+        <div class="mobile-visual-head">
+          <span>Mobile story map</span>
+          <strong>The forecast became conviction, then buying before his expected bottom window closed.</strong>
+        </div>
+        <ol class="mobile-story">
+          <li class="mobile-moment red">
+            <span class="mobile-node" aria-hidden="true">1</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2025-08-12">12 Aug 2025</time><span data-price-date="2025-08-12">Call-day BTC close</span></div>
+              <strong>Forecast a Q4 cycle top</strong>
+              <p>The warning came before Bitcoin's final Q4 high.</p>
+            </div>
+          </li>
+          <li class="mobile-moment red">
+            <span class="mobile-node" aria-hidden="true">2</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2025-10-06">6 Oct 2025</time><span data-price-date="2025-10-06">Call-day BTC close</span></div>
+              <strong>At the high, still wanted confirmation</strong>
+              <p>He had the broad Q4 thesis, not a perfect day call.</p>
+            </div>
+          </li>
+          <li class="mobile-moment">
+            <span class="mobile-node" aria-hidden="true">3</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2025-11-17">17 Nov 2025</time><span data-price-date="2025-11-17">Call-day BTC close</span></div>
+              <strong>Raised top-in odds to 60-70%</strong>
+              <p>The later technical break supplied the confirmation.</p>
+            </div>
+          </li>
+          <li class="mobile-moment disclosure">
+            <span class="mobile-node" aria-hidden="true">4</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2026-03-14">14 Mar 2026</time><span>Disclosure only</span></div>
+              <strong>Said he sold much of his stack in 2025</strong>
+              <p>The exact sale date and price were not stated.</p>
+            </div>
+          </li>
+          <li class="mobile-moment">
+            <span class="mobile-node" aria-hidden="true">5</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2026-06-07">7 Jun 2026</time><span data-price-date="2026-06-07">Call-day BTC close</span></div>
+              <strong>Still called it a bear market</strong>
+              <p>The bearish view persisted into June.</p>
+            </div>
+          </li>
+          <li class="mobile-moment green disclosure">
+            <span class="mobile-node" aria-hidden="true">6</span>
+            <div class="mobile-moment-card">
+              <div class="mobile-moment-meta"><time datetime="2026-08-06">6 Aug 2026</time><span>Below $60K trigger</span></div>
+              <strong>Now accumulating for the next bull market</strong>
+              <p>He still allows a final low, possibly in October.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="mobile-change" aria-label="Change from bearish positioning to buying">
+          <span>Before: bearish call + disclosed sale</span>
+          <strong>→</strong>
+          <span>Now: buying below $60K</span>
+        </div>
+      </div>
+
+      <article class="callout red compact" style="--left:.8%;--top:18px;--width:18%" data-date="2025-08-12" data-anchor="price" data-color="#ff5d5d">
         <div class="callout-head">
-          <p class="phase">Warned: Q4 top</p>
+          <p class="phase">Forecast: Q4 top</p>
           <time datetime="2025-08-12">12 Aug 2025</time>
         </div>
-        <blockquote>&ldquo;Bitcoin goes into the market cycle top in Q4 ... which sets up the midterm-year bear market.&rdquo;</blockquote>
+        <blockquote>&ldquo;and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.&rdquo;</blockquote>
         <div class="sources"><span class="source-name">Bitcoin: The Pattern That Historically Ended The Bull Market</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=il089bNt-4g&amp;t=151s" target="_blank" rel="noopener">02:31-03:02</a></div>
+      </article>
+
+      <article class="callout red compact" style="--left:19.6%;--top:18px;--width:15.5%" data-date="2025-10-06" data-anchor="price" data-color="#ff5d5d">
+        <div class="callout-head">
+          <p class="phase">At the high: waiting</p>
+          <time datetime="2025-10-06">6 Oct 2025</time>
+        </div>
+        <blockquote>&ldquo;I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.&rdquo;</blockquote>
+        <div class="sources"><span class="source-name">Bitcoin: Bull Market Support Band</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=5812UUvIZDw&amp;t=107s" target="_blank" rel="noopener">01:47-02:11</a></div>
+      </article>
+
+      <article class="callout blue compact" style="--left:35.9%;--top:18px;--width:18.2%" data-date="2025-11-17" data-anchor="price" data-color="#75baff">
+        <div class="callout-head">
+          <p class="phase">Confirmation: 60-70%</p>
+          <time datetime="2025-11-17">17 Nov 2025</time>
+        </div>
+        <blockquote>&ldquo;Given how late cycle it is, I would say there's probably a 60 to 70% chance that the top is already in.&rdquo;</blockquote>
+        <div class="sources"><span class="source-name">Bitcoin Falls Below the 50 Week Moving Average</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=9g1QsTVizyQ&amp;t=239s" target="_blank" rel="noopener">03:59-04:10</a></div>
       </article>
 
       <article class="callout amber bottom" style="--left:30%;--bottom:46px;--width:350px" data-date="2026-03-14" data-anchor="disclosure" data-color="#efbe62">
@@ -445,17 +624,17 @@
           <p class="phase">2025 sale disclosed</p>
           <time datetime="2026-03-14">14 Mar 2026</time>
         </div>
-        <blockquote>&ldquo;I ended up selling off approximately that amount of my Bitcoin stack last year.&rdquo;</blockquote>
+        <blockquote>&ldquo;And so because of that, I ended up selling off approximately that amount of my Bitcoin stack last year.&rdquo;</blockquote>
         <p class="boundary">Disclosure date shown. His exact 2025 trade date and price were not stated.</p>
-        <div class="sources"><span class="source-name">Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=7cW2PCPA8kY&amp;t=1142s" target="_blank" rel="noopener">19:02-19:35</a></div>
+        <div class="sources"><span class="source-name">Everyone Thinks the Bitcoin Cycle Is Dead… They're Wrong | Benjamin Cowen</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=7cW2PCPA8kY&amp;t=1142s" target="_blank" rel="noopener">19:02-19:35</a></div>
       </article>
 
-      <article class="callout amber" style="--left:58%;--top:18px;--width:300px" data-date="2026-06-07" data-anchor="price" data-color="#efbe62">
+      <article class="callout amber" style="--left:54.9%;--top:18px;--width:20%" data-date="2026-06-07" data-anchor="price" data-color="#efbe62">
         <div class="callout-head">
           <p class="phase">Stayed bearish</p>
           <time datetime="2026-06-07">7 Jun 2026</time>
         </div>
-        <blockquote>&ldquo;Bitcoin ... has entered the third, and what I think is the final, stage of the bear market.&rdquo;</blockquote>
+        <blockquote>&ldquo;Today, we're going to talk about Bitcoin and how it has entered the third and what I think is the final stage of the bear market.&rdquo;</blockquote>
         <div class="sources"><span class="source-name">Bitcoin Enters the 3rd Stage of the Bear Market</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=gkDqbvMnMHI&amp;t=4s" target="_blank" rel="noopener">00:04-00:16</a></div>
       </article>
 
@@ -466,22 +645,24 @@
         </div>
         <div class="dual">
           <blockquote>&ldquo;I started buying a little bit back when we went below 60K.&rdquo;</blockquote>
-          <blockquote>&ldquo;Why not October? ... It could very well be October.&rdquo;</blockquote>
+          <blockquote>&ldquo;Could very well be October.&rdquo;</blockquote>
         </div>
         <p class="boundary">He still says Bitcoin could go lower first. This is accumulation, not a declared exact bottom.</p>
         <div class="sources"><span class="source-name">Bitcoin: Where in the Cycle Are We?</span><span class="source-label">Exact quotes</span><a href="https://www.youtube.com/watch?v=CmGkfyot8qY&amp;t=1129s" target="_blank" rel="noopener">Buy 18:51</a><a href="https://www.youtube.com/watch?v=CmGkfyot8qY&amp;t=810s" target="_blank" rel="noopener">October 13:30</a></div>
       </article>
 
-      <div class="takeaway-rail" aria-label="Three phase summary">
-        <div style="--rail:var(--red)">Q4 top warning</div>
-        <div style="--rail:var(--amber)">2025 sale disclosed + bear thesis held</div>
-        <div style="--rail:var(--green)">Buying below $60K + October now in view</div>
+      <div class="takeaway-rail" aria-label="Four phase summary">
+        <div style="--rail:var(--red)">Q4 top forecast</div>
+        <div style="--rail:var(--red)">At high: wanted proof</div>
+        <div style="--rail:var(--blue)">Later confirmed + sale disclosed</div>
+        <div style="--rail:var(--green)">Stayed bearish, then bought</div>
       </div>
 
       <div class="chart-meta">
         <div class="legend" aria-label="Chart legend">
           <span style="--key:var(--btc)"><i></i>Bitcoin daily close</span>
-          <span style="--key:var(--red)"><i></i>Warning</span>
+          <span style="--key:var(--red)"><i></i>Forecast / waiting</span>
+          <span style="--key:var(--blue)"><i></i>Confirmation</span>
           <span style="--key:var(--amber)"><i></i>Bearish / disclosed sale</span>
           <span style="--key:var(--green)"><i></i>Buying / possible bottom window</span>
         </div>
@@ -491,11 +672,11 @@
 
     <footer class="foot">
       <span><strong>Reading rule:</strong> circles mark dated public calls. Squares mark disclosure dates, not assumed trade dates or prices.</span>
-      <span>Price data checked 7 Aug 2026. The October area is a forecast window with no projected price path.</span>
+      <span id="price-data-status">Price data checked 9 Aug 2026. The 9 Aug candle is a record-day snapshot. The October area has no projected price path.</span>
     </footer>
   </main>
 
-  <script src="./btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js"></script>
+  <script src="./btc-price-coinbase-daily-2025-08-01-to-2026-08-09.js"></script>
   <script>
     (() => {
       const svg = document.getElementById('price-chart');
@@ -512,6 +693,18 @@
       const yMin = 54000;
       const yMax = 132000;
       const byDate = new Map(data.map(row => [row.date, row]));
+      const currentDataDate = data[data.length - 1].date;
+
+      document.querySelectorAll('[data-price-date]').forEach(label => {
+        const row = byDate.get(label.dataset.priceDate);
+        if (!row) return;
+        const close = new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 0
+        }).format(row.close);
+        label.textContent = `BTC close ${close}`;
+      });
 
       const x = date => plot.left + ((new Date(date + 'T00:00:00Z').getTime() - domainStart) / (domainEnd - domainStart)) * (plot.right - plot.left);
       const y = value => plot.bottom - ((value - yMin) / (yMax - yMin)) * (plot.bottom - plot.top);
@@ -543,7 +736,7 @@
       });
 
       const zones = document.getElementById('zones');
-      const currentEnd = x('2026-08-06');
+      const currentEnd = x(currentDataDate);
       zones.append(make('rect', {
         x: currentEnd,
         y: plot.top,
