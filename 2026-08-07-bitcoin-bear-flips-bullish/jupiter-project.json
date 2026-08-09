@@ -3,7 +3,7 @@
   "schema_version": 2,
   "project_id": "2026-08-07-bitcoin-bear-flips-bullish",
   "brand": "rubicon",
-  "updated_at": "2026-08-09T02:17:12Z",
+  "updated_at": "2026-08-09T03:05:11Z",
   "stage": "handoff_ready",
   "recording_blocked": false,
   "blocking_reason": null,
@@ -43,7 +43,7 @@
   "evidence_order": [
     "01 Packaging model: one recognised bear plus one behavioural change",
     "02 One-glance chart: Cowen's six dated moments against Bitcoin price",
-    "03 August forecast: Q4 cycle top and bear-market setup",
+    "03 September X post: Q4 cycle top forecast",
     "04 October high: still waiting for confirmation",
     "05 November confirmation: 60-70% chance the top was in",
     "06 Retrospective action: Cowen says his portfolio followed the view",
@@ -63,9 +63,9 @@
   "research_ref": "research.md",
   "verification": {
     "record_day_checked_at": "2026-08-09T01:45:08.912Z",
-    "desktop_rendered_at": "2026-08-09T02:17:12Z",
-    "mobile_rendered_at": "2026-08-09T02:17:12Z",
-    "arc_manifest_checked_at": "2026-08-09T02:17:12Z",
+    "desktop_rendered_at": "2026-08-09T03:05:11Z",
+    "mobile_rendered_at": "2026-08-09T03:05:11Z",
+    "arc_manifest_checked_at": "2026-08-09T03:05:11Z",
     "tracking_path_checked_at": null
   },
   "parked_research": [

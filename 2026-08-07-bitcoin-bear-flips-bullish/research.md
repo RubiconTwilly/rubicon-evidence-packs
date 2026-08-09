@@ -34,18 +34,21 @@ move lower.
 
 ## The complete evidence spine
 
-### 1. He forecast the Q4 top and bear-market setup
+### 1. He forecast the Q4 top before the high
 
-**Source:** [Bitcoin: The Pattern That Historically Ended The Bull Market, 02:31-03:02](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
+**Source:** [Benjamin Cowen on X](https://x.com/intocryptoverse/status/1963240688146948108)
 
-**Published:** 12 August 2025
+**Published:** 3 September 2025
 
-> “So the way this historically works ... is Bitcoin goes up in July and August, gets a
-> pullback, generally speaking, to the bull market support band in September, and then goes
-> into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year
-> bear market.”
+> “Historically, #Bitcoin finds a low in September of the post-halving year, and then bounces
+> off of it into the market cycle top that occurs in Q4.”
 
 Why it matters: this establishes his bearish cycle thesis before the final Q4 high.
+
+The longer YouTube corroboration remains in the research library:
+[Bitcoin: The Pattern That Historically Ended The Bull Market, 02:31-03:02](https://www.youtube.com/watch?v=il089bNt-4g&t=151s),
+published 12 August 2025. The X post is used in the record deck because Benji can read the
+whole call immediately.
 
 ### 2. At the October high, he still wanted confirmation
 
@@ -53,8 +56,8 @@ Why it matters: this establishes his bearish cycle thesis before the final Q4 hi
 
 **Published:** 6 October 2025
 
-> “I'd like to see some daily closes actually above the prior wick high. We haven't actually
-> seen that yet.”
+> “I'd like to see some, you know, some daily closes actually above the prior wick high. We
+> haven't actually seen that yet.”
 
 Why it matters: the broad Q4 forecast was real, but he did not claim the exact October high
 in real time. He still wanted follow-through.
@@ -152,7 +155,7 @@ execution timestamps.
 
 1. [MODEL: This Bear Is Now Bullish](https://www.youtube.com/watch?v=MDN4hzx0inw)
 2. [ONE-GLANCE CHART: Cowen vs Bitcoin](assets/cowen-calls-vs-bitcoin.html)
-3. [FORECAST: Q4 top and bear market](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
+3. [FORECAST: Q4 top tweet](https://x.com/intocryptoverse/status/1963240688146948108)
 4. [AT THE HIGH: still wanted confirmation](https://www.youtube.com/watch?v=5812UUvIZDw&t=107s)
 5. [CONFIRMED: 60-70% top-in odds](https://www.youtube.com/watch?v=9g1QsTVizyQ&t=239s)
 6. [SOLD: his portfolio followed the view](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)

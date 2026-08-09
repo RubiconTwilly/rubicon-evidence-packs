@@ -1,7 +1,7 @@
 {
   "schema": "rubicon.record-pack-sources",
   "version": 3,
-  "generated_at": "2026-08-09T02:17:12Z",
+  "generated_at": "2026-08-09T03:05:11Z",
   "record_day_checked_at": "2026-08-09T01:45:08.912Z",
   "project": {
     "id": "2026-08-07-bitcoin-bear-flips-bullish",
@@ -73,16 +73,16 @@
       "cards": [
         {
           "id": "cowen-q4-top-forecast",
-          "type": "youtube",
+          "type": "x_post",
           "role": "forecast",
           "label": "Cowen forecast a Q4 cycle top and bear market",
-          "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
-          "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
-          "source_date": "2025-08-12",
-          "quote": "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+          "source_title": "Benjamin Cowen on X: Q4 market cycle top",
+          "url": "https://x.com/intocryptoverse/status/1963240688146948108",
+          "source_date": "2025-09-03",
+          "quote": "Historically, #Bitcoin finds a low in September of the post-halving year, and then bounces off of it into the market cycle top that occurs in Q4.",
           "shows": "A Q4 top and bear-market forecast before the fall.",
           "why": "Establishes a credible prior bearish call.",
-          "inspect": "02:31-03:02 | 12 Aug 2025",
+          "inspect": "Post | 3 Sep 2025",
           "missing": "The arc starts after the fall."
         },
         {
@@ -93,7 +93,7 @@
           "source_title": "Bitcoin: Bull Market Support Band",
           "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
           "source_date": "2025-10-06",
-          "quote": "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+          "quote": "I'd like to see some, you know, some daily closes actually above the prior wick high. We haven't actually seen that yet.",
           "shows": "At the October high, he still wanted follow-through.",
           "why": "Makes the chronology credible instead of pretending he nailed the exact candle.",
           "inspect": "01:47-02:11 | 6 Oct 2025",
@@ -254,13 +254,13 @@
       "order": 3,
       "section_id": "s2",
       "role": "forecast",
-      "label": "03 FORECAST | Q4 TOP + BEAR MARKET",
-      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
-      "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
-      "quote": "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+      "label": "03 FORECAST | Q4 TOP TWEET",
+      "url": "https://x.com/intocryptoverse/status/1963240688146948108",
+      "source_title": "Benjamin Cowen on X: Q4 market cycle top",
+      "quote": "Historically, #Bitcoin finds a low in September of the post-halving year, and then bounces off of it into the market cycle top that occurs in Q4.",
       "shows": "A Q4 top and bear-market forecast before the fall.",
       "why": "Establishes a credible prior bearish call.",
-      "inspect": "02:31-03:02 | 12 Aug 2025",
+      "inspect": "Post | 3 Sep 2025",
       "missing": "The arc starts after the fall.",
       "card_id": "cowen-q4-top-forecast"
     },
@@ -271,7 +271,7 @@
       "label": "04 AT THE HIGH | STILL WANTED CONFIRMATION",
       "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
       "source_title": "Bitcoin: Bull Market Support Band",
-      "quote": "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+      "quote": "I'd like to see some, you know, some daily closes actually above the prior wick high. We haven't actually seen that yet.",
       "shows": "At the October high, he still wanted follow-through.",
       "why": "Makes the chronology credible instead of pretending he nailed the exact candle.",
       "inspect": "01:47-02:11 | 6 Oct 2025",
@@ -356,53 +356,84 @@
         "stage": "forecast",
         "status": "evidenced",
         "searched_window": "1 Aug 2025 to 30 Sep 2025",
-        "searched_surfaces": "Official Benjamin Cowen YouTube videos and local transcripts",
-        "receipt_ids": ["cowen-q4-top-forecast"],
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos plus indexed @intocryptoverse posts on X; a relevant X receipt was found and selected",
+        "receipt_ids": [
+          "cowen-q4-top-forecast"
+        ],
         "counter_receipt_ids": []
       },
       {
         "stage": "decision_day",
         "status": "evidenced",
         "searched_window": "1 Oct 2025 to 10 Oct 2025",
-        "searched_surfaces": "Official Benjamin Cowen YouTube videos around the Bitcoin high",
-        "receipt_ids": ["cowen-exact-high-waiting"],
-        "counter_receipt_ids": ["cowen-exact-high-waiting"],
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos around the Bitcoin high plus indexed @intocryptoverse X search; no stronger decision-day X receipt was found",
+        "receipt_ids": [
+          "cowen-exact-high-waiting"
+        ],
+        "counter_receipt_ids": [
+          "cowen-exact-high-waiting"
+        ],
         "counter_search_status": "evidenced"
       },
       {
         "stage": "confirmation",
         "status": "evidenced",
         "searched_window": "7 Oct 2025 to 30 Nov 2025",
-        "searched_surfaces": "Official Benjamin Cowen YouTube videos and 50-week moving-average coverage",
-        "receipt_ids": ["cowen-top-confirmation"],
-        "counter_receipt_ids": ["cowen-top-confirmation"],
-        "counter_search_status": "evidenced"
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos and 50-week moving-average coverage plus indexed @intocryptoverse X search",
+        "receipt_ids": [
+          "cowen-top-confirmation"
+        ],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_found",
+        "counter_search_note": "No separate same-window receipt was found that reversed the 60-70% top-in stance. The source clip itself retains his probabilistic wording and local-low caveat."
       },
       {
         "stage": "action",
         "status": "evidenced",
         "searched_window": "Q4 2025 through Mar 2026 retrospective disclosures",
-        "searched_surfaces": "Official interviews and Benjamin Cowen first-person disclosures",
-        "receipt_ids": ["cowen-sale-disclosure"],
+        "searched_surfaces": "Official interviews, Benjamin Cowen first-person disclosures, and indexed @intocryptoverse X search; no exact execution post was found",
+        "receipt_ids": [
+          "cowen-sale-disclosure"
+        ],
         "counter_receipt_ids": []
       },
       {
         "stage": "re_entry",
         "status": "evidenced",
         "searched_window": "1 Jun 2026 to 9 Aug 2026",
-        "searched_surfaces": "Official Benjamin Cowen YouTube videos and current transcripts",
-        "receipt_ids": ["cowen-buy-below-60k"],
-        "counter_receipt_ids": ["cowen-bottom-window"]
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos, current transcripts, and indexed @intocryptoverse X search; no clearer re-entry X post was found",
+        "receipt_ids": [
+          "cowen-buy-below-60k"
+        ],
+        "counter_receipt_ids": [
+          "cowen-bottom-window"
+        ]
       },
       {
         "stage": "current_stance",
         "status": "evidenced",
         "searched_window": "1 Aug 2026 to record day 9 Aug 2026",
-        "searched_surfaces": "Official Benjamin Cowen YouTube videos, current record-day search, and BTC price context",
-        "receipt_ids": ["cowen-bottom-window", "cowen-buy-below-60k"],
+        "searched_surfaces": "Official Benjamin Cowen YouTube videos, indexed @intocryptoverse X search, current record-day search, and BTC price context",
+        "receipt_ids": [
+          "cowen-bottom-window",
+          "cowen-buy-below-60k"
+        ],
         "counter_receipt_ids": []
       }
     ]
+  },
+  "x_search_audit": {
+    "checked_at": "2026-08-09T02:24:00Z",
+    "account": "@intocryptoverse",
+    "searched_windows": [
+      "Aug-Sep 2025 forecast",
+      "6 Oct 2025 decision day",
+      "Oct-Nov 2025 confirmation",
+      "2025 sale disclosures",
+      "Jun-Aug 2026 re-entry and current stance"
+    ],
+    "selected_receipt": "https://x.com/intocryptoverse/status/1963240688146948108",
+    "result": "The concise 3 Sep Q4-top post was selected. No stronger indexed X receipt was found for the decision-day, confirmation, sale, or current buying checkpoints, so those retain official video receipts."
   },
   "cta": {
     "status": "approved_for_recording",
@@ -410,15 +441,23 @@
     "performance_claims": [
       {
         "claim": "HYPE at $20",
-        "proof_card_ids": ["cta-own-hype-range"],
-        "proof_asset_refs": ["transcripts/own-DDT5jXmTSQA.en.vtt"],
+        "proof_card_ids": [
+          "cta-own-hype-range"
+        ],
+        "proof_asset_refs": [
+          "transcripts/own-DDT5jXmTSQA.en.vtt"
+        ],
         "approved": true,
         "boundary": "The public receipt says HYPE in the $20 range; the owner approved the succinct $20 wording."
       },
       {
         "claim": "our opportunities rivalled the green market of 2025",
-        "proof_card_ids": ["cta-own-winter-opportunity-ratio"],
-        "proof_asset_refs": ["transcripts/own-DDT5jXmTSQA.en.vtt"],
+        "proof_card_ids": [
+          "cta-own-winter-opportunity-ratio"
+        ],
+        "proof_asset_refs": [
+          "transcripts/own-DDT5jXmTSQA.en.vtt"
+        ],
         "approved": true,
         "boundary": "Prior public retrospective statement, not an audited portfolio-return calculation."
       },
@@ -439,6 +478,11 @@
         "claim": "an Inner Circle quant shared winter-warning signals in October and November",
         "status": "owner_approved_primary_receipt_not_attached",
         "recording_boundary": "Use the approved readout. Do not display a fabricated screenshot or exact dated post."
+      },
+      {
+        "claim": "we identify traders with profitable track records",
+        "status": "owner_approved_process_claim_audited_records_not_attached",
+        "recording_boundary": "The visible CTA boundary states that audited screening records are not attached. Do not display fabricated performance proof."
       }
     ]
   },

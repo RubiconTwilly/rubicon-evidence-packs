@@ -444,6 +444,25 @@
     .cta-panel h2 { margin: 0 0 7px; font-size: 30px; letter-spacing: -.035em; }
     .cta-panel p { max-width: 900px; margin: 0; color: var(--body); }
 
+    .cta-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .cta-proof-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 13px 14px;
+      background: var(--panel);
+    }
+
+    .cta-proof-card b { display: block; margin: 4px 0 6px; font-size: 14px; }
+    .cta-proof-card p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
+    .cta-proof-links { display: flex; flex-wrap: wrap; gap: 5px 9px; margin-top: 8px; }
+    .cta-proof-links a { color: var(--green); font-size: 11px; font-weight: 850; text-underline-offset: 3px; }
+
     .preflight {
       display: flex;
       justify-content: space-between;
@@ -562,10 +581,29 @@
       .receipts { grid-template-columns: 1fr; }
       .visual-frame { height: 2300px; }
       .cta-panel { grid-template-columns: 1fr; }
+      .cta-proof-grid { grid-template-columns: 1fr; }
       .preflight { align-items: flex-start; flex-direction: column; gap: 5px; }
     }
 
     @media (max-width: 470px) {
+      .topbar-inner { min-height: 54px; }
+      .topbar .button { min-height: 38px; }
+      .hero { padding-top: 10px; }
+      .hero-kicker { display: none; }
+      .selected-copy { padding: 13px 14px 12px; }
+      .selected-copy h1 { margin-top: 6px; font-size: 31px; }
+      .package-layout { gap: 8px; }
+      .model-label { min-height: 30px; padding: 6px 9px; }
+      .model-label .label { font-size: 9px; }
+      .model-card img { min-height: 90px; }
+      .model-copy { gap: 4px; padding: 8px; }
+      .model-copy h2 { font-size: 17px; }
+      .model-next { font-size: 11px; }
+      .thesis-card { grid-template-columns: 1fr; gap: 8px; margin-top: 8px; padding: 12px 14px; }
+      .thesis-label { display: flex; align-items: center; gap: 9px; }
+      .thesis-label strong { margin-top: 0; font-size: 17px; }
+      .thesis-copy { gap: 6px; }
+      .thesis-copy p { font-size: 14px; line-height: 1.35; }
       .glance-summary { grid-template-columns: 1fr; }
       .glance-step:not(:last-child)::after { display: none; }
       .visual-frame { height: 1940px; }
@@ -670,7 +708,7 @@
       <div class="visual-stage">
         <iframe class="visual-frame" id="visual-frame" src="assets/cowen-calls-vs-bitcoin.html" title="Benjamin Cowen's Calls vs Bitcoin Price"></iframe>
         <div class="visual-bar">
-          <span>Everything needed to explain the change is visible without hover.</span>
+          <span>Start with Full story. Use the focus buttons to reveal exact quotes for one phase at a time.</span>
           <a href="assets/cowen-calls-vs-bitcoin.html" target="_blank">Open chart full-screen ↗</a>
         </div>
       </div>
@@ -711,6 +749,34 @@
           <p>The approved readout connects Cowen's change to Inner Circle signals, wallets, narratives, and recent opportunities. Its evidence ledger is kept separate from the Cowen recording tabs.</p>
         </div>
         <a class="button primary" href="BENJI-CTA-READOUT.txt" target="_blank">Open CTA text</a>
+      </div>
+
+      <div class="cta-proof-grid" aria-label="CTA proof and boundaries">
+        <article class="cta-proof-card">
+          <span class="label">Public retrospective</span>
+          <b>HYPE + winter opportunities</b>
+          <p>The prior video supports HYPE in the $20 range and Benji's green-market comparison. These are retrospective statements, not audited returns.</p>
+          <div class="cta-proof-links">
+            <a href="https://www.youtube.com/watch?v=DDT5jXmTSQA&t=885s" target="_blank" rel="noopener">HYPE 14:45 ↗</a>
+            <a href="https://www.youtube.com/watch?v=DDT5jXmTSQA&t=1033s" target="_blank" rel="noopener">Comparison 17:13 ↗</a>
+          </div>
+        </article>
+        <article class="cta-proof-card">
+          <span class="label">Supporting assets</span>
+          <b>MAGA · Manifest · YOTS</b>
+          <p>Owner-approved examples with supporting assets. They are not represented here as audited original-call receipts.</p>
+          <div class="cta-proof-links">
+            <a href="assets/cta-maga-card.png" target="_blank">MAGA ↗</a>
+            <a href="assets/cta-manifest-first-flag.png" target="_blank">Manifest ↗</a>
+            <a href="assets/cta-yots-recap.json" target="_blank">YOTS ↗</a>
+          </div>
+        </article>
+        <article class="cta-proof-card">
+          <span class="label">Claim boundaries</span>
+          <b>Winter signal + trader screening</b>
+          <p>Both are owner-approved CTA claims. Their dated quant receipt and audited screening records are not attached, so the pack does not invent or display them.</p>
+          <div class="cta-proof-links"><a href="sources.json" target="_blank">Open proof ledger ↗</a></div>
+        </article>
       </div>
 
       <div class="preflight" id="preflight">
@@ -759,13 +825,13 @@
       {
         section: "s2",
         role: "forecast",
-        label: "03 FORECAST | Q4 TOP + BEAR MARKET",
-        url: "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
-        sourceTitle: "Bitcoin: The Pattern That Historically Ended The Bull Market",
-        quote: "and then goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+        label: "03 FORECAST | Q4 TOP TWEET",
+        url: "https://x.com/intocryptoverse/status/1963240688146948108",
+        sourceTitle: "Benjamin Cowen on X: Q4 market cycle top",
+        quote: "Historically, #Bitcoin finds a low in September of the post-halving year, and then bounces off of it into the market cycle top that occurs in Q4.",
         shows: "A Q4 top and bear-market forecast before the fall.",
         why: "Establishes a credible prior bearish call.",
-        inspect: "02:31-03:02 | 12 Aug 2025",
+        inspect: "Post | 3 Sep 2025",
         missing: "The arc starts after the fall."
       },
       {
@@ -774,7 +840,7 @@
         label: "04 AT THE HIGH | STILL WANTED CONFIRMATION",
         url: "https://www.youtube.com/watch?v=5812UUvIZDw&t=107s",
         sourceTitle: "Bitcoin: Bull Market Support Band",
-        quote: "I'd like to see some daily closes actually above the prior wick high. We haven't actually seen that yet.",
+        quote: "I'd like to see some, you know, some daily closes actually above the prior wick high. We haven't actually seen that yet.",
         shows: "At the October high, he still wanted follow-through.",
         why: "Makes the chronology credible instead of pretending he nailed the exact candle.",
         inspect: "01:47-02:11 | 6 Oct 2025",
@@ -869,7 +935,7 @@
                   <div><dt>Without it</dt><dd>${item.missing}</dd></div>
                 </dl>
                 <p class="why"><strong>Why it matters:</strong> ${item.why}</p>
-                <a class="source-link" href="${item.url}" target="_blank" rel="noopener">Open at the exact moment ↗</a>
+                <a class="source-link" href="${item.url}" target="_blank" rel="noopener">Open source ↗</a>
               </div>
             </article>
           `).join("");
@@ -918,6 +984,14 @@
     document.getElementById("visual-frame").addEventListener("load", () => {
       fitVisualFrame();
       window.setTimeout(fitVisualFrame, 400);
+    });
+    window.addEventListener("message", event => {
+      const frame = document.getElementById("visual-frame");
+      if (event.source !== frame.contentWindow || event.data?.type !== "cowen-chart-height") return;
+      const height = Number(event.data.height);
+      if (Number.isFinite(height) && height > 400 && height < 10000) {
+        frame.style.height = `${Math.ceil(height)}px`;
+      }
     });
     window.addEventListener("resize", fitVisualFrame);
   </script>

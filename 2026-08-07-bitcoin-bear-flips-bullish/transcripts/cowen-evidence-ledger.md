@@ -7,18 +7,20 @@ receipts below support one thesis: Cowen forecast a Q4 top, waited for confirmat
 high, later disclosed selling, stayed bearish, and has now begun buying below $60K for the
 next bull market while still allowing a final low.
 
-## 12 August 2025: Q4 top and bear-market forecast
+## 3 September 2025: Q4 top forecast
 
-Source: https://www.youtube.com/watch?v=il089bNt-4g&t=151s
+Source: https://x.com/intocryptoverse/status/1963240688146948108
 
-02:31-03:02:
+Exact post:
 
-> “So the way this historically works ... is Bitcoin goes up in July and August, gets a
-> pullback, generally speaking, to the bull market support band in September, and then
-> goes into the market cycle top in Q4 of the post-halving year, which sets up the
-> midterm-year bear market.”
+> “Historically, #Bitcoin finds a low in September of the post-halving year, and then
+> bounces off of it into the market cycle top that occurs in Q4.”
 
 Evidence role: forecast before the final Q4 high.
+
+YouTube corroboration: https://www.youtube.com/watch?v=il089bNt-4g&t=151s, published
+12 August 2025. The X post is the record-deck receipt because the complete call is readable
+without playing a clip.
 
 ## 6 October 2025: at the high, still waiting for confirmation
 
@@ -26,8 +28,8 @@ Source: https://www.youtube.com/watch?v=5812UUvIZDw&t=107s
 
 01:47-02:11:
 
-> “I'd like to see some daily closes actually above the prior wick high. We haven't
-> actually seen that yet.”
+> “I'd like to see some, you know, some daily closes actually above the prior wick high.
+> We haven't actually seen that yet.”
 
 Evidence role: decision-day context. His broad Q4 forecast was live, but he was not
 declaring that he had nailed the final top on the exact day.

@@ -13,8 +13,8 @@ Open and rename the tabs in this order:
    - Jason Pizzino YouTube video. Shows the title-thumbnail mechanism being modelled.
 2. `02 ONE-GLANCE CHART | COWEN VS BITCOIN`
    - Prepared visual. Shows all six Cowen moments against Bitcoin price.
-3. `03 FORECAST | Q4 TOP + BEAR MARKET`
-   - Cowen YouTube video from 12 August 2025. Establishes the early Q4 top forecast.
+3. `03 FORECAST | Q4 TOP TWEET`
+   - Cowen's X post from 3 September 2025. States the Q4 top thesis in one written sentence.
 4. `04 AT THE HIGH | STILL WANTED CONFIRMATION`
    - Cowen YouTube video from 6 October 2025. Shows what he actually said at the high.
 5. `05 CONFIRMED | 60-70% TOP-IN ODDS`
