@@ -1,53 +1,99 @@
 # Benjamin Cowen evidence ledger
 
-Checked: 7 August 2026
+Checked: 9 August 2026
 
-YouTube's caption endpoint returned HTTP 429 while this pack was rebuilt, so this file
-stores the independently checked timestamps and narrow paraphrases used by the record
-deck. Open the official source at the timestamp before recording. The March interview
-has no usable YouTube captions and was independently transcribed from its audio.
+This ledger preserves the exact passages used by the Cowen-only record pack. The five
+receipts below support one thesis: Cowen warned of the top, sold, stayed bearish, and has
+now begun buying below $60K for the next bull market while still allowing a final low.
 
-## 12 August 2025: Q4 top window
+## 12 August 2025: Q4 top and bear-market forecast
 
-Source: https://www.youtube.com/watch?v=il089bNt-4g&t=158s
+Source: https://www.youtube.com/watch?v=il089bNt-4g&t=151s
 
-- 02:38-03:08: September pullback, then a Q4 post-halving-year cycle top and bear market.
-- 08:04-08:35: repeats the sequence while saying the exact top cannot be known.
+02:31-03:02:
 
-## 6 October 2025: the high is not confirmed
+> “So the way this historically works ... is Bitcoin goes up in July and August, gets a
+> pullback, generally speaking, to the bull market support band in September, and then
+> goes into the market cycle top in Q4 of the post-halving year, which sets up the
+> midterm-year bear market.”
 
-Source: https://www.youtube.com/watch?v=5812UUvIZDw&t=99s
-
-- 01:39-02:08: hopes Bitcoin can continue higher and wants follow-through.
-- 02:50-04:20: Q4 has hosted previous tops, but his weekly confirmation has not fired.
-
-## 17 November 2025: first clear confirmation
-
-Source: https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s
-
-- 03:52-04:20: after the first weekly close below the 50-week moving average, raises
-  his top-in probability to 60-70%.
-- 09:33-09:53: a weekly reclaim near $103K would reduce the conviction.
+Evidence role: forecast before the final Q4 high.
 
 ## 14 March 2026: retrospective sale disclosure
 
-Source: https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s
+Source: https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s
 
-- 18:15-19:28: links his 70-80% confidence in the bear path to selling approximately
-  that amount of his Bitcoin stack during 2025 while retaining the rest.
-- 21:09-21:19: describes the sale more cautiously as a "decent amount."
+19:02-19:35:
 
-Claim boundary: the disclosure does not supply sale dates, average price, transaction
-proof, or a safely quotable exact percentage.
+> “I would say I'm probably around like 70 to 80% confident in my view that that is how
+> this plays out. And so because of that, I ended up selling off approximately that amount
+> of my Bitcoin stack last year ... Like, the odds of this being the cycle top seemed kind
+> of high. And so I wanted my investment portfolio to reflect that.”
 
-## 6 August 2026: buying below $60K while still bearish
+Evidence role: first-person disclosure that his bearish view changed his allocation.
 
-Source: https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s
+Boundary: the source does not provide exact sale dates, average price, exact quantity, or
+transaction proof. The clean passage begins at 19:02; the old 18:15 handoff was early.
 
-- 18:29-19:49: discloses starting to buy a little below $60K, immediately says price
-  will probably go lower, and frames the purchase around the next bull market.
-- 12:26-13:42: gives a likely late-September to mid-December bottom window without
-  guaranteeing it.
+## 7 June 2026: still bearish
 
-Claim boundary: this is accumulated exposure during a bearish thesis, not a declared
-new bull market.
+Source: https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s
+
+00:04-00:16:
+
+> “Today, we're going to talk about Bitcoin and how it has entered the third and what I
+> think is the final stage of the bear market.”
+
+Evidence role: proves the bearish view persisted immediately before the buying disclosure.
+
+## 6 August 2026: expected bottom window
+
+Source: https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s
+
+12:39-12:52:
+
+> “But my guess is that Bitcoin will bottom when it normally bottoms. And if you kind of
+> look at the range, that would probably be like late September through mid-December...”
+
+At 13:30:
+
+> “Why not October? I mean, why not? ... Could very well be October. We'll see, right?
+> We'll see if it plays out like that.”
+
+Evidence role: explains the timing logic behind beginning to position now.
+
+Boundary: this is a forecast window, not confirmation that the final low is already in.
+
+## 6 August 2026: buying below $60K
+
+Source: https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s
+
+18:51-19:06:
+
+> “I started buying a little bit back when we went below 60K ... Who cares if it goes lower
+> later in the year? It probably will. But that doesn't mean you can't start thinking about
+> how do you get positioned potentially for the next bull market.”
+
+Evidence role: direct first-person buying disclosure and the behavioural reveal promised by
+the title and thumbnail.
+
+Boundary: exact execution date, average price, and quantity are not supplied.
+
+## Parked receipts
+
+These were checked but are not needed in the visible Cowen-only pack.
+
+### 6 October 2025: exact-high counterevidence
+
+Source: https://www.youtube.com/watch?v=5812UUvIZDw&t=99s
+
+Cowen still hoped for higher prices and said his weekly confirmation had not fired. The
+selected video claims a Q4 top call, not a perfect day-and-price call.
+
+### 17 November 2025: top-in odds rise
+
+Source: https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s
+
+At 03:52 he says there is probably a 60 to 70% chance that the top is already in after
+Bitcoin closes below the 50-week moving average. It is valid supporting evidence, but the
+five-receipt pack already proves the selected thin-slice thesis without it.

@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjamin Cowen's Calls vs Bitcoin Price</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f2e8;
+      --muted: #aaa69e;
+      --panel: #131313;
+      --panel-2: #191816;
+      --line: rgba(255, 255, 255, .11);
+      --orange: #ff9f32;
+      --red: #ff5d5d;
+      --amber: #efbe62;
+      --green: #45dc8d;
+      --blue: #75baff;
+      --btc: #f7a735;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      min-height: 100%;
+      margin: 0;
+      background:
+        radial-gradient(circle at 76% 0%, rgba(247, 167, 53, .10), transparent 33%),
+        #090909;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      display: grid;
+      place-items: start center;
+      padding: 24px;
+    }
+
+    .stage {
+      width: min(100%, 1600px);
+      min-height: 952px;
+      padding: 34px 42px 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.025), transparent 36%),
+        #0d0d0d;
+      box-shadow: 0 30px 90px rgba(0,0,0,.45);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 34px;
+      min-height: 132px;
+      padding: 0 8px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker,
+    .phase,
+    .source-label {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .kicker { color: var(--btc); }
+
+    h1 {
+      margin: 10px 0 6px;
+      max-width: 1080px;
+      font-size: clamp(38px, 3.55vw, 57px);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    h1 span { color: #bdb8ae; }
+
+    .thesis {
+      max-width: 920px;
+      margin: 0;
+      color: #c5c0b7;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .one-line {
+      width: 395px;
+      padding: 17px 19px 16px;
+      border: 1px solid rgba(69, 220, 141, .3);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(69, 220, 141, .11), rgba(69, 220, 141, .025));
+    }
+
+    .one-line span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .one-line strong {
+      display: block;
+      font-size: 17px;
+      line-height: 1.3;
+      letter-spacing: -.01em;
+    }
+
+    .chart-panel {
+      position: relative;
+      height: 696px;
+      margin-top: 15px;
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.022), transparent 22%),
+        var(--panel);
+      isolation: isolate;
+    }
+
+    .chart-meta {
+      position: absolute;
+      z-index: 4;
+      left: 20px;
+      bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: #8f8b83;
+      font-size: 11px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .legend span {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .legend i {
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--key);
+      box-shadow: 0 0 14px color-mix(in srgb, var(--key) 60%, transparent);
+    }
+
+    #price-chart {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .grid-line {
+      stroke: rgba(255,255,255,.07);
+      stroke-width: 1;
+      stroke-dasharray: 3 8;
+    }
+
+    .axis-label,
+    .date-label,
+    .zone-label,
+    .event-label {
+      fill: #8f8b83;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .05em;
+    }
+
+    .zone-label,
+    .event-label {
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .10em;
+    }
+
+    .price-area { fill: url(#area-gradient); }
+    .price-glow {
+      fill: none;
+      stroke: rgba(247, 167, 53, .17);
+      stroke-width: 11;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      filter: blur(4px);
+    }
+    .price-line {
+      fill: none;
+      stroke: var(--btc);
+      stroke-width: 3.5;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+
+    .connector {
+      fill: none;
+      stroke: var(--event-color);
+      stroke-width: 1.5;
+      stroke-dasharray: 3 4;
+      opacity: .75;
+    }
+
+    .event-dot {
+      fill: #111;
+      stroke: var(--event-color);
+      stroke-width: 3;
+    }
+
+    .disclosure-dot {
+      fill: #111;
+      stroke: var(--event-color);
+      stroke-width: 2.5;
+    }
+
+    .callout {
+      --event-color: var(--amber);
+      position: absolute;
+      z-index: 5;
+      top: var(--top);
+      left: var(--left);
+      width: var(--width);
+      min-height: 154px;
+      padding: 15px 16px 13px;
+      border: 1px solid color-mix(in srgb, var(--event-color) 36%, rgba(255,255,255,.08));
+      border-radius: 16px;
+      background:
+        linear-gradient(140deg, color-mix(in srgb, var(--event-color) 11%, transparent), transparent 56%),
+        rgba(20, 20, 19, .97);
+      box-shadow: 0 15px 34px rgba(0,0,0,.32);
+    }
+
+    .callout.bottom { top: auto; bottom: var(--bottom); }
+    .callout.red { --event-color: var(--red); }
+    .callout.amber { --event-color: var(--amber); }
+    .callout.green { --event-color: var(--green); }
+
+    .callout-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .phase { color: var(--event-color); }
+
+    .callout time {
+      color: #8f8b83;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .callout blockquote {
+      margin: 0 0 10px;
+      color: #f4efe5;
+      font-size: 15px;
+      font-weight: 760;
+      line-height: 1.28;
+      letter-spacing: -.012em;
+    }
+
+    .callout .boundary {
+      margin: -3px 0 9px;
+      color: #a6a198;
+      font-size: 10px;
+      line-height: 1.3;
+    }
+
+    .callout .dual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .callout .dual blockquote {
+      margin: 0;
+      padding: 9px 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.035);
+      font-size: 12px;
+      line-height: 1.28;
+    }
+
+    .sources {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 10px;
+    }
+
+    .source-label { color: #716e68; font-size: 9px; }
+
+    .source-name {
+      flex: 1 1 100%;
+      color: #aaa69e;
+      font-size: 9px;
+      font-weight: 760;
+      line-height: 1.25;
+    }
+
+    .sources a {
+      color: color-mix(in srgb, var(--event-color) 80%, white);
+      font-size: 10px;
+      font-weight: 850;
+      text-underline-offset: 3px;
+    }
+
+    .takeaway-rail {
+      position: absolute;
+      z-index: 4;
+      left: 21px;
+      right: 21px;
+      top: 470px;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1.15fr;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .takeaway-rail div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 33px;
+      padding: 6px 12px;
+      border: 1px solid color-mix(in srgb, var(--rail) 22%, transparent);
+      background: color-mix(in srgb, var(--rail) 8%, rgba(13,13,13,.85));
+      color: color-mix(in srgb, var(--rail) 77%, white);
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .takeaway-rail div:first-child { border-radius: 11px 0 0 11px; }
+    .takeaway-rail div:last-child { border-radius: 0 11px 11px 0; }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 14px 8px 0;
+      color: #716e68;
+      font-size: 10px;
+      line-height: 1.4;
+    }
+
+    .foot strong { color: #98938a; }
+
+    @media (max-width: 980px) {
+      body { padding: 0; }
+      .stage { min-height: 100vh; padding: 24px 18px; border: 0; border-radius: 0; }
+      .hero { grid-template-columns: 1fr; align-items: start; }
+      .one-line { width: 100%; }
+      .chart-panel { height: auto; min-height: 0; padding: 0 12px 18px; }
+      #price-chart { position: relative; display: block; height: 390px; margin-bottom: 12px; }
+      .callout,
+      .callout.bottom {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        margin: 10px 0;
+      }
+      .takeaway-rail { position: relative; inset: auto; margin: 8px 0 12px; grid-template-columns: 1fr; }
+      .takeaway-rail div { border-radius: 10px !important; }
+      .chart-meta { position: relative; inset: auto; flex-direction: column; align-items: flex-start; margin: 16px 2px 0; }
+      #connectors { display: none; }
+      .foot { flex-direction: column; gap: 4px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <header class="hero">
+      <div>
+        <p class="kicker">One-glance evidence | Cowen only</p>
+        <h1>Benjamin Cowen's Calls <span>vs Bitcoin Price</span></h1>
+        <p class="thesis">He warned of a Q4 top, later disclosed selling much of his Bitcoin, stayed bearish into June, then started buying below $60K.</p>
+      </div>
+      <aside class="one-line" aria-label="One line summary">
+        <span>One-line read</span>
+        <strong>Warned &rarr; sold &rarr; stayed bearish &rarr; now buying</strong>
+      </aside>
+    </header>
+
+    <section class="chart-panel" id="chart-panel" aria-labelledby="chart-title">
+      <svg id="price-chart" viewBox="0 0 1500 696" role="img" aria-labelledby="chart-title chart-desc">
+        <title id="chart-title">Benjamin Cowen's calls compared with the price of Bitcoin</title>
+        <desc id="chart-desc">Coinbase Bitcoin daily closing price from August 2025 to August 2026, followed by an unpriced forecast window through October 2026. Four source-linked Cowen moments show a Q4 top warning, a retrospective 2025 sale disclosure, a bearish June stance, and an August disclosure of buying below sixty thousand dollars while considering an October bottom.</desc>
+        <defs>
+          <linearGradient id="area-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f7a735" stop-opacity=".22"></stop>
+            <stop offset="1" stop-color="#f7a735" stop-opacity="0"></stop>
+          </linearGradient>
+          <linearGradient id="future-gradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#45dc8d" stop-opacity=".025"></stop>
+            <stop offset="1" stop-color="#45dc8d" stop-opacity=".09"></stop>
+          </linearGradient>
+        </defs>
+        <g id="grid"></g>
+        <g id="zones"></g>
+        <path class="price-area" id="price-area"></path>
+        <path class="price-glow" id="price-glow"></path>
+        <path class="price-line" id="price-line"></path>
+        <g id="connectors"></g>
+        <g id="markers"></g>
+      </svg>
+
+      <article class="callout red" style="--left:1.3%;--top:18px;--width:290px" data-date="2025-08-12" data-anchor="price" data-color="#ff5d5d">
+        <div class="callout-head">
+          <p class="phase">Warned: Q4 top</p>
+          <time datetime="2025-08-12">12 Aug 2025</time>
+        </div>
+        <blockquote>&ldquo;Bitcoin goes into the market cycle top in Q4 ... which sets up the midterm-year bear market.&rdquo;</blockquote>
+        <div class="sources"><span class="source-name">Bitcoin: The Pattern That Historically Ended The Bull Market</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=il089bNt-4g&amp;t=151s" target="_blank" rel="noopener">02:31-03:02</a></div>
+      </article>
+
+      <article class="callout amber bottom" style="--left:30%;--bottom:46px;--width:350px" data-date="2026-03-14" data-anchor="disclosure" data-color="#efbe62">
+        <div class="callout-head">
+          <p class="phase">2025 sale disclosed</p>
+          <time datetime="2026-03-14">14 Mar 2026</time>
+        </div>
+        <blockquote>&ldquo;I ended up selling off approximately that amount of my Bitcoin stack last year.&rdquo;</blockquote>
+        <p class="boundary">Disclosure date shown. His exact 2025 trade date and price were not stated.</p>
+        <div class="sources"><span class="source-name">Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=7cW2PCPA8kY&amp;t=1142s" target="_blank" rel="noopener">19:02-19:35</a></div>
+      </article>
+
+      <article class="callout amber" style="--left:58%;--top:18px;--width:300px" data-date="2026-06-07" data-anchor="price" data-color="#efbe62">
+        <div class="callout-head">
+          <p class="phase">Stayed bearish</p>
+          <time datetime="2026-06-07">7 Jun 2026</time>
+        </div>
+        <blockquote>&ldquo;Bitcoin ... has entered the third, and what I think is the final, stage of the bear market.&rdquo;</blockquote>
+        <div class="sources"><span class="source-name">Bitcoin Enters the 3rd Stage of the Bear Market</span><span class="source-label">Exact quote</span><a href="https://www.youtube.com/watch?v=gkDqbvMnMHI&amp;t=4s" target="_blank" rel="noopener">00:04-00:16</a></div>
+      </article>
+
+      <article class="callout green bottom" style="--left:69.4%;--bottom:46px;--width:440px" data-date="2026-08-06" data-anchor="disclosure" data-color="#45dc8d">
+        <div class="callout-head">
+          <p class="phase">Buying + watching October</p>
+          <time datetime="2026-08-06">6 Aug 2026</time>
+        </div>
+        <div class="dual">
+          <blockquote>&ldquo;I started buying a little bit back when we went below 60K.&rdquo;</blockquote>
+          <blockquote>&ldquo;Why not October? ... It could very well be October.&rdquo;</blockquote>
+        </div>
+        <p class="boundary">He still says Bitcoin could go lower first. This is accumulation, not a declared exact bottom.</p>
+        <div class="sources"><span class="source-name">Bitcoin: Where in the Cycle Are We?</span><span class="source-label">Exact quotes</span><a href="https://www.youtube.com/watch?v=CmGkfyot8qY&amp;t=1129s" target="_blank" rel="noopener">Buy 18:51</a><a href="https://www.youtube.com/watch?v=CmGkfyot8qY&amp;t=810s" target="_blank" rel="noopener">October 13:30</a></div>
+      </article>
+
+      <div class="takeaway-rail" aria-label="Three phase summary">
+        <div style="--rail:var(--red)">Q4 top warning</div>
+        <div style="--rail:var(--amber)">2025 sale disclosed + bear thesis held</div>
+        <div style="--rail:var(--green)">Buying below $60K + October now in view</div>
+      </div>
+
+      <div class="chart-meta">
+        <div class="legend" aria-label="Chart legend">
+          <span style="--key:var(--btc)"><i></i>Bitcoin daily close</span>
+          <span style="--key:var(--red)"><i></i>Warning</span>
+          <span style="--key:var(--amber)"><i></i>Bearish / disclosed sale</span>
+          <span style="--key:var(--green)"><i></i>Buying / possible bottom window</span>
+        </div>
+        <span>Price: Coinbase BTC-USD | Calls: linked official Cowen videos</span>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span><strong>Reading rule:</strong> circles mark dated public calls. Squares mark disclosure dates, not assumed trade dates or prices.</span>
+      <span>Price data checked 7 Aug 2026. The October area is a forecast window with no projected price path.</span>
+    </footer>
+  </main>
+
+  <script src="./btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js"></script>
+  <script>
+    (() => {
+      const svg = document.getElementById('price-chart');
+      const panel = document.getElementById('chart-panel');
+      const data = (window.BTC_CHART_DATA && window.BTC_CHART_DATA.rows) || [];
+      if (!data.length) return;
+
+      const NS = 'http://www.w3.org/2000/svg';
+      const W = 1500;
+      const H = 696;
+      const plot = { left: 46, right: 1450, top: 207, bottom: 456 };
+      const domainStart = new Date('2025-08-01T00:00:00Z').getTime();
+      const domainEnd = new Date('2026-10-31T00:00:00Z').getTime();
+      const yMin = 54000;
+      const yMax = 132000;
+      const byDate = new Map(data.map(row => [row.date, row]));
+
+      const x = date => plot.left + ((new Date(date + 'T00:00:00Z').getTime() - domainStart) / (domainEnd - domainStart)) * (plot.right - plot.left);
+      const y = value => plot.bottom - ((value - yMin) / (yMax - yMin)) * (plot.bottom - plot.top);
+      const money = value => '$' + Math.round(value / 1000) + 'K';
+      const make = (name, attrs = {}, text = '') => {
+        const node = document.createElementNS(NS, name);
+        Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+        if (text) node.textContent = text;
+        return node;
+      };
+
+      const grid = document.getElementById('grid');
+      [60000, 90000, 120000].forEach(value => {
+        grid.append(make('line', { x1: plot.left, y1: y(value), x2: plot.right, y2: y(value), class: 'grid-line' }));
+        grid.append(make('text', { x: plot.left + 5, y: y(value) - 8, class: 'axis-label' }, money(value)));
+      });
+
+      const dateTicks = [
+        ['2025-08-01', 'AUG 2025'],
+        ['2025-11-01', 'NOV'],
+        ['2026-02-01', 'FEB 2026'],
+        ['2026-05-01', 'MAY'],
+        ['2026-08-01', 'AUG'],
+        ['2026-10-15', 'OCT']
+      ];
+      dateTicks.forEach(([date, label]) => {
+        grid.append(make('line', { x1: x(date), y1: plot.top, x2: x(date), y2: plot.bottom, class: 'grid-line' }));
+        grid.append(make('text', { x: x(date), y: plot.bottom + 28, class: 'date-label', 'text-anchor': 'middle' }, label));
+      });
+
+      const zones = document.getElementById('zones');
+      const currentEnd = x('2026-08-06');
+      zones.append(make('rect', {
+        x: currentEnd,
+        y: plot.top,
+        width: plot.right - currentEnd,
+        height: plot.bottom - plot.top,
+        fill: 'url(#future-gradient)'
+      }));
+      zones.append(make('line', {
+        x1: currentEnd,
+        y1: plot.top,
+        x2: currentEnd,
+        y2: plot.bottom,
+        stroke: '#45dc8d',
+        'stroke-opacity': '.35',
+        'stroke-dasharray': '5 6'
+      }));
+      zones.append(make('text', { x: currentEnd + 10, y: plot.top + 17, class: 'zone-label', style: 'fill:#45dc8d' }, 'NO PRICE FORECAST'));
+
+      const octoberX = x('2026-10-15');
+      const futureCenterX = (currentEnd + plot.right) / 2;
+      zones.append(make('rect', {
+        x: x('2026-10-01'),
+        y: plot.top,
+        width: x('2026-10-31') - x('2026-10-01'),
+        height: plot.bottom - plot.top,
+        rx: 7,
+        fill: '#45dc8d',
+        'fill-opacity': '.075',
+        stroke: '#45dc8d',
+        'stroke-opacity': '.25',
+        'stroke-dasharray': '5 5'
+      }));
+      zones.append(make('text', { x: futureCenterX, y: plot.top + 39, class: 'event-label', style: 'fill:#45dc8d;font-size:10px', 'text-anchor': 'middle' }, 'COWEN: "IT COULD'));
+      zones.append(make('text', { x: futureCenterX, y: plot.top + 54, class: 'event-label', style: 'fill:#45dc8d;font-size:10px', 'text-anchor': 'middle' }, 'VERY WELL BE OCTOBER"'));
+
+      const buyBandTop = y(60500);
+      const buyBandBottom = y(58000);
+      zones.append(make('rect', {
+        x: x('2026-06-01'),
+        y: buyBandTop,
+        width: currentEnd - x('2026-06-01'),
+        height: buyBandBottom - buyBandTop,
+        rx: 5,
+        fill: '#45dc8d',
+        'fill-opacity': '.10',
+        stroke: '#45dc8d',
+        'stroke-opacity': '.32'
+      }));
+      zones.append(make('text', { x: x('2026-06-04'), y: buyBandTop - 7, class: 'event-label', style: 'fill:#45dc8d' }, 'BELOW $60K BUY ZONE'));
+
+      const visible = data.filter(row => new Date(row.date + 'T00:00:00Z').getTime() <= domainEnd);
+      const lineD = visible.map((row, index) => (index ? 'L' : 'M') + x(row.date).toFixed(1) + ',' + y(row.close).toFixed(1)).join(' ');
+      const areaD = lineD + ' L' + x(visible[visible.length - 1].date).toFixed(1) + ',' + plot.bottom + ' L' + x(visible[0].date).toFixed(1) + ',' + plot.bottom + ' Z';
+      document.getElementById('price-line').setAttribute('d', lineD);
+      document.getElementById('price-glow').setAttribute('d', lineD);
+      document.getElementById('price-area').setAttribute('d', areaD);
+
+      const markers = document.getElementById('markers');
+      const connectors = document.getElementById('connectors');
+
+      const addEvents = () => {
+        markers.replaceChildren();
+        connectors.replaceChildren();
+        const panelRect = panel.getBoundingClientRect();
+        const scaleX = W / panelRect.width;
+        const scaleY = H / panelRect.height;
+
+        document.querySelectorAll('.callout[data-date]').forEach(card => {
+          const date = card.dataset.date;
+          const color = card.dataset.color;
+          const row = byDate.get(date);
+          const anchorX = x(date);
+          const isDisclosure = card.dataset.anchor === 'disclosure';
+          const anchorY = isDisclosure ? plot.bottom + 8 : y(row ? row.close : 70000);
+          const cardRect = card.getBoundingClientRect();
+          const cardCenterX = (cardRect.left - panelRect.left + cardRect.width / 2) * scaleX;
+          const cardIsAbove = cardRect.top - panelRect.top < panelRect.height / 2;
+          const cardEdgeY = (cardIsAbove ? cardRect.bottom - panelRect.top : cardRect.top - panelRect.top) * scaleY;
+
+          const connector = make('path', {
+            d: 'M' + cardCenterX.toFixed(1) + ',' + cardEdgeY.toFixed(1) + ' L' + anchorX.toFixed(1) + ',' + anchorY.toFixed(1),
+            class: 'connector',
+            style: '--event-color:' + color
+          });
+          connectors.append(connector);
+
+          if (isDisclosure) {
+            markers.append(make('rect', {
+              x: anchorX - 6,
+              y: anchorY - 6,
+              width: 12,
+              height: 12,
+              rx: 2,
+              class: 'disclosure-dot',
+              style: '--event-color:' + color
+            }));
+            markers.append(make('text', {
+              x: anchorX,
+              y: anchorY - 13,
+              class: 'event-label',
+              style: 'fill:' + color,
+              'text-anchor': 'middle'
+            }, date === '2026-08-06' ? 'BUYING DISCLOSED' : 'SALE DISCLOSED (DATE ONLY)'));
+          } else {
+            markers.append(make('circle', {
+              cx: anchorX,
+              cy: anchorY,
+              r: 7,
+              class: 'event-dot',
+              style: '--event-color:' + color
+            }));
+          }
+        });
+      };
+
+      requestAnimationFrame(addEvents);
+      window.addEventListener('resize', addEvents, { passive: true });
+    })();
+  </script>
+</body>
+</html>

@@ -1,341 +1,234 @@
 {
-  "schema": "rubicon.video-research.sources",
+  "schema": "rubicon.record-pack-sources",
   "version": 3,
-  "generated_at": "2026-08-07T09:04:00Z",
+  "generated_at": "2026-08-08T23:12:59Z",
   "project": {
     "id": "2026-08-07-bitcoin-bear-flips-bullish",
-    "status": "evidence_ready_cta_pending",
-    "title": "These Bears Just Flipped Bullish",
-    "thumbnail_text": "BOTH BOUGHT",
-    "story_thesis": "Both published bearish top-or-correction frameworks around the 2025 high, then Bitcoin sold off toward $60K. Krown called $60K major long-term value in February but stayed downside-biased through H1, set a below-$70K buy plan in May, then disclosed low-$60K Bitcoin buys in July and expected no new lows in August. Cowen sold in 2025, still called June the final bear-market stage, then began buying below $60K while still allowing a lower final bottom.",
-    "subjects": [
-      "Benjamin Cowen",
-      "Eric Krown"
+    "status": "record_ready_local_review",
+    "title": "Benjamin Cowen Just Flipped Bullish",
+    "thumbnail_text": "HE'S BUYING",
+    "thumbnail_ref": "thumbnail-cowen-only-v2.png",
+    "model": {
+      "title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
+      "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
+      "mechanism": "One recognised bear, one behavioural change, one instantly understood promise."
+    },
+    "thesis_sentences": [
+      "Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed bearish into June 2026.",
+      "Now he is buying below $60K for the next bull market, even though he thinks the final cycle bottom may not arrive until October."
     ],
-    "cta_status": "deferred_by_user"
+    "subjects": [
+      "Benjamin Cowen"
+    ],
+    "cta_status": "approved_copy_tracking_pending",
+    "cta_ref": "BENJI-CTA-READOUT.txt"
   },
   "sections": [
     {
       "id": "s1",
-      "section": "Current change",
+      "section": "Packaging model",
       "cards": [
         {
-          "id": "cowen-current-buy",
+          "id": "model-this-bear-now-bullish",
           "type": "youtube",
-          "label": "Cowen started buying below $60K while still expecting lower",
-          "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s",
-          "source_date": "2026-08-06",
-          "status": "primary_verified",
-          "caution": "This is accumulation inside a bearish thesis, not a declared bull market.",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
-        },
-        {
-          "id": "krown-explicit-buy",
-          "type": "youtube",
-          "label": "Krown explicitly says he has been buying Bitcoin in the low $60Ks",
-          "url": "https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s",
-          "source_date": "2026-07-03",
-          "status": "primary_verified",
-          "caution": "Long-duration value action, not an exact-bottom or short-term breakout call.",
-          "local_evidence": "transcripts/L9Z5KrXG_ak.en.vtt"
-        },
-        {
-          "id": "krown-not-bearish",
-          "type": "youtube",
-          "label": "Krown says he is no longer bearish and expects no new lows",
-          "url": "https://www.youtube.com/watch?v=R94SC48JeH0&t=138s",
-          "source_date": "2026-08-05",
-          "status": "primary_verified",
-          "caution": "His public range levels still make the current stance conditional.",
-          "local_evidence": "transcripts/R94SC48JeH0.en.vtt"
-        },
-        {
-          "id": "krown-current-interview",
-          "type": "youtube",
-          "label": "Krown says the low is probably already in",
-          "url": "https://www.youtube.com/watch?v=2ThXmFN2ja8&t=117s",
-          "source_date": "2026-08-06",
-          "status": "primary_verified",
-          "caution": "His own current posts remain conditional and range-bound.",
-          "local_evidence": "transcripts/2ThXmFN2ja8.en.vtt"
+          "role": "packaging_model",
+          "label": "This Bear Is Now Bullish",
+          "source_title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
+          "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
+          "source_date": "2026-07-10",
+          "quote": "This Bear Is Now Bullish on Bitcoin",
+          "inspect": "Title and thumbnail packaging",
+          "why": "Models the single-recognisable-bear plus behavioural-change click mechanism.",
+          "missing": "Without it, Benji cannot immediately see what proven packaging this video is modelling."
         }
       ]
     },
     {
       "id": "s2",
-      "section": "Before the top",
+      "section": "He warned of the top, then sold",
       "cards": [
         {
-          "id": "cowen-q4-forecast",
+          "id": "cowen-q4-top-forecast",
           "type": "youtube",
-          "label": "Cowen forecasts a Q4 top window",
-          "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=158s",
+          "role": "forecast",
+          "label": "Cowen forecast a Q4 cycle top and bear market",
+          "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
+          "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
           "source_date": "2025-08-12",
-          "status": "primary_verified",
-          "caution": "Window, not exact day or price.",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
+          "quote": "Bitcoin ... goes into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year bear market.",
+          "inspect": "02:31-03:02",
+          "why": "Establishes the bearish cycle thesis before the final Q4 high.",
+          "missing": "Without it, the story begins after the market had already fallen."
         },
         {
-          "id": "krown-correction-warning",
-          "type": "x",
-          "label": "Krown forecasts a long correction but an early turn date",
-          "url": "https://x.com/KrownCryptoCave/status/1956714271032877064",
-          "source_date": "2025-08-16",
-          "status": "primary_verified",
-          "caution": "The 8-15 September turn window was roughly three weeks early.",
-          "local_evidence": "transcripts/krown-evidence-ledger.md"
+          "id": "cowen-sale-disclosure",
+          "type": "youtube",
+          "role": "action_disclosure",
+          "label": "Cowen says his portfolio followed the bearish view",
+          "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen",
+          "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
+          "source_date": "2026-03-14",
+          "quote": "I ended up selling off approximately that amount of my Bitcoin stack last year ... I wanted my investment portfolio to reflect that.",
+          "inspect": "19:02-19:35",
+          "why": "Shows that his bearish thesis changed his own allocation, not only his commentary.",
+          "missing": "Without it, the sell-to-buy behavioural change is unsupported.",
+          "caution": "This is a retrospective disclosure. Exact sale dates, prices and quantity are not supplied."
         }
       ]
     },
     {
       "id": "s3",
-      "section": "At the top and confirmation",
+      "section": "He stayed bearish",
       "cards": [
         {
-          "id": "cowen-top-day-caveat",
+          "id": "cowen-final-bear-stage",
           "type": "youtube",
-          "label": "Cowen still hopes for higher prices on the day of the high",
-          "url": "https://www.youtube.com/watch?v=5812UUvIZDw&t=99s",
-          "source_date": "2025-10-06",
-          "status": "primary_verified",
-          "caution": "His top confirmation had not fired.",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
-        },
-        {
-          "id": "krown-top-day-counter",
-          "type": "x",
-          "label": "Krown publishes a bullish signal one day before the high",
-          "url": "https://x.com/KrownCryptoCave/status/1974825937242837045",
-          "source_date": "2025-10-05",
-          "status": "primary_verified",
-          "caution": "Required counterevidence against a clean top-call claim.",
-          "local_evidence": "transcripts/krown-evidence-ledger.md"
-        },
-        {
-          "id": "cowen-top-confirmation",
-          "type": "youtube",
-          "label": "Cowen raises top-in odds after the 50-week average breaks",
-          "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s",
-          "source_date": "2025-11-17",
-          "status": "primary_verified",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
-        },
-        {
-          "id": "krown-bear-confirmation",
-          "type": "x",
-          "label": "Krown confirms a general long-term downside bias",
-          "url": "https://x.com/KrownCryptoCave/status/1991891913100955719",
-          "source_date": "2025-11-21",
-          "status": "primary_verified",
-          "local_evidence": "transcripts/krown-evidence-ledger.md"
-        },
-        {
-          "id": "krown-bear-market-video",
-          "type": "youtube",
-          "label": "Krown expects a bear-market bounce to fail absent a weekly reversal",
-          "url": "https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s",
-          "source_date": "2025-12-30",
-          "status": "primary_verified",
-          "caution": "A conditional bearish view, not a guaranteed path.",
-          "local_evidence": "transcripts/aj-Zt3ADQ-k.en.vtt"
+          "role": "forecast",
+          "label": "Cowen still called it the final bear-market stage in June",
+          "source_title": "Bitcoin Enters the 3rd Stage of the Bear Market",
+          "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
+          "source_date": "2026-06-07",
+          "quote": "Bitcoin ... has entered the third and what I think is the final stage of the bear market.",
+          "inspect": "00:04-00:16",
+          "why": "Proves the bearish view persisted immediately before the buying disclosure.",
+          "missing": "Without it, the story jumps from an old sale directly to buying."
         }
       ]
     },
     {
       "id": "s4",
-      "section": "Disclosed action",
+      "section": "Now he is buying",
       "cards": [
         {
-          "id": "cowen-sale-disclosure",
+          "id": "cowen-bottom-window",
           "type": "youtube",
-          "label": "Cowen retrospectively discloses a substantial 2025 sale",
-          "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s",
-          "source_date": "2026-03-14",
-          "status": "primary_verified",
-          "caution": "Exact sale dates, average price, quantity and transaction proof are unknown.",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
+          "role": "forecast",
+          "label": "Cowen says the durable bottom may arrive around October",
+          "source_title": "Bitcoin: Where in the Cycle Are We?",
+          "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
+          "source_date": "2026-08-06",
+          "quote": "That would probably be like late September through mid-December ... Why not October? ... Could very well be October.",
+          "inspect": "12:39-13:44",
+          "why": "Defines the bottom window behind his new long-term positioning.",
+          "missing": "Without it, the reason he is willing to begin buying now is unclear.",
+          "caution": "This is a forecast, not confirmation that the bottom is already in."
         },
         {
-          "id": "krown-major-low",
+          "id": "cowen-buy-below-60k",
           "type": "youtube",
-          "label": "Krown calls a major low near $60K and puts long-term money to work",
-          "url": "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s",
-          "source_date": "2026-02-06",
-          "status": "primary_verified",
-          "inspect": "00:00-00:28; 06:01-06:13; 10:48-11:03",
-          "caution": "He does not explicitly identify Bitcoin as the purchased asset, and at 10:48-11:03 he remains downside-biased while Bitcoin is below $80K; July later undercut the wick.",
-          "local_evidence": "transcripts/e8jcSvurVQ0.en.vtt"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "section": "H1 2026 bearish continuation",
-      "cards": [
-        {
-          "id": "krown-march-retest-lower",
-          "type": "youtube",
-          "label": "Krown expects Bitcoin to retest lower prices after the failure",
-          "url": "https://www.youtube.com/watch?v=DzLIQrbSqwo&t=68s",
-          "source_date": "2026-03-24",
-          "status": "primary_verified",
-          "inspect": "01:08 onward; 02:15 for the monthly corrective signal",
-          "caution": "Research-library receipt; the later May and June sources provide the distinct H1 steps used in the ordered deck."
-        },
-        {
-          "id": "krown-may-downside-buy-plan",
-          "type": "youtube",
-          "label": "Krown keeps a downside bias and sets a below-$70K long-term buy plan",
-          "url": "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s",
-          "source_date": "2026-05-26",
-          "status": "primary_verified",
-          "inspect": "01:10-01:42; 02:42-03:03; 07:01-07:29",
-          "caution": "The below-$70K statement is a plan, not proof that a Bitcoin purchase had already been executed."
-        },
-        {
-          "id": "cowen-final-stage-bear",
-          "type": "youtube",
-          "label": "Cowen says Bitcoin entered the third and final stage of the bear market",
-          "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
-          "source_date": "2026-06-07",
-          "status": "primary_verified",
-          "inspect": "00:04-00:16; 05:20-05:39",
-          "caution": "This is a cycle-stage framework, not a disclosed trade."
-        },
-        {
-          "id": "krown-june-short-term-bearish",
-          "type": "youtube",
-          "label": "Krown remains short-term bearish and expects a retest of the lows",
-          "url": "https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s",
-          "source_date": "2026-06-18",
-          "status": "primary_verified",
-          "inspect": "00:00-00:26",
-          "caution": "He also flags a possible trap; this supports the short-term bearish stance, not an unconditional crash call."
+          "role": "action_disclosure",
+          "label": "Cowen says he started buying below $60K",
+          "source_title": "Bitcoin: Where in the Cycle Are We?",
+          "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s",
+          "source_date": "2026-08-06",
+          "quote": "I started buying a little bit back when we went below 60K ... Who cares if it goes lower later in the year? It probably will.",
+          "inspect": "18:51-19:06",
+          "why": "This is the behavioural reveal promised by the title and thumbnail.",
+          "missing": "Without it, there is no direct evidence that Cowen's behaviour changed.",
+          "caution": "Exact execution date, average price and quantity are not supplied."
         }
       ]
     },
     {
       "id": "s5",
-      "section": "Current nuance",
+      "section": "Prepared visual",
       "cards": [
         {
-          "id": "cowen-bottom-window",
-          "type": "youtube",
-          "label": "Cowen still allows a later final-bottom window while beginning to buy",
-          "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s",
-          "source_date": "2026-08-06",
-          "status": "primary_verified",
-          "caution": "This is long-term scaling, not an exact-bottom claim.",
-          "local_evidence": "transcripts/cowen-evidence-ledger.md"
-        },
-        {
-          "id": "krown-current-range",
-          "type": "x",
-          "label": "Krown describes a range, not a confirmed bull market",
-          "url": "https://x.com/KrownCryptoCave/status/2083636812430622966",
-          "source_date": "2026-08-01",
-          "status": "primary_verified",
-          "local_evidence": "transcripts/krown-evidence-ledger.md"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "section": "Prepared Arc navigation visuals",
-      "cards": [
-        {
-          "id": "visual-story-map",
-          "type": "hosted_visual",
-          "label": "Selected packaging and complete evidence story map",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-top-calls",
-          "type": "hosted_visual",
-          "label": "Both early bearish calls against the 2025 price line",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=1#price-story",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-price-break",
-          "type": "hosted_visual",
-          "label": "The market break and bearish confirmation on price",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=4#price-story",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-cycle-context",
-          "type": "hosted_visual",
-          "label": "Same-age post-ATH pullback comparison",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html#cycle-context",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-value-zone-pre",
-          "type": "hosted_visual",
-          "label": "The low-$60K value zone before the buy receipts",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-h1-bridge",
-          "type": "hosted_visual",
-          "label": "The H1 bearish bridge in Cowen and Krown stance lanes",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=8#stance-change",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-both-bought",
-          "type": "hosted_visual",
-          "label": "Both disclosed purchases around the low-$60K value zone",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=10#value-zone",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-current-split",
-          "type": "hosted_visual",
-          "label": "The post-buy split between Krown and Cowen",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=11#stance-change",
-          "status": "prepared_public_visual"
-        },
-        {
-          "id": "visual-bitcoin-now",
-          "type": "hosted_visual",
-          "label": "Where Bitcoin and both purchase markers sit now",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=13#price-story",
-          "status": "prepared_public_visual"
+          "id": "cowen-calls-vs-bitcoin",
+          "type": "generated_asset",
+          "role": "prepared_visual",
+          "label": "Benjamin Cowen's Calls vs Bitcoin Price",
+          "local_ref": "assets/cowen-calls-vs-bitcoin.html",
+          "source_date": "2026-08-09",
+          "quote": "Warned. Sold. Stayed bearish. Started buying.",
+          "inspect": "All anchored callouts",
+          "why": "Lets a non-expert understand the entire thesis in one glance.",
+          "missing": "Without it, Benji must mentally combine separate clips and dates."
         }
       ]
     }
   ],
   "record_deck": [
-    {"order": 1, "section_id": "s7", "role": "prepared_visual", "label": "01 CALL OF TOP | STORY MAP", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/", "inspect": "Selected packaging and five-stage evidence summary", "why": "Gives Benji the whole evidence relationship before opening receipts.", "card_id": "visual-story-map"},
-    {"order": 2, "section_id": "s7", "role": "prepared_visual", "label": "02 CALL OF TOP | BOTH CALLS ON PRICE", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=1#price-story", "inspect": "Markers 1-2 against the 2025 price line", "why": "Shows both early bearish frameworks together.", "card_id": "visual-top-calls"},
-    {"order": 3, "section_id": "s2", "role": "core_receipt", "label": "03 CALL OF TOP | COWEN Q4 WINDOW", "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=158s", "inspect": "02:38 for the framework; 08:04 for the caveat", "why": "Establishes Cowen's bearish cycle framework before the high.", "card_id": "cowen-q4-forecast"},
-    {"order": 4, "section_id": "s2", "role": "core_receipt", "label": "04 CALL OF TOP | KROWN 4-7 MONTH CORRECTION", "url": "https://x.com/KrownCryptoCave/status/1956714271032877064", "inspect": "Complete post", "why": "Establishes Krown's prolonged-correction warning before the high.", "card_id": "krown-correction-warning"},
-    {"order": 5, "section_id": "s7", "role": "prepared_visual", "label": "05 BEAR | THE BREAK ON PRICE", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=4#price-story", "inspect": "The high, sell-off and markers 3-4", "why": "Returns to price before the confirmation receipts.", "card_id": "visual-price-break"},
-    {"order": 6, "section_id": "s3", "role": "core_receipt", "label": "06 BEAR | COWEN TOP-IN ODDS", "url": "https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s", "inspect": "03:52 onward", "why": "Shows Cowen strengthening the bear case after the breakdown.", "card_id": "cowen-top-confirmation"},
-    {"order": 7, "section_id": "s3", "role": "core_receipt", "label": "07 BEAR | KROWN BOUNCE FAIL", "url": "https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s", "inspect": "01:25-01:41", "why": "Shows Krown still expecting lower prices.", "card_id": "krown-bear-market-video"},
-    {"order": 8, "section_id": "s7", "role": "prepared_visual", "label": "08 BEAR | PULLBACK VS PRIOR CYCLES", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html#cycle-context", "inspect": "Same-age post-ATH drawdown comparison", "why": "Provides a prepared pullback comparison.", "card_id": "visual-cycle-context"},
-    {"order": 9, "section_id": "s4", "role": "core_receipt", "label": "09 BEAR | COWEN 2025 SALE", "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s", "inspect": "18:15 onward", "why": "Supplies the sell side of Cowen's later sell-to-buy story.", "card_id": "cowen-sale-disclosure"},
-    {"order": 10, "section_id": "s7", "role": "prepared_visual", "label": "10 BEAR | H1 BEARISH BRIDGE", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=8#stance-change", "inspect": "Cowen and Krown stance lanes through H1 2026", "why": "Prevents a jump from old calls directly to buying.", "card_id": "visual-h1-bridge"},
-    {"order": 11, "section_id": "s6", "role": "core_receipt", "label": "11 BEAR | COWEN STAGE 3 BEAR", "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s", "inspect": "00:04-00:16; 05:20-05:39", "why": "Shows Cowen still explicitly bearish in June.", "card_id": "cowen-final-stage-bear"},
-    {"order": 12, "section_id": "s6", "role": "core_receipt", "label": "12 BEAR | KROWN RETEST LOWS", "url": "https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s", "inspect": "00:00-00:26", "why": "Provides Krown's last clear bearish receipt before buying.", "card_id": "krown-june-short-term-bearish"},
-    {"order": 13, "section_id": "s7", "role": "prepared_visual", "label": "13 PRE-BULLISH | $60K VALUE ZONE", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=5#value-zone", "inspect": "February and July tests of the low-$60K zone", "why": "Shows where behaviour begins changing.", "card_id": "visual-value-zone-pre"},
-    {"order": 14, "section_id": "s4", "role": "core_receipt", "label": "14 PRE-BULLISH | KROWN VALUE + MONEY IN", "url": "https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s", "inspect": "00:00-00:28; 06:01-06:13; 10:48-11:03", "why": "Shows long-term allocation beginning while downside bias remains.", "card_id": "krown-major-low"},
-    {"order": 15, "section_id": "s6", "role": "core_receipt", "label": "15 PRE-BULLISH | KROWN BUY PLAN BELOW $70K", "url": "https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s", "inspect": "01:10-01:42; 02:42-03:03; 07:01-07:29", "why": "Shows downside bias alongside a lower buy plan.", "card_id": "krown-may-downside-buy-plan"},
-    {"order": 16, "section_id": "s7", "role": "prepared_visual", "label": "16 NOW | BOTH BOUGHT NEAR $60K", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=10#value-zone", "inspect": "The value-zone chart and both buy disclosures", "why": "Combines the two purchase claims visually.", "card_id": "visual-both-bought"},
-    {"order": 17, "section_id": "s1", "role": "core_receipt", "label": "17 NOW | KROWN BOUGHT LOW $60Ks", "url": "https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s", "inspect": "01:07-01:29", "why": "Direct proof that Krown bought Bitcoin.", "card_id": "krown-explicit-buy"},
-    {"order": 18, "section_id": "s1", "role": "core_receipt", "label": "18 NOW | COWEN BOUGHT BELOW $60K", "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s", "inspect": "18:29-18:50", "why": "Completes the BOTH BOUGHT evidence.", "card_id": "cowen-current-buy"},
-    {"order": 19, "section_id": "s7", "role": "prepared_visual", "label": "19 POST-BULLISH | CURRENT SPLIT", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=11#stance-change", "inspect": "Krown expects no new lows; Cowen still allows lower", "why": "Shows the different current views after buying.", "card_id": "visual-current-split"},
-    {"order": 20, "section_id": "s1", "role": "core_receipt", "label": "20 POST-BULLISH | KROWN NO NEW LOWS", "url": "https://www.youtube.com/watch?v=R94SC48JeH0&t=138s", "inspect": "02:18-02:22", "why": "Makes Krown's directional change explicit.", "card_id": "krown-not-bearish"},
-    {"order": 21, "section_id": "s5", "role": "context", "label": "21 POST-BULLISH | COWEN STILL ALLOWS LOWER", "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s", "inspect": "12:26-13:42", "why": "Shows Cowen is accumulating without calling the final low.", "card_id": "cowen-bottom-window"},
-    {"order": 22, "section_id": "s7", "role": "prepared_visual", "label": "22 POST-BULLISH | WHERE BITCOIN IS NOW", "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-07-bitcoin-bear-flips-bullish/charts.html?focus=13#price-story", "inspect": "Current price, both buy markers and the present split", "why": "Returns to the complete price line for the final current-state visual.", "card_id": "visual-bitcoin-now"}
+    {
+      "order": 1,
+      "section_id": "s1",
+      "role": "packaging_model",
+      "label": "01 MODEL | THIS BEAR IS NOW BULLISH",
+      "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
+      "source_title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
+      "quote": "This Bear Is Now Bullish on Bitcoin",
+      "inspect": "Title and thumbnail packaging",
+      "why": "Shows Benji the source packaging before the evidence.",
+      "card_id": "model-this-bear-now-bullish"
+    },
+    {
+      "order": 2,
+      "section_id": "s2",
+      "role": "forecast",
+      "label": "02 CALL OF TOP | Q4 TOP + BEAR MARKET",
+      "url": "https://www.youtube.com/watch?v=il089bNt-4g&t=151s",
+      "source_title": "Bitcoin: The Pattern That Historically Ended The Bull Market",
+      "quote": "Bitcoin ... goes into the market cycle top in Q4 ... which sets up the midterm-year bear market.",
+      "inspect": "02:31-03:02",
+      "why": "Establishes the thesis before the final high.",
+      "card_id": "cowen-q4-top-forecast"
+    },
+    {
+      "order": 3,
+      "section_id": "s2",
+      "role": "action_disclosure",
+      "label": "03 SOLD | HIS PORTFOLIO FOLLOWED THE VIEW",
+      "url": "https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s",
+      "source_title": "Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen",
+      "quote": "I ended up selling off approximately that amount of my Bitcoin stack last year.",
+      "inspect": "19:02-19:35",
+      "why": "Shows the thesis affected his own allocation.",
+      "card_id": "cowen-sale-disclosure"
+    },
+    {
+      "order": 4,
+      "section_id": "s3",
+      "role": "forecast",
+      "label": "04 STILL BEARISH | FINAL BEAR-MARKET STAGE",
+      "url": "https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s",
+      "source_title": "Bitcoin Enters the 3rd Stage of the Bear Market",
+      "quote": "Bitcoin ... has entered the third and what I think is the final stage of the bear market.",
+      "inspect": "00:04-00:16",
+      "why": "Proves the bearish view persisted into June.",
+      "card_id": "cowen-final-bear-stage"
+    },
+    {
+      "order": 5,
+      "section_id": "s4",
+      "role": "forecast",
+      "label": "05 BOTTOM WINDOW | OCTOBER?",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s",
+      "source_title": "Bitcoin: Where in the Cycle Are We?",
+      "quote": "Why not October? ... Could very well be October.",
+      "inspect": "12:39-13:44",
+      "why": "Defines the approaching durable-bottom window.",
+      "card_id": "cowen-bottom-window"
+    },
+    {
+      "order": 6,
+      "section_id": "s4",
+      "role": "action_disclosure",
+      "label": "06 HE'S BUYING | BELOW $60K",
+      "url": "https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s",
+      "source_title": "Bitcoin: Where in the Cycle Are We?",
+      "quote": "I started buying a little bit back when we went below 60K.",
+      "inspect": "18:51-19:06",
+      "why": "Delivers the title and thumbnail promise.",
+      "card_id": "cowen-buy-below-60k"
+    }
   ],
+  "parked_for_future_video": {
+    "subject": "Eric Krown",
+    "reason": "Separate person and separate thesis. Retained in the existing Krown ledger for a future thin-slice pack.",
+    "local_ref": "transcripts/krown-evidence-ledger.md"
+  },
   "holes": [
-    "CTA proof, spoken line and destination are deliberately deferred.",
-    "Refresh any current BTC price quoted on camera before recording.",
-    "Cowen caption downloads were rate-limited; verify the stored timestamps in the live videos during rehearsal."
+    "The public hosted console and chart have not yet been refreshed. Do not share the old snapshot as this Cowen-only version.",
+    "The spoken CTA is approved, but a video-specific tracking URL has not yet been supplied or verified."
   ]
 }

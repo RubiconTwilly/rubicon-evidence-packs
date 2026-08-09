@@ -3,21 +3,31 @@
   "schema_version": 2,
   "project_id": "2026-08-07-bitcoin-bear-flips-bullish",
   "brand": "rubicon",
-  "updated_at": "2026-08-07T09:04:00Z",
-  "stage": "evidence_ready_cta_pending",
+  "updated_at": "2026-08-08T23:12:59Z",
+  "stage": "evidence_ready_cta_tracking_pending",
   "recording_blocked": false,
   "blocking_reason": null,
-  "selected_title": "These Bears Just Flipped Bullish",
-  "thumbnail_text": "BOTH BOUGHT",
-  "thumbnail_concept": "Outlier-led mock: huge clean Cowen and Krown cutouts, oversized glowing Bitcoin in the centre, saturated red-to-gold tension, and large bottom-anchored BOTH BOUGHT copy.",
-  "promise": "Show how Cowen and Krown published bearish top-or-correction frameworks around the 2025 high, stayed bearish through H1 2026 as Bitcoin moved toward $60K, then both began buying around that zone before arriving at different current views.",
+  "selected_title": "Benjamin Cowen Just Flipped Bullish",
+  "thumbnail_text": "HE'S BUYING",
+  "thumbnail_concept": "Benjamin Cowen as the only recognisable face, a large Bitcoin, and one oversized behavioural reveal: HE'S BUYING.",
+  "promise": "Benjamin Cowen warned of a Q4 2025 cycle top, sold a substantial part of his Bitcoin, stayed bearish into June, and has now started buying below $60,000 while still allowing one final move lower.",
+  "packaging_model": {
+    "title": "This Bear Is Now Bullish on Bitcoin | Jason Pizzino",
+    "url": "https://www.youtube.com/watch?v=MDN4hzx0inw",
+    "mechanism": "One recognised bear, one behavioural change, one instantly understood promise."
+  },
+  "thesis_sentences": [
+    "Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed bearish into June 2026.",
+    "Now he is buying below $60K for the next bull market, even though he thinks the final cycle bottom may not arrive until October."
+  ],
   "cta": {
-    "status": "deferred_by_user",
-    "text": null,
-    "destination": null,
-    "video_slug": null,
+    "status": "approved_copy_tracking_pending",
+    "text": "Back in October and November, one of our Inner Circle quants shared the signals warning that a crypto winter was coming, just like Cowen. Inside the Inner Circle, we identify traders with profitable track records, then distil their market signals, wallet movements and narratives into information you can actually use. Even during this winter, our opportunities rivalled the green market of 2025: HYPE at $20, plus lower-cap runs in Make Aliens Great Again, Manifest and, just this week, YOTS. If the bear who called the top is now buying, the opportunities ahead could be absolutely insane. To learn the bottom signals, know when we believe they've hit and catch narratives before the mainstream and create asymmetric opportunities, join the Inner Circle using the link below.",
+    "destination": "Rubicon Inner Circle via Jupiter",
+    "video_slug": "benjamin-cowen-just-flipped-bullish",
     "tracking_url": null,
-    "tracking_verified": false
+    "tracking_verified": false,
+    "readout_ref": "BENJI-CTA-READOUT.txt"
   },
   "measurement": {
     "destination": "Jupiter",
@@ -30,22 +40,30 @@
     ]
   },
   "evidence_order": [
-    "01 Bearish around the top",
-    "02 Bitcoin sells off toward $60K",
-    "03 Around $60K, money starts moving",
-    "04 H1 2026: both still publish bearish downside frameworks",
-    "05 Both begin buying around or below $60K",
-    "06 Current split: Krown expects no new lows, Cowen still allows a lower final bottom"
+    "01 Model the proven one-bear behavioural-change packaging",
+    "02 Cowen forecast a Q4 cycle top and bear market",
+    "03 Cowen says his portfolio followed the bearish view",
+    "04 Cowen remained openly bearish into June 2026",
+    "05 Cowen places the durable-bottom window from late September to mid-December, possibly October",
+    "06 Cowen discloses that he started buying below $60,000"
   ],
-  "public_source_count": 13,
+  "public_source_count": 6,
   "console_ref": "console.html",
   "charts_ref": "charts.html",
   "chart_data_refs": [
-    "assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js",
-    "assets/btc-post-ath-drawdowns-coinbase.js"
+    "assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js"
   ],
-  "thumbnail_ref": "thumbnail-mock.png",
+  "prepared_visual_ref": "assets/cowen-calls-vs-bitcoin.html",
+  "thumbnail_ref": "thumbnail-cowen-only-v2.png",
   "arc_handoff_ref": "arc-handoff.json",
+  "research_ref": "research.md",
+  "parked_research": [
+    {
+      "subject": "Eric Krown",
+      "reason": "Separate person and thesis for a future thin-slice video.",
+      "ref": "transcripts/krown-evidence-ledger.md"
+    }
+  ],
   "descript": {},
   "youtube": {},
   "published": {},

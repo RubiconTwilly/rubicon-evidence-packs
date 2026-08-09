@@ -1,272 +1,169 @@
-# Research ledger: These Bears Just Flipped Bullish
+# Research ledger: Benjamin Cowen Just Flipped Bullish
 
-Research snapshot: 7 August 2026  
-Selected by Tristan: Benjamin Cowen plus Eric Krown  
-CTA: deferred to the next working pass
+Research snapshot: 9 August 2026
 
-## Selected premise
+Selected subject: Benjamin Cowen
 
-**Title:** These Bears Just Flipped Bullish  
-**Working thumbnail:** BOTH BOUGHT
+Parked for a later video: Eric Krown
 
-The title packages a behavioural change. The visible evidence story is:
+## Packaging first
 
-- Both published bearish top-or-correction frameworks around the 2025 high.
-- Bitcoin then sold off toward $60K while Krown remained defensive and expected the
-  December bounce to fail.
-- Krown called low-$60K major long-term value in February, but he remained
-  downside-biased below $80K. Both analysts continued publishing bearish frameworks
-  through H1 2026.
-- Krown set a below-$70K long-term buy plan in May, remained short-term bearish in June,
-  then said in July that he had been buying Bitcoin in the low $60Ks.
-- Cowen called June the third and final bear-market stage, then said in August that he
-  had begun buying below $60K.
-- Their current views are not identical: Krown expects no new lows; Cowen still allows
-  a lower final bottom.
+**Proposed title:** Benjamin Cowen Just Flipped Bullish
 
-The exact-top bullish counter-receipts remain in the research library below. They are
-deliberately excluded from the main graph because they interrupt the movement this
-video is showing. Cowen's advance Q4-top framework remains visible because the top or
-near-top call is part of the selected content spine.
+**Thumbnail text:** HE'S BUYING
 
-## Demand receipts
+**Thumbnail:** [`thumbnail-cowen-only-v2.png`](thumbnail-cowen-only-v2.png)
 
-| Packaging receipt | Views at snapshot | Channel normal | Signal |
-|---|---:|---:|---:|
-| [This Bear Is Now Bullish on Bitcoin / Jason Pizzino](https://www.youtube.com/watch?v=MDN4hzx0inw) | 12,888 | 3,340 | 3.86x normal lifetime views |
-| [Everyone Is Wrong About the Bitcoin Bottom / Eric Krown](https://www.youtube.com/watch?v=2ThXmFN2ja8) | 3,291 after 9.0h | 3,340 | 10.79x normal recent speed |
+**Packaging model:** [This Bear Is Now Bullish on Bitcoin | Jason Pizzino](https://www.youtube.com/watch?v=MDN4hzx0inw)
 
-The first proves the bear-to-bull packaging travelled. The second proves that the live
-bottom argument was accelerating. Neither proves the underlying analyst claims.
+What is being modelled is simple: one recognised bear, one surprising behavioural change,
+and one promise that can be understood before the video starts. The content and wording
+are original to the Cowen evidence.
 
-## Benjamin Cowen chronology
+## Two-sentence thesis
 
-### 12 August 2025: forecast
+Benjamin Cowen warned of a Q4 2025 Bitcoin top, sold much of his own stack, and stayed
+bearish into June 2026.
 
-[Bitcoin: The Pattern That Historically Ended The Bull Market, 02:38](https://www.youtube.com/watch?v=il089bNt-4g&t=158s)
+Now he is buying below $60K for the next bull market, even though he thinks the final
+cycle bottom may not arrive until October.
 
-Forecasts a September pullback followed by a Q4 cycle top and bear market. At 08:04 he
-states that the exact top cannot be known.
+The interesting change is not that every bearish forecast has ended. His behaviour changed
+first: he has started positioning for the next bull market while still allowing one final
+move lower.
 
-### 6 October 2025: decision day
+## The complete evidence spine
 
-[Bitcoin: Bull Market Support Band, 01:39](https://www.youtube.com/watch?v=5812UUvIZDw&t=99s)
+### 1. He forecast the Q4 top and bear-market setup
 
-On the day of the exchange-specific high he still hopes for higher prices and says his
-weekly confirmation has not fired. This prevents an exact-top claim.
+**Source:** [Bitcoin: The Pattern That Historically Ended The Bull Market, 02:31-03:02](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
 
-### 17 November 2025: confirmation
+**Published:** 12 August 2025
 
-[Bitcoin Falls Below the 50 Week Moving Average, 03:52](https://www.youtube.com/watch?v=9g1QsTVizyQ&t=232s)
+> “So the way this historically works ... is Bitcoin goes up in July and August, gets a
+> pullback, generally speaking, to the bull market support band in September, and then goes
+> into the market cycle top in Q4 of the post-halving year, which sets up the midterm-year
+> bear market.”
 
-After the first weekly close below the 50-week moving average, raises the probability
-that the top is in to 60-70%, with a reclaim condition that would reduce conviction.
+Why it matters: this establishes his bearish cycle thesis before the final Q4 high.
 
-### 14 March 2026: disclosed action
+### 2. He says his own portfolio followed that view
 
-[Market Disruptors interview, 18:15](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1095s)
+**Source:** [Everyone Thinks the Bitcoin Cycle Is Dead... They're Wrong | Benjamin Cowen, 19:02-19:35](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)
 
-Retrospectively links his high bear-market confidence to selling a substantial amount of
-his Bitcoin stack during 2025. Exact execution dates, average price, exact quantity and
-transaction proof remain unknown.
+**Published:** 14 March 2026
 
-### 7 June 2026: still explicitly bearish
+> “I would say I'm probably around like 70 to 80% confident in my view that that is how this
+> plays out. And so because of that, I ended up selling off approximately that amount of my
+> Bitcoin stack last year ... Like, the odds of this being the cycle top seemed kind of high.
+> And so I wanted my investment portfolio to reflect that.”
 
-[Bitcoin Enters the 3rd Stage of the Bear Market, 00:04](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
+Why it matters: the view changed his allocation, rather than remaining commentary only.
+This is a retrospective disclosure. The exact execution dates, prices, and quantity are not
+supplied in the source.
 
-At 00:04-00:16 Cowen says Bitcoin has entered the third and final stage of the bear
-market. At 05:20-05:39 he explains that stage within his cycle framework. This is the
-missing H1 receipt between his March sale disclosure and August re-entry disclosure.
+### 3. He was still openly bearish in June
 
-### 6 August 2026: re-entry and current stance
+**Source:** [Bitcoin Enters the 3rd Stage of the Bear Market, 00:04-00:16](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
 
-[Bitcoin: Where in the Cycle Are We?, 12:26](https://www.youtube.com/watch?v=CmGkfyot8qY&t=746s)
+**Published:** 7 June 2026
 
-Still allows a later final-bottom window. This is the current disagreement that makes
-his later buying disclosure interesting rather than a simple exact-bottom call.
+> “Today, we're going to talk about Bitcoin and how it has entered the third and what I think
+> is the final stage of the bear market.”
 
-[Bitcoin: Where in the Cycle Are We?, 18:29](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1109s)
+Why it matters: this bridges the old sale and the new buying disclosure. He did not simply
+turn bullish immediately after selling.
 
-Discloses that he started buying a little below $60K. In the same passage he says price
-will probably go lower and frames the position around the next bull market. This is
-early accumulation inside a bearish thesis, not a declared bullish flip.
+### 4. He now sees the durable-bottom window approaching
 
-## Eric Krown chronology
+**Source:** [Bitcoin: Where in the Cycle Are We?, 12:39-13:44](https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s)
 
-### 16 August 2025: early correction warning
+**Published:** 6 August 2026
 
-[Official X post](https://x.com/KrownCryptoCave/status/1956714271032877064)
+> “But my guess is that Bitcoin will bottom when it normally bottoms. And if you kind of look
+> at the range, that would probably be like late September through mid-December...”
 
-Forecasts an 8-15 September reversal into a four-to-seven-month corrective phase. The
-regime warning was directionally useful, but the final high came about three weeks later.
+At 13:30:
 
-### 5 October 2025: decision-day counterevidence
+> “Why not October? I mean, why not? ... Could very well be October. We'll see, right? We'll
+> see if it plays out like that.”
 
-[Official X post](https://x.com/KrownCryptoCave/status/1974825937242837045)
+Why it matters: this gives the timing logic behind beginning to position now. It is a
+forecast window, not a claim that the final low is already confirmed.
 
-Publishes a hidden-bullish-divergence signal one day before the high. This prevents a
-clean top-call story.
+### 5. He has started buying below $60,000
 
-### 21 November 2025: bearish confirmation
+**Source:** [Bitcoin: Where in the Cycle Are We?, 18:51-19:06](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s)
 
-[Official X post](https://x.com/KrownCryptoCave/status/1991891913100955719)
+**Published:** 6 August 2026
 
-Says the monthly MACD cross historically confirmed long-term downside and retains a
-general downside bias. Like Cowen, the clearest confirmation followed the top.
+> “I started buying a little bit back when we went below 60K ... Who cares if it goes lower
+> later in the year? It probably will. But that doesn't mean you can't start thinking about
+> how do you get positioned potentially for the next bull market.”
 
-### 30 December 2025: still not ready
+Why it matters: this is the behavioural reveal promised by the title and thumbnail. The
+story is stronger because he is buying before his own bearish timing window has fully ended.
 
-[Bitcoin Bear Market... What Now?, 01:25](https://www.youtube.com/watch?v=aj-Zt3ADQ-k&t=85s)
+## One-glance visual
 
-Expects the bounce to fail and price to move lower unless the weekly reversal conditions
-appear. This is the last visible defensive step before the low-$60K value call.
+Open [Benjamin Cowen's Calls vs Bitcoin Price](assets/cowen-calls-vs-bitcoin.html).
 
-### 6 February 2026: major-low call and disclosed action
+The chart has one job: let a non-expert see his changing position against the Bitcoin price
+without clicking, hovering, or remembering earlier clips.
 
-[4 Reasons Why Bitcoin Formed A MAJOR Bottom, 00:00](https://www.youtube.com/watch?v=e8jcSvurVQ0&t=0s)
+- He warned of a Q4 top and bear market.
+- He later disclosed selling much of his Bitcoin.
+- He remained bearish into June.
+- Below $60,000, he started buying for the next bull market.
+- He still allows a final low, with October inside his expected bottom window.
 
-Calls low-$60K a major or possible macro low and says he put long-term money to work in
-long-term investments. At 06:01 he uses a five-to-ten-year horizon while allowing a spike
-into the low $50Ks. At 10:48-11:03 he remains downside-biased while Bitcoin is below
-$80K. He does not explicitly identify Bitcoin as the purchased asset.
+The chart uses Coinbase BTC-USD daily closes through 6 August 2026 for neutral price context.
+Publication dates and disclosed views are plotted; they are not represented as exact trade
+execution timestamps.
 
-### 24 March 2026: lower-price retest remains on the table
+## Ordered recording deck
 
-[Bitcoin Failed. Here Are the 2 Stocks I'm Selling Before It Gets Worse, 01:08](https://www.youtube.com/watch?v=DzLIQrbSqwo&t=68s)
+1. [MODEL: This Bear Is Now Bullish](https://www.youtube.com/watch?v=MDN4hzx0inw)
+2. [CALL OF TOP: Q4 top and bear market](https://www.youtube.com/watch?v=il089bNt-4g&t=151s)
+3. [SOLD: his portfolio followed the view](https://www.youtube.com/watch?v=7cW2PCPA8kY&t=1142s)
+4. [STILL BEARISH: final bear-market stage](https://www.youtube.com/watch?v=gkDqbvMnMHI&t=4s)
+5. [BOTTOM WINDOW: October?](https://www.youtube.com/watch?v=CmGkfyot8qY&t=759s)
+6. [HE'S BUYING: below $60K](https://www.youtube.com/watch?v=CmGkfyot8qY&t=1129s)
 
-Krown expects Bitcoin to retest lower prices and at 02:15 cites a monthly corrective
-signal indicating downside. This is retained in the research library rather than the
-ordered deck because the May and June receipts below show distinct later steps in the
-same H1 bearish continuation.
+Every tab has a single job. The model is first so Benji understands the packaging. The five
+Cowen receipts then move from prior call, to action, to continued bearishness, to bottom
+window, to the current buying reveal.
 
-### 26 May 2026: downside bias plus a future buy level
+## CTA handoff
 
-[Is Bitcoin About To Crash? (What the Data Says), 01:10](https://www.youtube.com/watch?v=D3QhiwrjvLk&t=70s)
+The approved spoken CTA is in [`BENJI-CTA-READOUT.txt`](BENJI-CTA-READOUT.txt). It connects
+Cowen's earlier winter signal and current buying behaviour to the Inner Circle's distilled
+signals, trader research, wallet movements, and recent opportunities.
 
-At 01:10-01:42 and 02:42-03:03 Krown lays out the downside bias. At 07:01-07:29 he says
-he plans to buy Bitcoin at or below $70K for the long term. This is a stated plan, not
-evidence that the purchase had already happened.
+The video-specific Jupiter tracking URL is still pending. It must be added and verified
+before publication.
 
-### 18 June 2026: still short-term bearish
+## Parked research, not discarded
 
-[Bitcoin's Short-Term Bearish, 00:00](https://www.youtube.com/watch?v=EmTVQheMX-g&t=0s)
+Krown remains a strong future subject, but adding him makes this a second thesis and doubles
+the mental load. His complete evidence remains in
+[`transcripts/krown-evidence-ledger.md`](transcripts/krown-evidence-ledger.md).
 
-At 00:00-00:26 Krown says Bitcoin is short-term bearish and expects a retest of the lows,
-possibly with a slightly lower wick. He also sees the setup for a potential trap. This
-is the last clear bearish receipt in the ordered deck before the July Bitcoin-buy
-disclosure.
+The older combined timeline, thumbnail, and broader four-year-cycle comparisons are parked
+under [`archive/combined-cowen-krown/`](archive/combined-cowen-krown/). They are intentionally
+not linked from the recording console because they do not help Benji understand this single
+video faster.
 
-### 3 July 2026: Bitcoin purchase made explicit
+## Claim boundaries
 
-[Bitcoin’s Metric Hits Lowest Level Since 2022 Bear Market, 01:27](https://www.youtube.com/watch?v=L9Z5KrXG_ak&t=87s)
-
-Describes the low-$60K region as attractive four-to-five-year value and at 01:26 says
-he has been buying Bitcoin in the low $60Ks. This resolves the asset ambiguity in the
-earlier February disclosure and directly supports the working thumbnail copy.
-
-### 1 July and 1 August 2026: undercut and remaining conditions
-
-Coinbase later printed $57,717.55 on 1 July, 3.81% below the February
-$60,001 wick. In his [1 August range post](https://x.com/KrownCryptoCave/status/2083636812430622966),
-Krown identifies buyers below $60K and sellers at $65,631, describing neither a resumed
-bear market nor a confirmed bull market.
-
-### 5-6 August 2026: directional change stated plainly
-
-[Bitcoin Just Fired a Reversal Signal, 02:18](https://www.youtube.com/watch?v=R94SC48JeH0&t=138s)
-
-Says he is no longer bearish on Bitcoin and does not expect new lows.
-
-[Fresh interview, 01:57](https://www.youtube.com/watch?v=2ThXmFN2ja8&t=117s)
-
-Says Bitcoin's low is likely in while noting that final confirmation is still pending.
-Together with the explicit July purchase and the 1 August range post, these sources show
-a constructive long-term change without inventing an unconditional short-term bull call.
-
-## Consistent BTC price context
-
-Source: [Coinbase Exchange BTC-USD daily candles](https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles), using completed UTC candles through 6 August 2026.
-
-| Date | Context |
+| Claim | Evidence treatment |
 |---|---|
-| 6 Oct 2025 | Intraday high $126,296.00; close $124,720.09 |
-| 6 Feb 2026 | Intraday low $60,001.00; close $70,527.70 |
-| 1 Jul 2026 | Intraday low $57,717.55; close $59,961.45 |
-| 6 Aug 2026 | Close $64,267.30 |
+| Cowen called the top | He forecast a Q4 2025 cycle top and bear market before the final high. |
+| Cowen sold | First-person retrospective disclosure; exact executions are unknown. |
+| Cowen stayed bearish | Direct June 2026 statement that Bitcoin was entering the final bear stage. |
+| Cowen flipped bullish | Strong packaging for the behavioural change; the video immediately shows that he is buying while still allowing one final low. |
+| Cowen bought below $60K | Direct first-person disclosure; exact average price and quantity are unknown. |
 
-These are market-context prices, not either analyst's execution prices.
+## Current open item
 
-## Accompanying evidence charts
-
-Open [`charts.html`](charts.html) for the source-linked visual layer. The primary graph
-and its plain-text companion have five jobs:
-
-1. **Bearish around the top:** Cowen forecasts a Q4 top window and Krown warns of a long
-   correction before the final high; Cowen later raises his top-in odds after the break.
-2. **Bitcoin sells off:** neutral Coinbase price context carries the move toward $60K,
-   while Krown still expects the December bounce to fail.
-3. **The turn is not immediate:** Krown calls roughly $60K major long-term value but
-   remains downside-biased; both analysts continue publishing bearish frameworks through
-   H1 2026.
-4. **Capital plans become disclosed action:** Krown first identifies his below-$70K
-   long-term buy level, then explicitly discloses buying Bitcoin in the low
-   $60Ks; Cowen discloses beginning to buy below $60K.
-5. **Current split:** Krown expects no new lows while Cowen still allows a lower final
-   bottom.
-
-The market high and low remain neutral price context, not numbered analyst evidence.
-Publication and disclosure dates are not presented as exact execution dates. The
-four-year-cycle comparison remains secondary context, not proof of a bottom.
-
-Local chart data:
-
-- `assets/btc-price-coinbase-daily-2025-08-01-to-2026-08-06.js`
-- `assets/btc-post-ath-drawdowns-coinbase.js`
-
-Both datasets identify Coinbase Exchange, the checked time, the date range and the
-official candle documentation. The daily series ends at the completed 6 August 2026 UTC
-candle; refresh it only if the recording date moves.
-
-## Claim matrix
-
-| Claim | Status | Safe treatment |
-|---|---|---|
-| Cowen bracketed a Q4 top | Primary verified | Window, not exact day or price |
-| Cowen sold during 2025 | First-person disclosure | Substantial amount; execution unknown |
-| Cowen remained bearish in June 2026 | Primary verified | Third and final bear-market stage; not a disclosed trade |
-| Cowen is buying below $60K | Primary verified | Buying while still bearish |
-| Krown warned of a long correction | Primary verified | Directional warning; exact turn early |
-| Krown called major value near $60K | Primary verified | Major-low zone; later undercut |
-| Krown planned to buy at or below $70K in May | Primary verified | Stated plan, not an executed purchase |
-| Krown remained short-term bearish in June | Primary verified | Expected a retest while also flagging a possible trap |
-| Krown bought Bitcoin | Primary verified | Explicit low-$60K Bitcoin-buy disclosure on 3 July 2026 |
-| Both cleanly flipped bullish | Packaging inference | Explain the real behavioural change immediately |
-
-## Thumbnail and visual mechanism
-
-- Two huge clean face cutouts: Cowen left, Krown right.
-- Oversized glowing Bitcoin between them.
-- Saturated red-to-molten-gold background with a clean dark lower band.
-- Working thumbnail copy: **BOTH BOUGHT**
-- Avoid tiny charts, token logos and percentages.
-- The current mock is rendered at 1280x720 and was checked at a 320x180 feed preview.
-
-## Current holes
-
-- CTA proof, spoken line and tracking destination are intentionally pending.
-- Cowen caption downloads were rate-limited during this build; exact timestamp notes are
-  preserved in `transcripts/cowen-evidence-ledger.md` and should be checked in the live
-  source during rehearsal.
-- Refresh the chart data and Krown interview's final 24-hour performance only if the
-  recording date moves beyond this 7 August research snapshot.
-
-## Transcript assets
-
-- `transcripts/cowen-evidence-ledger.md`
-- `transcripts/krown-evidence-ledger.md`
-- `transcripts/e8jcSvurVQ0.en.vtt`
-- `transcripts/L9Z5KrXG_ak.en.vtt`
-- `transcripts/R94SC48JeH0.en.vtt`
-- `transcripts/2ThXmFN2ja8.en.vtt`
-- `transcripts/aj-Zt3ADQ-k.en.vtt`
-- Additional Krown confirmation VTT files retained for the source library.
+- Add and test the video-specific Jupiter tracking URL before the video is published.
