@@ -204,7 +204,8 @@
 
     .selected-visual img {
       display: block;
-      width: min(100%, 720px);
+      width: 100%;
+      max-width: 720px;
       height: auto;
       margin: 0 auto;
       aspect-ratio: 16 / 9;
@@ -477,12 +478,19 @@
       .topbar-inner { width: min(100% - 24px, 1500px); }
       .nav { display: none; }
       .topbar .button { padding: 8px 10px; }
-      .wrap { width: min(100% - 24px, 1500px); }
+      .wrap { width: calc(100% - 24px); max-width: 1500px; }
       .hero { min-height: auto; padding-top: 24px; }
+      .package-layout,
+      .selected-card,
+      .selected-copy,
+      .selected-visual,
+      .model-card,
+      .thesis-card { width: 100%; min-width: 0; }
       .selected-card { min-height: 0; }
       .selected-copy { display: block; }
+      .selected-copy h1, .one-line { max-width: 100%; overflow-wrap: break-word; }
       .selected-visual { min-height: 0; }
-      .selected-visual img { aspect-ratio: 16 / 9; }
+      .selected-visual img { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; }
       .model-card { display: block; }
       .model-card img { height: auto; aspect-ratio: 16 / 9; }
       .thesis-card { grid-template-columns: 1fr; gap: 14px; padding: 20px; }
