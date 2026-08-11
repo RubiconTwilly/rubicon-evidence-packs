@@ -635,12 +635,13 @@
 
     function openDeck(items) {
       if (!items.length) return;
-      window.open(items[0].url, "_blank", "noopener");
-      items.slice(1).forEach((item, index) => {
+      const reverseLaunch = [...items].reverse();
+      window.open(reverseLaunch[0].url, "_blank", "noopener");
+      reverseLaunch.slice(1).forEach((item, index) => {
         setTimeout(() => window.open(item.url, "_blank", "noopener"), (index + 1) * 180);
       });
       const statusLine = document.getElementById("launchStatus");
-      if (statusLine) statusLine.textContent = `Opening ${items.length} tabs in record order. Allow popups if your browser asks.`;
+      if (statusLine) statusLine.textContent = `Opening ${items.length} tabs backwards so Arc stacks them in record order. Allow popups if Arc asks.`;
     }
 
     document.getElementById("openAll").addEventListener("click", () => openDeck(RECORD_DECK));
