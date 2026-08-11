@@ -1,0 +1,89 @@
+{
+  "schema": "rubicon.video-project",
+  "schema_version": 2,
+  "project_id": "2026-08-11-cryptogodjohn-3-coins-next-cycle",
+  "brand": "rubicon",
+  "updated_at": "2026-08-11T00:47:24Z",
+  "stage": "research_ready",
+  "recording_blocked": false,
+  "blocking_reason": null,
+  "record_date": "2026-08-11",
+  "selected_title": "CryptoGodJohn's 3 Meme Coins for the Next Cycle",
+  "thumbnail_text": "HIS NEXT 3",
+  "thumbnail_concept": "CryptoGodJohn is the only face and fills the right half. HIS NEXT 3 and three glowing, unnamed coin shapes fill the left half.",
+  "promise": "John is back in meme coins, with MANIFEST as the culture bet, YOTS as the AI and Elon bet, and GTA6 as the newest gaming and meme-stock thesis in his latest disclosed lineup.",
+  "packaging_model": {
+    "title": "These 3 CryptoGodJohn AI Tokens could go NUCLEAR in the next 90 days",
+    "url": "https://www.youtube.com/watch?v=uYMaZKwojCw",
+    "mechanism": "One large John face, one finite three-token promise, and three visibly different narrative roles."
+  },
+  "thesis_sentences": [
+    "CryptoGodJohn is back in meme coins, with MANIFEST as the culture bet, YOTS as the AI and Elon bet, and GTA6 as his newest gaming and meme-stock thesis.",
+    "Each coin gives Benji a different attention narrative to break down, while MAGA and ASTEROID supply the recent post-to-chart proof for why viewers care what John says next."
+  ],
+  "cta": {
+    "status": "approved_for_recording_tracking_path_unverified",
+    "text": "When someone like CryptoGodJohn posts a coin, most people only see the headline after it has already spread across X. Inside our paid Inner Circle, the Influencer Feed brings his public posts, updates from his @0x0papi alt, exact-token matches, and chart context into one place while the story is still developing. The MANIFEST alert and the early YOTS and GTA6 sources in this video are exactly the kind of information it is built to surface. If you want the same research feed I am using here, join the Inner Circle through the link below. It is an information and research tool, not a promise of a trade or return. These are micro-cap tokens, and they can lose most or all of their value.",
+    "destination": "Rubicon Inner Circle via Jupiter",
+    "video_slug": "cryptogodjohn-3-coins-next-cycle",
+    "tracking_url": "https://join.welcometorubicon.com/cryptogodjohn-3-coins-next-cycle",
+    "tracking_verified": false,
+    "readout_ref": "BENJI-CTA-READOUT.txt"
+  },
+  "measurement": {
+    "destination": "Jupiter",
+    "video_level_attribution_required": true,
+    "checkout_path_verified": false,
+    "outcomes_due": [
+      "24h",
+      "72h",
+      "7d"
+    ]
+  },
+  "evidence_order": [
+    "01 Package: John face plus a finite three-token promise",
+    "02 Orientation: who John is and the three narrative roles",
+    "03 Recent attention: MAGA and ASTEROID post-to-chart montage",
+    "04 Current lineup reveal: MANIFEST, YOTS, GTA6",
+    "05 MANIFEST: culture, feed alert, current stance, and chart context",
+    "06 YOTS: Elon and AI lore, @0x0papi source, current stance, and chart context",
+    "07 Earned CTA: Influencer Feed as an information source",
+    "08 GTA6: newest reveal, TTWO mechanism, official game catalyst, and chart context"
+  ],
+  "public_source_count": 14,
+  "console_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/",
+  "prepared_visual_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg",
+  "thumbnail_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/#packaging",
+  "arc_handoff_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/arc-handoff.json",
+  "research_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/research.md",
+  "skeleton": {
+    "source_ref": "research.md#recording-route",
+    "sections": [
+      "Finite three-pick open",
+      "Why John matters now",
+      "Current three reveal",
+      "MANIFEST culture block",
+      "YOTS AI and Elon block",
+      "Influencer Feed CTA",
+      "GTA6 fresh final reveal"
+    ]
+  },
+  "verification": {
+    "record_day_checked_at": "2026-08-10T23:46:00Z",
+    "desktop_rendered_at": null,
+    "mobile_rendered_at": null,
+    "arc_manifest_checked_at": "2026-08-11T00:47:24Z",
+    "tracking_path_checked_at": null
+  },
+  "parked_research": [
+    {
+      "subject": "Ansem and MANLET",
+      "reason": "Third-party market-heat context that dilutes the selected John-only premise.",
+      "ref": "research.md#parked"
+    }
+  ],
+  "descript": {},
+  "youtube": {},
+  "published": {},
+  "outcomes": []
+}

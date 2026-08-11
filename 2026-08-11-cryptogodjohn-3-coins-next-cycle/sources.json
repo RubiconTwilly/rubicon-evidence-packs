@@ -1,0 +1,977 @@
+{
+  "schema": "rubicon.record-pack-sources",
+  "version": 4,
+  "generated_at": "2026-08-11T10:47:24+10:00",
+  "record_day_checked_at": "2026-08-11T10:47:24+10:00",
+  "project": {
+    "id": "2026-08-11-cryptogodjohn-3-coins-next-cycle",
+    "status": "research_ready_render_pending",
+    "record_date": "2026-08-11",
+    "title": "CryptoGodJohn's 3 Meme Coins for the Next Cycle",
+    "thumbnail_text": "HIS NEXT 3",
+    "thumbnail_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/#packaging",
+    "hosted_console_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/",
+    "model": {
+      "title": "These 3 CryptoGodJohn AI Tokens could go NUCLEAR in the next 90 days",
+      "url": "https://www.youtube.com/watch?v=uYMaZKwojCw",
+      "mechanism": "A large John face, a finite three-token promise, and three visibly different roles."
+    },
+    "thesis_sentences": [
+      "CryptoGodJohn is back in meme coins, with MANIFEST as the culture bet, YOTS as the AI and Elon bet, and GTA6 as his newest gaming and meme-stock thesis.",
+      "Each coin gives Benji a different attention narrative to break down, while MAGA and ASTEROID supply the recent post-to-chart proof for why viewers care what John says next."
+    ],
+    "subjects": [
+      "CryptoGodJohn"
+    ],
+    "subject_aliases": [
+      "0x0papi",
+      "John's alt"
+    ],
+    "cta_status": "draft_for_benji_review_tracking_path_unverified",
+    "cta_ref": "BENJI-CTA-READOUT.txt"
+  },
+  "audience_orientation": {
+    "status": "required",
+    "reason": "Viewers need to know who John is, why his current meme-coin attention matters, and that this is an editorial roundup of three current theses rather than a static portfolio audit.",
+    "items": [
+      {
+        "type": "subject",
+        "question": "Who is John and why does this channel care?",
+        "answer": "John is a repeat Rubicon subject whose finite-pick videos have worked. His alt @0x0papi is part of the same John source trail in Rubicon's Influencer Feed.",
+        "receipt_ids": [
+          "model-three-john-tokens",
+          "becker-credits-john"
+        ],
+        "asset_refs": [
+          "assets/model-three-tokens-thumbnail.jpg"
+        ]
+      },
+      {
+        "type": "market_position",
+        "question": "What are the three current narratives?",
+        "answer": "MANIFEST is the culture coin, YOTS is the AI and Elon coin, and GTA6 is the gaming plus meme-stock coin shown in John's latest disclosed three-position image.",
+        "receipt_ids": [
+          "latest-three-protected",
+          "manifest-current-stance",
+          "yots-current-load",
+          "gta6-latest-thesis"
+        ],
+        "asset_refs": [
+          "assets/user/john-latest-three-gta6.jpg"
+        ]
+      },
+      {
+        "type": "framework",
+        "question": "What kind of list is this?",
+        "answer": "This is an editorial roundup of three narratives John is actively discussing, not a promise of future winners or a forensic audit of every trade.",
+        "receipt_ids": [
+          "manifest-public-first",
+          "yots-public-ape",
+          "gta6-public-first"
+        ],
+        "asset_refs": [
+          "assets/user/oxo-gta6-first-thesis-feed-card.jpg"
+        ]
+      }
+    ]
+  },
+  "claim_chronology": {
+    "subject": "CryptoGodJohn",
+    "claim": "John is actively pushing three distinct meme-coin narratives: culture, AI and Elon, and GTA gaming plus meme stocks.",
+    "checkpoints": [
+      {
+        "stage": "forecast",
+        "status": "evidenced",
+        "searched_window": "17 Apr to 10 Aug 2026",
+        "searched_surfaces": [
+          "John public X",
+          "0x0papi alt captures",
+          "Rubicon feed cards",
+          "public token charts"
+        ],
+        "receipt_ids": [
+          "manifest-current-stance",
+          "yots-current-load",
+          "gta6-latest-thesis"
+        ],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "decision_day",
+        "status": "evidenced",
+        "searched_window": "18 May to 10 Aug 2026",
+        "searched_surfaces": [
+          "John public X",
+          "0x0papi alt captures"
+        ],
+        "receipt_ids": [
+          "manifest-public-first",
+          "yots-public-ape",
+          "gta6-protected-first"
+        ],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_applicable",
+        "counter_search_note": "The episode reports John's visible claims and information flow rather than adjudicating hidden portfolio consistency."
+      },
+      {
+        "stage": "confirmation",
+        "status": "evidenced",
+        "searched_window": "3 to 10 Aug 2026",
+        "searched_surfaces": [
+          "exact-contract public posts",
+          "current 0x0papi alt feed"
+        ],
+        "receipt_ids": [
+          "manifest-current-stance",
+          "yots-current-load",
+          "gta6-latest-thesis"
+        ],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_applicable",
+        "counter_search_note": "The useful confirmation is that John continued publicly developing each thesis."
+      },
+      {
+        "stage": "action",
+        "status": "evidenced",
+        "searched_window": "18 May to 10 Aug 2026",
+        "searched_surfaces": [
+          "John's own public and @0x0papi buy or ape language"
+        ],
+        "receipt_ids": [
+          "manifest-public-first",
+          "yots-public-ape",
+          "gta6-protected-first"
+        ],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "re_entry",
+        "status": "not_applicable",
+        "searched_window": "8 to 10 Aug 2026",
+        "searched_surfaces": [
+          "latest public John posts"
+        ],
+        "receipt_ids": [],
+        "counter_receipt_ids": [],
+        "note": "The episode does not claim a prior exit or a re-entry for the selected three."
+      },
+      {
+        "stage": "current_stance",
+        "status": "evidenced",
+        "searched_window": "10 to 11 Aug 2026",
+        "searched_surfaces": [
+          "latest public X",
+          "0x0papi alt feed",
+          "Dexscreener",
+          "official Rockstar GTA VI pages"
+        ],
+        "receipt_ids": [
+          "manifest-current-stance",
+          "yots-current-load",
+          "gta6-latest-thesis",
+          "rockstar-gta6-release"
+        ],
+        "counter_receipt_ids": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "section": "Packaging model and audience orientation",
+      "cards": [
+        {
+          "id": "model-three-john-tokens",
+          "type": "youtube",
+          "role": "model",
+          "label": "Past three-token John video",
+          "source_title": "These 3 CryptoGodJohn AI Tokens could go NUCLEAR in the next 90 days",
+          "url": "https://www.youtube.com/watch?v=uYMaZKwojCw",
+          "source_date": "2025-06-17",
+          "quote": "These 3 CryptoGodJohn AI Tokens could go NUCLEAR in the next 90 days",
+          "shows": "A channel-native John face plus finite three-token promise that reached about 20,000 views.",
+          "why": "It gives this episode a proven Rubicon shape instead of an audit premise.",
+          "inspect": "Title, thumbnail, 00:00-02:41 | 17 Jun 2025",
+          "missing": "The package loses its closest channel precedent."
+        },
+        {
+          "id": "becker-credits-john",
+          "type": "x_post",
+          "role": "orientation",
+          "label": "Becker publicly credits John",
+          "source_title": "Alex Becker on X: credit to CryptoGodJohn",
+          "url": "https://x.com/ZssBecker/status/1771828283295879450",
+          "source_date": "2024-03-24",
+          "quote": "@CryptoGodJohn pointed destra out to me in the .02s. He's been SLAYING AI coins this run.",
+          "shows": "A major outside creator publicly credited John with surfacing Destra early.",
+          "why": "It explains John's relevance without relying only on Rubicon praising its own recurring subject.",
+          "inspect": "Full post | 24 Mar 2024",
+          "missing": "New viewers get no independent reason to care about John.",
+          "caution": "The post also credits two other accounts, so show the full post."
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "section": "Recent proof: why John has attention again",
+      "cards": [
+        {
+          "id": "maga-protected-capture",
+          "type": "john_alt_capture",
+          "role": "track_record",
+          "label": "John's @0x0papi MAGA post and chart",
+          "source_title": "John's alt @0x0papi: MAGA thesis",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/maga-protected-thesis.png",
+          "canonical_url": "https://x.com/0x0papi",
+          "local_ref": "assets/user/maga-protected-thesis.png",
+          "source_date": "2026-04-18",
+          "quote": "Thesis on they I aped $MAGA",
+          "shows": "The supplied timestamp maps to roughly a $297K to $334K chart range; the same pool later printed an approximate $33.2M high.",
+          "why": "It is the cleanest recent example of a post followed by a very large public-chart move.",
+          "inspect": "Influencer Feed render plus exact-minute GeckoTerminal candle | 18 Apr 2026",
+          "missing": "The opener lacks a recent meme-coin receipt.",
+          "caution": "Say the chart later printed roughly 100x, not that John or followers realised 100x."
+        },
+        {
+          "id": "maga-public-action",
+          "type": "x_post",
+          "role": "track_record",
+          "label": "MAGA public conviction follow-up",
+          "source_title": "John on X: another $10k into MAGA",
+          "url": "https://x.com/CryptoGodJohn/status/2052492850902806600",
+          "source_date": "2026-05-07",
+          "quote": "Aped another $10k into $MAGA. My highest conviction meme coin trade of 2026.",
+          "shows": "John later disclosed another purchase and called MAGA his highest-conviction meme trade of 2026.",
+          "why": "It gives Arc a public MAGA action receipt.",
+          "inspect": "Post | 7 May 2026",
+          "missing": "The MAGA example has no public first-post tab; use the local Influencer Feed render."
+        },
+        {
+          "id": "maga-public-chart",
+          "type": "chart",
+          "role": "chart_context",
+          "label": "MAGA exact public pool",
+          "source_title": "DexScreener: MAGA / SOL",
+          "url": "https://dexscreener.com/solana/hvimk99ygssdnwz9esqumdthrfz4dade7j6phmfms6at",
+          "source_date": "2026-08-11",
+          "quote": "MAGA / SOL on PumpSwap",
+          "shows": "The same public pool used for the timestamped April post and later approximate $33.2M high.",
+          "why": "It gives Benji a public chart surface for the historical sequence.",
+          "inspect": "Full chart, 18 to 25 Apr 2026 | checked 11 Aug 2026",
+          "missing": "The historical MAGA move has no public chart tab.",
+          "caution": "Chart history is not evidence of a realised personal return."
+        },
+        {
+          "id": "asteroid-conditional-hint",
+          "type": "x_post",
+          "role": "track_record",
+          "label": "ASTEROID conditional hint",
+          "source_title": "John on X: if Elon confirms",
+          "url": "https://x.com/CryptoGodJohn/status/2045003219537957206",
+          "source_date": "2026-04-17",
+          "quote": "If Elon confirms - this might be the runner the trenches have been waiting for",
+          "shows": "The exact post minute was roughly $4.2M to $4.8M; the public pool later reached an approximate $212.6M daily high.",
+          "why": "It shows why viewers pay attention to John's narrative reads.",
+          "inspect": "Post, quoted Elon reply and exact-minute chart | 17 Apr 2026",
+          "missing": "One of the user's strongest recent John examples is absent.",
+          "caution": "Call it an early conditional hint followed by a chart move, not a realised trade return."
+        },
+        {
+          "id": "asteroid-public-chart",
+          "type": "chart",
+          "role": "chart_context",
+          "label": "ASTEROID exact public pool",
+          "source_title": "DexScreener: ASTEROID / WETH",
+          "url": "https://dexscreener.com/ethereum/0x76a411f14a704099ba476ce8dffc288a53295218",
+          "source_date": "2026-08-11",
+          "quote": "ASTEROID / WETH on Uniswap",
+          "shows": "The public pool around John's conditional hint and the later approximate $212.6M chart high.",
+          "why": "It makes the ASTEROID context inspectable on the recording day.",
+          "inspect": "Full chart from 17 Apr 2026 | checked 11 Aug 2026",
+          "missing": "The ASTEROID move has no public chart tab.",
+          "caution": "John later said he did not own the Ethereum token; use this only as an early information spot."
+        },
+        {
+          "id": "post-chart-snapshot",
+          "type": "generated_asset",
+          "role": "visual",
+          "label": "Posts and later chart states",
+          "source_title": "John posts and later public-chart states",
+          "local_ref": "assets/post-to-chart-snapshot.json",
+          "source_date": "2026-08-11",
+          "quote": "Timestamped posts, displayed feed values, later chart highs and record-day market context.",
+          "shows": "The strongest historical observations without turning them into investor-return promises.",
+          "why": "Benji gets one clear proof montage before the current three.",
+          "inspect": "Prepared data visual | checked 11 Aug 2026",
+          "missing": "The earlier examples have to be combined manually."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "section": "The current three: culture, AI, and gaming",
+      "cards": [
+        {
+          "id": "latest-three-protected",
+          "type": "john_alt_capture",
+          "role": "lineup_reveal",
+          "label": "John's latest three via @0x0papi",
+          "source_title": "John's alt @0x0papi: current three attachment",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2086903386004230205",
+          "local_ref": "assets/user/john-latest-three-gta6.jpg",
+          "source_date": "2026-08-10",
+          "quote": "Manifesting / The Cult of YOTS / GTA VI",
+          "shows": "The latest retained three-position attachment visibly shows MANIFEST, YOTS, and GTA6.",
+          "why": "It is the cleanest source for the selected lineup and makes GTA6 the current third reveal.",
+          "inspect": "Influencer Feed source attachment | 10 Aug 2026",
+          "missing": "The current trio would otherwise be inferred from separate posts.",
+          "caution": "Use the image as John's disclosed lineup, not as an audited portfolio statement."
+        },
+        {
+          "id": "current-three-lineup",
+          "type": "generated_asset",
+          "role": "visual",
+          "label": "Current three one-glance view",
+          "source_title": "CryptoGodJohn current three narrative lineup",
+          "local_ref": "assets/john-three-current.html",
+          "data_ref": "assets/current-three-snapshot.json",
+          "source_date": "2026-08-11",
+          "quote": "MANIFEST: culture. YOTS: AI and Elon. GTA6: gaming and meme stocks.",
+          "shows": "Three different bets on what will capture attention over the next part of the cycle.",
+          "why": "It gives the video a simple organising idea before the token blocks.",
+          "inspect": "Prepared current-lineup visual | checked 11 Aug 2026",
+          "missing": "The episode feels like three unrelated token summaries.",
+          "caution": "This is an editorial roundup of John's current posts, not a single formal portfolio statement."
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "section": "Coin one: MANIFEST, the culture coin",
+      "cards": [
+        {
+          "id": "manifest-feed-alert",
+          "type": "feed_capture",
+          "role": "feed_proof",
+          "label": "MANIFEST appeared in the Influencer Feed",
+          "source_title": "Rubicon MANIFEST buy alert",
+          "local_ref": "assets/user/manifest-buy-alert.png",
+          "source_date": "2026-05-18",
+          "quote": "Influencer BUY Alert: MANIFEST",
+          "shows": "The supplied alert displays approximately $1,930 of tracked activity and a $2.2M market-cap snapshot.",
+          "why": "It is the cleanest product bridge in the current three-token story.",
+          "inspect": "Supplied feed card | 18 May 2026",
+          "missing": "The CTA has no adjacent product visual."
+        },
+        {
+          "id": "manifest-oxo-first-thesis",
+          "type": "john_alt_capture",
+          "role": "first_alt_thesis",
+          "label": "John's MANIFEST thesis via @0x0papi",
+          "source_title": "John's alt @0x0papi: MANIFEST first thesis",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-manifest-first-thesis-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2056118437097726284",
+          "local_ref": "assets/user/oxo-manifest-first-thesis-feed-card.jpg",
+          "source_date": "2026-05-18",
+          "quote": "If you know anything about me I am a big believer in manifesting positivity to your life",
+          "shows": "John's alt disclosed the MANIFEST bag, the exact contract, and the culture thesis in one Influencer Feed render.",
+          "why": "It is the strongest visual opening for the MANIFEST section.",
+          "inspect": "Influencer Feed render | 18 May 2026, 07:03 AEST",
+          "missing": "The MANIFEST block opens on a wallet card instead of John's actual words."
+        },
+        {
+          "id": "manifest-oxo-current-chart",
+          "type": "john_alt_capture",
+          "role": "current_alt_chart",
+          "label": "John's MANIFEST chart via @0x0papi",
+          "source_title": "John's alt @0x0papi: MANIFEST bidding zone",
+          "url": "https://x.com/0x0papi/status/2085146074075763116",
+          "local_ref": "assets/user/oxo-manifest-current-chart-feed-card.jpg",
+          "source_date": "2026-08-06",
+          "quote": "Manifest back in our bidding zone",
+          "shows": "John's alt returned to the MANIFEST thesis with an annotated long-range chart.",
+          "why": "It connects the first thesis to his current attention without another paragraph.",
+          "inspect": "Influencer Feed render | 6 Aug 2026, 09:28 AEST",
+          "missing": "The section lacks a clean current chart visual from John's alt."
+        },
+        {
+          "id": "manifest-public-first",
+          "type": "x_post",
+          "role": "token_thesis",
+          "label": "John's public MANIFEST thesis",
+          "source_title": "John on X: I MANIFEST success",
+          "url": "https://x.com/CryptoGodJohn/status/2056341490016702480",
+          "source_date": "2026-05-18",
+          "quote": "I $MANIFEST success, positivity, health & family daily. Aped a big bag &will buy more",
+          "shows": "John framed MANIFEST as a universal belief and disclosed a position.",
+          "why": "It explains the culture-coin slot in his current lineup.",
+          "inspect": "Post | 18 May 2026",
+          "missing": "The first coin has no original public conviction receipt."
+        },
+        {
+          "id": "manifest-buying-more",
+          "type": "x_post",
+          "role": "current_action",
+          "label": "Fresh MANIFEST add claim",
+          "source_title": "John on X: buying more MANIFEST",
+          "url": "https://x.com/CryptoGodJohn/status/2086180903449976963",
+          "source_date": "2026-08-08",
+          "quote": "Buying more $MANIFEST here below $10M is extremely undervalued",
+          "shows": "John publicly said he was adding below a $10M market cap.",
+          "why": "It makes MANIFEST a current conviction story rather than only a May example.",
+          "inspect": "Post | 8 Aug 2026",
+          "missing": "The first coin lacks a fresh update."
+        },
+        {
+          "id": "manifest-current-stance",
+          "type": "x_post",
+          "role": "current_stance",
+          "label": "Latest MANIFEST stance",
+          "source_title": "John on X: MANIFEST at these levels",
+          "url": "https://x.com/CryptoGodJohn/status/2086902775724626129",
+          "source_date": "2026-08-10",
+          "quote": "$MANIFEST is free at these levels. Going to be one of the biggest runners of the coming months. Accumulate wisely",
+          "shows": "John was still publicly bullish on MANIFEST on the record-day eve.",
+          "why": "It supplies the current ending for the first token block.",
+          "inspect": "Post | 10 Aug 2026",
+          "missing": "The video cannot separate the current claim from the older one.",
+          "caution": "Present this as John's forecast, not Rubicon's promised outcome."
+        },
+        {
+          "id": "manifest-official-site",
+          "type": "official_source",
+          "role": "narrative_visual",
+          "label": "MANIFEST official culture surface",
+          "source_title": "Manifesting: the movement on Solana",
+          "url": "https://www.manifesting.meme/",
+          "source_date": "2026-08-11",
+          "quote": "MANIFEST IT. LIVE IT.",
+          "shows": "The project's black-and-gold manifestation identity, culture language, and visual system.",
+          "why": "It gives Benji something more memorable to show than a ticker and chart.",
+          "inspect": "Hero, culture copy and visual assets | checked 11 Aug 2026",
+          "missing": "The MANIFEST section lacks a filmable cultural world."
+        },
+        {
+          "id": "manifest-public-chart",
+          "type": "chart",
+          "role": "chart_context",
+          "label": "MANIFEST exact public pool",
+          "source_title": "DexScreener: MANIFEST / SOL",
+          "url": "https://dexscreener.com/solana/2dvbu5h8jcd37gaxajuz4t77hsjjw22lldutzk7gsa43",
+          "source_date": "2026-08-11",
+          "quote": "MANIFEST / SOL on Raydium",
+          "shows": "The pool was around $0.0082 during John's May 18 public post and later touched roughly $0.0567.",
+          "why": "It gives the first coin a simple post-to-chart visual without promising a repeat.",
+          "inspect": "Full chart from 18 May 2026 | checked 11 Aug 2026",
+          "missing": "The MANIFEST chart context cannot be inspected during recording.",
+          "caution": "This dates a post and a public chart, not John's personal return."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "section": "Coin two: YOTS, the AI and Elon coin",
+      "cards": [
+        {
+          "id": "yots-protected-next-goat",
+          "type": "john_alt_capture",
+          "role": "feed_proof",
+          "label": "John's @0x0papi YOTS comparison",
+          "source_title": "John's alt @0x0papi: next GOAT / ZERBRO?",
+          "url": "https://x.com/0x0papi/status/2083729572227338400",
+          "local_ref": "assets/user/yots-next-goat-post.png",
+          "source_date": "2026-08-02",
+          "quote": "The next GOAT / ZERBRO?",
+          "shows": "John's @0x0papi alt positioned YOTS against two recognisable AI-agent meme precedents.",
+          "why": "It is a clean visual bridge into the AI singularity thesis.",
+          "inspect": "Influencer Feed render | second stored YOTS post on 2 Aug 2026",
+          "missing": "The YOTS section opens without the strongest visual comparison."
+        },
+        {
+          "id": "yots-oxo-leading-ai",
+          "type": "john_alt_capture",
+          "role": "current_alt_thesis",
+          "label": "John's leading-AI YOTS thesis via @0x0papi",
+          "source_title": "John's alt @0x0papi: YOTS leading AI coin",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-yots-leading-ai-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2085030287453405525",
+          "local_ref": "assets/user/oxo-yots-leading-ai-feed-card.jpg",
+          "source_date": "2026-08-06",
+          "quote": "Will be the leading AI coin soon",
+          "shows": "John's alt says smart trenchers are bullish on YOTS and frames it as the prospective leading AI coin.",
+          "why": "It is the cleanest one-sentence YOTS conviction visual.",
+          "inspect": "Influencer Feed render | 6 Aug 2026, 01:48 AEST",
+          "missing": "The YOTS block lacks a clean current conviction card from John's alt."
+        },
+        {
+          "id": "yots-oxo-current-chart",
+          "type": "john_alt_capture",
+          "role": "current_alt_chart",
+          "label": "John's YOTS chart via @0x0papi",
+          "source_title": "John's alt @0x0papi: YOTS chart update",
+          "url": "https://x.com/0x0papi/status/2085406036358263175",
+          "local_ref": "assets/user/oxo-yots-current-chart-feed-card.jpg",
+          "source_date": "2026-08-07",
+          "quote": "YOTS looking like its gonna teleport higher soon",
+          "shows": "John's alt pairs the current YOTS forecast with a readable chart in the Influencer Feed render.",
+          "why": "It makes the movement section visual and immediately understandable.",
+          "inspect": "Influencer Feed render | 7 Aug 2026, 02:41 AEST",
+          "missing": "The YOTS section has no clean current chart card from John's alt."
+        },
+        {
+          "id": "yots-public-ape",
+          "type": "x_post",
+          "role": "token_thesis",
+          "label": "John's public YOTS action",
+          "source_title": "John on X: aped a bag of YOTS",
+          "url": "https://x.com/CryptoGodJohn/status/2083913549001199932",
+          "source_date": "2026-08-02",
+          "quote": "Aped a bag of $YOTS. I think the lore with Elon can be massive. Reminds me of early GOAT / Zebro with AI agents",
+          "shows": "John disclosed a YOTS position and the exact AI and Elon comparison.",
+          "why": "It explains why YOTS occupies the AI slot in the lineup.",
+          "inspect": "Post | 2 Aug 2026",
+          "missing": "The second coin has no public action or thesis."
+        },
+        {
+          "id": "yots-exact-contract-thesis",
+          "type": "x_post",
+          "role": "identity",
+          "label": "Exact YOTS contract and lore",
+          "source_title": "John on X: YOTS exact-contract thesis",
+          "url": "https://x.com/CryptoGodJohn/status/2084268643559297457",
+          "source_date": "2026-08-03",
+          "quote": "The lore on solana:3f9LEP4RNM1yq5VnCD1LYMvq7FZis5tfGqyZMsiRpump reminds me of early $GOAT / $ZERBRO days",
+          "shows": "The exact mint and John's comparison to earlier AI-agent meme cycles.",
+          "why": "It closes ticker ambiguity and gives Benji the real narrative hook.",
+          "inspect": "Post | 3 Aug 2026",
+          "missing": "YOTS is discussed by ticker without contract-level identity."
+        },
+        {
+          "id": "yots-current-load",
+          "type": "x_post",
+          "role": "current_stance",
+          "label": "Latest YOTS stance",
+          "source_title": "John on X: load up YOTS",
+          "url": "https://x.com/CryptoGodJohn/status/2086899767825580517",
+          "source_date": "2026-08-10",
+          "quote": "I think solana:3f9LEP4RNM1yq5VnCD1LYMvq7FZis5tfGqyZMsiRpump is going to go on an insane run soon",
+          "shows": "John repeated the exact mint on the record-day eve.",
+          "why": "It keeps the YOTS thesis current rather than a one-day mention.",
+          "inspect": "Post | 10 Aug 2026",
+          "missing": "The second coin has no current ending.",
+          "caution": "The forecast wording is John's, not Rubicon's promise."
+        },
+        {
+          "id": "yots-official-site",
+          "type": "official_source",
+          "role": "narrative_visual",
+          "label": "YOTS official lore surface",
+          "source_title": "Year of the Singularity",
+          "url": "https://yearofthesingularity.com/",
+          "source_date": "2026-08-11",
+          "quote": "INITIALIZING SINGULARITY PROTOCOL",
+          "shows": "The project's cyberpunk world, terminal, lore, agent surfaces, and Elon-linked singularity premise.",
+          "why": "It gives the YOTS section a visual world rather than only an AI ticker comparison.",
+          "inspect": "Home, Terminal, Gospel and Signal surfaces | checked 11 Aug 2026",
+          "missing": "The YOTS narrative remains abstract and hard to film.",
+          "caution": "Attribute autonomous-Grok or agent claims to the project."
+        },
+        {
+          "id": "yots-public-chart",
+          "type": "chart",
+          "role": "chart_context",
+          "label": "YOTS screenshot-matching pool",
+          "source_title": "DexScreener: YOTS / SOL",
+          "url": "https://dexscreener.com/solana/4usnftqy15mrvylcpkngv4rytamcgnhc9qt9pwbsjpzv",
+          "local_ref": "assets/user/yots-chart-aug4.png",
+          "source_date": "2026-08-11",
+          "quote": "YOTS / SOL on PumpSwap",
+          "shows": "The pool traded near $0.0019 around John's public post and briefly touched roughly $0.00585 about 26 hours later.",
+          "why": "It makes the supplied August 4 chart capture directly inspectable against the public pool.",
+          "inspect": "Full chart from 2 Aug 2026 | checked 11 Aug 2026",
+          "missing": "The YOTS post-to-chart sequence has no public chart tab.",
+          "caution": "This is a chart excursion, not a realised personal return."
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "section": "Coin three: GTA6, the gaming and meme-stock coin",
+      "cards": [
+        {
+          "id": "gta6-protected-first",
+          "type": "john_alt_capture",
+          "role": "fresh_reveal",
+          "label": "John's first GTA6 thesis via @0x0papi",
+          "source_title": "John's alt @0x0papi: I bought some GTA6",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-gta6-first-thesis-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2086588790941053328",
+          "local_ref": "assets/user/oxo-gta6-first-thesis-feed-card.jpg",
+          "chart_asset_ref": "assets/gta6-protected-source.jpg",
+          "source_date": "2026-08-10",
+          "quote": "I bought some of this it's GTA 6 - but it's paired with its stock TTWO",
+          "shows": "John framed GTA6 as a combined game-meme and meme-stock narrative; the attached chart displayed about $361K.",
+          "why": "This is the freshest source in the entire pack and a strong third reveal.",
+          "inspect": "Influencer Feed render and source chart | 9 Aug 23:01 UTC",
+          "missing": "The current lineup lacks a genuinely new final coin.",
+          "caution": "Attribute TTWO rewards and any trailer date to John or the token project, not Rockstar."
+        },
+        {
+          "id": "gta6-public-first",
+          "type": "x_post",
+          "role": "public_confirmation",
+          "label": "Public GTA6 thesis",
+          "source_title": "John on X: GTA6 plus TTWO narrative",
+          "url": "https://x.com/CryptoGodJohn/status/2086635391302443509",
+          "source_date": "2026-08-10",
+          "quote": "The only Grand Theft Auto coin that is paired to Rockstar's stock / TTWO.",
+          "shows": "John publicly repeated the combined GTA and meme-stock thesis hours after his @0x0papi alt post.",
+          "why": "It gives Ben a public tab to open beside the Influencer Feed render.",
+          "inspect": "Post and attached GIF | 10 Aug 2026",
+          "missing": "The GTA6 claim has no public tweet tab for recording."
+        },
+        {
+          "id": "gta6-latest-thesis",
+          "type": "x_post",
+          "role": "current_stance",
+          "label": "Latest exact-contract GTA6 thesis",
+          "source_title": "John on X: GTA6 exact-contract thesis",
+          "url": "https://x.com/CryptoGodJohn/status/2086914345678819518",
+          "local_ref": "assets/gta6-latest-public.jpg",
+          "source_date": "2026-08-10",
+          "quote": "Expecting this to be one of the biggest plays of the coming months",
+          "shows": "John supplied the exact mint and elevated GTA6 into his coming-month thesis.",
+          "why": "It makes GTA6 more than a passing mention and creates the final update beat.",
+          "inspect": "Full post | 10 Aug 20:35 UTC",
+          "missing": "There is no current public finish to the GTA6 section.",
+          "caution": "The comparison with MLG and all future performance language are John's claims."
+        },
+        {
+          "id": "gta6-stonkfun-mechanism",
+          "type": "official_source",
+          "role": "mechanism",
+          "label": "GTA6 token mechanism",
+          "source_title": "StonkFun: GTA6 token page",
+          "url": "https://www.stonkfun.xyz/token/4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+          "source_date": "2026-08-11",
+          "quote": "GTA6 / TTWO",
+          "shows": "The independent token project's GTA6 and tokenized-TTWO pairing and its stated fee-reward mechanic.",
+          "why": "It explains the actual novelty behind John's combined game and meme-stock thesis.",
+          "inspect": "Token overview and rewards panel | checked 11 Aug 2026",
+          "missing": "The GTA6 section repeats John's claim without showing how the project says it works.",
+          "caution": "This is not a Rockstar or Take-Two product, endorsement, or stock reward."
+        },
+        {
+          "id": "gta6-public-chart",
+          "type": "chart",
+          "role": "chart_context",
+          "label": "GTA6 exact public pool",
+          "source_title": "DexScreener: GTA6 / TTWO",
+          "url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2",
+          "source_date": "2026-08-11",
+          "quote": "GTA6 / TTWO on Raydium",
+          "shows": "John's @0x0papi Influencer Feed render displayed about $361K and the exact pool later traded above roughly $1.26M before pulling back.",
+          "why": "It gives the newest pick immediate chart context without projecting a future outcome.",
+          "inspect": "Full chart from 9 Aug 2026 | checked 11 Aug 2026",
+          "missing": "The GTA6 move has no public chart tab.",
+          "caution": "This is a chart excursion, not a realised personal return."
+        },
+        {
+          "id": "rockstar-gta6-release",
+          "type": "official_source",
+          "role": "narrative_anchor",
+          "label": "Official GTA VI catalyst",
+          "source_title": "Grand Theft Auto VI: An Extended Look",
+          "url": "https://www.rockstargames.com/VI/an-extended-look",
+          "source_date": "2026-08-11",
+          "quote": "AUGUST 27, 3 PM ET",
+          "shows": "Rockstar's official GTA VI page confirms the August 27 Extended Look and the November 19, 2026 game release.",
+          "why": "It separates the real entertainment catalyst from token-team marketing claims.",
+          "inspect": "Official Rockstar GTA VI page | checked 11 Aug 2026",
+          "missing": "The GTA6 narrative lacks an authoritative real-world catalyst."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "section": "Parked Ansem and MANLET context",
+      "cards": [
+        {
+          "id": "ansem-manlet-third-party",
+          "type": "x_post",
+          "role": "parked_context",
+          "label": "Third-party MANLET claim",
+          "source_title": "Abu on X: possible Ansem support for MANLET",
+          "url": "https://x.com/0x_abu/status/2086924787947839848",
+          "source_date": "2026-08-10",
+          "quote": "MANLET went from 200k+ to 7m+ in an hour",
+          "shows": "A third party claimed Ansem might support MANLET and described a rapid move.",
+          "why": "At most, it shows that influencer-led meme attention is hot again.",
+          "inspect": "Full post and attribution | 10 Aug 2026",
+          "missing": "Nothing essential; this stays parked to protect the John-first premise.",
+          "caution": "Not proof Ansem bought, supported, or caused the move. Two active MANLET contracts also exist."
+        },
+        {
+          "id": "john-fumbled-manlet",
+          "type": "x_post",
+          "role": "parked_context",
+          "label": "John says he fumbled MANLET",
+          "source_title": "John on X: fumbled massively on Manlet",
+          "url": "https://x.com/CryptoGodJohn/status/2086909187250917829",
+          "source_date": "2026-08-10",
+          "quote": "Fumbled massively on Manlet",
+          "shows": "John's own latest MANLET language is regret, not a clean current thesis.",
+          "why": "It confirms MANLET should not replace the selected three.",
+          "inspect": "Post | 10 Aug 2026",
+          "missing": "Nothing essential; use only as a five-second market-heat coda."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "section": "CTA and policy",
+      "cards": [
+        {
+          "id": "youtube-spam-policy",
+          "type": "policy",
+          "role": "policy",
+          "label": "YouTube spam and deceptive practices",
+          "source_title": "YouTube spam, deceptive practices and scams policies",
+          "url": "https://support.google.com/youtube/answer/2801973?hl=en",
+          "source_date": "2026-08-11",
+          "quote": "Avoid get-rich-quick investment framing and misleading packaging.",
+          "shows": "The organic-content boundary for financial-scam and misleading-title risk.",
+          "why": "It keeps historical chart facts from becoming a promise of future gain.",
+          "inspect": "Official YouTube policy | checked 11 Aug 2026",
+          "missing": "The CTA has no explicit platform-policy basis."
+        },
+        {
+          "id": "google-unreliable-claims",
+          "type": "policy",
+          "role": "policy",
+          "label": "Google unreliable claims policy",
+          "source_title": "Google Ads unreliable claims policy",
+          "url": "https://support.google.com/adspolicy/answer/15936857?hl=en",
+          "source_date": "2026-08-11",
+          "quote": "Do not present improbable outcomes as likely or minimise investment risk.",
+          "shows": "The stricter boundary if the promotion or episode is used in advertising.",
+          "why": "It supports a visible research-tool and loss-risk line in the spoken CTA.",
+          "inspect": "Official Google Ads policy | checked 11 Aug 2026",
+          "missing": "The paid-promotion risk line is undocumented."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "destination": "Rubicon Inner Circle via Jupiter",
+    "tracking_url": "https://join.welcometorubicon.com/cryptogodjohn-3-coins-next-cycle",
+    "tracking_verified": false,
+    "placement": "After the YOTS block, once viewers have seen John's @0x0papi renders and the MANIFEST feed alert",
+    "performance_claims": [],
+    "safety": [
+      "Keep the research-tool and loss-risk line spoken or visible on the same CTA card.",
+      "Do not place a join button directly beside the MAGA 100x montage.",
+      "Describe chart-after-post sequences as historical observations, not realised member returns.",
+      "Use YouTube's paid-promotion declaration if the commercial relationship qualifies."
+    ]
+  },
+  "record_deck": [
+    {
+      "order": 1,
+      "section_id": "s2",
+      "role": "lineup_reveal",
+      "label": "01 OPEN | JOHN'S CURRENT THREE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg",
+      "source_title": "John's alt @0x0papi: current three attachment",
+      "quote": "Manifesting / The Cult of YOTS / GTA VI",
+      "shows": "The latest retained three-position attachment visibly shows MANIFEST, YOTS, and GTA6.",
+      "why": "It is the cleanest source for the selected lineup and makes GTA6 the current third reveal.",
+      "inspect": "Influencer Feed source attachment | 10 Aug 2026",
+      "missing": "The current trio would otherwise be inferred from separate posts.",
+      "card_id": "latest-three-protected"
+    },
+    {
+      "order": 2,
+      "section_id": "s2",
+      "role": "track_record",
+      "label": "02 WHY JOHN | MAGA SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/maga-protected-thesis.png",
+      "source_title": "John's alt @0x0papi: MAGA thesis",
+      "quote": "Thesis on they I aped $MAGA",
+      "shows": "The supplied timestamp maps to roughly a $297K to $334K chart range; the same pool later printed an approximate $33.2M high.",
+      "why": "It is the cleanest recent example of a post followed by a very large public-chart move.",
+      "inspect": "Influencer Feed render plus exact-minute GeckoTerminal candle | 18 Apr 2026",
+      "missing": "The opener lacks a recent meme-coin receipt.",
+      "card_id": "maga-protected-capture"
+    },
+    {
+      "order": 3,
+      "section_id": "s2",
+      "role": "track_record",
+      "label": "03 WHY JOHN | ASTEROID HINT",
+      "url": "https://x.com/CryptoGodJohn/status/2045003219537957206",
+      "source_title": "John on X: if Elon confirms",
+      "quote": "If Elon confirms - this might be the runner the trenches have been waiting for",
+      "shows": "The exact post minute was roughly $4.2M to $4.8M; the public pool later reached an approximate $212.6M daily high.",
+      "why": "It shows why viewers pay attention to John's narrative reads.",
+      "inspect": "Post, quoted Elon reply and exact-minute chart | 17 Apr 2026",
+      "missing": "One of the user's strongest recent John examples is absent.",
+      "card_id": "asteroid-conditional-hint"
+    },
+    {
+      "order": 4,
+      "section_id": "s2",
+      "role": "chart_context",
+      "label": "04 WHY JOHN | ASTEROID CHART",
+      "url": "https://dexscreener.com/ethereum/0x76a411f14a704099ba476ce8dffc288a53295218",
+      "source_title": "DexScreener: ASTEROID / WETH",
+      "quote": "ASTEROID / WETH on Uniswap",
+      "shows": "The public pool around John's conditional hint and the later approximate $212.6M chart high.",
+      "why": "It makes the ASTEROID context inspectable on the recording day.",
+      "inspect": "Full chart from 17 Apr 2026 | checked 11 Aug 2026",
+      "missing": "The ASTEROID move has no public chart tab.",
+      "card_id": "asteroid-public-chart"
+    },
+    {
+      "order": 5,
+      "section_id": "s4",
+      "role": "first_alt_thesis",
+      "label": "05 MANIFEST | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-manifest-first-thesis-feed-card.jpg",
+      "source_title": "John's alt @0x0papi: MANIFEST first thesis",
+      "quote": "If you know anything about me I am a big believer in manifesting positivity to your life",
+      "shows": "John's alt disclosed the MANIFEST bag, the exact contract, and the culture thesis in one Influencer Feed render.",
+      "why": "It is the strongest visual opening for the MANIFEST section.",
+      "inspect": "Influencer Feed render | 18 May 2026, 07:03 AEST",
+      "missing": "The MANIFEST block opens on a wallet card instead of John's actual words.",
+      "card_id": "manifest-oxo-first-thesis"
+    },
+    {
+      "order": 6,
+      "section_id": "s4",
+      "role": "current_stance",
+      "label": "06 MANIFEST | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086902775724626129",
+      "source_title": "John on X: MANIFEST at these levels",
+      "quote": "$MANIFEST is free at these levels. Going to be one of the biggest runners of the coming months. Accumulate wisely",
+      "shows": "John was still publicly bullish on MANIFEST on the record-day eve.",
+      "why": "It supplies the current ending for the first token block.",
+      "inspect": "Post | 10 Aug 2026",
+      "missing": "The video cannot separate the current claim from the older one.",
+      "card_id": "manifest-current-stance"
+    },
+    {
+      "order": 7,
+      "section_id": "s4",
+      "role": "chart_context",
+      "label": "07 MANIFEST | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/2dvbu5h8jcd37gaxajuz4t77hsjjw22lldutzk7gsa43",
+      "source_title": "DexScreener: MANIFEST / SOL",
+      "quote": "MANIFEST / SOL on Raydium",
+      "shows": "The pool was around $0.0082 during John's May 18 public post and later touched roughly $0.0567.",
+      "why": "It gives the first coin a simple post-to-chart visual without promising a repeat.",
+      "inspect": "Full chart from 18 May 2026 | checked 11 Aug 2026",
+      "missing": "The MANIFEST chart context cannot be inspected during recording.",
+      "card_id": "manifest-public-chart"
+    },
+    {
+      "order": 8,
+      "section_id": "s5",
+      "role": "current_alt_thesis",
+      "label": "08 YOTS | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-yots-leading-ai-feed-card.jpg",
+      "source_title": "John's alt @0x0papi: YOTS leading AI coin",
+      "quote": "Will be the leading AI coin soon",
+      "shows": "John's alt says smart trenchers are bullish on YOTS and frames it as the prospective leading AI coin.",
+      "why": "It is the cleanest one-sentence YOTS conviction visual.",
+      "inspect": "Influencer Feed render | 6 Aug 2026, 01:48 AEST",
+      "missing": "The YOTS block lacks a clean current conviction card from John's alt.",
+      "card_id": "yots-oxo-leading-ai"
+    },
+    {
+      "order": 9,
+      "section_id": "s5",
+      "role": "current_stance",
+      "label": "09 YOTS | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086899767825580517",
+      "source_title": "John on X: load up YOTS",
+      "quote": "I think solana:3f9LEP4RNM1yq5VnCD1LYMvq7FZis5tfGqyZMsiRpump is going to go on an insane run soon",
+      "shows": "John repeated the exact mint on the record-day eve.",
+      "why": "It keeps the YOTS thesis current rather than a one-day mention.",
+      "inspect": "Post | 10 Aug 2026",
+      "missing": "The second coin has no current ending.",
+      "card_id": "yots-current-load"
+    },
+    {
+      "order": 10,
+      "section_id": "s5",
+      "role": "chart_context",
+      "label": "10 YOTS | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/4usnftqy15mrvylcpkngv4rytamcgnhc9qt9pwbsjpzv",
+      "source_title": "DexScreener: YOTS / SOL",
+      "quote": "YOTS / SOL on PumpSwap",
+      "shows": "The pool traded near $0.0019 around John's public post and briefly touched roughly $0.00585 about 26 hours later.",
+      "why": "It makes the supplied August 4 chart capture directly inspectable against the public pool.",
+      "inspect": "Full chart from 2 Aug 2026 | checked 11 Aug 2026",
+      "missing": "The YOTS post-to-chart sequence has no public chart tab.",
+      "card_id": "yots-public-chart"
+    },
+    {
+      "order": 11,
+      "section_id": "s6",
+      "role": "fresh_reveal",
+      "label": "11 GTA6 | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-gta6-first-thesis-feed-card.jpg",
+      "source_title": "John's alt @0x0papi: I bought some GTA6",
+      "quote": "I bought some of this it's GTA 6 - but it's paired with its stock TTWO",
+      "shows": "John framed GTA6 as a combined game-meme and meme-stock narrative; the attached chart displayed about $361K.",
+      "why": "This is the freshest source in the entire pack and a strong third reveal.",
+      "inspect": "Influencer Feed render and source chart | 9 Aug 23:01 UTC",
+      "missing": "The current lineup lacks a genuinely new final coin.",
+      "card_id": "gta6-protected-first"
+    },
+    {
+      "order": 12,
+      "section_id": "s6",
+      "role": "current_stance",
+      "label": "12 GTA6 | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086914345678819518",
+      "source_title": "John on X: GTA6 exact-contract thesis",
+      "quote": "Expecting this to be one of the biggest plays of the coming months",
+      "shows": "John supplied the exact mint and elevated GTA6 into his coming-month thesis.",
+      "why": "It makes GTA6 more than a passing mention and creates the final update beat.",
+      "inspect": "Full post | 10 Aug 20:35 UTC",
+      "missing": "There is no current public finish to the GTA6 section.",
+      "card_id": "gta6-latest-thesis"
+    },
+    {
+      "order": 13,
+      "section_id": "s6",
+      "role": "chart_context",
+      "label": "13 GTA6 | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2",
+      "source_title": "DexScreener: GTA6 / TTWO",
+      "quote": "GTA6 / TTWO on Raydium",
+      "shows": "John's @0x0papi Influencer Feed render displayed about $361K and the exact pool later traded above roughly $1.26M before pulling back.",
+      "why": "It gives the newest pick immediate chart context without projecting a future outcome.",
+      "inspect": "Full chart from 9 Aug 2026 | checked 11 Aug 2026",
+      "missing": "The GTA6 move has no public chart tab.",
+      "card_id": "gta6-public-chart"
+    },
+    {
+      "order": 14,
+      "section_id": "s6",
+      "role": "narrative_anchor",
+      "label": "14 GTA6 | OFFICIAL CATALYST",
+      "url": "https://www.rockstargames.com/VI/an-extended-look",
+      "source_title": "Grand Theft Auto VI: An Extended Look",
+      "quote": "AUGUST 27, 3 PM ET",
+      "shows": "Rockstar's official GTA VI page confirms the August 27 Extended Look and the November 19, 2026 game release.",
+      "why": "It separates the real entertainment catalyst from token-team marketing claims.",
+      "inspect": "Official Rockstar GTA VI page | checked 11 Aug 2026",
+      "missing": "The GTA6 narrative lacks an authoritative real-world catalyst.",
+      "card_id": "rockstar-gta6-release"
+    }
+  ]
+}

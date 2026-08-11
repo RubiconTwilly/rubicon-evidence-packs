@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recording Console | CryptoGodJohn's 3 Meme Coins for the Next Cycle</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #12151a;
+      --panel: #191e25;
+      --panel-2: #20262e;
+      --line: #313943;
+      --ink: #f7f8f4;
+      --body: #cbd1d4;
+      --muted: #9da7ab;
+      --green: #66f29b;
+      --cyan: #67ddff;
+      --pink: #ff72d6;
+      --amber: #ffc66c;
+      --shadow: 0 24px 70px rgba(0, 0, 0, .32);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 7% 2%, rgba(102, 242, 155, .07), transparent 32rem),
+        radial-gradient(circle at 93% 5%, rgba(103, 221, 255, .05), transparent 30rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(18,21,26,.93);
+      backdrop-filter: blur(16px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: min(1480px, calc(100% - 36px));
+      min-height: 62px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      flex: 1;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav a {
+      border-radius: 8px;
+      padding: 8px 9px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav a:hover { background: var(--panel-2); color: var(--ink); }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 13px;
+      background: var(--panel-2);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary { border-color: var(--green); background: var(--green); color: #07130c; }
+    .button.cyan { border-color: rgba(103,221,255,.38); background: rgba(103,221,255,.08); color: var(--cyan); }
+    .button:hover { filter: brightness(1.08); }
+
+    .wrap {
+      width: min(1480px, calc(100% - 48px));
+      margin: 0 auto;
+      padding-bottom: 84px;
+    }
+
+    .hero {
+      min-height: calc(100vh - 62px);
+      padding: 28px 0 40px;
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .kicker::before { content: ""; width: 28px; height: 2px; background: currentColor; }
+
+    h1 {
+      max-width: 1100px;
+      margin: 12px 0 20px;
+      font-size: clamp(42px, 5.2vw, 78px);
+      line-height: .92;
+      letter-spacing: -.06em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(38px, 4.4vw, 66px);
+      line-height: .92;
+      letter-spacing: -.055em;
+    }
+
+    h3 { margin: 0; font-size: 20px; line-height: 1.12; }
+    p { color: var(--body); }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: minmax(0,1.35fr) minmax(330px,.65fr);
+      gap: 14px;
+    }
+
+    .thumb-card, .model-card, .thesis, .panel, .source-card, .actual, .cta-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-card, .model-card { overflow: hidden; }
+
+    .thumb-mock {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #060709 url("assets/john-face-thumbnail-source.jpg") center / cover no-repeat;
+    }
+
+    .thumb-mock::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #050609 0%, #050609 43%, rgba(5,6,9,.92) 55%, rgba(5,6,9,.12) 76%, transparent 100%);
+    }
+
+    .thumb-copy {
+      position: absolute;
+      z-index: 2;
+      inset: 9% 40% 8% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-shadow: 0 8px 25px rgba(0,0,0,.9);
+    }
+
+    .thumb-copy span { font-size: clamp(26px,3.5vw,54px); font-weight: 1000; line-height: .9; letter-spacing: -.04em; }
+    .thumb-copy strong { color: var(--green); font-size: clamp(92px,12vw,190px); line-height: .72; letter-spacing: -.09em; }
+
+    .thumb-dots { display: flex; gap: 10px; margin-top: 24px; }
+    .thumb-dots i { width: 40px; height: 40px; border: 2px solid rgba(255,255,255,.56); border-radius: 50%; }
+    .thumb-dots i:nth-child(1) { background: var(--green); box-shadow: 0 0 24px rgba(102,242,155,.52); }
+    .thumb-dots i:nth-child(2) { background: var(--cyan); box-shadow: 0 0 24px rgba(103,221,255,.52); }
+    .thumb-dots i:nth-child(3) { background: var(--pink); box-shadow: 0 0 24px rgba(255,114,214,.52); }
+
+    .caption { padding: 12px 16px; color: var(--muted); font-size: 11px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+
+    .model-card { color: var(--ink); text-decoration: none; }
+    .model-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .model-copy { padding: 17px; }
+    .model-copy span { color: var(--muted); font-size: 10px; font-weight: 950; letter-spacing: .11em; text-transform: uppercase; }
+    .model-copy strong { display: block; margin-top: 6px; font-size: 17px; line-height: 1.15; }
+
+    .theses { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+    .thesis { padding: 15px 18px; box-shadow: none; }
+    .thesis span { color: var(--muted); font-size: 9px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .thesis p { margin: 5px 0 0; font-size: 14px; }
+
+    .orientation {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 28px 0 58px;
+      border: 1px solid rgba(102,242,155,.26);
+      border-radius: 16px;
+      padding: 16px 20px;
+      background: rgba(102,242,155,.055);
+    }
+
+    .orientation strong { color: var(--green); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+    .orientation p { margin: 0; font-size: 14px; }
+
+    .record-start {
+      margin-bottom: 22px;
+      border: 1px solid rgba(102,242,155,.34);
+      border-radius: 20px;
+      padding: clamp(22px,3vw,38px);
+      background: linear-gradient(135deg, rgba(102,242,155,.10), rgba(25,30,37,.96) 55%);
+    }
+
+    .record-start h2 { margin-top: 8px; }
+    .record-start blockquote { max-width: 1050px; margin: 20px 0 0; color: var(--ink); font-size: clamp(20px,2vw,29px); line-height: 1.34; }
+    .open-note { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+
+    .sec {
+      scroll-margin-top: 76px;
+      padding: 62px 0 30px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(280px,.46fr);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 20px;
+    }
+
+    .section-no { color: var(--accent,var(--green)); font-size: 11px; font-weight: 950; letter-spacing: .13em; text-transform: uppercase; }
+    .section-head p { margin: 0; font-size: 15px; }
+
+    .source-layout {
+      display: grid;
+      grid-template-columns: minmax(0,1.35fr) minmax(330px,.65fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .source-card { overflow: hidden; box-shadow: none; }
+    .source-card a { display: block; text-decoration: none; }
+    .source-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #07101a; }
+    .source-card .source-caption { display: flex; justify-content: space-between; gap: 14px; padding: 12px 15px; color: var(--muted); font-size: 11px; }
+    .source-card .source-caption strong { color: var(--accent,var(--green)); }
+
+    .actuals { display: grid; gap: 10px; }
+    .actual { padding: 16px 18px; box-shadow: none; }
+    .actual span { color: var(--accent,var(--green)); font-size: 10px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .actual p { margin: 7px 0 0; font-size: 15px; }
+    .actual strong.value { display: block; margin-top: 6px; color: var(--ink); font-size: 24px; line-height: 1.04; }
+
+    .secondary-images { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+    .secondary-images a { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #07101a; }
+    .secondary-images img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+
+    .source-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .source-actions .button { min-height: 38px; }
+
+    .coin-manifest { --accent: var(--green); }
+    .coin-yots { --accent: var(--cyan); }
+    .coin-gta { --accent: var(--pink); }
+
+    .why-grid { display: grid; grid-template-columns: minmax(360px,.82fr) minmax(0,1.18fr); gap: 16px; align-items: start; }
+    .metric-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+    .metric { border: 1px solid var(--line); border-radius: 15px; padding: 18px; background: var(--panel); }
+    .metric span { color: var(--muted); font-size: 10px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .metric strong { display: block; margin-top: 7px; font-size: clamp(24px,3vw,38px); line-height: 1; }
+    .metric p { margin: 8px 0 0; font-size: 13px; }
+
+    .cta-card {
+      border-color: rgba(102,242,155,.3);
+      padding: clamp(22px,3vw,34px);
+      background: linear-gradient(145deg, rgba(102,242,155,.09), var(--panel) 48%);
+    }
+
+    .cta-card h3 { margin-top: 7px; font-size: clamp(28px,3vw,44px); }
+    .cta-card p { max-width: 960px; font-size: 16px; }
+    .risk { max-width: 960px; border: 1px solid rgba(255,198,108,.26); border-radius: 12px; padding: 12px 14px; background: rgba(255,198,108,.055); color: #f4d8a0; font-size: 13px; }
+
+    details.proof {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.018);
+    }
+
+    details.proof summary { padding: 13px 16px; color: var(--muted); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+    .receipt-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; padding: 0 12px 12px; }
+    .receipt { border: 1px solid var(--line); border-radius: 13px; padding: 15px; background: var(--panel); }
+    .receipt-role { color: var(--accent,var(--green)); font-size: 9px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .receipt h3 { margin-top: 5px; font-size: 16px; }
+    .receipt blockquote { margin: 11px 0; border-left: 2px solid var(--line); padding-left: 10px; color: var(--body); font-size: 12px; }
+    .receipt-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+    .field { border-top: 1px solid var(--line); padding-top: 7px; }
+    .field span { display: block; color: var(--muted); font-size: 8px; font-weight: 950; letter-spacing: .09em; text-transform: uppercase; }
+    .field p { margin: 4px 0 0; font-size: 11px; }
+    .receipt .button { margin-top: 10px; }
+
+    .close-line {
+      margin-top: 62px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      background: var(--panel);
+    }
+
+    .close-line p { max-width: 1050px; margin: 9px 0 0; color: var(--ink); font-size: clamp(20px,2.2vw,31px); }
+
+    .appendix { margin-top: 18px; border: 1px dashed var(--line); border-radius: 15px; }
+    .appendix summary { padding: 15px 18px; color: var(--muted); font-size: 12px; font-weight: 900; cursor: pointer; }
+    .appendix-body { padding: 0 18px 18px; }
+    .appendix-body p { font-size: 13px; }
+    .file-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+    #launchStatus { min-height: 18px; margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+
+    @media (max-width: 1000px) {
+      .package-grid, .section-head, .source-layout, .why-grid { grid-template-columns: 1fr; }
+      .model-card { display: grid; grid-template-columns: 220px 1fr; }
+      .model-card img { height: 100%; }
+    }
+
+    @media (max-width: 680px) {
+      .topbar-inner { width: calc(100% - 20px); min-height: 56px; }
+      .brand { display: none; }
+      .topbar .nav { display: none; }
+      .topbar .button { width: 100%; }
+      .wrap { width: min(100% - 24px,520px); }
+      .hero { min-height: 0; padding-top: 22px; }
+      h1 { font-size: clamp(40px,13vw,60px); }
+      .model-card { display: block; }
+      .theses, .metric-grid, .receipt-grid, .receipt-fields, .secondary-images { grid-template-columns: 1fr; }
+      .orientation { align-items: flex-start; flex-direction: column; gap: 6px; margin-bottom: 40px; }
+      .thumb-copy { inset: 8% 35% 8% 5%; }
+      .thumb-copy span { font-size: 27px; }
+      .thumb-copy strong { font-size: 86px; }
+      .thumb-dots { margin-top: 15px; gap: 7px; }
+      .thumb-dots i { width: 27px; height: 27px; }
+      .sec { padding-top: 46px; }
+      .section-head { gap: 10px; }
+      .source-card .source-caption { flex-direction: column; gap: 4px; }
+      .source-actions .button { width: 100%; }
+      .record-start blockquote { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">RECORDING CONSOLE</div>
+      <nav class="nav" aria-label="Recording sections">
+        <a href="#record">Start</a>
+        <a href="#s2">Why John</a>
+        <a href="#s4">MANIFEST</a>
+        <a href="#s5">YOTS</a>
+        <a href="#s8">CTA</a>
+        <a href="#s6">GTA6</a>
+      </nav>
+      <button class="button primary" id="openAll">Open 14 Arc tabs</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="packaging">
+      <div class="kicker">Proposed title</div>
+      <h1>CryptoGodJohn's 3 Meme Coins for the Next Cycle</h1>
+
+      <div class="package-grid">
+        <div class="thumb-card">
+          <div class="thumb-mock" role="img" aria-label="Thumbnail mock with a large CryptoGodJohn face, HIS NEXT 3, and three glowing coin shapes">
+            <div class="thumb-copy">
+              <span>HIS NEXT</span>
+              <strong>3</strong>
+              <div class="thumb-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="caption">Selected thumbnail mock</div>
+        </div>
+
+        <a class="model-card" href="https://www.youtube.com/watch?v=uYMaZKwojCw" target="_blank" rel="noreferrer">
+          <img src="assets/model-three-tokens-thumbnail.jpg" alt="Closest past three-token CryptoGodJohn video thumbnail">
+          <div class="model-copy">
+            <span>Linked packaging model</span>
+            <strong>These 3 CryptoGodJohn AI Tokens could go NUCLEAR in the next 90 days</strong>
+          </div>
+        </a>
+      </div>
+
+      <div class="theses" aria-label="Two-sentence thesis">
+        <div class="thesis"><span>Thesis 1</span><p>CryptoGodJohn is back in meme coins, with MANIFEST as the culture bet, YOTS as the AI and Elon bet, and GTA6 as his newest gaming and meme-stock thesis.</p></div>
+        <div class="thesis"><span>Thesis 2</span><p>Each coin gives Ben a different attention narrative to unpack, while John's recent posts explain why people are watching what he moves into next.</p></div>
+      </div>
+    </section>
+
+    <section class="orientation" id="orientation">
+      <strong>Audience orientation</strong>
+      <p><b>0x0papi is John's alt.</b> The large Rubicon Influencer Feed renders below are John's source posts, shown directly beside the public tweets Ben can open.</p>
+    </section>
+
+    <section class="sec" id="s1">
+      <div class="record-start" id="record">
+        <div class="kicker">Record from here</div>
+        <h2>Opening</h2>
+        <blockquote>CryptoGodJohn is properly back in meme coins, and his latest three are chasing completely different types of attention. MANIFEST is the culture coin, YOTS is the AI and Elon coin, and the newest one is trying to combine GTA6 hype with a meme-stock narrative.</blockquote>
+        <div class="source-actions">
+          <button class="button primary" data-open-all>Open the full 14-tab deck</button>
+          <button class="button" id="copyAll">Copy all URLs</button>
+        </div>
+        <p class="open-note">Your browser may ask for popup permission. The first source opens immediately, then the rest open in order.</p>
+        <p id="launchStatus" aria-live="polite"></p>
+      </div>
+
+      <div class="source-layout">
+        <figure class="source-card">
+          <a href="assets/user/john-latest-three-gta6.jpg" target="_blank">
+            <img src="assets/user/john-latest-three-gta6.jpg" alt="John's latest three-position attachment showing MANIFEST, YOTS, and GTA6">
+          </a>
+          <figcaption class="source-caption"><strong>JOHN / @0x0papi</strong><span>Latest three-position attachment, 10 Aug 2026</span></figcaption>
+        </figure>
+        <div class="actuals">
+          <div class="actual"><span>The actual lineup</span><strong class="value">MANIFEST / YOTS / GTA6</strong><p>This image is the clean reveal. Use it before explaining the three roles.</p></div>
+          <div class="actual"><span>The simple structure</span><p>Culture. AI and Elon. Gaming plus meme stocks.</p></div>
+          <div class="actual"><span>What this video is</span><p>What John is posting now, what each narrative is, and what the public charts did after the early posts.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="s2">
+      <div class="section-head">
+        <div><div class="section-no">30 seconds maximum</div><h2>Why people watch John</h2></div>
+        <p>One image and two chart facts. This is only the reason to care before the three current picks.</p>
+      </div>
+
+      <div class="why-grid">
+        <figure class="source-card">
+          <a href="assets/user/maga-protected-thesis.png" target="_blank">
+            <img src="assets/user/maga-protected-thesis.png" alt="John's @0x0papi MAGA thesis source">
+          </a>
+          <figcaption class="source-caption"><strong>JOHN / @0x0papi</strong><span>MAGA thesis, 18 Apr 2026</span></figcaption>
+        </figure>
+        <div>
+          <div class="metric-grid">
+            <div class="metric"><span>MAGA public chart</span><strong>about $300K to $33.2M</strong><p>After the timestamped post, before reversing.</p></div>
+            <div class="metric"><span>ASTEROID public chart</span><strong>about $4.2M to $213M</strong><p>After John's conditional Elon hint.</p></div>
+          </div>
+          <div class="actual" style="margin-top:10px"><span>The point</span><p>His posts have repeatedly become information events. That is why the current three are worth unpacking.</p></div>
+          <div class="source-actions">
+            <button class="button cyan" data-open-section="s2">Open ASTEROID post + chart</button>
+          </div>
+        </div>
+      </div>
+
+      <details class="proof"><summary>Source notes for Why John</summary><div class="receipt-grid" data-receipts="s2"></div></details>
+    </section>
+
+    <section class="sec coin-manifest" id="s4">
+      <div class="section-head">
+        <div><div class="section-no">Coin 1 / culture</div><h2>MANIFEST</h2></div>
+        <p>John's bet that an existing belief and daily behaviour can become a lasting crypto culture.</p>
+      </div>
+
+      <div class="source-layout">
+        <div>
+          <figure class="source-card">
+            <a href="assets/user/oxo-manifest-first-thesis-feed-card.jpg" target="_blank">
+              <img src="assets/user/oxo-manifest-first-thesis-feed-card.jpg" alt="Influencer Feed render of John's first MANIFEST thesis from @0x0papi">
+            </a>
+            <figcaption class="source-caption"><strong>JOHN / @0x0papi</strong><span>First MANIFEST thesis, 18 May 2026</span></figcaption>
+          </figure>
+          <div class="secondary-images">
+            <a href="assets/user/oxo-manifest-current-chart-feed-card.jpg" target="_blank"><img src="assets/user/oxo-manifest-current-chart-feed-card.jpg" alt="John's MANIFEST bidding-zone chart via @0x0papi"></a>
+            <a href="assets/user/manifest-buy-alert.png" target="_blank"><img src="assets/user/manifest-buy-alert.png" alt="Rubicon Influencer Feed MANIFEST buy alert"></a>
+          </div>
+        </div>
+
+        <div class="actuals">
+          <div class="actual"><span>What John posted</span><p>He said manifesting positivity speaks his language, disclosed a bag, and called it a main meme holding moving forward.</p></div>
+          <div class="actual"><span>The story</span><p>Manifestation is already a recognisable belief and shareable behaviour. The token is trying to turn that into a culture coin.</p></div>
+          <div class="actual"><span>What happened after</span><strong class="value">$0.0082 to about $0.0567</strong><p>The public pool later touched that high, then pulled back. John returned to the thesis in August and said he was buying more below $10M.</p></div>
+          <div class="source-actions">
+            <button class="button primary" data-open-section="s4">Open source + tweet + chart</button>
+          </div>
+        </div>
+      </div>
+
+      <details class="proof"><summary>Source notes for MANIFEST</summary><div class="receipt-grid" data-receipts="s4"></div></details>
+    </section>
+
+    <section class="sec coin-yots" id="s5">
+      <div class="section-head">
+        <div><div class="section-no">Coin 2 / AI + Elon</div><h2>YOTS</h2></div>
+        <p>Year of the Singularity, Elon lore, and John's comparison with the early AI-agent meme cycle.</p>
+      </div>
+
+      <div class="source-layout">
+        <div>
+          <figure class="source-card">
+            <a href="assets/user/oxo-yots-leading-ai-feed-card.jpg" target="_blank">
+              <img src="assets/user/oxo-yots-leading-ai-feed-card.jpg" alt="Influencer Feed render of John's YOTS leading-AI thesis from @0x0papi">
+            </a>
+            <figcaption class="source-caption"><strong>JOHN / @0x0papi</strong><span>Leading-AI thesis, 6 Aug 2026</span></figcaption>
+          </figure>
+          <div class="secondary-images">
+            <a href="assets/user/oxo-yots-current-chart-feed-card.jpg" target="_blank"><img src="assets/user/oxo-yots-current-chart-feed-card.jpg" alt="John's current YOTS chart via @0x0papi"></a>
+            <a href="assets/user/yots-next-goat-post.png" target="_blank"><img src="assets/user/yots-next-goat-post.png" alt="John's next GOAT or ZERBRO comparison via @0x0papi"></a>
+          </div>
+        </div>
+
+        <div class="actuals">
+          <div class="actual"><span>What John posted</span><p>He said he aped a bag, thought the Elon lore could be massive, compared it with early GOAT and ZERBRO, and later called it a prospective leading AI coin.</p></div>
+          <div class="actual"><span>The story</span><p>Elon's "year of the Singularity" phrase gives it the hook. The project wraps that in an AI-agent world and on-chain lore.</p></div>
+          <div class="actual"><span>What happened after</span><strong class="value">about $1.9M to $5.85M</strong><p>Roughly 26 hours after the public post, the same pool briefly touched the later level before pulling back.</p></div>
+          <div class="source-actions">
+            <button class="button primary" data-open-section="s5">Open source + tweet + chart</button>
+          </div>
+        </div>
+      </div>
+
+      <details class="proof"><summary>Source notes for YOTS</summary><div class="receipt-grid" data-receipts="s5"></div></details>
+    </section>
+
+    <section class="sec" id="s8">
+      <div class="cta-card">
+        <div class="kicker">CTA / after YOTS</div>
+        <h3>The Influencer Feed is the bridge</h3>
+        <p>When someone like CryptoGodJohn posts a coin, most people only see the headline after it has already spread across X. Inside our paid Inner Circle, the Influencer Feed brings his public posts, updates from his @0x0papi alt, exact-token matches, and chart context into one place while the story is still developing.</p>
+        <p>If you want the same research feed I am using here, join the Inner Circle through the link below.</p>
+        <div class="risk">It is an information and research tool, not a promise of a trade or return. Micro-cap tokens can lose most or all of their value.</div>
+        <div class="source-actions"><a class="button primary" href="BENJI-CTA-READOUT.txt">Open clean CTA readout</a></div>
+      </div>
+    </section>
+
+    <section class="sec coin-gta" id="s6">
+      <div class="section-head">
+        <div><div class="section-no">Coin 3 / newest reveal</div><h2>GTA6</h2></div>
+        <p>The freshest pick combines one of the world's biggest game releases with a meme-stock and tokenized-TTWO angle.</p>
+      </div>
+
+      <div class="source-layout">
+        <div>
+          <figure class="source-card">
+            <a href="assets/user/oxo-gta6-first-thesis-feed-card.jpg" target="_blank">
+              <img src="assets/user/oxo-gta6-first-thesis-feed-card.jpg" alt="Influencer Feed render of John's first GTA6 thesis from @0x0papi">
+            </a>
+            <figcaption class="source-caption"><strong>JOHN / @0x0papi</strong><span>First GTA6 thesis, 10 Aug 2026</span></figcaption>
+          </figure>
+          <div class="secondary-images">
+            <a href="assets/gta6-latest-public.jpg" target="_blank"><img src="assets/gta6-latest-public.jpg" alt="Chart comparison attached to John's latest public GTA6 post"></a>
+            <a href="assets/user/john-latest-three-gta6.jpg" target="_blank"><img src="assets/user/john-latest-three-gta6.jpg" alt="John's latest three-position attachment"></a>
+          </div>
+        </div>
+
+        <div class="actuals">
+          <div class="actual"><span>What John posted</span><p>On @0x0papi he said he bought GTA6 and highlighted the GTA plus TTWO pairing. Publicly, he repeated the exact thesis and later called it one of his biggest coming-month plays.</p></div>
+          <div class="actual"><span>The story</span><p>GTA6 attention plus a meme-stock narrative. The token project says qualifying holders receive fee distributions in tokenized TTWO.</p></div>
+          <div class="actual"><span>What happened after</span><strong class="value">about $361K to $1.26M</strong><p>The exact pool later traded above the second level before pulling back.</p></div>
+          <div class="actual"><span>The real catalyst</span><p>Rockstar's official GTA VI page promotes an Extended Look on August 27 at 3 PM ET and a November 19, 2026 release.</p></div>
+          <div class="actual"><span>Keep this clear</span><p>The meme token is independent from Rockstar and Take-Two.</p></div>
+          <div class="source-actions">
+            <button class="button primary" data-open-section="s6">Open source + tweet + chart + Rockstar</button>
+          </div>
+        </div>
+      </div>
+
+      <details class="proof"><summary>Source notes for GTA6</summary><div class="receipt-grid" data-receipts="s6"></div></details>
+    </section>
+
+    <section class="close-line">
+      <div class="kicker">Close</div>
+      <p>John is back, these are the three stories he is pushing now, and GTA6 shows how quickly his list can change when a fresh narrative appears.</p>
+    </section>
+
+    <details class="appendix">
+      <summary>Producer appendix, backup research, and handoff files</summary>
+      <div class="appendix-body">
+        <p>The hosted Arc deck is deliberately limited to 14 useful tabs. It includes four public John-alt source images, the essential public tweets, each selected token chart, and the official GTA6 catalyst. Backup research remains outside the recording order.</p>
+        <div class="file-links">
+          <a class="button" href="sources.json">sources.json</a>
+          <a class="button" href="arc-handoff.json">arc-handoff.json</a>
+          <a class="button" href="research.md">research.md</a>
+          <a class="button" href="jupiter-project.json">jupiter-project.json</a>
+        </div>
+      </div>
+    </details>
+  </main>
+
+  <script>
+    const RECORD_DECK = [
+      { section: "s2", label: "01 OPEN | JOHN'S CURRENT THREE", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg", role: "lineup_reveal", sourceTitle: "John's alt @0x0papi: current three attachment", quote: "Manifesting / The Cult of YOTS / GTA VI", shows: "The latest retained three-position attachment visibly shows MANIFEST, YOTS, and GTA6.", why: "It is the cleanest source for the selected lineup and makes GTA6 the current third reveal.", inspect: "Influencer Feed source attachment | 10 Aug 2026", missing: "The current trio would otherwise be inferred from separate posts." },
+      { section: "s2", label: "02 WHY JOHN | MAGA SOURCE", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/maga-protected-thesis.png", role: "track_record", sourceTitle: "John's alt @0x0papi: MAGA thesis", quote: "Thesis on they I aped $MAGA", shows: "The supplied timestamp maps to roughly a $297K to $334K chart range; the same pool later printed an approximate $33.2M high.", why: "It is the cleanest recent example of a post followed by a very large public-chart move.", inspect: "Influencer Feed render plus exact-minute GeckoTerminal candle | 18 Apr 2026", missing: "The opener lacks a recent meme-coin receipt." },
+      { section: "s2", label: "03 WHY JOHN | ASTEROID HINT", url: "https://x.com/CryptoGodJohn/status/2045003219537957206", role: "track_record", sourceTitle: "John on X: if Elon confirms", quote: "If Elon confirms - this might be the runner the trenches have been waiting for", shows: "The exact post minute was roughly $4.2M to $4.8M; the public pool later reached an approximate $212.6M daily high.", why: "It shows why viewers pay attention to John's narrative reads.", inspect: "Post, quoted Elon reply and exact-minute chart | 17 Apr 2026", missing: "One of the user's strongest recent John examples is absent." },
+      { section: "s2", label: "04 WHY JOHN | ASTEROID CHART", url: "https://dexscreener.com/ethereum/0x76a411f14a704099ba476ce8dffc288a53295218", role: "chart_context", sourceTitle: "DexScreener: ASTEROID / WETH", quote: "ASTEROID / WETH on Uniswap", shows: "The public pool around John's conditional hint and the later approximate $212.6M chart high.", why: "It makes the ASTEROID context inspectable on the recording day.", inspect: "Full chart from 17 Apr 2026 | checked 11 Aug 2026", missing: "The ASTEROID move has no public chart tab." },
+      { section: "s4", label: "05 MANIFEST | @0x0papi SOURCE", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-manifest-first-thesis-feed-card.jpg", role: "first_alt_thesis", sourceTitle: "John's alt @0x0papi: MANIFEST first thesis", quote: "If you know anything about me I am a big believer in manifesting positivity to your life", shows: "John's alt disclosed the MANIFEST bag, the exact contract, and the culture thesis in one Influencer Feed render.", why: "It is the strongest visual opening for the MANIFEST section.", inspect: "Influencer Feed render | 18 May 2026, 07:03 AEST", missing: "The MANIFEST block opens on a wallet card instead of John's actual words." },
+      { section: "s4", label: "06 MANIFEST | LATEST JOHN TWEET", url: "https://x.com/CryptoGodJohn/status/2086902775724626129", role: "current_stance", sourceTitle: "John on X: MANIFEST at these levels", quote: "$MANIFEST is free at these levels. Going to be one of the biggest runners of the coming months. Accumulate wisely", shows: "John was still publicly bullish on MANIFEST on the record-day eve.", why: "It supplies the current ending for the first token block.", inspect: "Post | 10 Aug 2026", missing: "The video cannot separate the current claim from the older one." },
+      { section: "s4", label: "07 MANIFEST | DEXSCREENER", url: "https://dexscreener.com/solana/2dvbu5h8jcd37gaxajuz4t77hsjjw22lldutzk7gsa43", role: "chart_context", sourceTitle: "DexScreener: MANIFEST / SOL", quote: "MANIFEST / SOL on Raydium", shows: "The pool was around $0.0082 during John's May 18 public post and later touched roughly $0.0567.", why: "It gives the first coin a simple post-to-chart visual without promising a repeat.", inspect: "Full chart from 18 May 2026 | checked 11 Aug 2026", missing: "The MANIFEST chart context cannot be inspected during recording." },
+      { section: "s5", label: "08 YOTS | @0x0papi SOURCE", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-yots-leading-ai-feed-card.jpg", role: "current_alt_thesis", sourceTitle: "John's alt @0x0papi: YOTS leading AI coin", quote: "Will be the leading AI coin soon", shows: "John's alt says smart trenchers are bullish on YOTS and frames it as the prospective leading AI coin.", why: "It is the cleanest one-sentence YOTS conviction visual.", inspect: "Influencer Feed render | 6 Aug 2026, 01:48 AEST", missing: "The YOTS block lacks a clean current conviction card from John's alt." },
+      { section: "s5", label: "09 YOTS | LATEST JOHN TWEET", url: "https://x.com/CryptoGodJohn/status/2086899767825580517", role: "current_stance", sourceTitle: "John on X: load up YOTS", quote: "I think solana:3f9LEP4RNM1yq5VnCD1LYMvq7FZis5tfGqyZMsiRpump is going to go on an insane run soon", shows: "John repeated the exact mint on the record-day eve.", why: "It keeps the YOTS thesis current rather than a one-day mention.", inspect: "Post | 10 Aug 2026", missing: "The second coin has no current ending." },
+      { section: "s5", label: "10 YOTS | DEXSCREENER", url: "https://dexscreener.com/solana/4usnftqy15mrvylcpkngv4rytamcgnhc9qt9pwbsjpzv", role: "chart_context", sourceTitle: "DexScreener: YOTS / SOL", quote: "YOTS / SOL on PumpSwap", shows: "The pool traded near $0.0019 around John's public post and briefly touched roughly $0.00585 about 26 hours later.", why: "It makes the supplied August 4 chart capture directly inspectable against the public pool.", inspect: "Full chart from 2 Aug 2026 | checked 11 Aug 2026", missing: "The YOTS post-to-chart sequence has no public chart tab." },
+      { section: "s6", label: "11 GTA6 | @0x0papi SOURCE", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-gta6-first-thesis-feed-card.jpg", role: "fresh_reveal", sourceTitle: "John's alt @0x0papi: I bought some GTA6", quote: "I bought some of this it's GTA 6 - but it's paired with its stock TTWO", shows: "John framed GTA6 as a combined game-meme and meme-stock narrative; the attached chart displayed about $361K.", why: "This is the freshest source in the entire pack and a strong third reveal.", inspect: "Influencer Feed render and source chart | 9 Aug 23:01 UTC", missing: "The current lineup lacks a genuinely new final coin." },
+      { section: "s6", label: "12 GTA6 | LATEST JOHN TWEET", url: "https://x.com/CryptoGodJohn/status/2086914345678819518", role: "current_stance", sourceTitle: "John on X: GTA6 exact-contract thesis", quote: "Expecting this to be one of the biggest plays of the coming months", shows: "John supplied the exact mint and elevated GTA6 into his coming-month thesis.", why: "It makes GTA6 more than a passing mention and creates the final update beat.", inspect: "Full post | 10 Aug 20:35 UTC", missing: "There is no current public finish to the GTA6 section." },
+      { section: "s6", label: "13 GTA6 | DEXSCREENER", url: "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2", role: "chart_context", sourceTitle: "DexScreener: GTA6 / TTWO", quote: "GTA6 / TTWO on Raydium", shows: "John's @0x0papi Influencer Feed render displayed about $361K and the exact pool later traded above roughly $1.26M before pulling back.", why: "It gives the newest pick immediate chart context without projecting a future outcome.", inspect: "Full chart from 9 Aug 2026 | checked 11 Aug 2026", missing: "The GTA6 move has no public chart tab." },
+      { section: "s6", label: "14 GTA6 | OFFICIAL CATALYST", url: "https://www.rockstargames.com/VI/an-extended-look", role: "narrative_anchor", sourceTitle: "Grand Theft Auto VI: An Extended Look", quote: "AUGUST 27, 3 PM ET", shows: "Rockstar's official GTA VI page confirms the August 27 Extended Look and the November 19, 2026 game release.", why: "It separates the real entertainment catalyst from token-team marketing claims.", inspect: "Official Rockstar GTA VI page | checked 11 Aug 2026", missing: "The GTA6 narrative lacks an authoritative real-world catalyst." },
+    ];
+
+    const grouped = RECORD_DECK.reduce((map, item) => {
+      if (!map[item.section]) map[item.section] = [];
+      map[item.section].push(item);
+      return map;
+    }, {});
+
+    function openDeck(items) {
+      if (!items.length) return;
+      window.open(items[0].url, "_blank", "noopener");
+      items.slice(1).forEach((item, index) => {
+        setTimeout(() => window.open(item.url, "_blank", "noopener"), (index + 1) * 180);
+      });
+      const statusLine = document.getElementById("launchStatus");
+      if (statusLine) statusLine.textContent = `Opening ${items.length} tabs in record order. Allow popups if your browser asks.`;
+    }
+
+    document.getElementById("openAll").addEventListener("click", () => openDeck(RECORD_DECK));
+    document.querySelectorAll("[data-open-all]").forEach((button) => button.addEventListener("click", () => openDeck(RECORD_DECK)));
+    document.querySelectorAll("[data-open-section]").forEach((button) => {
+      button.addEventListener("click", () => openDeck(grouped[button.dataset.openSection] || []));
+    });
+
+    document.getElementById("copyAll").addEventListener("click", async () => {
+      const value = RECORD_DECK.map((item) => item.url).join("\n");
+      try {
+        await navigator.clipboard.writeText(value);
+        document.getElementById("launchStatus").textContent = "Copied all 14 URLs in record order.";
+      } catch (error) {
+        document.getElementById("launchStatus").textContent = "Copy was blocked. Open arc-handoff.json for the ordered list.";
+      }
+    });
+
+    document.querySelectorAll("[data-receipts]").forEach((holder) => {
+      const items = grouped[holder.dataset.receipts] || [];
+      items.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "receipt";
+
+        const role = document.createElement("div");
+        role.className = "receipt-role";
+        role.textContent = "ROLE / " + item.role;
+
+        const title = document.createElement("h3");
+        title.textContent = item.sourceTitle;
+
+        const quote = document.createElement("blockquote");
+        quote.textContent = item.quote;
+
+        const fields = document.createElement("div");
+        fields.className = "receipt-fields";
+        [
+          ["SHOWS", item.shows],
+          ["WHY IT MATTERS", item.why],
+          ["INSPECT", item.inspect],
+          ["WITHOUT IT", item.missing]
+        ].forEach(([label, value]) => {
+          const field = document.createElement("div");
+          field.className = "field";
+          const fieldLabel = document.createElement("span");
+          fieldLabel.textContent = label;
+          const fieldValue = document.createElement("p");
+          fieldValue.textContent = value;
+          field.append(fieldLabel, fieldValue);
+          fields.append(field);
+        });
+
+        const link = document.createElement("a");
+        link.className = "button cyan";
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = item.label;
+
+        card.append(role, title, quote, fields, link);
+        holder.append(card);
+      });
+    });
+  </script>
+</body>
+</html>
