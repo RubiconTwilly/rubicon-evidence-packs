@@ -18,8 +18,8 @@ This is an information-led roundup of what John is posting and what each story i
 
 - John is the sole headline and sole thumbnail face.
 - The current three are MANIFEST, YOTS, and GTA6.
-- Frame the picks as an evolving lineup. John moves quickly, and his latest disclosed three-position screenshot shows MANIFEST, YOTS, and GTA6.
-- Use MAGA and ASTEROID only as a compressed reason viewers should care before revealing the current three.
+- Frame the picks as an evolving lineup. John's full @0x0papi post says "This is going to print millions" and includes the MANIFEST, YOTS, and GTA6 attachment.
+- Use the original LINK post, John's direct 0x0 echo, and MAGA as one compressed reason viewers care before breaking down the current three.
 - Place the Influencer Feed CTA after YOTS, once viewers have seen two examples of what the feed surfaced. Then finish on the newest reveal, GTA6.
 - Report chart movement as historical context: what was visible around a post and what the public chart did later.
 
@@ -51,7 +51,7 @@ The closest format model is the three-token John video at roughly 20,000 views. 
 This pack keeps that rhythm:
 
 1. John is back, and Papi season is moving fast.
-2. MAGA and ASTEROID remind viewers why his posts get watched.
+2. LINK built John's reputation, 0x0 repeated the same conviction motif, and MAGA is the recent bridge.
 3. Reveal the current three as three different narrative bets.
 4. Explain the story people would actually repeat for each coin.
 5. Use the feed as the information advantage, not as a profit promise.
@@ -67,26 +67,28 @@ Open on the updated three-pick reveal, not on a chart.
 
 Suggested thought: CryptoGodJohn is properly back in the meme-coin market, and the three coins he is talking about now could not be more different. One is a culture coin, one is an Elon and AI coin, and the newest is trying to combine GTA6 hype with a meme-stock mechanic.
 
-Show the title card and John's latest @0x0papi lineup image: MANIFEST, YOTS, and GTA6.
+Show the title card and John's full @0x0papi post. Its caption says "This is going to print millions" and its attachment shows MANIFEST, YOTS, and GTA6.
 
-### 00:35 to 01:25 | Why John matters now
+### 00:35 to 01:30 | Why John matters now
 
-Use Alex Becker's public Destra credit for one independent credibility beat. Then cut quickly through MAGA and ASTEROID.
+This is the clean recording bridge:
 
-- MAGA: the timestamped @0x0papi post maps to a sub-$1M public chart, which later printed an approximate $33.2M high before reversing.
-- ASTEROID: after John's conditional hint, the public chart later reached roughly $213M.
+1. In May 2018 John posted: "$LINK you will change my life forever" and wrote that he would return to it in 2020-2021.
+2. In May 2023 he posted the same line for 0x0, changed the return date to 2024-2025, and directly quoted the original LINK post.
+3. John later described LINK as a 360x and 0x0 as a 40x. Attribute those figures to John.
+4. In April 2026 his @0x0papi alt put MAGA beside those older conviction plays. The timestamped MAGA post maps to a roughly $297K to $334K public-chart range, and the same pool later printed an approximate $33.2M high before reversing.
 
-The point is not that John realised every move. The point is that his posts can become important information events, which is why viewers want to know what he is focused on now.
+Suggested transition: John built his reputation on the LINK call, later made the same life-changing prediction for 0x0, and this year put MAGA beside those older conviction plays. That is why people are watching his next three now.
 
 ### 01:25 to 01:45 | Reveal the organising idea
 
-Bring back John's latest @0x0papi lineup image:
+Bring back John's full latest @0x0papi post:
 
 - MANIFEST is the culture bet.
 - YOTS is the AI and Elon bet.
 - GTA6 is the gaming and meme-stock bet.
 
-Say that this is an evolving lineup. The latest disclosed three-position screenshot shows MANIFEST, YOTS, and GTA6, which is a useful sign of how quickly Papi season moves.
+Say that this is an evolving lineup. Post `2086903386004230205` says "This is going to print millions" and shows MANIFEST, YOTS, and GTA6 in the attached image.
 
 ### 01:45 onward | Coin one: MANIFEST
 
@@ -166,9 +168,13 @@ Benji's useful question: does pairing a meme with a real-world stock narrative c
 ### Context
 
 - [Three-token channel model](https://www.youtube.com/watch?v=uYMaZKwojCw)
-- [Alex Becker credits John](https://x.com/ZssBecker/status/1771828283295879450)
-- [John's ASTEROID conditional hint](https://x.com/CryptoGodJohn/status/2045003219537957206)
+- [John's original LINK post](https://x.com/CryptoGodJohn/status/994754953901215744)
+- [John repeats the LINK line for 0x0](https://x.com/CryptoGodJohn/status/1654649237370535936)
+- [John later describes LINK as 360x](https://x.com/CryptoGodJohn/status/1654650796494008321)
+- [John tells the LINK story in his own interview](https://www.youtube.com/watch?v=VchD5QnDqg4&t=828s)
+- [Exact 0x0 DexScreener pool](https://dexscreener.com/ethereum/0x9ec9367b8c4dd45ec8e7b800b1f719251053ad60)
 - [John's later public MAGA conviction](https://x.com/CryptoGodJohn/status/2052492850902806600)
+- [Exact MAGA DexScreener pool](https://dexscreener.com/solana/hvimk99ygssdnwz9esqumdthrfz4dade7j6phmfms6at)
 
 ### MANIFEST
 
@@ -200,5 +206,5 @@ Benji's useful question: does pairing a meme with a real-world stock narrative c
 - `sources.json` is the complete source and claim ledger.
 - `arc-handoff.json` contains public URLs only and still requires the manual Arc share step.
 - `console.html` is the record-facing page.
-- `assets/user/john-latest-three-gta6.jpg` is the clean lineup visual.
+- `assets/user/oxo-current-three-gta6-feed-card.jpg` is the full current-lineup post render. It includes the caption and attached three-position image.
 - `BENJI-CTA-READOUT.txt` is the spoken CTA draft.

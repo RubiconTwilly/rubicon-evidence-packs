@@ -3,8 +3,8 @@
   "schema_version": 2,
   "project_id": "2026-08-11-cryptogodjohn-3-coins-next-cycle",
   "brand": "rubicon",
-  "updated_at": "2026-08-11T00:47:24Z",
-  "stage": "research_ready",
+  "updated_at": "2026-08-11T01:23:23Z",
+  "stage": "record_ready",
   "recording_blocked": false,
   "blocking_reason": null,
   "record_date": "2026-08-11",
@@ -19,7 +19,7 @@
   },
   "thesis_sentences": [
     "CryptoGodJohn is back in meme coins, with MANIFEST as the culture bet, YOTS as the AI and Elon bet, and GTA6 as his newest gaming and meme-stock thesis.",
-    "Each coin gives Benji a different attention narrative to break down, while MAGA and ASTEROID supply the recent post-to-chart proof for why viewers care what John says next."
+    "Each coin gives Benji a different attention narrative to break down, while the original LINK post, John's 0x0 echo, and MAGA explain why viewers care what he says next."
   ],
   "cta": {
     "status": "approved_for_recording_tracking_path_unverified",
@@ -43,16 +43,17 @@
   "evidence_order": [
     "01 Package: John face plus a finite three-token promise",
     "02 Orientation: who John is and the three narrative roles",
-    "03 Recent attention: MAGA and ASTEROID post-to-chart montage",
-    "04 Current lineup reveal: MANIFEST, YOTS, GTA6",
-    "05 MANIFEST: culture, feed alert, current stance, and chart context",
-    "06 YOTS: Elon and AI lore, @0x0papi source, current stance, and chart context",
-    "07 Earned CTA: Influencer Feed as an information source",
-    "08 GTA6: newest reveal, TTWO mechanism, official game catalyst, and chart context"
+    "03 Historical bridge: original LINK post, exact 0x0 echo, and the 0x0 chart",
+    "04 Recent bridge: MAGA @0x0papi source and exact public chart",
+    "05 Current lineup reveal: full @0x0papi post with MANIFEST, YOTS, GTA6",
+    "06 MANIFEST: culture, feed alert, current stance, and chart context",
+    "07 YOTS: Elon and AI lore, @0x0papi source, current stance, and chart context",
+    "08 Earned CTA: Influencer Feed as an information source",
+    "09 GTA6: newest reveal, TTWO mechanism, official game catalyst, and chart context"
   ],
-  "public_source_count": 14,
+  "public_source_count": 16,
   "console_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/",
-  "prepared_visual_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg",
+  "prepared_visual_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-current-three-gta6-feed-card.jpg",
   "thumbnail_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/#packaging",
   "arc_handoff_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/arc-handoff.json",
   "research_ref": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/research.md",
@@ -72,7 +73,7 @@
     "record_day_checked_at": "2026-08-10T23:46:00Z",
     "desktop_rendered_at": null,
     "mobile_rendered_at": null,
-    "arc_manifest_checked_at": "2026-08-11T00:47:24Z",
+    "arc_manifest_checked_at": "2026-08-11T01:23:23Z",
     "tracking_path_checked_at": null
   },
   "parked_research": [

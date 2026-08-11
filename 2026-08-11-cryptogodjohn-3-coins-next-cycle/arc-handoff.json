@@ -7,86 +7,98 @@
   "tabs": [
     {
       "order": 1,
-      "section_id": "s2",
-      "label": "01 OPEN | JOHN'S CURRENT THREE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-latest-three-gta6.jpg"
+      "section_id": "s1",
+      "label": "01 OPEN | JOHN'S CURRENT THREE POST",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-current-three-gta6-feed-card.jpg"
     },
     {
       "order": 2,
       "section_id": "s2",
-      "label": "02 WHY JOHN | MAGA SOURCE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/maga-protected-thesis.png"
+      "label": "02 WHY JOHN | ORIGINAL LINK POST",
+      "url": "https://x.com/CryptoGodJohn/status/994754953901215744"
     },
     {
       "order": 3,
       "section_id": "s2",
-      "label": "03 WHY JOHN | ASTEROID HINT",
-      "url": "https://x.com/CryptoGodJohn/status/2045003219537957206"
+      "label": "03 WHY JOHN | ORIGINAL 0x0 ECHO",
+      "url": "https://x.com/CryptoGodJohn/status/1654649237370535936"
     },
     {
       "order": 4,
       "section_id": "s2",
-      "label": "04 WHY JOHN | ASTEROID CHART",
-      "url": "https://dexscreener.com/ethereum/0x76a411f14a704099ba476ce8dffc288a53295218"
+      "label": "04 WHY JOHN | 0x0 DEXSCREENER",
+      "url": "https://dexscreener.com/ethereum/0x9ec9367b8c4dd45ec8e7b800b1f719251053ad60"
     },
     {
       "order": 5,
-      "section_id": "s4",
-      "label": "05 MANIFEST | @0x0papi SOURCE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-manifest-first-thesis-feed-card.jpg"
+      "section_id": "s2",
+      "label": "05 WHY JOHN | MAGA @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/maga-protected-thesis.png"
     },
     {
       "order": 6,
-      "section_id": "s4",
-      "label": "06 MANIFEST | LATEST JOHN TWEET",
-      "url": "https://x.com/CryptoGodJohn/status/2086902775724626129"
+      "section_id": "s2",
+      "label": "06 WHY JOHN | MAGA DEXSCREENER",
+      "url": "https://dexscreener.com/solana/hvimk99ygssdnwz9esqumdthrfz4dade7j6phmfms6at"
     },
     {
       "order": 7,
       "section_id": "s4",
-      "label": "07 MANIFEST | DEXSCREENER",
-      "url": "https://dexscreener.com/solana/2dvbu5h8jcd37gaxajuz4t77hsjjw22lldutzk7gsa43"
+      "label": "07 MANIFEST | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-manifest-first-thesis-feed-card.jpg"
     },
     {
       "order": 8,
-      "section_id": "s5",
-      "label": "08 YOTS | @0x0papi SOURCE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-yots-leading-ai-feed-card.jpg"
+      "section_id": "s4",
+      "label": "08 MANIFEST | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086902775724626129"
     },
     {
       "order": 9,
-      "section_id": "s5",
-      "label": "09 YOTS | LATEST JOHN TWEET",
-      "url": "https://x.com/CryptoGodJohn/status/2086899767825580517"
+      "section_id": "s4",
+      "label": "09 MANIFEST | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/2dvbu5h8jcd37gaxajuz4t77hsjjw22lldutzk7gsa43"
     },
     {
       "order": 10,
       "section_id": "s5",
-      "label": "10 YOTS | DEXSCREENER",
-      "url": "https://dexscreener.com/solana/4usnftqy15mrvylcpkngv4rytamcgnhc9qt9pwbsjpzv"
+      "label": "10 YOTS | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-yots-leading-ai-feed-card.jpg"
     },
     {
       "order": 11,
-      "section_id": "s6",
-      "label": "11 GTA6 | @0x0papi SOURCE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-gta6-first-thesis-feed-card.jpg"
+      "section_id": "s5",
+      "label": "11 YOTS | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086899767825580517"
     },
     {
       "order": 12,
-      "section_id": "s6",
-      "label": "12 GTA6 | LATEST JOHN TWEET",
-      "url": "https://x.com/CryptoGodJohn/status/2086914345678819518"
+      "section_id": "s5",
+      "label": "12 YOTS | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/4usnftqy15mrvylcpkngv4rytamcgnhc9qt9pwbsjpzv"
     },
     {
       "order": 13,
       "section_id": "s6",
-      "label": "13 GTA6 | DEXSCREENER",
-      "url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2"
+      "label": "13 GTA6 | @0x0papi SOURCE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-gta6-first-thesis-feed-card.jpg"
     },
     {
       "order": 14,
       "section_id": "s6",
-      "label": "14 GTA6 | OFFICIAL CATALYST",
+      "label": "14 GTA6 | LATEST JOHN TWEET",
+      "url": "https://x.com/CryptoGodJohn/status/2086914345678819518"
+    },
+    {
+      "order": 15,
+      "section_id": "s6",
+      "label": "15 GTA6 | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2"
+    },
+    {
+      "order": 16,
+      "section_id": "s6",
+      "label": "16 GTA6 | OFFICIAL CATALYST",
       "url": "https://www.rockstargames.com/VI/an-extended-look"
     }
   ],
