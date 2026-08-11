@@ -196,6 +196,24 @@
           "missing": "The package loses its closest channel precedent."
         },
         {
+          "id": "latest-three-protected",
+          "type": "john_alt_capture",
+          "role": "lineup_reveal",
+          "label": "John's full current-three post via @0x0papi",
+          "source_title": "John's alt @0x0papi: This is going to print millions",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-current-three-gta6-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2086903386004230205",
+          "local_ref": "assets/user/oxo-current-three-gta6-feed-card.jpg",
+          "source_date": "2026-08-10",
+          "source_id": "2086903386004230205",
+          "quote": "This is going to print millions",
+          "shows": "The full original-post render includes John's caption and the attached three-position image showing MANIFEST, YOTS, and GTA6.",
+          "why": "It ties the selected lineup to the actual @0x0papi post instead of presenting a detached wallet screenshot.",
+          "inspect": "Original post record and Influencer Feed render | 10 Aug 2026, 19:51:54 UTC",
+          "missing": "The current trio would otherwise be inferred from separate posts.",
+          "caution": "Use the image as John's disclosed lineup, not as an audited portfolio statement."
+        },
+        {
           "id": "becker-credits-john",
           "type": "x_post",
           "role": "orientation",
@@ -400,60 +418,6 @@
           "inspect": "Full chart from 17 Apr 2026 | checked 11 Aug 2026",
           "missing": "The ASTEROID move has no public chart tab.",
           "caution": "John later said he did not own the Ethereum token; use this only as an early information spot."
-        },
-        {
-          "id": "post-chart-snapshot",
-          "type": "generated_asset",
-          "role": "visual",
-          "label": "Posts and later chart states",
-          "source_title": "John posts and later public-chart states",
-          "local_ref": "assets/post-to-chart-snapshot.json",
-          "source_date": "2026-08-11",
-          "quote": "Timestamped posts, displayed feed values, later chart highs and record-day market context.",
-          "shows": "The strongest historical observations without turning them into investor-return promises.",
-          "why": "Benji gets one clear proof montage before the current three.",
-          "inspect": "Prepared data visual | checked 11 Aug 2026",
-          "missing": "The earlier examples have to be combined manually."
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "section": "The current three: culture, AI, and gaming",
-      "cards": [
-        {
-          "id": "latest-three-protected",
-          "type": "john_alt_capture",
-          "role": "lineup_reveal",
-          "label": "John's full current-three post via @0x0papi",
-          "source_title": "John's alt @0x0papi: This is going to print millions",
-          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/oxo-current-three-gta6-feed-card.jpg",
-          "canonical_url": "https://x.com/0x0papi/status/2086903386004230205",
-          "local_ref": "assets/user/oxo-current-three-gta6-feed-card.jpg",
-          "source_date": "2026-08-10",
-          "source_id": "2086903386004230205",
-          "quote": "This is going to print millions",
-          "shows": "The full original-post render includes John's caption and the attached three-position image showing MANIFEST, YOTS, and GTA6.",
-          "why": "It ties the selected lineup to the actual @0x0papi post instead of presenting a detached wallet screenshot.",
-          "inspect": "Original post record and Influencer Feed render | 10 Aug 2026, 19:51:54 UTC",
-          "missing": "The current trio would otherwise be inferred from separate posts.",
-          "caution": "Use the image as John's disclosed lineup, not as an audited portfolio statement."
-        },
-        {
-          "id": "current-three-lineup",
-          "type": "generated_asset",
-          "role": "visual",
-          "label": "Current three one-glance view",
-          "source_title": "CryptoGodJohn current three narrative lineup",
-          "local_ref": "assets/john-three-current.html",
-          "data_ref": "assets/current-three-snapshot.json",
-          "source_date": "2026-08-11",
-          "quote": "MANIFEST: culture. YOTS: AI and Elon. GTA6: gaming and meme stocks.",
-          "shows": "Three different bets on what will capture attention over the next part of the cycle.",
-          "why": "It gives the video a simple organising idea before the token blocks.",
-          "inspect": "Prepared current-lineup visual | checked 11 Aug 2026",
-          "missing": "The episode feels like three unrelated token summaries.",
-          "caution": "This is an editorial roundup of John's current posts, not a single formal portfolio statement."
         }
       ]
     },
@@ -909,7 +873,7 @@
       "label": "02 WHY JOHN | ORIGINAL LINK POST",
       "url": "https://x.com/CryptoGodJohn/status/994754953901215744",
       "source_title": "CryptoGodJohn on X: LINK will change my life",
-      "quote": "$LINK you will change my life forever",
+      "quote": "$LINK you will change my life forever. You will make me a multimillionaire in a few years. Just want to mark this here so I can come back to it in 2020-2021.",
       "shows": "John's original 2018 LINK prediction and the 2020-2021 return date written into it.",
       "why": "This is the primary source behind the call that built his reputation.",
       "inspect": "Original X post | 11 May 2018, 01:43:57 UTC",
@@ -923,7 +887,7 @@
       "label": "03 WHY JOHN | ORIGINAL 0x0 ECHO",
       "url": "https://x.com/CryptoGodJohn/status/1654649237370535936",
       "source_title": "CryptoGodJohn on X: 0x0 will change my life",
-      "quote": "#0x0 you will change my life forever",
+      "quote": "#0x0 you will change my life forever. You will make me a multimillionaire in a few years. Just want to mark this here so I can come back to it in 2024-2025",
       "shows": "The 2023 post repeats the LINK wording, changes the dates to 2024-2025 and directly quotes the original LINK status.",
       "why": "It makes the LINK-to-0x0 motif visual and exact.",
       "inspect": "Original X post | 6 May 2023, 00:48:14 UTC",
