@@ -1,11 +1,11 @@
 {
   "schema": "rubicon.record-pack-sources",
   "version": 4,
-  "generated_at": "2026-08-12T10:22:48+10:00",
-  "record_day_checked_at": "2026-08-12T10:12:01+10:00",
+  "generated_at": "2026-08-12T11:34:30+10:00",
+  "record_day_checked_at": "2026-08-12T11:34:30+10:00",
   "project": {
     "id": "2026-08-12-ansem-next-sub-50m-coin",
-    "status": "research_ready_render_pending",
+    "status": "record_ready",
     "record_date": "2026-08-12",
     "premise_evidence_mode": "statement_led",
     "reporting_stance": {
@@ -14,18 +14,18 @@
       "truth_audit_required": false,
       "attribution_rule": "Self-reported or disputed assertions remain attributed. Their underlying truth is not an inclusion gate unless the selected video explicitly investigates it or adopts it as objective fact."
     },
-    "title": "Ansem is back buying microcap meme coins... (under $50M)",
+    "title": "Ansem's next microcap token could make MILLIONS... (under $50M)",
     "thumbnail_text": "UNDER $50M?!",
     "thumbnail_ref": "assets/thumbnail-mock.png",
     "hosted_console_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-12-ansem-next-sub-50m-coin/",
     "model": {
-      "title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
-      "url": "https://youtu.be/DJ3Dto1ZZdI",
-      "mechanism": "A known crypto personality returns, takes a current action, and creates an unresolved next-move question."
+      "title": "cryptogodjohn's NEW crypto project could print MILLIONS in the next 90 days...",
+      "url": "https://youtu.be/aBajheRdZUI",
+      "mechanism": "One influential crypto personality, one mystery token, and one oversized future-outcome question."
     },
     "thesis_sentences": [
-      "Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows.",
-      "Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives."
+      "Ansem's own Black Bull project shows the scale of his current influence and the creator-attention thesis behind it.",
+      "COBY is the follow story, MANLET is the Discord story, and the unnamed sub-$50M post is the open loop that drives the package."
     ],
     "subjects": [
       "Ansem"
@@ -43,13 +43,12 @@
       {
         "type": "subject",
         "question": "Who is Ansem and why does the market care what he posts?",
-        "answer": "Ansem publicly championed WIF early in the prior Solana meme cycle and now has about 1.27 million X followers. Market Bubble #9 is a concise first-party account of that history and his return to onchain trading.",
+        "answer": "Bullpen's compact profile post summarises the career story traders attach to Ansem; his December 2023 WIF post is the immediate first-party receipt.",
         "receipt_ids": [
-          "market-bubble-nine",
+          "bullpen-ansem-profile",
           "ansem-wif-early"
         ],
         "asset_refs": [
-          "assets/ansem-market-bubble-source.png",
           "assets/user/06-ansem-dogwifhat-2023.jpg"
         ]
       },
@@ -91,7 +90,7 @@
         "searched_window": "9 to 12 Aug 2026",
         "searched_surfaces": [
           "Ansem public X",
-          "official Market Bubble",
+          "Bullpen public X",
           "public chart data"
         ],
         "receipt_ids": [
@@ -153,11 +152,10 @@
         "status": "evidenced",
         "searched_window": "25 Jun to 10 Aug 2026",
         "searched_surfaces": [
-          "Market Bubble episodes 8 and 9",
+          "Market Bubble episode 8",
           "Ansem public X"
         ],
         "receipt_ids": [
-          "market-bubble-nine",
           "market-bubble-solana-bottom",
           "ansem-blackbull-support"
         ],
@@ -189,23 +187,37 @@
       "arc_label": "CONTEXT",
       "cards": [
         {
-          "id": "market-bubble-nine",
-          "type": "youtube",
+          "id": "bullpen-ansem-profile",
+          "type": "x_post",
           "role": "subject_orientation",
-          "label": "Ansem tells his WIF and comeback story",
-          "source_title": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
-          "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s",
-          "canonical_url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ",
-          "source_date": "2026-07-02",
-          "quote": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
-          "shows": "Ansem explains the Solana, BONK and WIF period, says he barely traded in 2025, and says he has started buying memes again.",
-          "why": "It supplies first-party history and the comeback bridge without a long biography.",
-          "inspect": "09:43 WIF history; 11:02 barely traded in 2025; 13:08 Black Bull; 14:09 active onchain again",
-          "missing": "New viewers get no reason to care about Ansem's current posts.",
-          "video_meta": {
-            "video_id": "Ff1shGhhQzQ",
-            "channel": "Market Bubble",
-            "published_at_utc": "2026-07-03T00:26:46Z"
+          "label": "Bullpen's compact Ansem profile",
+          "source_title": "Bullpen on X: be Ansem",
+          "url": "https://x.com/BullpenFi/status/2082251765043646593",
+          "canonical_url": "https://x.com/BullpenFi/status/2082251765043646593",
+          "source_date": "2026-07-28",
+          "source_id": "2082251765043646593",
+          "quote": "> be Ansem > graduate georgia tech > enter crypto in the bear market, call $SOL bottom publicly @ $1.50",
+          "shows": "Bullpen's profile post summarises the career story traders attach to Ansem, including early Solana meme calls, his audience and the Bullpen platform.",
+          "why": "It gives Ben the quick context he asked for without requiring a long biography clip.",
+          "inspect": "Full profile post | 28 Jul 2026, 23:48:01 UTC",
+          "missing": "New viewers have no quick explanation for why Ansem's activity matters.",
+          "caution": "Attribute the summary to Bullpen; use the next WIF post as the first-party receipt.",
+          "tweet_meta": {
+            "tweet_id": "2082251765043646593",
+            "canonical_url": "https://x.com/BullpenFi/status/2082251765043646593",
+            "handle": "BullpenFi",
+            "display_name": "Bullpen",
+            "created_at_utc": "2026-07-28T23:48:01.000Z",
+            "text_raw": "> be Ansem > graduate georgia tech > enter crypto in the bear market, call $SOL bottom publicly @ $1.50 > call $WIF early for 500x and $BONK for 80x > build 1m+ ct following as the solana guy > co-found one of the fastest growing crypto startups, Bullpen > start his own trading…",
+            "text_display": "> be Ansem > graduate georgia tech > enter crypto in the bear market, call $SOL bottom publicly @ $1.50",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "BullpenFi",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T11:00:00+10:00",
+            "render_provenance": "public_x_source"
           }
         },
         {
@@ -222,7 +234,7 @@
           "shows": "Ansem publicly championed WIF in December 2023 before it became a defining Solana meme narrative.",
           "why": "It is a clean primary receipt for the reputation behind his current influence.",
           "inspect": "Full post and attached image | 18 Dec 2023, 09:15 UTC",
-          "missing": "The video relies only on Ansem's retrospective version of his history.",
+          "missing": "The profile section relies only on somebody else's summary.",
           "caution": "Do not claim the post alone caused WIF's move or assign an exact realized return.",
           "tweet_meta": {
             "tweet_id": "1736676424977719528",
@@ -264,7 +276,7 @@
           "source_date": "2026-06-25",
           "quote": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
           "shows": "Ansem gives the market-turn view that preceded his return to onchain meme trading.",
-          "why": "It connects the comeback to his broader market view instead of making MANLET feel random.",
+          "why": "It connects the current token activity to his broader market view instead of making MANLET feel random.",
           "inspect": "02:30 onward | published 25 Jun 2026 Pacific time",
           "missing": "The video has no macro bridge between his absence and current activity.",
           "video_meta": {
@@ -322,7 +334,7 @@
           "shows": "Ansem's freshest public stance is selective but active rather than absent from the market.",
           "why": "It closes the macro block on a current statement and sets up why viewers want his next posts tracked.",
           "inspect": "Full reply | 11 Aug 2026, 22:18:09 UTC",
-          "missing": "The comeback thesis ends on an older post instead of his record-day stance.",
+          "missing": "The macro thesis ends on an older post instead of his record-day stance.",
           "caution": "Do not carry the post's 1,000x language into the CTA.",
           "tweet_meta": {
             "tweet_id": "2087302579051208751",
@@ -698,18 +710,18 @@
       "arc_label": "WHAT NEXT",
       "cards": [
         {
-          "id": "model-becker-return",
+          "id": "model-john-millions",
           "type": "youtube",
           "role": "model",
-          "label": "Rubicon return model",
-          "source_title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
-          "url": "https://youtu.be/DJ3Dto1ZZdI",
+          "label": "Rubicon mystery-token model",
+          "source_title": "cryptogodjohn's NEW crypto project could print MILLIONS in the next 90 days...",
+          "url": "https://youtu.be/aBajheRdZUI",
           "source_date": "2026",
-          "quote": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
-          "shows": "A channel-native personality-return package that turns current activity into an unresolved next-move story.",
-          "why": "It is the closest packaging mechanism for Ansem being active again.",
+          "quote": "cryptogodjohn's NEW crypto project could print MILLIONS in the next 90 days...",
+          "shows": "A channel-native single-influencer package built around a mystery token and an oversized future-outcome question.",
+          "why": "It is the closest packaging mechanism for Ansem's unnamed sub-$50M coin.",
           "inspect": "Title and thumbnail",
-          "missing": "The package risks becoming a generic MANLET explainer instead of an Ansem comeback story."
+          "missing": "The package risks becoming a broad Ansem influence explainer instead of a mystery-token story."
         },
         {
           "id": "model-quant-action",
@@ -857,15 +869,15 @@
       "order": 1,
       "section_id": "s2",
       "role": "subject_orientation",
-      "label": "01 CONTEXT | MARKET BUBBLE #9",
-      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s",
-      "source_title": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
-      "quote": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
-      "shows": "Ansem explains the Solana, BONK and WIF period, says he barely traded in 2025, and says he has started buying memes again.",
-      "why": "It supplies first-party history and the comeback bridge without a long biography.",
-      "inspect": "09:43 WIF history; 11:02 barely traded in 2025; 13:08 Black Bull; 14:09 active onchain again",
-      "missing": "New viewers get no reason to care about Ansem's current posts.",
-      "card_id": "market-bubble-nine"
+      "label": "01 CONTEXT | WHO ANSEM IS",
+      "url": "https://x.com/BullpenFi/status/2082251765043646593",
+      "source_title": "Bullpen on X: be Ansem",
+      "quote": "> be Ansem > graduate georgia tech > enter crypto in the bear market, call $SOL bottom publicly @ $1.50",
+      "shows": "Bullpen's compact profile post summarises the career story traders attach to Ansem.",
+      "why": "It gives Ben the quick context he asked for without requiring a long biography clip.",
+      "inspect": "Full profile post | 28 Jul 2026, 23:48:01 UTC",
+      "missing": "New viewers have no quick explanation for why Ansem's activity matters.",
+      "card_id": "bullpen-ansem-profile"
     },
     {
       "order": 2,
@@ -890,7 +902,7 @@
       "source_title": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
       "quote": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
       "shows": "Ansem gives the market-turn view that preceded his return to onchain meme trading.",
-      "why": "It connects the comeback to his broader market view instead of making MANLET feel random.",
+      "why": "It connects the current token activity to his broader market view instead of making MANLET feel random.",
       "inspect": "02:30 onward | published 25 Jun 2026 Pacific time",
       "missing": "The video has no macro bridge between his absence and current activity.",
       "card_id": "market-bubble-solana-bottom"

@@ -55,8 +55,8 @@
     {
       "order": 1,
       "section_id": "s2",
-      "label": "01 CONTEXT | MARKET BUBBLE #9",
-      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s"
+      "label": "01 CONTEXT | WHO ANSEM IS",
+      "url": "https://x.com/BullpenFi/status/2082251765043646593"
     },
     {
       "order": 2,
@@ -155,8 +155,8 @@
       "launch_order": 2,
       "kind": "evidence",
       "evidence_order": 1,
-      "label": "01 CONTEXT | MARKET BUBBLE #9",
-      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s"
+      "label": "01 CONTEXT | WHO ANSEM IS",
+      "url": "https://x.com/BullpenFi/status/2082251765043646593"
     },
     {
       "launch_order": 3,
@@ -302,10 +302,13 @@
   "private_items": [],
   "manual_steps": [
     "Create a flat Arc folder",
-    "In one Arc window, open launch_tabs from last to first",
+    "Keep the hosted dashboard in the existing Arc window as the anchor tab",
+    "In that same Arc window, open launch_tabs from last to first with at least one second between each tab",
+    "After every creation, confirm the visible sidebar row appears directly beneath the dashboard anchor before continuing",
     "Rename each Google spacer tab to its green section-marker label",
     "Keep those marker tabs out of record_deck and evidence counts",
-    "Keep the hosted console_url open separately for the final Tracker CTA section",
+    "Keep the hosted console_url as the final dashboard and Tracker CTA surface",
+    "Verify the visible Arc sidebar top to bottom; do not infer order from Arc's internal tab collection",
     "Walk the sequence once",
     "Use Share Folder",
     "Save the new snapshot URL and shared_at time here"

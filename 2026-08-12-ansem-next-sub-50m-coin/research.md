@@ -1,20 +1,20 @@
 ---
 project: 2026-08-12-ansem-next-sub-50m-coin
-status: research-ready
+status: record-ready
 record_date: 2026-08-12
 premise_evidence_mode: statement_led
 reporting_stance: reporter
 ---
 
-# Ansem is back buying microcap meme coins
+# Ansem's next microcap token could make millions
 
 ## Selected package
 
-- **Title:** `Ansem is back buying microcap meme coins... (under $50M)`
-- **Thumbnail:** large real Ansem face, one obscured coin, `HE'S BACK`, and `BUYING SUB $50M`.
-- **Packaging model:** [Alex Becker returned to crypto for one last cycle](https://youtu.be/DJ3Dto1ZZdI).
+- **Title:** `Ansem's next microcap token could make MILLIONS... (under $50M)`
+- **Thumbnail:** real Ansem face, one obscured mystery coin, red arrow and `UNDER $50M?!`.
+- **Packaging model:** [CryptoGodJohn's new token could print millions](https://youtu.be/aBajheRdZUI).
 
-Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows. Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives.
+Ansem's own Black Bull project shows the scale of his current influence and the creator-attention thesis behind it. COBY is the follow story, MANLET is the Discord story, and the unnamed sub-$50M post is the open loop that drives the package.
 
 ## Reporting stance
 
@@ -24,18 +24,15 @@ Rubicon is the reporter here, not a truth serum. The reportable information is w
 
 ### 🟢 Context: why Ansem matters
 
-Use [Market Bubble #9](https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s) as the compact Ansem introduction:
+Use [Bullpen's compact profile post](https://x.com/BullpenFi/status/2082251765043646593) as the fast Ansem introduction. Attribute the summary to Bullpen rather than presenting its career multiples as audited fact.
 
-- `09:43` - his Solana, BONK and WIF history.
-- `11:02` - he says he barely traded during 2025.
-- `13:08` - the show discusses Black Bull moving above $100 million during launch week.
-- `14:09` - he says he had started buying memes again and planned to become active onchain.
+> be Ansem > graduate georgia tech > enter crypto in the bear market, call $SOL bottom publicly @ $1.50
 
 Then show [his December 2023 WIF post](https://x.com/blknoiz06/status/1736676424977719528):
 
 > dogwifhat may quite literally be the first dog coin to ever hit $1.00
 
-This section only needs to establish reputation, absence and return.
+This section only needs to establish who Ansem is and why his public activity attracts attention.
 
 ### 🟢 Macro: why he is looking now
 

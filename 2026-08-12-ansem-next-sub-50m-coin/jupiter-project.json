@@ -3,28 +3,28 @@
   "schema_version": 2,
   "project_id": "2026-08-12-ansem-next-sub-50m-coin",
   "brand": "rubicon",
-  "updated_at": "2026-08-12T01:01:17Z",
+  "updated_at": "2026-08-12T01:34:30Z",
   "stage": "record_ready",
   "recording_blocked": false,
   "blocking_reason": null,
   "record_date": "2026-08-12",
-  "selected_title": "Ansem is back buying microcap meme coins... (under $50M)",
+  "selected_title": "Ansem's next microcap token could make MILLIONS... (under $50M)",
   "thumbnail_text": "UNDER $50M?!",
   "thumbnail_concept": "Established Rubicon single-influencer layout: real Ansem face on the right, one obscured token on the left, a thick red arrow, and one oversized bottom line quoting the sub-$50M mystery.",
-  "promise": "Ansem is active onchain again, and COBY, MANLET and his unnamed sub-$50M post show how quickly traders turn his attention into a token narrative.",
+  "promise": "Black Bull, COBY and MANLET explain why traders are treating Ansem's posts, follows and Discord comments as clues to his unnamed sub-$50M token.",
   "editorial_mode": {
     "mode": "reporter",
     "truth_audit_required": false,
     "rule": "Report attributable statements, visible actions, approved Discord captures, public narratives and public reaction. Keep disputed or self-reported assertions attributed; verify their underlying truth only when the selected premise explicitly investigates or adopts them as fact."
   },
   "packaging_model": {
-    "title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
-    "url": "https://youtu.be/DJ3Dto1ZZdI",
-    "mechanism": "A known personality returns, takes a current action, and creates an unresolved next-move question."
+    "title": "cryptogodjohn's NEW crypto project could print MILLIONS in the next 90 days...",
+    "url": "https://youtu.be/aBajheRdZUI",
+    "mechanism": "One influential crypto personality, one mystery token, and one oversized future-outcome question."
   },
   "thesis_sentences": [
-    "Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows.",
-    "Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives."
+    "Ansem's own Black Bull project shows the scale of his current influence and the creator-attention thesis behind it.",
+    "COBY is the follow story, MANLET is the Discord story, and the unnamed sub-$50M post is the open loop that drives the package."
   ],
   "cta": {
     "status": "record_ready",
@@ -46,7 +46,7 @@
     ]
   },
   "evidence_order": [
-    "01 Context: WIF history, low 2025 activity, and his onchain return",
+    "01 Context: Bullpen's compact profile and Ansem's early WIF post",
     "02 Macro: Solana turn and creator-attention thesis",
     "03 Black Bull: Ansem support post and live chart",
     "04 COBY: official follow notification, market amplification, and exact chart",
@@ -63,7 +63,7 @@
   "skeleton": {
     "source_ref": "research.md",
     "sections": [
-      "Why Ansem matters",
+      "Who Ansem is and why his activity matters",
       "Macro: market turn and creator attention",
       "Black Bull current proof",
       "COBY follow case",
@@ -73,17 +73,17 @@
     ]
   },
   "verification": {
-    "record_day_checked_at": "2026-08-12T00:12:01Z",
-    "desktop_rendered_at": "2026-08-12T01:01:17Z",
-    "mobile_rendered_at": "2026-08-12T01:01:17Z",
-    "arc_manifest_checked_at": "2026-08-12T00:16:52Z",
-    "static_bundle_checked_at": "2026-08-12T00:12:01Z",
+    "record_day_checked_at": "2026-08-12T01:34:30Z",
+    "desktop_rendered_at": "2026-08-12T01:34:30Z",
+    "mobile_rendered_at": "2026-08-12T01:34:30Z",
+    "arc_manifest_checked_at": "2026-08-12T01:34:30Z",
+    "static_bundle_checked_at": "2026-08-12T01:34:30Z",
     "tracking_path_checked_at": null
   },
   "parked_research": [
     {
       "subject": "Fresh five-coins macro post",
-      "reason": "Useful as research context, but it repeats the comeback point and its 1,000x wording distracts from the selected story.",
+      "reason": "Useful as research context, but it repeats the macro point and its 1,000x wording distracts from the selected story.",
       "ref": "research.md#what-is-parked"
     }
   ],
