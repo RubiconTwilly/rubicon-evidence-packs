@@ -1,0 +1,1067 @@
+{
+  "schema": "rubicon.record-pack-sources",
+  "version": 4,
+  "generated_at": "2026-08-12T10:22:48+10:00",
+  "record_day_checked_at": "2026-08-12T10:12:01+10:00",
+  "project": {
+    "id": "2026-08-12-ansem-next-sub-50m-coin",
+    "status": "research_ready_render_pending",
+    "record_date": "2026-08-12",
+    "premise_evidence_mode": "statement_led",
+    "reporting_stance": {
+      "mode": "reporter",
+      "reportable_unit": "An attributable public statement, visible action, approved Discord capture, market narrative, and the public reaction around it.",
+      "truth_audit_required": false,
+      "attribution_rule": "Self-reported or disputed assertions remain attributed. Their underlying truth is not an inclusion gate unless the selected video explicitly investigates it or adopts it as objective fact."
+    },
+    "title": "Ansem is back buying microcap meme coins... (under $50M)",
+    "thumbnail_text": "UNDER $50M?!",
+    "thumbnail_ref": "assets/thumbnail-mock.png",
+    "hosted_console_url": "",
+    "model": {
+      "title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
+      "url": "https://youtu.be/DJ3Dto1ZZdI",
+      "mechanism": "A known crypto personality returns, takes a current action, and creates an unresolved next-move question."
+    },
+    "thesis_sentences": [
+      "Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows.",
+      "Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives."
+    ],
+    "subjects": [
+      "Ansem"
+    ],
+    "subject_aliases": [
+      "blknoiz06"
+    ],
+    "cta_status": "record_ready",
+    "cta_ref": "BENJI-CTA-READOUT.txt"
+  },
+  "audience_orientation": {
+    "status": "required",
+    "reason": "Viewers need brief proof of who Ansem is, why he is active again, and how traders react to the information around him.",
+    "items": [
+      {
+        "type": "subject",
+        "question": "Who is Ansem and why does the market care what he posts?",
+        "answer": "Ansem publicly championed WIF early in the prior Solana meme cycle and now has about 1.27 million X followers. Market Bubble #9 is a concise first-party account of that history and his return to onchain trading.",
+        "receipt_ids": [
+          "market-bubble-nine",
+          "ansem-wif-early"
+        ],
+        "asset_refs": [
+          "assets/ansem-market-bubble-source.png",
+          "assets/user/06-ansem-dogwifhat-2023.jpg"
+        ]
+      },
+      {
+        "type": "market_position",
+        "question": "What is different now?",
+        "answer": "Ansem says he is active onchain again, is continuing to build around The Black Bull, and is focused on creator attention as financial distribution.",
+        "receipt_ids": [
+          "ansem-attention-thesis",
+          "ansem-blackbull-support"
+        ],
+        "asset_refs": [
+          "assets/user/04-ansem-proof-of-bagwork.png"
+        ]
+      },
+      {
+        "type": "framework",
+        "question": "What is the Ansem effect this video is showing?",
+        "answer": "Traders turn posts, follows and Discord comments into token narratives. COBY is the follow case, MANLET is the Discord case, and the unnamed sub-$50M post is the next open loop.",
+        "receipt_ids": [
+          "coby-official-follow",
+          "abu-manlet-discord",
+          "ansem-under-fifty"
+        ],
+        "asset_refs": [
+          "assets/user/coby/06-coby-official-ansem-follow-notification.jpg",
+          "assets/user/01-ansem-discord-manlet-question.jpg"
+        ]
+      }
+    ]
+  },
+  "claim_chronology": {
+    "subject": "Ansem",
+    "claim": "Ansem is active onchain again, and traders are turning his posts, follows and Discord comments into immediate token narratives.",
+    "checkpoints": [
+      {
+        "stage": "forecast",
+        "status": "evidenced",
+        "searched_window": "9 to 12 Aug 2026",
+        "searched_surfaces": [
+          "Ansem public X",
+          "official Market Bubble",
+          "public chart data"
+        ],
+        "receipt_ids": [
+          "ansem-under-fifty",
+          "ansem-five-coins"
+        ],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "decision_day",
+        "status": "evidenced",
+        "searched_window": "10 Aug 2026",
+        "searched_surfaces": [
+          "Ansem public X",
+          "public third-party Discord capture",
+          "Fox relaunch post",
+          "minute chart data"
+        ],
+        "receipt_ids": [
+          "fox-manlet-relaunch",
+          "abu-manlet-discord",
+          "ansem-under-fifty"
+        ],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_applicable",
+        "counter_search_note": "The selected story does not attempt to solve the unnamed coin; MANLET is a separate Discord-driven example."
+      },
+      {
+        "stage": "confirmation",
+        "status": "not_applicable",
+        "searched_window": "10 to 12 Aug 2026",
+        "searched_surfaces": [
+          "Ansem public X timeline",
+          "quoted posts",
+          "MANLET project posts",
+          "public X search"
+        ],
+        "receipt_ids": [],
+        "counter_receipt_ids": [],
+        "note": "The selected story reports the public guessing game rather than trying to identify Ansem's unnamed purchase.",
+        "counter_search_status": "not_applicable",
+        "counter_search_note": "COBY and MANLET are presented as two public attention cases, not as answers to the unnamed post."
+      },
+      {
+        "stage": "action",
+        "status": "not_applicable",
+        "searched_window": "28 Jul to 12 Aug 2026",
+        "searched_surfaces": [
+          "Ansem public X",
+          "Market Bubble",
+          "public Discord capture"
+        ],
+        "receipt_ids": [],
+        "counter_receipt_ids": [],
+        "note": "The selected premise follows public statements and the public aftermath."
+      },
+      {
+        "stage": "re_entry",
+        "status": "evidenced",
+        "searched_window": "25 Jun to 10 Aug 2026",
+        "searched_surfaces": [
+          "Market Bubble episodes 8 and 9",
+          "Ansem public X"
+        ],
+        "receipt_ids": [
+          "market-bubble-nine",
+          "market-bubble-solana-bottom",
+          "ansem-blackbull-support"
+        ],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "current_stance",
+        "status": "evidenced",
+        "searched_window": "6 to 12 Aug 2026",
+        "searched_surfaces": [
+          "latest Ansem public X",
+          "Black Bull chart",
+          "MANLET chart"
+        ],
+        "receipt_ids": [
+          "ansem-attention-thesis",
+          "ansem-under-fifty",
+          "ansem-five-coins",
+          "blackbull-chart"
+        ],
+        "counter_receipt_ids": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s2",
+      "section": "Audience orientation and Ansem context",
+      "arc_label": "CONTEXT",
+      "cards": [
+        {
+          "id": "market-bubble-nine",
+          "type": "youtube",
+          "role": "subject_orientation",
+          "label": "Ansem tells his WIF and comeback story",
+          "source_title": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
+          "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s",
+          "canonical_url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ",
+          "source_date": "2026-07-02",
+          "quote": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
+          "shows": "Ansem explains the Solana, BONK and WIF period, says he barely traded in 2025, and says he has started buying memes again.",
+          "why": "It supplies first-party history and the comeback bridge without a long biography.",
+          "inspect": "09:43 WIF history; 11:02 barely traded in 2025; 13:08 Black Bull; 14:09 active onchain again",
+          "missing": "New viewers get no reason to care about Ansem's current posts.",
+          "video_meta": {
+            "video_id": "Ff1shGhhQzQ",
+            "channel": "Market Bubble",
+            "published_at_utc": "2026-07-03T00:26:46Z"
+          }
+        },
+        {
+          "id": "ansem-wif-early",
+          "type": "x_post",
+          "role": "subject_proof",
+          "label": "Early WIF conviction",
+          "source_title": "Ansem on X: dogwifhat may be the first dog coin to hit $1",
+          "url": "https://x.com/blknoiz06/status/1736676424977719528",
+          "local_ref": "assets/user/06-ansem-dogwifhat-2023.jpg",
+          "source_date": "2023-12-18",
+          "source_id": "1736676424977719528",
+          "quote": "dogwifhat may quite literally be the first dog coin to ever hit $1.00",
+          "shows": "Ansem publicly championed WIF in December 2023 before it became a defining Solana meme narrative.",
+          "why": "It is a clean primary receipt for the reputation behind his current influence.",
+          "inspect": "Full post and attached image | 18 Dec 2023, 09:15 UTC",
+          "missing": "The video relies only on Ansem's retrospective version of his history.",
+          "caution": "Do not claim the post alone caused WIF's move or assign an exact realized return.",
+          "tweet_meta": {
+            "tweet_id": "1736676424977719528",
+            "canonical_url": "https://x.com/blknoiz06/status/1736676424977719528",
+            "handle": "blknoiz06",
+            "display_name": "Ansem 🐂🀄️",
+            "created_at_utc": "2023-12-18T09:15:00.000Z",
+            "text_raw": "so it's a dog, but wif, a hat\n\nthese new crypto memes spontaneously emerge as viral symbols prevalent in digital culture, a rallying cry for those internet natives disllusioned with the typical 9-to-5 grind - dogwifhat may quite literally be the first dog coin to ever hit $1.00 https://t.co/pjOW3bPUDs",
+            "text_display": "dogwifhat may quite literally be the first dog coin to ever hit $1.00",
+            "media_urls": [
+              "https://pbs.twimg.com/media/GBnqAAaXIAAd2Lq.jpg"
+            ],
+            "local_media_refs": [
+              "assets/user/06-ansem-dogwifhat-2023.jpg"
+            ],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "blknoiz06",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source_with_retained_media"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "section": "Market turn and macro thesis",
+      "arc_label": "MACRO",
+      "cards": [
+        {
+          "id": "market-bubble-solana-bottom",
+          "type": "youtube",
+          "role": "macro_context",
+          "label": "Ansem calls a Solana bottom",
+          "source_title": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
+          "url": "https://www.youtube.com/watch?v=TuJO-b4rD3s&t=150s",
+          "canonical_url": "https://www.youtube.com/watch?v=TuJO-b4rD3s",
+          "source_date": "2026-06-25",
+          "quote": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
+          "shows": "Ansem gives the market-turn view that preceded his return to onchain meme trading.",
+          "why": "It connects the comeback to his broader market view instead of making MANLET feel random.",
+          "inspect": "02:30 onward | published 25 Jun 2026 Pacific time",
+          "missing": "The video has no macro bridge between his absence and current activity.",
+          "video_meta": {
+            "video_id": "TuJO-b4rD3s",
+            "channel": "Market Bubble",
+            "published_at_utc": "2026-06-26T00:14:16Z"
+          }
+        },
+        {
+          "id": "ansem-attention-thesis",
+          "type": "x_post",
+          "role": "macro_thesis",
+          "label": "Creator attention is the product",
+          "source_title": "Ansem on X: creators, attention and financial distribution",
+          "url": "https://x.com/blknoiz06/status/2086584870642528603",
+          "source_date": "2026-08-09",
+          "source_id": "2086584870642528603",
+          "quote": "the unsolved game with creators and attention is what i am most interested in this cycle",
+          "shows": "Ansem explicitly argues that creator trust, social trading and tokenized distribution are the opportunity he is building around.",
+          "why": "It turns the story from a random pump into Ansem's stated macro thesis.",
+          "inspect": "Long-form post, especially final four paragraphs | 9 Aug 2026, 22:46:14 UTC",
+          "missing": "Black Bull and MANLET read as disconnected token anecdotes.",
+          "tweet_meta": {
+            "tweet_id": "2086584870642528603",
+            "canonical_url": "https://x.com/blknoiz06/status/2086584870642528603",
+            "handle": "blknoiz06",
+            "display_name": "Ansem 🐂🀄️",
+            "created_at_utc": "2026-08-09T22:46:14.000Z",
+            "text_raw": "last crypto cycle in 2023 at the beginning the first major onchain innovation was unibot, it ran to 200M bc it was the first trading terminal with a token attached that made it easy for people to one-click buy long-tail crypto assets, this is now the standard with instant onboarding from user's bank accounts\n\ncoinbase & robinhood had 100M users each but retail had no way to buy long-tail crypto assets onchain easily until they were listed on the major centralized exchanges\n\nhyperliquid didn't even exist yet\n\nthis cycle we will have several mobile-focused social trading platforms that highlight the best traders & their ability to spin up small balances into large amounts in a short amount of time, trading will easily be the most popular pvp game for the next generation, & tokenization will be as commonplace as people posting memes about viral trends on tik tok, @Pumpfun will very directly benefit from this social shift happening in real time\n\n24/7 perps for stocks are going to gain an immense amount of traction as retail finds it much easier to speculate with leverage & pre-determined risk tolerance than it is to learn options + greeks, @HyperliquidX has already proven this thesis out w/ 50% of platform volume being attributed to HIP-3 stocks & it being by far the top performing crypto asset over the past year as crypto trading volumes were down, @Lighter_xyz will also benefit from this trend especially w/ their Robinhood partnership\n\n@RobinhoodApp was the first proof of concept for a trading app that gamified the experience and made it easily understandable for retail, but nobody has effectively captured the social aspects of trading, the only place where people find the best Robinhood traders w/ large PNLs is on @X or other stocktwits esque sites, not the same venues where the trading is actually happening\n\nclosest thing we've seen in the past with this trend was the $GME saga with Roaring Kitty, there will be a lot more stories like that this soon with even larger PNLs, entertainment finance is a new primitive and the content involved will be some of the most viral across the internet, everyone wants to learn how to trade and everyone wants to learn how to make money, people running courses cannot compete with talented traders who have all of the positions publicly verifiable on-chain especially those who also have a social media presence, we are focused on this area specifically at @BullpenFi\n\nthe unsolved game with creators and attention is what i am most interested in this cycle, i cannot count how many people have reached out to me and thanked me for making them money over the years, trading and financial creators scale trust with their followers in a way that other creators on the internet do not, many of my loudest supporters are people who made a lot of money tailing me on solana & wif last cycle and printed 10x / 100x on both, there is no existing structure that captures this impact at scale but tokenization can, & these are the people rolling portions of their trading profits into $ANSEM\n\nthere's also an immense amount of token projects who want to use creators with large followings for distribution and will pay substantial amounts of capital to do so that cannot be captured by your typical memecoin, productizing this demand side into something that benefits token holders will be my main focus this cycle\n\noverall believe that crypto social has largely failed because it shied away from the piece that crypto has had the most success with which is speculation, but it is uniquely positioned to capture an ongoing supertrend at the intersection of social media x creators x finance",
+            "text_display": "the unsolved game with creators and attention is what i am most interested in this cycle",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [],
+            "quote_ids": [
+              "2086546318001074678"
+            ],
+            "quote_handle": "blknoiz06",
+            "quote_text_raw": "2026 & 2027 there will be a lot of self-made millionaires from trading on-chain & perps on stocks+crypto majors\n\npreviously these people were not very public, this time around it will be done on socially focused mobile apps with many people watching, virality effect will 100x the space",
+            "family_parent": "blknoiz06",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source"
+          }
+        },
+        {
+          "id": "ansem-five-coins",
+          "type": "x_post",
+          "role": "current_macro",
+          "label": "Only a few coins look interesting",
+          "source_title": "Ansem on X: interesting things are happening onchain",
+          "url": "https://x.com/blknoiz06/status/2087302579051208751",
+          "source_date": "2026-08-11",
+          "source_id": "2087302579051208751",
+          "quote": "there's interesting things happening on-chain for first time in awhile imo, even if its only like 5 coins lol",
+          "shows": "Ansem's freshest public stance is selective but active rather than absent from the market.",
+          "why": "It closes the macro block on a current statement and sets up why viewers want his next posts tracked.",
+          "inspect": "Full reply | 11 Aug 2026, 22:18:09 UTC",
+          "missing": "The comeback thesis ends on an older post instead of his record-day stance.",
+          "caution": "Do not carry the post's 1,000x language into the CTA.",
+          "tweet_meta": {
+            "tweet_id": "2087302579051208751",
+            "canonical_url": "https://x.com/blknoiz06/status/2087302579051208751",
+            "handle": "blknoiz06",
+            "display_name": "Ansem 🐂🀄️",
+            "created_at_utc": "2026-08-11T22:18:09.000Z",
+            "text_raw": "there's interesting things happening on-chain for first time in awhile imo, even if its only like 5 coins lol\n\nthe state of new pairs is never going to change bc deployers make too much money off of it & gamblers love buying things for $10 trying to make $100,000\n\nhowever, ability to sift through this & find the best coins will return 1,000xs",
+            "text_display": "there's interesting things happening on-chain for first time in awhile imo, even if its only like 5 coins lol",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [
+              "2087301338824634422"
+            ],
+            "reply_handle": "drews888",
+            "reply_text_raw": "every once in awhile i get sucked in to try “the state of the trenches” and it’s the same disgusting stinky dumpster full of gambling addicts getting gangr**ed by the same group of serial deployers and their buddies",
+            "quote_ids": [],
+            "family_parent": "blknoiz06",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "section": "Black Bull current proof",
+      "arc_label": "BLACK BULL",
+      "cards": [
+        {
+          "id": "ansem-blackbull-support",
+          "type": "x_post",
+          "role": "current_proof",
+          "label": "Ansem says he keeps buying and building around ANSEM",
+          "source_title": "Ansem on X: continued buying ANSEM while building around it",
+          "url": "https://x.com/blknoiz06/status/2085363873314750882",
+          "source_date": "2026-08-06",
+          "source_id": "2085363873314750882",
+          "quote": "continued buying $ANSEM past few weeks while i build everything around it",
+          "shows": "Ansem directly says he continued buying The Black Bull while building the surrounding ecosystem.",
+          "why": "It is the strongest current first-party proof that his attention thesis is also his active project.",
+          "inspect": "Full reply and parent context | 6 Aug 2026, 13:54:26 UTC",
+          "missing": "Black Bull is described only through price action and third parties.",
+          "tweet_meta": {
+            "tweet_id": "2085363873314750882",
+            "canonical_url": "https://x.com/blknoiz06/status/2085363873314750882",
+            "handle": "blknoiz06",
+            "display_name": "Ansem 🐂🀄️",
+            "created_at_utc": "2026-08-06T13:54:26.000Z",
+            "text_raw": "@rndtrippr we* are saving the trenches, if you guys didnt trust me enough to bid $ANSEM when i said id support it & then have continued buying $ANSEM past few weeks while i build everything around it, then none of this wouldve happened\n\ni just gave ppl something to believe in 🐂🀄️",
+            "text_display": "continued buying $ANSEM past few weeks while i build everything around it",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [
+              "2085363066275787079"
+            ],
+            "reply_handle": "rndtrippr",
+            "reply_text_raw": "@blknoiz06 bro give yourself some props you are literally saving the trenches and giving us daily runners because of $ansem",
+            "quote_ids": [],
+            "family_parent": "blknoiz06",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source"
+          }
+        },
+        {
+          "id": "blackbull-chart",
+          "type": "dexscreener",
+          "role": "chart_context",
+          "label": "The Black Bull live chart",
+          "source_title": "Dexscreener: The Black Bull / ANSEM",
+          "url": "https://dexscreener.com/solana/fnzky6x7entq1er3d225dqyt7ybfka4pskbmqhb8l3cc",
+          "source_date": "2026-08-12",
+          "quote": "The Black Bull / ANSEM",
+          "shows": "The exact main ANSEM/SOL pool and the full launch-to-current chart.",
+          "why": "It lets Benji show current price action without freezing a stale 24-hour percentage.",
+          "inspect": "Daily candles; exact pair FnzKY6x7...L3CC; refresh on record day",
+          "missing": "The viewer cannot see whether the token still has active market attention.",
+          "caution": "Live percentage changes are mutable. Show the chart or refresh immediately before speaking a number.",
+          "token_meta": {
+            "chain": "solana",
+            "symbol": "ANSEM",
+            "name": "The Black Bull",
+            "contract": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+            "pair": "FnzKY6x7entQ1eR3D225dQyT7ybfka4PskBMQhb8L3CC"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "section": "COBY follow-driven attention case",
+      "arc_label": "COBY",
+      "cards": [
+        {
+          "id": "coby-official-follow",
+          "type": "x_post",
+          "role": "follow_receipt",
+          "label": "COBY thanks Ansem for the follow",
+          "source_title": "COBY on X: Wow thanks for the follow @blknoiz06",
+          "url": "https://x.com/cobywifhat/status/2087062492195553747",
+          "local_ref": "assets/user/coby/06-coby-official-ansem-follow-notification.jpg",
+          "source_date": "2026-08-11",
+          "source_id": "2087062492195553747",
+          "quote": "Wow thanks for the follow @blknoiz06 🐂",
+          "shows": "The official COBY account publicly posts the Ansem follow notification while introducing its ANSEM reward narrative.",
+          "why": "This is the original visible clue that traders treated as information.",
+          "inspect": "Full post, notification image and quoted launch post | 11 Aug 2026, 06:24:08 UTC",
+          "missing": "The follow-driven section has no originating project receipt.",
+          "tweet_meta": {
+            "tweet_id": "2087062492195553747",
+            "canonical_url": "https://x.com/cobywifhat/status/2087062492195553747",
+            "handle": "cobywifhat",
+            "display_name": "COBY",
+            "created_at_utc": "2026-08-11T06:24:08.000Z",
+            "text_raw": "Wow thanks for the follow @blknoiz06 🐂\n\nEveryone now can earn $ANSEM while holding $COBY ✊🏻 https://t.co/1aYtbMQelC https://t.co/0hwcUFxPgS",
+            "text_display": "Wow thanks for the follow @blknoiz06 🐂",
+            "media_urls": [
+              "https://pbs.twimg.com/media/HPa8Q4FbMAAl-T7.jpg"
+            ],
+            "local_media_refs": [
+              "assets/user/coby/06-coby-official-ansem-follow-notification.jpg"
+            ],
+            "reply_ids": [],
+            "quote_ids": [
+              "2087062040032706845"
+            ],
+            "quote_handle": "cobywifhat",
+            "quote_text_raw": "Its time.\n\nHold $COBY earn $ANSEM\n\nBLACK BULL FLYWHEEL. 🐂🎯\n\nPowered by @LaunchOnSF\n\nH9sWsszQN9PCn4H9YH8C8Rv99XtH7hRsVhsafNzdYLZK https://t.co/eRjR0Zr87U https://t.co/G1zl6k96es",
+            "family_parent": "",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T09:20:00+10:00",
+            "render_provenance": "public_x_source_with_retained_media"
+          }
+        },
+        {
+          "id": "coby-market-pickup",
+          "type": "x_post",
+          "role": "market_amplification",
+          "label": "Market accounts pick up the follow",
+          "source_title": "Whale Insider on X: COBY attention after Ansem follows",
+          "url": "https://x.com/WhaleInsider/status/2087072961266143424",
+          "local_ref": "assets/user/coby/01-whale-insider-coby.jpg",
+          "source_date": "2026-08-11",
+          "source_id": "2087072961266143424",
+          "quote": "JUST IN: $COBY on Solana sees increased attention after Ansem follows the project on X.",
+          "shows": "A large market account turns the visible follow into the public COBY narrative.",
+          "why": "It captures the moment the follow moved from project lore into wider market attention.",
+          "inspect": "Full post and first attached composite | 11 Aug 2026, 07:05:44 UTC",
+          "missing": "There is no receipt showing how the wider market described the follow.",
+          "tweet_meta": {
+            "tweet_id": "2087072961266143424",
+            "canonical_url": "https://x.com/WhaleInsider/status/2087072961266143424",
+            "handle": "WhaleInsider",
+            "display_name": "Whale Insider",
+            "created_at_utc": "2026-08-11T07:05:44.000Z",
+            "text_raw": "JUST IN: $COBY on Solana sees increased attention after Ansem follows the project on X. https://t.co/vVfX2Ha0Fx",
+            "text_display": "JUST IN: $COBY on Solana sees increased attention after Ansem follows the project on X.",
+            "media_urls": [
+              "https://pbs.twimg.com/media/HPbFyfDXgAAguWK.jpg",
+              "https://pbs.twimg.com/media/HPbFyfKXoAAaIwv.jpg"
+            ],
+            "local_media_refs": [
+              "assets/user/coby/01-whale-insider-coby.jpg",
+              "assets/user/coby/02-ansem-follows-coby-receipt.jpg"
+            ],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T09:20:00+10:00",
+            "render_provenance": "public_x_source_with_retained_media"
+          }
+        },
+        {
+          "id": "coby-chart",
+          "type": "dexscreener",
+          "role": "chart_aftermath",
+          "label": "Exact COBY/ANSEM chart",
+          "source_title": "Dexscreener: COBY / ANSEM",
+          "url": "https://dexscreener.com/solana/gtrscnxmetpcrimzhwp7lzwkm1cbmcdym53dx2b9mhe8",
+          "source_date": "2026-08-12",
+          "quote": "COBY / ANSEM",
+          "shows": "The exact COBY contract paired with ANSEM and the chart after the follow notification circulated.",
+          "why": "It completes the follow-to-market-attention sequence visually.",
+          "inspect": "Five-minute candles from 11 Aug 06:20 to 12:00 UTC, then zoom out",
+          "missing": "The follow narrative has no visible market aftermath.",
+          "token_meta": {
+            "chain": "solana",
+            "symbol": "COBY",
+            "name": "cobywifhat",
+            "contract": "H9sWsszQN9PCn4H9YH8C8Rv99XtH7hRsVhsafNzdYLZK",
+            "pair": "GTrscNxmeTPCriMzHWp7LzWKm1cBMCdYm53Dx2B9MhE8",
+            "quote_symbol": "ANSEM",
+            "raw_chart_ref": "assets/user/coby/coby-cmc-5m-marketcap.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "section": "MANLET live influence case",
+      "arc_label": "MANLET",
+      "cards": [
+        {
+          "id": "john-manlet-alert",
+          "type": "influencer_feed_alert",
+          "role": "rubicon_context",
+          "label": "Rubicon caught John's MANLET buy",
+          "source_title": "Rubicon Influencer Feed: John MANLET buy alert",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png",
+          "local_ref": "assets/user/05-john-manlet-buy-alert.png",
+          "source_date": "2026-08-05",
+          "quote": "John - Influencer BUY Alert: MANLET",
+          "shows": "The retained Rubicon alert for the relevant MANLET contract at a displayed $448K market cap.",
+          "why": "It connects the prior John video, establishes the exact contract, and demonstrates the information workflow before Ansem entered the story.",
+          "inspect": "Displayed +4,491,185.87 MANLET, $2,268 value, $448K market cap | 5 Aug 2026, 23:48:39 UTC",
+          "missing": "The tracker CTA feels detached from the actual MANLET chronology.",
+          "caution": "This is the HxQh... MANLET, not the older DdPr... token sharing the ticker.",
+          "hosting_approved_by": "project owner via 11 Aug 2026 chat",
+          "hosting_approved_at": "2026-08-11",
+          "hosting_scope": "Rubicon evidence packs and remote recording",
+          "hosted_render_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png",
+          "feed_meta": {
+            "event_kind": "BUY",
+            "source_handle": "CryptoGodJohn",
+            "created_at_utc": "2026-08-05T23:48:39Z",
+            "displayed_market_cap": "$448K",
+            "contract": "HxQhDGYqyjorgogMJx7YbBHADEDxuHhLnMMmr6VYpyn",
+            "render_provenance": "retained_feed_render"
+          }
+        },
+        {
+          "id": "fox-manlet-relaunch",
+          "type": "x_post",
+          "role": "token_mechanics",
+          "label": "Fox explains the MANLET relaunch",
+          "source_title": "Fox on X: MANLET is paired with ANSEM",
+          "url": "https://x.com/_fox09/status/2086859222810014158",
+          "source_date": "2026-08-10",
+          "source_id": "2086859222810014158",
+          "quote": "This is the first memecoin to be paired with $ANSEM.",
+          "shows": "The project lead says MANLET is paired with ANSEM and positioned as part of the ANSEM ecosystem.",
+          "why": "It explains why MANLET was legible to traders as an Ansem-adjacent token before the Discord screenshot circulated.",
+          "inspect": "Full post | 10 Aug 2026, 16:56:25 UTC",
+          "missing": "The link between MANLET and Black Bull is asserted without a project source.",
+          "caution": "This is a project-operator statement, not an Ansem endorsement.",
+          "tweet_meta": {
+            "tweet_id": "2086859222810014158",
+            "canonical_url": "https://x.com/_fox09/status/2086859222810014158",
+            "handle": "_fox09",
+            "display_name": "Fox 🐂🀄️🦊",
+            "created_at_utc": "2026-08-10T16:56:25.000Z",
+            "text_raw": "Hi everyone. With the help of some of the former team, I will be the lead of $MANLET now. We have made a new X etc.\n\nThis is the first memecoin to be paired with $ANSEM. It helps the overall $ANSEM ecosystem as well.\n\nI figured who better to lead than me since I currently hold 0.1% of $ANSEM and have been pushing $ANSEM since the day the first one launched.\n\nMore content and activity from the main X coming as well.",
+            "text_display": "This is the first memecoin to be paired with $ANSEM.",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source"
+          }
+        },
+        {
+          "id": "abu-manlet-discord",
+          "type": "x_post",
+          "role": "discord_receipt",
+          "label": "Public Discord and chart compilation",
+          "source_title": "Abu on X: Ansem Discord MANLET screenshots",
+          "url": "https://x.com/0x_abu/status/2086924787947839848",
+          "local_ref": "assets/user/01-ansem-discord-manlet-question.jpg",
+          "source_date": "2026-08-10",
+          "source_id": "2086924787947839848",
+          "quote": "Ansem posted on his Discord that he could potentially support $MANLET",
+          "shows": "A public third-party post preserves the Discord message attributed to Ansem and a contemporaneous MANLET chart screenshot.",
+          "why": "It is the strongest recordable source for the Discord moment that traders linked to MANLET.",
+          "inspect": "Open both attached images | 10 Aug 2026, 21:16:57 UTC",
+          "missing": "The central Discord event has no recordable visual.",
+          "caution": "The caption's $200K-to-$7M timing is a third-party claim. Use independently checked chart wording instead. The screenshot does not prove an Ansem buy.",
+          "tweet_meta": {
+            "tweet_id": "2086924787947839848",
+            "canonical_url": "https://x.com/0x_abu/status/2086924787947839848",
+            "handle": "0x_abu",
+            "display_name": "Abu",
+            "created_at_utc": "2026-08-10T21:16:57.000Z",
+            "text_raw": "Ansem posted on his Discord that he could potentially support $MANLET\n\nthe first meme to be paired with $ANSEM\n\nand he made a post: “buying a memecoin sub 50m today who can guess which one”\n\nand this meme pumps from 200k+ to over $7M MC in an hour https://t.co/ZfFkKLnaw4",
+            "text_display": "Ansem posted on his Discord that he could potentially support $MANLET",
+            "media_urls": [
+              "https://pbs.twimg.com/media/HPY_BmnXwAAOKuy.jpg",
+              "https://pbs.twimg.com/media/HPY_BmuXkAEhhFW.jpg"
+            ],
+            "local_media_refs": [
+              "assets/user/01-ansem-discord-manlet-question.jpg",
+              "assets/user/02-manlet-chart-abu.jpg"
+            ],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source_with_retained_media"
+          }
+        },
+        {
+          "id": "manlet-chart",
+          "type": "dexscreener",
+          "role": "chart_aftermath",
+          "label": "Exact MANLET/ANSEM chart",
+          "source_title": "Dexscreener: MANLET / ANSEM",
+          "url": "https://dexscreener.com/solana/bneed53wyjj8qfheztbuxyc1el1cqv5hlb5h6ykgn7eo",
+          "source_date": "2026-08-12",
+          "quote": "MANLET / ANSEM",
+          "shows": "The exact HxQh... MANLET pool paired with ANSEM and the full move around the Discord and public-post window.",
+          "why": "It lets Benji show the move without relying on a cropped third-party percentage claim.",
+          "inspect": "Minute candles around 10 Aug 19:31 to 20:44 UTC; then zoom out",
+          "missing": "The video cannot distinguish the correct MANLET contract or show the checked aftermath.",
+          "caution": "Use around $528K at the inferred Discord minute and later above $7M. Do not say $200K to $7M in 15 minutes.",
+          "token_meta": {
+            "chain": "solana",
+            "symbol": "MANLET",
+            "name": "MANLET",
+            "contract": "HxQhDGYqyjorgogMJx7YbBHADEDxuHhLnMMmr6VYpyn",
+            "pair": "BNEeD53WYjj8qfHEZtbUXyc1eL1cQv5HLb5H6yKgN7eo",
+            "quote_symbol": "ANSEM"
+          }
+        },
+        {
+          "id": "john-fumbled-manlet",
+          "type": "x_post",
+          "role": "counter_receipt",
+          "label": "John says he fumbled MANLET",
+          "source_title": "CryptoGodJohn on X: Fumbled massively on Manlet",
+          "url": "https://x.com/CryptoGodJohn/status/2086909187250917829",
+          "local_ref": "assets/user/03-john-fumbled-manlet.jpg",
+          "source_date": "2026-08-10",
+          "source_id": "2086909187250917829",
+          "quote": "Fumbled massively on Manlet",
+          "shows": "John publicly described his own MANLET outcome as a fumble immediately after Ansem's mystery post.",
+          "why": "It closes the John callback with his own public reaction.",
+          "inspect": "Caption first; crop or blur the hypothetical dollar-profit card if shown | 10 Aug 2026, 20:14:57 UTC",
+          "missing": "The John callback stops at the buy alert and implies a cleaner result than John himself reported.",
+          "caution": "Do not state a realized dollar loss. Crop or blur the attached hypothetical $95,809 missed-profit figure if the image is shown.",
+          "tweet_meta": {
+            "tweet_id": "2086909187250917829",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2086909187250917829",
+            "handle": "CryptoGodJohn",
+            "display_name": "John",
+            "created_at_utc": "2026-08-10T20:14:57.000Z",
+            "text_raw": "Fumbled massively on Manlet https://t.co/l3Yusmd5Rn",
+            "text_display": "Fumbled massively on Manlet",
+            "media_urls": [
+              "https://pbs.twimg.com/media/HPYw1-PW8AAGYqT.jpg"
+            ],
+            "local_media_refs": [
+              "assets/user/03-john-fumbled-manlet.jpg"
+            ],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "cryptogodjohn",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source_with_retained_media"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "section": "Packaging and final open loop",
+      "arc_label": "WHAT NEXT",
+      "cards": [
+        {
+          "id": "model-becker-return",
+          "type": "youtube",
+          "role": "model",
+          "label": "Rubicon return model",
+          "source_title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
+          "url": "https://youtu.be/DJ3Dto1ZZdI",
+          "source_date": "2026",
+          "quote": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
+          "shows": "A channel-native personality-return package that turns current activity into an unresolved next-move story.",
+          "why": "It is the closest packaging mechanism for Ansem being active again.",
+          "inspect": "Title and thumbnail",
+          "missing": "The package risks becoming a generic MANLET explainer instead of an Ansem comeback story."
+        },
+        {
+          "id": "model-quant-action",
+          "type": "youtube",
+          "role": "model",
+          "label": "Rubicon influential-person model",
+          "source_title": "The BILLIONAIRE quant that CryptoGodJohn copy trades is buying this...",
+          "url": "https://youtu.be/qrBt-T4B7hw",
+          "source_date": "2026",
+          "quote": "The BILLIONAIRE quant that CryptoGodJohn copy trades is buying this...",
+          "shows": "An influential person, one current action, and a clear open loop.",
+          "why": "It supports keeping this video on one person and one current behavior.",
+          "inspect": "Title and thumbnail",
+          "missing": "The story can drift into a broad Ansem biography."
+        },
+        {
+          "id": "ansem-under-fifty",
+          "type": "x_post",
+          "role": "open_loop",
+          "label": "Ansem's unnamed sub-$50M post",
+          "source_title": "Ansem on X: buying a memecoin sub 50m today",
+          "url": "https://x.com/blknoiz06/status/2086908794517533015",
+          "source_date": "2026-08-10",
+          "source_id": "2086908794517533015",
+          "quote": "buying a memecoin sub 50m today who can guess which one",
+          "shows": "Ansem publicly announced a sub-$50M memecoin purchase without naming the coin.",
+          "why": "After the COBY and MANLET cases, this becomes the unresolved next-move question.",
+          "inspect": "Full post and engagement | 10 Aug 2026, 20:13:24 UTC",
+          "missing": "The video has no final open loop before the workflow CTA.",
+          "caution": "Keep the coin unresolved; the guessing game is the story.",
+          "tweet_meta": {
+            "tweet_id": "2086908794517533015",
+            "canonical_url": "https://x.com/blknoiz06/status/2086908794517533015",
+            "handle": "blknoiz06",
+            "display_name": "Ansem 🐂🀄️",
+            "created_at_utc": "2026-08-10T20:13:24.000Z",
+            "text_raw": "buying a memecoin sub 50m today who can guess which one",
+            "text_display": "buying a memecoin sub 50m today who can guess which one",
+            "media_urls": [],
+            "local_media_refs": [],
+            "reply_ids": [],
+            "quote_ids": [],
+            "family_parent": "blknoiz06",
+            "access": "public",
+            "feed_checked_at": "2026-08-12T08:37:00+10:00",
+            "render_provenance": "public_x_source"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "section": "Tracker and CTA",
+      "arc_label": "TRACKER CTA",
+      "cards": [
+        {
+          "id": "influencer-feed-cta",
+          "type": "product_bridge",
+          "role": "information_workflow",
+          "label": "Why Ansem belongs in the Influencer Feed",
+          "source_title": "Rubicon Influencer Feed: Ansem information workflow",
+          "local_ref": "BENJI-CTA-READOUT.txt",
+          "source_date": "2026-08-12",
+          "quote": "That is exactly why we are adding his public X posts to the Rubicon Influencer Feed.",
+          "shows": "The video has demonstrated the viewer problem: one vague post, several market interpretations and evidence scattered across different places.",
+          "why": "The CTA is the natural next step after COBY, MANLET and the unnamed sub-$50M post.",
+          "inspect": "BENJI-CTA-READOUT.txt",
+          "missing": "The membership pitch is disconnected from the information problem shown in the video."
+        },
+        {
+          "id": "youtube-spam-policy",
+          "type": "policy",
+          "role": "cta_safety",
+          "label": "YouTube spam and scam policy",
+          "source_title": "YouTube Help: Spam, deceptive practices, and scams policies",
+          "url": "https://support.google.com/youtube/answer/2801973?hl=en",
+          "source_date": "2026-08-12",
+          "quote": "Spam, deceptive practices, and scams policies",
+          "shows": "The policy boundary against get-rich-quick investment schemes and misleading presentation.",
+          "why": "It supports keeping outlier chart moves separate from the membership promise.",
+          "inspect": "Scams and misleading metadata sections",
+          "missing": "The CTA has no explicit policy source."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "destination": "Rubicon Inner Circle via Jupiter",
+    "tracking_url": "",
+    "tracking_verified": false,
+    "placement": "After the unnamed sub-$50M post closes the COBY and MANLET clue sequence",
+    "performance_claims": [],
+    "safety": [
+      "Keep the information-tool and loss-risk line spoken or visible on the same CTA card.",
+      "Do not place the join button directly beside the COBY or MANLET chart peaks or imply membership reproduces either move.",
+      "Use YouTube's paid-promotion declaration if the commercial relationship qualifies."
+    ]
+  },
+  "arc_sections": [
+    {
+      "section_id": "s2",
+      "before_order": 1,
+      "label": "🟢 CONTEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s3",
+      "before_order": 3,
+      "label": "🟢 MACRO",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s4",
+      "before_order": 5,
+      "label": "🟢 BLACK BULL",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s7",
+      "before_order": 7,
+      "label": "🟢 COBY",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s5",
+      "before_order": 10,
+      "label": "🟢 MANLET",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s1",
+      "before_order": 15,
+      "label": "🟢 WHAT NEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s6",
+      "after_order": 15,
+      "label": "🟢 TRACKER CTA",
+      "url": "https://www.google.com/"
+    }
+  ],
+  "record_deck": [
+    {
+      "order": 1,
+      "section_id": "s2",
+      "role": "subject_orientation",
+      "label": "01 CONTEXT | MARKET BUBBLE #9",
+      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s",
+      "source_title": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
+      "quote": "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9",
+      "shows": "Ansem explains the Solana, BONK and WIF period, says he barely traded in 2025, and says he has started buying memes again.",
+      "why": "It supplies first-party history and the comeback bridge without a long biography.",
+      "inspect": "09:43 WIF history; 11:02 barely traded in 2025; 13:08 Black Bull; 14:09 active onchain again",
+      "missing": "New viewers get no reason to care about Ansem's current posts.",
+      "card_id": "market-bubble-nine"
+    },
+    {
+      "order": 2,
+      "section_id": "s2",
+      "role": "subject_proof",
+      "label": "02 CONTEXT | EARLY WIF POST",
+      "url": "https://x.com/blknoiz06/status/1736676424977719528",
+      "source_title": "Ansem on X: dogwifhat may be the first dog coin to hit $1",
+      "quote": "dogwifhat may quite literally be the first dog coin to ever hit $1.00",
+      "shows": "Ansem publicly championed WIF in December 2023 before it became a defining Solana meme narrative.",
+      "why": "It is a clean primary receipt for the reputation behind his current influence.",
+      "inspect": "Full post and attached image | 18 Dec 2023, 09:15 UTC",
+      "missing": "The video relies only on Ansem's retrospective version of his history.",
+      "card_id": "ansem-wif-early"
+    },
+    {
+      "order": 3,
+      "section_id": "s3",
+      "role": "macro_context",
+      "label": "03 MACRO | SOLANA BOTTOM CLIP",
+      "url": "https://www.youtube.com/watch?v=TuJO-b4rD3s&t=150s",
+      "source_title": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
+      "quote": "“The Bull Case For Solana” - Helius CEO | Market Bubble #8",
+      "shows": "Ansem gives the market-turn view that preceded his return to onchain meme trading.",
+      "why": "It connects the comeback to his broader market view instead of making MANLET feel random.",
+      "inspect": "02:30 onward | published 25 Jun 2026 Pacific time",
+      "missing": "The video has no macro bridge between his absence and current activity.",
+      "card_id": "market-bubble-solana-bottom"
+    },
+    {
+      "order": 4,
+      "section_id": "s3",
+      "role": "macro_thesis",
+      "label": "04 MACRO | CREATOR ATTENTION THESIS",
+      "url": "https://x.com/blknoiz06/status/2086584870642528603",
+      "source_title": "Ansem on X: creators, attention and financial distribution",
+      "quote": "the unsolved game with creators and attention is what i am most interested in this cycle",
+      "shows": "Ansem explicitly argues that creator trust, social trading and tokenized distribution are the opportunity he is building around.",
+      "why": "It turns the story from a random pump into Ansem's stated macro thesis.",
+      "inspect": "Long-form post, especially final four paragraphs | 9 Aug 2026, 22:46:14 UTC",
+      "missing": "Black Bull and MANLET read as disconnected token anecdotes.",
+      "card_id": "ansem-attention-thesis"
+    },
+    {
+      "order": 5,
+      "section_id": "s4",
+      "role": "current_proof",
+      "label": "05 BLACK BULL | ANSEM SUPPORT POST",
+      "url": "https://x.com/blknoiz06/status/2085363873314750882",
+      "source_title": "Ansem on X: continued buying ANSEM while building around it",
+      "quote": "continued buying $ANSEM past few weeks while i build everything around it",
+      "shows": "Ansem directly says he continued buying The Black Bull while building the surrounding ecosystem.",
+      "why": "It is the strongest current first-party proof that his attention thesis is also his active project.",
+      "inspect": "Full reply and parent context | 6 Aug 2026, 13:54:26 UTC",
+      "missing": "Black Bull is described only through price action and third parties.",
+      "card_id": "ansem-blackbull-support"
+    },
+    {
+      "order": 6,
+      "section_id": "s4",
+      "role": "chart_context",
+      "label": "06 BLACK BULL | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/fnzky6x7entq1er3d225dqyt7ybfka4pskbmqhb8l3cc",
+      "source_title": "Dexscreener: The Black Bull / ANSEM",
+      "quote": "The Black Bull / ANSEM",
+      "shows": "The exact main ANSEM/SOL pool and the full launch-to-current chart.",
+      "why": "It lets Benji show current price action without freezing a stale 24-hour percentage.",
+      "inspect": "Daily candles; exact pair FnzKY6x7...L3CC; refresh on record day",
+      "missing": "The viewer cannot see whether the token still has active market attention.",
+      "card_id": "blackbull-chart"
+    },
+    {
+      "order": 7,
+      "section_id": "s7",
+      "role": "follow_receipt",
+      "label": "07 COBY | OFFICIAL FOLLOW RECEIPT",
+      "url": "https://x.com/cobywifhat/status/2087062492195553747",
+      "source_title": "COBY on X: Wow thanks for the follow @blknoiz06",
+      "quote": "Wow thanks for the follow @blknoiz06 🐂",
+      "shows": "The official COBY account publicly posts the Ansem follow notification while introducing its ANSEM reward narrative.",
+      "why": "This is the original visible clue that traders treated as information.",
+      "inspect": "Full post, notification image and quoted launch post | 11 Aug 2026, 06:24:08 UTC",
+      "missing": "The follow-driven section has no originating project receipt.",
+      "card_id": "coby-official-follow"
+    },
+    {
+      "order": 8,
+      "section_id": "s7",
+      "role": "market_amplification",
+      "label": "08 COBY | MARKET PICKS UP THE FOLLOW",
+      "url": "https://x.com/WhaleInsider/status/2087072961266143424",
+      "source_title": "Whale Insider on X: COBY attention after Ansem follows",
+      "quote": "JUST IN: $COBY on Solana sees increased attention after Ansem follows the project on X.",
+      "shows": "A large market account turns the visible follow into the public COBY narrative.",
+      "why": "It captures the moment the follow moved from project lore into wider market attention.",
+      "inspect": "Full post and first attached composite | 11 Aug 2026, 07:05:44 UTC",
+      "missing": "There is no receipt showing how the wider market described the follow.",
+      "card_id": "coby-market-pickup"
+    },
+    {
+      "order": 9,
+      "section_id": "s7",
+      "role": "chart_aftermath",
+      "label": "09 COBY | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/gtrscnxmetpcrimzhwp7lzwkm1cbmcdym53dx2b9mhe8",
+      "source_title": "Dexscreener: COBY / ANSEM",
+      "quote": "COBY / ANSEM",
+      "shows": "The exact COBY contract paired with ANSEM and the chart after the follow notification circulated.",
+      "why": "It completes the follow-to-market-attention sequence visually.",
+      "inspect": "Five-minute candles from 11 Aug 06:20 to 12:00 UTC, then zoom out",
+      "missing": "The follow narrative has no visible market aftermath.",
+      "card_id": "coby-chart"
+    },
+    {
+      "order": 10,
+      "section_id": "s5",
+      "role": "rubicon_context",
+      "label": "10 MANLET | JOHN BUY ALERT",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png",
+      "source_title": "Rubicon Influencer Feed: John MANLET buy alert",
+      "quote": "John - Influencer BUY Alert: MANLET",
+      "shows": "The retained Rubicon alert for the relevant MANLET contract at a displayed $448K market cap.",
+      "why": "It connects the prior John video, establishes the exact contract, and demonstrates the information workflow before Ansem entered the story.",
+      "inspect": "Displayed +4,491,185.87 MANLET, $2,268 value, $448K market cap | 5 Aug 2026, 23:48:39 UTC",
+      "missing": "The tracker CTA feels detached from the actual MANLET chronology.",
+      "card_id": "john-manlet-alert"
+    },
+    {
+      "order": 11,
+      "section_id": "s5",
+      "role": "token_mechanics",
+      "label": "11 MANLET | FOX RELAUNCH POST",
+      "url": "https://x.com/_fox09/status/2086859222810014158",
+      "source_title": "Fox on X: MANLET is paired with ANSEM",
+      "quote": "This is the first memecoin to be paired with $ANSEM.",
+      "shows": "The project lead says MANLET is paired with ANSEM and positioned as part of the ANSEM ecosystem.",
+      "why": "It explains why MANLET was legible to traders as an Ansem-adjacent token before the Discord screenshot circulated.",
+      "inspect": "Full post | 10 Aug 2026, 16:56:25 UTC",
+      "missing": "The link between MANLET and Black Bull is asserted without a project source.",
+      "card_id": "fox-manlet-relaunch"
+    },
+    {
+      "order": 12,
+      "section_id": "s5",
+      "role": "discord_receipt",
+      "label": "12 MANLET | ANSEM DISCORD RECEIPT",
+      "url": "https://x.com/0x_abu/status/2086924787947839848",
+      "source_title": "Abu on X: Ansem Discord MANLET screenshots",
+      "quote": "Ansem posted on his Discord that he could potentially support $MANLET",
+      "shows": "A public third-party post preserves the Discord message attributed to Ansem and a contemporaneous MANLET chart screenshot.",
+      "why": "It is the strongest recordable source for the Discord moment that traders linked to MANLET.",
+      "inspect": "Open both attached images | 10 Aug 2026, 21:16:57 UTC",
+      "missing": "The central Discord event has no recordable visual.",
+      "card_id": "abu-manlet-discord"
+    },
+    {
+      "order": 13,
+      "section_id": "s5",
+      "role": "chart_aftermath",
+      "label": "13 MANLET | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/bneed53wyjj8qfheztbuxyc1el1cqv5hlb5h6ykgn7eo",
+      "source_title": "Dexscreener: MANLET / ANSEM",
+      "quote": "MANLET / ANSEM",
+      "shows": "The exact HxQh... MANLET pool paired with ANSEM and the full move around the Discord and public-post window.",
+      "why": "It lets Benji show the move without relying on a cropped third-party percentage claim.",
+      "inspect": "Minute candles around 10 Aug 19:31 to 20:44 UTC; then zoom out",
+      "missing": "The video cannot distinguish the correct MANLET contract or show the checked aftermath.",
+      "card_id": "manlet-chart"
+    },
+    {
+      "order": 14,
+      "section_id": "s5",
+      "role": "counter_receipt",
+      "label": "14 MANLET | JOHN SAYS HE FUMBLED",
+      "url": "https://x.com/CryptoGodJohn/status/2086909187250917829",
+      "source_title": "CryptoGodJohn on X: Fumbled massively on Manlet",
+      "quote": "Fumbled massively on Manlet",
+      "shows": "John publicly described his own MANLET outcome as a fumble immediately after Ansem's mystery post.",
+      "why": "It closes the John callback with his own public reaction.",
+      "inspect": "Caption first; crop or blur the hypothetical dollar-profit card if shown | 10 Aug 2026, 20:14:57 UTC",
+      "missing": "The John callback stops at the buy alert and implies a cleaner result than John himself reported.",
+      "card_id": "john-fumbled-manlet"
+    },
+    {
+      "order": 15,
+      "section_id": "s1",
+      "role": "open_loop",
+      "label": "15 WHAT NEXT | ANSEM UNDER $50M POST",
+      "url": "https://x.com/blknoiz06/status/2086908794517533015",
+      "source_title": "Ansem on X: buying a memecoin sub 50m today",
+      "quote": "buying a memecoin sub 50m today who can guess which one",
+      "shows": "Ansem publicly announced a sub-$50M memecoin purchase without naming the coin.",
+      "why": "After COBY and MANLET show how traders respond to clues, this becomes the unresolved next-move question.",
+      "inspect": "Full post and engagement | 10 Aug 2026, 20:13:24 UTC",
+      "missing": "The video has no final open loop before the workflow CTA.",
+      "card_id": "ansem-under-fifty"
+    }
+  ]
+}

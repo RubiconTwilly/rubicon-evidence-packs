@@ -1,0 +1,313 @@
+{
+  "schema": "rubicon.arc-handoff",
+  "version": 1,
+  "folder_name": "RUBICON - 2026-08-12 - ANSEM UNDER 50M - RECORD ORDER",
+  "editorial_mode": "reporter",
+  "snapshot_url": "",
+  "shared_at": "",
+  "console_ref": "console.html",
+  "console_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-12-ansem-next-sub-50m-coin/",
+  "section_markers": [
+    {
+      "section_id": "s2",
+      "before_order": 1,
+      "label": "🟢 CONTEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s3",
+      "before_order": 3,
+      "label": "🟢 MACRO",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s4",
+      "before_order": 5,
+      "label": "🟢 BLACK BULL",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s7",
+      "before_order": 7,
+      "label": "🟢 COBY",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s5",
+      "before_order": 10,
+      "label": "🟢 MANLET",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s1",
+      "before_order": 15,
+      "label": "🟢 WHAT NEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "section_id": "s6",
+      "after_order": 15,
+      "label": "🟢 TRACKER CTA",
+      "url": "https://www.google.com/"
+    }
+  ],
+  "tabs": [
+    {
+      "order": 1,
+      "section_id": "s2",
+      "label": "01 CONTEXT | MARKET BUBBLE #9",
+      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s"
+    },
+    {
+      "order": 2,
+      "section_id": "s2",
+      "label": "02 CONTEXT | EARLY WIF POST",
+      "url": "https://x.com/blknoiz06/status/1736676424977719528"
+    },
+    {
+      "order": 3,
+      "section_id": "s3",
+      "label": "03 MACRO | SOLANA BOTTOM CLIP",
+      "url": "https://www.youtube.com/watch?v=TuJO-b4rD3s&t=150s"
+    },
+    {
+      "order": 4,
+      "section_id": "s3",
+      "label": "04 MACRO | CREATOR ATTENTION THESIS",
+      "url": "https://x.com/blknoiz06/status/2086584870642528603"
+    },
+    {
+      "order": 5,
+      "section_id": "s4",
+      "label": "05 BLACK BULL | ANSEM SUPPORT POST",
+      "url": "https://x.com/blknoiz06/status/2085363873314750882"
+    },
+    {
+      "order": 6,
+      "section_id": "s4",
+      "label": "06 BLACK BULL | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/fnzky6x7entq1er3d225dqyt7ybfka4pskbmqhb8l3cc"
+    },
+    {
+      "order": 7,
+      "section_id": "s7",
+      "label": "07 COBY | OFFICIAL FOLLOW RECEIPT",
+      "url": "https://x.com/cobywifhat/status/2087062492195553747"
+    },
+    {
+      "order": 8,
+      "section_id": "s7",
+      "label": "08 COBY | MARKET PICKS UP THE FOLLOW",
+      "url": "https://x.com/WhaleInsider/status/2087072961266143424"
+    },
+    {
+      "order": 9,
+      "section_id": "s7",
+      "label": "09 COBY | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/gtrscnxmetpcrimzhwp7lzwkm1cbmcdym53dx2b9mhe8"
+    },
+    {
+      "order": 10,
+      "section_id": "s5",
+      "label": "10 MANLET | JOHN BUY ALERT",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png"
+    },
+    {
+      "order": 11,
+      "section_id": "s5",
+      "label": "11 MANLET | FOX RELAUNCH POST",
+      "url": "https://x.com/_fox09/status/2086859222810014158"
+    },
+    {
+      "order": 12,
+      "section_id": "s5",
+      "label": "12 MANLET | ANSEM DISCORD RECEIPT",
+      "url": "https://x.com/0x_abu/status/2086924787947839848"
+    },
+    {
+      "order": 13,
+      "section_id": "s5",
+      "label": "13 MANLET | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/bneed53wyjj8qfheztbuxyc1el1cqv5hlb5h6ykgn7eo"
+    },
+    {
+      "order": 14,
+      "section_id": "s5",
+      "label": "14 MANLET | JOHN SAYS HE FUMBLED",
+      "url": "https://x.com/CryptoGodJohn/status/2086909187250917829"
+    },
+    {
+      "order": 15,
+      "section_id": "s1",
+      "label": "15 WHAT NEXT | ANSEM UNDER $50M POST",
+      "url": "https://x.com/blknoiz06/status/2086908794517533015"
+    }
+  ],
+  "launch_tabs": [
+    {
+      "launch_order": 1,
+      "kind": "section_marker",
+      "section_id": "s2",
+      "label": "🟢 CONTEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 2,
+      "kind": "evidence",
+      "evidence_order": 1,
+      "label": "01 CONTEXT | MARKET BUBBLE #9",
+      "url": "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s"
+    },
+    {
+      "launch_order": 3,
+      "kind": "evidence",
+      "evidence_order": 2,
+      "label": "02 CONTEXT | EARLY WIF POST",
+      "url": "https://x.com/blknoiz06/status/1736676424977719528"
+    },
+    {
+      "launch_order": 4,
+      "kind": "section_marker",
+      "section_id": "s3",
+      "label": "🟢 MACRO",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 5,
+      "kind": "evidence",
+      "evidence_order": 3,
+      "label": "03 MACRO | SOLANA BOTTOM CLIP",
+      "url": "https://www.youtube.com/watch?v=TuJO-b4rD3s&t=150s"
+    },
+    {
+      "launch_order": 6,
+      "kind": "evidence",
+      "evidence_order": 4,
+      "label": "04 MACRO | CREATOR ATTENTION THESIS",
+      "url": "https://x.com/blknoiz06/status/2086584870642528603"
+    },
+    {
+      "launch_order": 7,
+      "kind": "section_marker",
+      "section_id": "s4",
+      "label": "🟢 BLACK BULL",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 8,
+      "kind": "evidence",
+      "evidence_order": 5,
+      "label": "05 BLACK BULL | ANSEM SUPPORT POST",
+      "url": "https://x.com/blknoiz06/status/2085363873314750882"
+    },
+    {
+      "launch_order": 9,
+      "kind": "evidence",
+      "evidence_order": 6,
+      "label": "06 BLACK BULL | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/fnzky6x7entq1er3d225dqyt7ybfka4pskbmqhb8l3cc"
+    },
+    {
+      "launch_order": 10,
+      "kind": "section_marker",
+      "section_id": "s7",
+      "label": "🟢 COBY",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 11,
+      "kind": "evidence",
+      "evidence_order": 7,
+      "label": "07 COBY | OFFICIAL FOLLOW RECEIPT",
+      "url": "https://x.com/cobywifhat/status/2087062492195553747"
+    },
+    {
+      "launch_order": 12,
+      "kind": "evidence",
+      "evidence_order": 8,
+      "label": "08 COBY | MARKET PICKS UP THE FOLLOW",
+      "url": "https://x.com/WhaleInsider/status/2087072961266143424"
+    },
+    {
+      "launch_order": 13,
+      "kind": "evidence",
+      "evidence_order": 9,
+      "label": "09 COBY | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/gtrscnxmetpcrimzhwp7lzwkm1cbmcdym53dx2b9mhe8"
+    },
+    {
+      "launch_order": 14,
+      "kind": "section_marker",
+      "section_id": "s5",
+      "label": "🟢 MANLET",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 15,
+      "kind": "evidence",
+      "evidence_order": 10,
+      "label": "10 MANLET | JOHN BUY ALERT",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png"
+    },
+    {
+      "launch_order": 16,
+      "kind": "evidence",
+      "evidence_order": 11,
+      "label": "11 MANLET | FOX RELAUNCH POST",
+      "url": "https://x.com/_fox09/status/2086859222810014158"
+    },
+    {
+      "launch_order": 17,
+      "kind": "evidence",
+      "evidence_order": 12,
+      "label": "12 MANLET | ANSEM DISCORD RECEIPT",
+      "url": "https://x.com/0x_abu/status/2086924787947839848"
+    },
+    {
+      "launch_order": 18,
+      "kind": "evidence",
+      "evidence_order": 13,
+      "label": "13 MANLET | DEXSCREENER",
+      "url": "https://dexscreener.com/solana/bneed53wyjj8qfheztbuxyc1el1cqv5hlb5h6ykgn7eo"
+    },
+    {
+      "launch_order": 19,
+      "kind": "evidence",
+      "evidence_order": 14,
+      "label": "14 MANLET | JOHN SAYS HE FUMBLED",
+      "url": "https://x.com/CryptoGodJohn/status/2086909187250917829"
+    },
+    {
+      "launch_order": 20,
+      "kind": "section_marker",
+      "section_id": "s1",
+      "label": "🟢 WHAT NEXT",
+      "url": "https://www.google.com/"
+    },
+    {
+      "launch_order": 21,
+      "kind": "evidence",
+      "evidence_order": 15,
+      "label": "15 WHAT NEXT | ANSEM UNDER $50M POST",
+      "url": "https://x.com/blknoiz06/status/2086908794517533015"
+    },
+    {
+      "launch_order": 22,
+      "kind": "section_marker",
+      "section_id": "s6",
+      "label": "🟢 TRACKER CTA",
+      "url": "https://www.google.com/"
+    }
+  ],
+  "private_items": [],
+  "manual_steps": [
+    "Create a flat Arc folder",
+    "In one Arc window, open launch_tabs from last to first",
+    "Rename each Google spacer tab to its green section-marker label",
+    "Keep those marker tabs out of record_deck and evidence counts",
+    "Keep the hosted console_url open separately for the final Tracker CTA section",
+    "Walk the sequence once",
+    "Use Share Folder",
+    "Save the new snapshot URL and shared_at time here"
+  ]
+}

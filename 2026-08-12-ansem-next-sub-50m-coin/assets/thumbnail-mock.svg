@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070b"/>
+      <stop offset="0.48" stop-color="#0a1019"/>
+      <stop offset="1" stop-color="#181017"/>
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="0.27" cy="0.42" r="0.46">
+      <stop offset="0" stop-color="#218cff" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#218cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="0.9" cy="0.34" r="0.42">
+      <stop offset="0" stop-color="#ff2345" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#ff2345" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a515d"/>
+      <stop offset="0.5" stop-color="#11161e"/>
+      <stop offset="1" stop-color="#030507"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.8"/>
+    </filter>
+    <filter id="coinGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="22" flood-color="#ff2948" flood-opacity="0.85"/>
+    </filter>
+    <clipPath id="frameClip"><rect width="1280" height="720" rx="0"/></clipPath>
+    <pattern id="grid" width="62" height="62" patternUnits="userSpaceOnUse">
+      <path d="M62 0H0V62" fill="none" stroke="#a8c4e7" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <rect width="1280" height="720" fill="url(#bg)"/>
+    <rect width="1280" height="720" fill="url(#blueGlow)"/>
+    <rect width="1280" height="720" fill="url(#redGlow)"/>
+    <rect width="1280" height="720" fill="url(#grid)"/>
+    <path d="M426 0L520 720" stroke="#4ba8ff" stroke-opacity="0.22" stroke-width="6"/>
+
+    <ellipse cx="224" cy="352" rx="216" ry="302" fill="none" stroke="#45a9ff" stroke-width="10" opacity="0.82" filter="url(#coinGlow)"/>
+    <image x="-36" y="-82" width="470" height="990" preserveAspectRatio="xMidYMid slice" xlink:href="ansem-market-bubble-source.png"/>
+    <g transform="translate(1100 140) rotate(8)" filter="url(#coinGlow)">
+      <circle r="116" fill="url(#coin)" stroke="#ff3652" stroke-width="12"/>
+      <text x="0" y="73" text-anchor="middle" fill="#f2f5fa" font-family="Impact, Arial Black, sans-serif" font-size="206">?</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <text x="817" y="354" text-anchor="middle" fill="#ffffff" stroke="#020305" stroke-width="14" paint-order="stroke" font-family="Impact, Arial Black, sans-serif" font-size="144" letter-spacing="3">HE'S</text>
+      <text x="817" y="486" text-anchor="middle" fill="#ffffff" stroke="#020305" stroke-width="14" paint-order="stroke" font-family="Impact, Arial Black, sans-serif" font-size="144" letter-spacing="3">BACK</text>
+    </g>
+
+    <g transform="translate(522 535) rotate(-2)" filter="url(#shadow)">
+      <rect width="590" height="96" rx="17" fill="#f4f7fa" stroke="#090c11" stroke-width="7"/>
+      <text x="295" y="65" text-anchor="middle" fill="#151a22" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="900">BUYING SUB <tspan fill="#e6193a">$50M</tspan></text>
+    </g>
+
+    <g transform="translate(1023 660)">
+      <rect width="226" height="40" rx="8" fill="#05080d" fill-opacity="0.88" stroke="#3a4656"/>
+      <text x="113" y="27" text-anchor="middle" fill="#9eb0c5" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">THUMBNAIL MOCK</text>
+    </g>
+  </g>
+</svg>

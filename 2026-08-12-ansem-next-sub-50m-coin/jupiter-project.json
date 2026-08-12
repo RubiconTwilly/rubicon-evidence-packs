@@ -1,0 +1,94 @@
+{
+  "schema": "rubicon.video-project",
+  "schema_version": 2,
+  "project_id": "2026-08-12-ansem-next-sub-50m-coin",
+  "brand": "rubicon",
+  "updated_at": "2026-08-12T00:22:48Z",
+  "stage": "research_ready",
+  "recording_blocked": false,
+  "blocking_reason": null,
+  "record_date": "2026-08-12",
+  "selected_title": "Ansem is back buying microcap meme coins... (under $50M)",
+  "thumbnail_text": "UNDER $50M?!",
+  "thumbnail_concept": "Established Rubicon single-influencer layout: real Ansem face on the right, one obscured token on the left, a thick red arrow, and one oversized bottom line quoting the sub-$50M mystery.",
+  "promise": "Ansem is active onchain again, and COBY, MANLET and his unnamed sub-$50M post show how quickly traders turn his attention into a token narrative.",
+  "editorial_mode": {
+    "mode": "reporter",
+    "truth_audit_required": false,
+    "rule": "Report attributable statements, visible actions, approved Discord captures, public narratives and public reaction. Keep disputed or self-reported assertions attributed; verify their underlying truth only when the selected premise explicitly investigates or adopts them as fact."
+  },
+  "packaging_model": {
+    "title": "BREAKING: Alex Becker just returned to crypto for one last cycle...",
+    "url": "https://youtu.be/DJ3Dto1ZZdI",
+    "mechanism": "A known personality returns, takes a current action, and creates an unresolved next-move question."
+  },
+  "thesis_sentences": [
+    "Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows.",
+    "Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives."
+  ],
+  "cta": {
+    "status": "record_ready",
+    "text": "Ansem didn't name the coin, but the entire market still spent hours trying to reverse-engineer it. That's exactly why we're adding his public X posts to the Rubicon Influencer Feed. The next time he posts, you'll have the original statement, the relevant token research and the chart context in one place, instead of rebuilding the story later from cropped screenshots. If you want the same information workflow we're using in this video, join the Rubicon Inner Circle through the link below. This is research, not a buy signal or a promise of returns, and microcaps can lose most or all of their value.",
+    "destination": "Rubicon Inner Circle via Jupiter",
+    "video_slug": "ansem-next-sub-50m-coin",
+    "tracking_url": "",
+    "tracking_verified": false,
+    "readout_ref": "BENJI-CTA-READOUT.txt"
+  },
+  "measurement": {
+    "destination": "Jupiter",
+    "video_level_attribution_required": true,
+    "checkout_path_verified": false,
+    "outcomes_due": [
+      "24h",
+      "72h",
+      "7d"
+    ]
+  },
+  "evidence_order": [
+    "01 Context: WIF history, low 2025 activity, and his onchain return",
+    "02 Macro: Solana turn and creator-attention thesis",
+    "03 Black Bull: Ansem support post and live chart",
+    "04 COBY: official follow notification, market amplification, and exact chart",
+    "05 MANLET: John alert, Fox relaunch, Discord receipt, exact chart, and John counter-receipt",
+    "06 What next: Ansem says he is buying a sub-$50M memecoin without naming it",
+    "07 Earned CTA: information workflow with the loss-risk line adjacent"
+  ],
+  "public_source_count": 15,
+  "console_ref": "console.html",
+  "prepared_visual_ref": "assets/thumbnail-mock.png",
+  "thumbnail_ref": "assets/thumbnail-mock.png",
+  "arc_handoff_ref": "arc-handoff.json",
+  "research_ref": "research.md",
+  "skeleton": {
+    "source_ref": "research.md",
+    "sections": [
+      "Why Ansem matters",
+      "Macro: market turn and creator attention",
+      "Black Bull current proof",
+      "COBY follow case",
+      "MANLET Discord case",
+      "What Ansem buys next",
+      "From story to workflow"
+    ]
+  },
+  "verification": {
+    "record_day_checked_at": "2026-08-12T00:12:01Z",
+    "desktop_rendered_at": null,
+    "mobile_rendered_at": null,
+    "arc_manifest_checked_at": "2026-08-12T00:16:52Z",
+    "static_bundle_checked_at": "2026-08-12T00:12:01Z",
+    "tracking_path_checked_at": null
+  },
+  "parked_research": [
+    {
+      "subject": "Fresh five-coins macro post",
+      "reason": "Useful as research context, but it repeats the comeback point and its 1,000x wording distracts from the selected story.",
+      "ref": "research.md#what-is-parked"
+    }
+  ],
+  "descript": {},
+  "youtube": {},
+  "published": {},
+  "outcomes": []
+}

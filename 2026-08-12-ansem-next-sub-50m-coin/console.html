@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="rubicon-editorial-mode" content="reporter">
+  <title>Ansem under $50M | Recording Console</title>
+  <style>
+    :root {
+      --bg: #070a0f;
+      --panel: #0f151f;
+      --panel2: #151d29;
+      --line: #263245;
+      --text: #f5f7fb;
+      --muted: #9cacbf;
+      --blue: #4ba8ff;
+      --green: #4fe38a;
+      --amber: #ffbd59;
+      --red: #ff5b6f;
+      --purple: #a985ff;
+      --max: 1420px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% -5%, rgba(47, 134, 255, .17), transparent 32rem),
+        radial-gradient(circle at 88% 2%, rgba(255, 60, 86, .12), transparent 28rem),
+        var(--bg);
+      font: 16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    button { font: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 42px)); margin: 0 auto; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(7,10,15,.92);
+      backdrop-filter: blur(18px);
+    }
+    .topbar-inner {
+      min-height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: .05em; }
+    .brand-mark { width: 11px; height: 36px; border-radius: 9px; background: linear-gradient(var(--green), var(--blue)); box-shadow: 0 0 22px rgba(75,168,255,.7); }
+    .top-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .btn {
+      cursor: pointer;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 14px;
+      color: var(--text);
+      background: #121a25;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .btn:hover { border-color: var(--blue); background: #182536; }
+    .btn.primary { color: #04110a; border-color: var(--green); background: var(--green); }
+    .hero { padding: 54px 0 28px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr); gap: 28px; align-items: stretch; }
+    .eyebrow { color: var(--green); font-size: 13px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 14px 0 18px; max-width: 900px; font-size: clamp(46px, 6vw, 86px); line-height: .98; letter-spacing: -.045em; }
+    .dek { max-width: 850px; margin: 0; color: #c9d3df; font-size: clamp(19px, 2vw, 25px); line-height: 1.4; }
+    .badge-row { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 25px; }
+    .badge { padding: 8px 11px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(15,21,31,.76); font-size: 13px; font-weight: 850; }
+    .badge.green { color: var(--green); border-color: rgba(79,227,138,.35); }
+    .badge.amber { color: var(--amber); border-color: rgba(255,189,89,.35); }
+    .thumb-shell { overflow: hidden; min-height: 330px; border: 1px solid var(--line); border-radius: 18px; background: #030509; box-shadow: 0 22px 70px rgba(0,0,0,.45); }
+    .thumb-shell img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .thumb-note { padding: 12px 15px; color: var(--muted); border-top: 1px solid var(--line); font-size: 13px; }
+    .gate {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 24px 0 34px;
+    }
+    .gate-card { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(15,21,31,.84); }
+    .gate-card strong { display: block; margin-bottom: 6px; color: white; }
+    .gate-card span { color: var(--muted); }
+    .gate-card.no { border-color: rgba(255,91,111,.35); }
+    .gate-card.no strong { color: var(--red); }
+    .orientation {
+      margin-bottom: 42px;
+      padding: 24px;
+      border: 1px solid rgba(75,168,255,.35);
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(31,91,152,.17), rgba(15,21,31,.88));
+    }
+    .orientation h2 { margin: 0 0 14px; font-size: 24px; }
+    .orientation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .orientation-item { padding: 16px; border-radius: 12px; background: rgba(3,7,12,.44); }
+    .orientation-item b { display: block; margin-bottom: 7px; color: var(--blue); }
+    .orientation-item p { margin: 0; color: #c7d1de; }
+    .sec { scroll-margin-top: 82px; margin: 0 0 34px; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: rgba(15,21,31,.92); }
+    .sec-head { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; margin-bottom: 19px; }
+    .sec-title { display: flex; gap: 11px; align-items: center; }
+    .dot { flex: 0 0 auto; width: 14px; height: 14px; border-radius: 50%; background: var(--green); box-shadow: 0 0 18px rgba(79,227,138,.8); }
+    .sec h2 { margin: 0; font-size: clamp(25px, 3vw, 36px); line-height: 1.1; }
+    .sec-count { color: var(--muted); font-size: 13px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .section-note { margin: -4px 0 20px 25px; max-width: 1050px; color: #c2ccd9; font-size: 18px; }
+    .say-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 14px; margin-bottom: 20px; }
+    .say, .caution, .status-box { padding: 17px; border-radius: 12px; border: 1px solid var(--line); background: #0a1018; }
+    .say b, .caution b, .status-box b { display: block; margin-bottom: 5px; font-size: 12px; letter-spacing: .11em; text-transform: uppercase; }
+    .say b { color: var(--green); }
+    .caution b { color: var(--amber); }
+    .say p, .caution p, .status-box p { margin: 0; }
+    .deck-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .receipt { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--panel2); }
+    .receipt-top { display: flex; gap: 12px; justify-content: space-between; padding: 16px 16px 12px; border-bottom: 1px solid var(--line); }
+    .receipt-label { font-weight: 900; line-height: 1.3; }
+    .receipt-role { flex: 0 0 auto; color: var(--purple); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .receipt-body { display: grid; gap: 10px; padding: 15px 16px; color: #ccd5e1; font-size: 14px; }
+    .field { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 10px; }
+    .field b { color: #77879a; font-size: 10px; letter-spacing: .09em; text-transform: uppercase; }
+    .field span { min-width: 0; overflow-wrap: anywhere; }
+    .receipt-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding: 0 16px 16px; }
+    .receipt-actions a, .receipt-actions button { cursor: pointer; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: white; background: #0b1119; text-decoration: none; font-size: 12px; font-weight: 850; }
+    .receipt-actions a:hover, .receipt-actions button:hover { border-color: var(--blue); }
+    .media-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+    .media-card { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #080c12; }
+    .media-card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; }
+    .media-card div { padding: 10px 12px; color: var(--muted); font-size: 12px; }
+    .tracker-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .status-box.good { border-color: rgba(79,227,138,.34); }
+    .status-box.good b { color: var(--green); }
+    .status-box.blocked { border-color: rgba(255,91,111,.45); }
+    .status-box.blocked b { color: var(--red); }
+    .cta-read { margin-top: 16px; padding: 20px; border: 1px solid rgba(255,189,89,.42); border-radius: 14px; background: rgba(70,47,15,.25); }
+    .cta-read h3 { margin: 0 0 9px; color: var(--amber); }
+    .cta-read p { margin: 8px 0; }
+    .source-footer { display: flex; gap: 10px; flex-wrap: wrap; padding: 10px 0 58px; }
+    .toast { position: fixed; right: 18px; bottom: 18px; z-index: 50; opacity: 0; transform: translateY(12px); transition: .2s; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: #182231; box-shadow: 0 10px 40px rgba(0,0,0,.4); pointer-events: none; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .hero-grid, .gate, .orientation-grid, .tracker-grid { grid-template-columns: 1fr; }
+      .thumb-shell { min-height: 0; }
+      .deck-grid { grid-template-columns: 1fr; }
+      .media-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .say-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 34px; }
+    }
+    @media (max-width: 650px) {
+      .wrap { width: min(100% - 24px, var(--max)); }
+      .topbar-inner { align-items: flex-start; flex-direction: column; padding: 12px 0; }
+      .top-actions { width: 100%; justify-content: flex-start; }
+      .btn { padding: 9px 11px; font-size: 13px; }
+      h1 { font-size: 46px; }
+      .hero-grid { grid-template-columns: minmax(0, 1fr); }
+      .sec { padding: 18px; border-radius: 15px; }
+      .sec-head { flex-direction: column; gap: 8px; }
+      .section-note { margin-left: 0; font-size: 16px; }
+      .field { grid-template-columns: 80px minmax(0, 1fr); }
+      .media-strip { grid-template-columns: 1fr; }
+      .orientation { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand"><span class="brand-mark"></span><span>ANSEM RECORDING CONSOLE</span></div>
+      <nav class="top-actions" aria-label="Recording actions">
+        <button class="btn primary" type="button" onclick="openDeck(ARC_LAUNCH)">Open 22 Arc tabs backwards</button>
+        <button class="btn" type="button" onclick="copyDeck(ARC_LAUNCH)">Copy 22 Arc URLs</button>
+        <a class="btn" href="research.md">Research</a>
+        <a class="btn" href="sources.json">Sources</a>
+        <a class="btn" href="arc-handoff.json">Arc handoff</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="packaging">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Selected video package</div>
+          <h1>Ansem is back buying microcap meme coins... <span style="color:var(--green)">(under $50M)</span></h1>
+          <p class="dek">The market is reacting to everything around Ansem: his own token, the accounts he follows, what appears in Discord, and the unnamed coin he says he is buying next.</p>
+          <div class="badge-row">
+            <span class="badge green">15 RECORDING TABS</span>
+            <span class="badge">REPORTER MODE</span>
+            <span class="badge">CONTEXT → MACRO → CASES</span>
+            <span class="badge amber">COBY + MANLET</span>
+          </div>
+        </div>
+        <div class="thumb-shell">
+          <img src="assets/thumbnail-mock.png" alt="Ansem video thumbnail mock">
+          <div class="thumb-note">Ansem source image from the official Market Bubble #9 thumbnail.</div>
+        </div>
+      </div>
+      <div class="gate">
+        <div class="gate-card"><strong>Thesis 1</strong><span>Ansem is active onchain again, and the market is reacting to every clue: what he posts, what appears in Discord, and even which accounts he follows.</span></div>
+        <div class="gate-card"><strong>Thesis 2</strong><span>Black Bull shows the scale of his distribution; COBY and MANLET show how traders turn those clues into immediate token narratives.</span></div>
+        <div class="gate-card"><strong>Packaging model</strong><span><a href="https://youtu.be/DJ3Dto1ZZdI" target="_blank" rel="noopener">BREAKING: Alex Becker just returned to crypto for one last cycle...</a></span></div>
+      </div>
+    </section>
+
+    <section class="orientation" aria-labelledby="orientation-title">
+      <h2 id="orientation-title">Audience orientation</h2>
+      <div class="orientation-grid">
+        <div class="orientation-item"><b>WHO</b><p>Ansem became one of the defining voices of the last Solana meme cycle, then says he barely traded through 2025.</p></div>
+        <div class="orientation-item"><b>WHY NOW</b><p>He says he is buying memes again and building around Black Bull as creator attention becomes part of the product.</p></div>
+        <div class="orientation-item"><b>THE TWO CASES</b><p>COBY is the follow story. MANLET is the Discord story. Together they show how quickly traders build a narrative around his attention.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="s2">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>Context: why Ansem matters</h2></div><span class="sec-count">2 tabs</span></div>
+      <p class="section-note">One first-party Market Bubble segment and one early WIF post establish the history quickly: he was central to the last Solana meme cycle, went quiet, and now says he is buying again.</p>
+      <div class="deck-grid" data-deck-for="s2"></div>
+      <div class="media-strip">
+        <figure class="media-card"><img src="assets/ansem-market-bubble-official-thumbnail-original.webp" alt="Official Market Bubble episode thumbnail"><div>Official Market Bubble #9 thumbnail</div></figure>
+        <figure class="media-card"><img src="assets/user/06-ansem-dogwifhat-2023.jpg" alt="Image attached to Ansem's 2023 dogwifhat post"><div>Original WIF post media</div></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="s3">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>Macro: why attention matters now</h2></div><span class="sec-count">2 tabs</span></div>
+      <p class="section-note">The Solana-bottom clip explains the market turn. His long post explains the larger bet: creator trust, social trading and tokenized distribution.</p>
+      <div class="deck-grid" data-deck-for="s3"></div>
+    </section>
+
+    <section class="sec" id="s4">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>Black Bull: the current proof</h2></div><span class="sec-count">2 tabs</span></div>
+      <p class="section-note">Start with Ansem's own support post, then show the live chart. Black Bull is the bridge between his macro view and the attention cases that follow.</p>
+      <div class="deck-grid" data-deck-for="s4"></div>
+    </section>
+
+    <section class="sec" id="s7">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>COBY: one follow becomes the story</h2></div><span class="sec-count">3 tabs</span></div>
+      <p class="section-note">The project posts the Ansem follow notification. Whale Insider amplifies it. The exact COBY/ANSEM chart shows what happened while that narrative spread.</p>
+      <div class="deck-grid" data-deck-for="s7"></div>
+      <div class="media-strip">
+        <figure class="media-card"><img src="assets/user/coby/06-coby-official-ansem-follow-notification.jpg" alt="COBY post with Ansem follow notification"><div>Official COBY follow notification</div></figure>
+        <figure class="media-card"><img src="assets/user/coby/01-whale-insider-coby.jpg" alt="Whale Insider post about Ansem following COBY"><div>Market amplification of the follow</div></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="s5">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>MANLET: one Discord message becomes the story</h2></div><span class="sec-count">5 tabs</span></div>
+      <p class="section-note">Rubicon caught John's earlier buy, Fox tied MANLET to ANSEM, Abu preserved the Discord screenshot, and the exact chart shows the reaction. John then publicly called his own trade a fumble.</p>
+      <div class="deck-grid" data-deck-for="s5"></div>
+      <div class="media-strip">
+        <figure class="media-card"><img src="assets/user/05-john-manlet-buy-alert.png" alt="Rubicon John MANLET buy alert"><div>Rubicon buy alert, exact current MANLET</div></figure>
+        <figure class="media-card"><img src="assets/user/01-ansem-discord-manlet-question.jpg" alt="Discord screenshot attributed to Ansem"><div>Discord question preserved in a public X post</div></figure>
+        <figure class="media-card"><img src="assets/user/02-manlet-chart-abu.jpg" alt="Third-party MANLET chart screenshot"><div>Contemporaneous chart screenshot, third-party caption</div></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="s1">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>What does Ansem buy next?</h2></div><span class="sec-count">1 tab</span></div>
+      <p class="section-note">After COBY and MANLET show how traders react to clues, end on the unresolved post: Ansem says he is buying a sub-$50M memecoin and asks the market to guess.</p>
+      <div class="deck-grid" data-deck-for="s1"></div>
+    </section>
+
+    <section class="sec" id="s6">
+      <div class="sec-head"><div class="sec-title"><span class="dot"></span><h2>From story to workflow</h2></div><span class="sec-count">CTA</span></div>
+      <p class="section-note">One vague post sent traders across X, Discord screenshots and charts. The CTA is the information workflow that brings the original public posts, token research and chart context together.</p>
+      <div class="tracker-grid">
+        <div class="status-box good"><b>The bridge</b><p>The market spent hours reverse-engineering one vague post from scattered sources.</p></div>
+        <div class="status-box good"><b>What Rubicon adds</b><p>Ansem's public X posts in the Influencer Feed, with the relevant token research and chart context.</p></div>
+        <div class="status-box"><b>The story just shown</b><p>COBY begins with a follow, MANLET with a Discord screenshot, and the final post leaves the next coin unresolved.</p></div>
+        <div class="status-box"><b>The recording finish</b><p>End on the Influencer Feed view, then deliver the readout below.</p></div>
+      </div>
+      <article class="cta-read">
+        <h3>Benji CTA readout</h3>
+        <p>Ansem didn't name the coin, but the entire market still spent hours trying to reverse-engineer it. That's exactly why we're adding his public X posts to the Rubicon Influencer Feed.</p>
+        <p>The next time he posts, you'll have the original statement, the relevant token research and the chart context in one place, instead of rebuilding the story later from cropped screenshots.</p>
+        <p>If you want the same information workflow we're using in this video, join the Rubicon Inner Circle through the link below. This is research, not a buy signal or a promise of returns, and microcaps can lose most or all of their value.</p>
+      </article>
+    </section>
+
+    <footer class="source-footer">
+      <a class="btn" href="research.md">Open research.md</a>
+      <a class="btn" href="sources.json">Open sources.json</a>
+      <a class="btn" href="arc-handoff.json">Open Arc handoff</a>
+      <a class="btn" href="BENJI-CTA-READOUT.txt">Open CTA readout</a>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const RECORD_DECK = [
+      { section: "s2", label: "01 CONTEXT | MARKET BUBBLE #9", url: "https://www.youtube.com/watch?v=Ff1shGhhQzQ&t=583s", role: "subject_orientation", sourceTitle: "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9", quote: "\"$0 to $100 Million in One Week\" - Ansem | Market Bubble #9", shows: "Ansem explains the Solana, BONK and WIF period, says he barely traded in 2025, and says he has started buying memes again.", why: "It supplies first-party history and the comeback bridge without a long biography.", inspect: "09:43 WIF history; 11:02 barely traded in 2025; 13:08 Black Bull; 14:09 active onchain again", missing: "New viewers get no reason to care about Ansem's current posts." },
+      { section: "s2", label: "02 CONTEXT | EARLY WIF POST", url: "https://x.com/blknoiz06/status/1736676424977719528", role: "subject_proof", sourceTitle: "Ansem on X: dogwifhat may be the first dog coin to hit $1", quote: "dogwifhat may quite literally be the first dog coin to ever hit $1.00", shows: "Ansem publicly championed WIF in December 2023 before it became a defining Solana meme narrative.", why: "It is a clean primary receipt for the reputation behind his current influence.", inspect: "Full post and attached image | 18 Dec 2023, 09:15 UTC", missing: "The video relies only on Ansem's retrospective version of his history." },
+      { section: "s3", label: "03 MACRO | SOLANA BOTTOM CLIP", url: "https://www.youtube.com/watch?v=TuJO-b4rD3s&t=150s", role: "macro_context", sourceTitle: "“The Bull Case For Solana” - Helius CEO | Market Bubble #8", quote: "“The Bull Case For Solana” - Helius CEO | Market Bubble #8", shows: "Ansem gives the market-turn view that preceded his return to onchain meme trading.", why: "It connects the comeback to his broader market view instead of making MANLET feel random.", inspect: "02:30 onward | published 25 Jun 2026 Pacific time", missing: "The video has no macro bridge between his absence and current activity." },
+      { section: "s3", label: "04 MACRO | CREATOR ATTENTION THESIS", url: "https://x.com/blknoiz06/status/2086584870642528603", role: "macro_thesis", sourceTitle: "Ansem on X: creators, attention and financial distribution", quote: "the unsolved game with creators and attention is what i am most interested in this cycle", shows: "Ansem explicitly argues that creator trust, social trading and tokenized distribution are the opportunity he is building around.", why: "It turns the story from a random pump into Ansem's stated macro thesis.", inspect: "Long-form post, especially final four paragraphs | 9 Aug 2026, 22:46:14 UTC", missing: "Black Bull and MANLET read as disconnected token anecdotes." },
+      { section: "s4", label: "05 BLACK BULL | ANSEM SUPPORT POST", url: "https://x.com/blknoiz06/status/2085363873314750882", role: "current_proof", sourceTitle: "Ansem on X: continued buying ANSEM while building around it", quote: "continued buying $ANSEM past few weeks while i build everything around it", shows: "Ansem directly says he continued buying The Black Bull while building the surrounding ecosystem.", why: "It is the strongest current first-party proof that his attention thesis is also his active project.", inspect: "Full reply and parent context | 6 Aug 2026, 13:54:26 UTC", missing: "Black Bull is described only through price action and third parties." },
+      { section: "s4", label: "06 BLACK BULL | DEXSCREENER", url: "https://dexscreener.com/solana/fnzky6x7entq1er3d225dqyt7ybfka4pskbmqhb8l3cc", role: "chart_context", sourceTitle: "Dexscreener: The Black Bull / ANSEM", quote: "The Black Bull / ANSEM", shows: "The exact main ANSEM/SOL pool and the full launch-to-current chart.", why: "It lets Benji show current price action without freezing a stale 24-hour percentage.", inspect: "Daily candles; exact pair FnzKY6x7...L3CC; refresh on record day", missing: "The viewer cannot see whether the token still has active market attention." },
+      { section: "s7", label: "07 COBY | OFFICIAL FOLLOW RECEIPT", url: "https://x.com/cobywifhat/status/2087062492195553747", role: "follow_receipt", sourceTitle: "COBY on X: Wow thanks for the follow @blknoiz06", quote: "Wow thanks for the follow @blknoiz06 🐂", shows: "The official COBY account publicly posts the Ansem follow notification while introducing its ANSEM reward narrative.", why: "This is the original visible clue that traders treated as information.", inspect: "Full post, notification image and quoted launch post | 11 Aug 2026, 06:24:08 UTC", missing: "The follow-driven section has no originating project receipt." },
+      { section: "s7", label: "08 COBY | MARKET PICKS UP THE FOLLOW", url: "https://x.com/WhaleInsider/status/2087072961266143424", role: "market_amplification", sourceTitle: "Whale Insider on X: COBY attention after Ansem follows", quote: "JUST IN: $COBY on Solana sees increased attention after Ansem follows the project on X.", shows: "A large market account turns the visible follow into the public COBY narrative.", why: "It captures the moment the follow moved from project lore into wider market attention.", inspect: "Full post and first attached composite | 11 Aug 2026, 07:05:44 UTC", missing: "There is no receipt showing how the wider market described the follow." },
+      { section: "s7", label: "09 COBY | DEXSCREENER", url: "https://dexscreener.com/solana/gtrscnxmetpcrimzhwp7lzwkm1cbmcdym53dx2b9mhe8", role: "chart_aftermath", sourceTitle: "Dexscreener: COBY / ANSEM", quote: "COBY / ANSEM", shows: "The exact COBY contract paired with ANSEM and the chart after the follow notification circulated.", why: "It completes the follow-to-market-attention sequence visually.", inspect: "Five-minute candles from 11 Aug 06:20 to 12:00 UTC, then zoom out", missing: "The follow narrative has no visible market aftermath." },
+      { section: "s5", label: "10 MANLET | JOHN BUY ALERT", url: "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-11-cryptogodjohn-3-coins-next-cycle/assets/user/john-manlet-buy-alert.png", role: "rubicon_context", sourceTitle: "Rubicon Influencer Feed: John MANLET buy alert", quote: "John - Influencer BUY Alert: MANLET", shows: "The retained Rubicon alert for the relevant MANLET contract at a displayed $448K market cap.", why: "It connects the prior John video, establishes the exact contract, and demonstrates the information workflow before Ansem entered the story.", inspect: "Displayed +4,491,185.87 MANLET, $2,268 value, $448K market cap | 5 Aug 2026, 23:48:39 UTC", missing: "The tracker CTA feels detached from the actual MANLET chronology." },
+      { section: "s5", label: "11 MANLET | FOX RELAUNCH POST", url: "https://x.com/_fox09/status/2086859222810014158", role: "token_mechanics", sourceTitle: "Fox on X: MANLET is paired with ANSEM", quote: "This is the first memecoin to be paired with $ANSEM.", shows: "The project lead says MANLET is paired with ANSEM and positioned as part of the ANSEM ecosystem.", why: "It explains why MANLET was legible to traders as an Ansem-adjacent token before the Discord screenshot circulated.", inspect: "Full post | 10 Aug 2026, 16:56:25 UTC", missing: "The link between MANLET and Black Bull is asserted without a project source." },
+      { section: "s5", label: "12 MANLET | ANSEM DISCORD RECEIPT", url: "https://x.com/0x_abu/status/2086924787947839848", role: "discord_receipt", sourceTitle: "Abu on X: Ansem Discord MANLET screenshots", quote: "Ansem posted on his Discord that he could potentially support $MANLET", shows: "A public third-party post preserves the Discord message attributed to Ansem and a contemporaneous MANLET chart screenshot.", why: "It is the strongest recordable source for the Discord moment that traders linked to MANLET.", inspect: "Open both attached images | 10 Aug 2026, 21:16:57 UTC", missing: "The central Discord event has no recordable visual." },
+      { section: "s5", label: "13 MANLET | DEXSCREENER", url: "https://dexscreener.com/solana/bneed53wyjj8qfheztbuxyc1el1cqv5hlb5h6ykgn7eo", role: "chart_aftermath", sourceTitle: "Dexscreener: MANLET / ANSEM", quote: "MANLET / ANSEM", shows: "The exact HxQh... MANLET pool paired with ANSEM and the full move around the Discord and public-post window.", why: "It lets Benji show the move without relying on a cropped third-party percentage claim.", inspect: "Minute candles around 10 Aug 19:31 to 20:44 UTC; then zoom out", missing: "The video cannot distinguish the correct MANLET contract or show the checked aftermath." },
+      { section: "s5", label: "14 MANLET | JOHN SAYS HE FUMBLED", url: "https://x.com/CryptoGodJohn/status/2086909187250917829", role: "counter_receipt", sourceTitle: "CryptoGodJohn on X: Fumbled massively on Manlet", quote: "Fumbled massively on Manlet", shows: "John publicly described his own MANLET outcome as a fumble immediately after Ansem's mystery post.", why: "It closes the John callback with his own public reaction.", inspect: "Caption first; crop or blur the hypothetical dollar-profit card if shown | 10 Aug 2026, 20:14:57 UTC", missing: "The John callback stops at the buy alert and implies a cleaner result than John himself reported." },
+      { section: "s1", label: "15 WHAT NEXT | ANSEM UNDER $50M POST", url: "https://x.com/blknoiz06/status/2086908794517533015", role: "open_loop", sourceTitle: "Ansem on X: buying a memecoin sub 50m today", quote: "buying a memecoin sub 50m today who can guess which one", shows: "Ansem publicly announced a sub-$50M memecoin purchase without naming the coin.", why: "After COBY and MANLET show how traders respond to clues, this becomes the unresolved next-move question.", inspect: "Full post and engagement | 10 Aug 2026, 20:13:24 UTC", missing: "The video has no final open loop before the workflow CTA." }
+    ];
+
+    const ARC_MARKERS = {
+      context: { section: "s2", label: "🟢 CONTEXT", url: "https://www.google.com/", marker: true },
+      macro: { section: "s3", label: "🟢 MACRO", url: "https://www.google.com/", marker: true },
+      blackBull: { section: "s4", label: "🟢 BLACK BULL", url: "https://www.google.com/", marker: true },
+      coby: { section: "s7", label: "🟢 COBY", url: "https://www.google.com/", marker: true },
+      manlet: { section: "s5", label: "🟢 MANLET", url: "https://www.google.com/", marker: true },
+      whatNext: { section: "s1", label: "🟢 WHAT NEXT", url: "https://www.google.com/", marker: true },
+      trackerCta: { section: "s6", label: "🟢 TRACKER CTA", url: "https://www.google.com/", marker: true }
+    };
+
+    const ARC_LAUNCH = [
+      ARC_MARKERS.context,
+      ...RECORD_DECK.filter(item => item.section === "s2"),
+      ARC_MARKERS.macro,
+      ...RECORD_DECK.filter(item => item.section === "s3"),
+      ARC_MARKERS.blackBull,
+      ...RECORD_DECK.filter(item => item.section === "s4"),
+      ARC_MARKERS.coby,
+      ...RECORD_DECK.filter(item => item.section === "s7"),
+      ARC_MARKERS.manlet,
+      ...RECORD_DECK.filter(item => item.section === "s5"),
+      ARC_MARKERS.whatNext,
+      ...RECORD_DECK.filter(item => item.section === "s1"),
+      ARC_MARKERS.trackerCta
+    ];
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>'"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]));
+    }
+
+    function renderDeck() {
+      document.querySelectorAll("[data-deck-for]").forEach(container => {
+        const section = container.dataset.deckFor;
+        const items = RECORD_DECK.filter(item => item.section === section);
+        container.innerHTML = items.map(item => `
+          <article class="receipt">
+            <div class="receipt-top"><div class="receipt-label">${escapeHtml(item.label)}</div><div class="receipt-role">${escapeHtml(item.role)}</div></div>
+            <div class="receipt-body">
+              <div class="field"><b>ROLE</b><span>${escapeHtml(item.role)}</span></div>
+              <div class="field"><b>SHOWS</b><span>${escapeHtml(item.shows)}</span></div>
+              <div class="field"><b>WHY IT MATTERS</b><span>${escapeHtml(item.why)}</span></div>
+              <div class="field"><b>INSPECT</b><span>${escapeHtml(item.inspect)}</span></div>
+              <div class="field"><b>WITHOUT IT</b><span>${escapeHtml(item.missing)}</span></div>
+            </div>
+            <div class="receipt-actions"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Open source</a><button type="button" data-copy="${escapeHtml(item.url)}">Copy URL</button></div>
+          </article>`).join("");
+      });
+      document.querySelectorAll("[data-copy]").forEach(button => button.addEventListener("click", () => copyText(button.dataset.copy, "URL copied")));
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    async function copyText(value, message) {
+      try {
+        await navigator.clipboard.writeText(value);
+        showToast(message);
+      } catch (error) {
+        showToast("Clipboard blocked. Open arc-handoff.json instead.");
+      }
+    }
+
+    function copyDeck(items) {
+      copyText(items.map(item => item.url).join("\n"), `${items.length} URLs copied in forward order`);
+    }
+
+    function openDeck(items) {
+      const launch = [...items].reverse();
+      if (!launch.length) return;
+      window.open(launch[0].url, "_blank");
+      launch.slice(1).forEach((item, index) => {
+        setTimeout(() => window.open(item.url, "_blank"), 260 * (index + 1));
+      });
+      showToast(`Opening backwards. Rename the ${items.filter(item => item.marker).length} Google spacer tabs to their green section labels.`);
+    }
+
+    renderDeck();
+  </script>
+</body>
+</html>

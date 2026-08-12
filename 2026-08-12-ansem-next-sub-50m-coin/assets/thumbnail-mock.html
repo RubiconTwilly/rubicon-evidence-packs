@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ansem thumbnail</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #05080a; }
+    body { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    .frame {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 27% 42%, rgba(47, 255, 147, .18), transparent 34%),
+        radial-gradient(circle at 79% 44%, rgba(37, 126, 255, .25), transparent 35%),
+        linear-gradient(115deg, #070a0d 0%, #0b1415 46%, #06080b 100%);
+    }
+    .market {
+      position: absolute;
+      inset: 0;
+      opacity: .25;
+      background-image:
+        linear-gradient(rgba(96, 255, 174, .16) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96, 255, 174, .12) 1px, transparent 1px);
+      background-size: 96px 72px;
+      mask-image: linear-gradient(90deg, #000 0 70%, transparent 100%);
+    }
+    .chart-line {
+      position: absolute;
+      left: -30px;
+      top: 95px;
+      width: 880px;
+      height: 410px;
+      opacity: .46;
+      filter: drop-shadow(0 0 14px rgba(46, 255, 150, .42));
+    }
+    .face-glow {
+      position: absolute;
+      right: -55px;
+      top: 5px;
+      width: 490px;
+      height: 710px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(38, 127, 255, .48), rgba(38, 127, 255, .06) 55%, transparent 72%);
+      filter: blur(8px);
+    }
+    .face {
+      position: absolute;
+      z-index: 4;
+      right: 10px;
+      bottom: -4px;
+      height: 725px;
+      filter: drop-shadow(-18px 10px 24px rgba(0,0,0,.88)) saturate(1.07) contrast(1.04);
+    }
+    .coin-shell {
+      position: absolute;
+      z-index: 2;
+      left: 42px;
+      top: 92px;
+      width: 430px;
+      height: 430px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 11px solid #eef5f1;
+      background: #070b0c;
+      box-shadow:
+        0 0 0 7px rgba(59, 255, 151, .50),
+        0 0 55px 15px rgba(24, 255, 134, .42),
+        16px 18px 24px rgba(0,0,0,.72);
+      transform: rotate(-3deg);
+    }
+    .coin-shell img {
+      position: absolute;
+      width: 3480px;
+      max-width: none;
+      left: -842px;
+      top: -272px;
+      image-rendering: pixelated;
+      filter: blur(8px) contrast(1.45) saturate(1.32) brightness(.88);
+      transform: scale(1.04);
+    }
+    .coin-shell::after {
+      content: "?";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,.82);
+      font: 300px/.9 Impact, sans-serif;
+      text-shadow: 0 9px 0 rgba(0,0,0,.75), 0 0 25px rgba(255,255,255,.45);
+      transform: rotate(3deg);
+    }
+    .tag {
+      position: absolute;
+      z-index: 6;
+      left: 22px;
+      top: 18px;
+      padding: 11px 21px 9px;
+      border-radius: 10px;
+      color: #fff;
+      background: #ed111f;
+      box-shadow: 0 6px 18px rgba(0,0,0,.55);
+      font: 50px/.95 Impact, sans-serif;
+      letter-spacing: 2px;
+      transform: rotate(-1deg);
+    }
+    .arrow {
+      position: absolute;
+      z-index: 7;
+      left: 385px;
+      top: 2px;
+      width: 415px;
+      height: 280px;
+      filter: drop-shadow(0 8px 7px rgba(0,0,0,.76)) drop-shadow(0 0 13px rgba(255, 20, 33, .68));
+      transform: rotate(-3deg);
+    }
+    .headline {
+      position: absolute;
+      z-index: 9;
+      left: 19px;
+      bottom: -7px;
+      margin: 0;
+      white-space: nowrap;
+      color: #fff;
+      font: 154px/.88 Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      letter-spacing: -2px;
+      transform: rotate(-1.5deg);
+      -webkit-text-stroke: 14px #020303;
+      paint-order: stroke fill;
+      text-shadow: 0 12px 0 #020303, 0 19px 26px rgba(0,0,0,.84);
+    }
+    .headline strong { color: #58f29b; font-weight: inherit; }
+  </style>
+</head>
+<body>
+  <main class="frame" aria-label="Ansem video thumbnail in the established Rubicon single-influencer style">
+    <div class="market"></div>
+    <svg class="chart-line" viewBox="0 0 880 410" aria-hidden="true">
+      <path d="M0 342 L82 330 L132 354 L205 310 L271 320 L336 275 L382 290 L432 238 L501 259 L565 202 L617 212 L662 156 L715 171 L765 111 L816 125 L880 48" fill="none" stroke="#45f396" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="face-glow"></div>
+    <div class="coin-shell"><img src="user/04-ansem-proof-of-bagwork.png" alt="Obscured token icon"></div>
+    <svg class="arrow" viewBox="0 0 420 280" aria-hidden="true">
+      <path d="M393 28 C313 9 225 30 175 87 C141 126 132 162 136 185 L69 143 L30 250 L145 234 L120 204 C113 146 143 92 194 61 C244 31 316 25 382 45 Z" fill="#f20d20" stroke="#fff" stroke-width="13" stroke-linejoin="round"/>
+    </svg>
+    <div class="tag">NEW TOKEN</div>
+    <img class="face" src="ansem-market-bubble-source.png" alt="Ansem from the official Market Bubble thumbnail">
+    <h1 class="headline">UNDER <strong>$50M?!</strong></h1>
+  </main>
+</body>
+</html>
