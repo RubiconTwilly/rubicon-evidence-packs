@@ -12,7 +12,7 @@ reporting_stance: reporter
 
 - **Title:** `Ansem's next microcap token could make MILLIONS... (under $50M)`
 - **Thumbnail:** real Ansem face, one obscured mystery coin, red arrow and `UNDER $50M?!`.
-- **Packaging model:** [CryptoGodJohn's new token could print millions](https://youtu.be/aBajheRdZUI).
+- **Packaging model:** [cryptogodjohn's NEW crypto project could print MILLIONS in the next 90 days...](https://youtu.be/aBajheRdZUI).
 
 Ansem's own Black Bull project shows the scale of his current influence and the creator-attention thesis behind it. COBY is the follow story, MANLET is the Discord story, and the unnamed sub-$50M post is the open loop that drives the package.
 
