@@ -1,0 +1,62 @@
+{
+  "schema": "rubicon.gta6.market-identity.v1",
+  "captured_at_utc": "2026-08-14T22:25:30.919Z",
+  "exact_token": {
+    "chain": "solana",
+    "contract": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+    "ticker": "GTA6",
+    "name": "GTA VI"
+  },
+  "price_history_pair": {
+    "required_pair_address": "5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs",
+    "role": "clean GTA6 market-price and market-cap history",
+    "dex": "meteora",
+    "url": "https://dexscreener.com/solana/5a15quc6kmxw9dsvpvuv6zdttbeywbn2scyy1meqjfqs",
+    "base_token": {
+      "address": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+      "name": "GTA VI",
+      "symbol": "GTA6"
+    },
+    "quote_token": {
+      "address": "So11111111111111111111111111111111111111112",
+      "name": "Wrapped SOL",
+      "symbol": "SOL"
+    },
+    "snapshot": {
+      "price_usd": 0.001731,
+      "liquidity_usd": 199667.02,
+      "fdv_usd": 1731975,
+      "market_cap_usd": 1731975,
+      "volume_24h_usd": 672503.86
+    }
+  },
+  "stock_meta_pair": {
+    "pair_address": "FDamUzyiEA7Cq1VNiQcbhuHpfCmmcJfgA6DwQQ1hhLd2",
+    "role": "TTWO/GTA6 stock-meta mechanism only; not a clean GTA6 market-cap chart",
+    "dex": "raydium",
+    "url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2",
+    "base_token": {
+      "address": "TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo",
+      "name": "Take-Two Interactive Software - Backpack Securities",
+      "symbol": "TTWO"
+    },
+    "quote_token": {
+      "address": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+      "name": "GTA VI",
+      "symbol": "GTA6"
+    },
+    "warning": "DexScreener priceUsd/FDV/marketCap on this pair describe TTWO as the base token, not GTA6."
+  },
+  "stale_dependencies": [
+    {
+      "surface": "production Token.dexscreenerUrl and Hub API token URL",
+      "current_url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2",
+      "issue": "Points to TTWO-base FDam pair; replace for any GTA6 price-history or market-cap presentation."
+    },
+    {
+      "surface": "2026-08-11 prior pack GTA6 chart tab/source",
+      "current_url": "https://dexscreener.com/solana/fdamuzyiea7cq1vniqcbhuhpfcmmcjfga6dwqq1hhld2",
+      "issue": "Labeled as an exact GTA6 public pool, but it is TTWO-base/GTA6-quote."
+    }
+  ]
+}

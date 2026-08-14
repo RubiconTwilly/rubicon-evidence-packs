@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CryptoGodJohn GTA6 timeline vs market cap</title>
+  <style>
+    :root{color-scheme:dark;--bg:#071018;--panel:#0c1822;--line:#223b4f;--ink:#f4f8fb;--muted:#91a9ba;--cyan:#48e4ed;--pink:#ff4fa9;--green:#5af09d;--gold:#ffd05e}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#16374e 0,transparent 36%),var(--bg);color:var(--ink);font:16px/1.45 Inter,system-ui,sans-serif}main{width:min(1280px,calc(100% - 24px));margin:auto;padding:28px 0 54px}.top{display:flex;justify-content:space-between;gap:24px;align-items:end}.eyebrow{color:var(--cyan);font-size:.74rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(2rem,5.4vw,4.7rem);line-height:.96;letter-spacing:-.055em;margin:.35rem 0 .8rem}.lede{max-width:850px;color:#bed0dc}.snapshot{background:#0d1d29;border:1px solid var(--line);border-radius:16px;padding:14px 17px;min-width:210px}.snapshot b{display:block;color:var(--green);font-size:1.65rem}.snapshot span{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}.chart{position:relative;margin-top:24px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,#0d1b27,#08121a);padding:16px;box-shadow:0 24px 60px #0006}.canvas-wrap{height:min(64vh,610px);min-height:430px}canvas{display:block;width:100%;height:100%}.legend{display:flex;flex-wrap:wrap;gap:10px 18px;padding:9px 4px 0;color:var(--muted);font-size:.84rem}.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--cyan);margin-right:7px}.legend .buy::before{background:var(--gold)}.legend .post::before{background:var(--pink)}.legend .peak::before{background:var(--green)}.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.note{border:1px solid var(--line);border-radius:15px;padding:13px;background:#0c1924;color:var(--muted);font-size:.86rem}.note strong{display:block;color:var(--ink);margin-bottom:4px}.sources{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.sources a{color:#061119;background:var(--cyan);text-decoration:none;padding:9px 13px;border-radius:999px;font-weight:850}.sources a:nth-child(2){background:#c1ced8}.sources a:nth-child(3){background:var(--gold)}@media(max-width:760px){.top{display:block}.snapshot{margin-top:16px}.canvas-wrap{height:520px}.notes{grid-template-columns:1fr}main{width:min(100% - 14px,1280px);padding-top:18px}.chart{padding:8px}}
+  </style>
+</head>
+<body><main>
+  <div class="top"><div><div class="eyebrow">Exact mint 4kjr...Dnz | GTA6/SOL Meteora pool</div><h1>CryptoGodJohn's GTA6 timeline vs market cap</h1><p class="lede">Five-minute GTA6/SOL candles from the first tracked buy through the record-day check. The yellow points are the five exact-mint swaps classified as buys in Rubicon's tracked John wallet.</p></div><div class="snapshot"><b>$1.75M</b><span>record check, 14 Aug 22:27 UTC</span></div></div>
+  <section class="chart"><div class="canvas-wrap"><canvas id="chart" aria-label="GTA6 market cap line chart with John buy and post markers"></canvas></div><div class="legend"><span>GTA6 market cap</span><span class="buy">tracked wallet buy</span><span class="post">John post</span><span class="peak">window peak</span></div></section>
+  <div class="notes"><div class="note"><strong>The first alert</strong>The retained wallet card displayed $199K. The matching five-minute candle ranged from roughly $192K to $537K while the launch was moving quickly.</div><div class="note"><strong>The highest five-minute print</strong>The selected pool later touched roughly $3.15M on 12 Aug at 18:15 UTC. This is a chart observation, not John's realised return.</div><div class="note"><strong>How market cap is drawn</strong>GeckoTerminal base-token price multiplied by the roughly one-billion token launch supply. Live values vary by provider and pool.</div></div>
+  <div class="sources"><a href="https://dexscreener.com/solana/5a15quc6kmxw9dsvpvuv6zdttbeywbn2scyy1meqjfqs" target="_blank">Live GTA6/SOL chart</a><a href="https://www.geckoterminal.com/solana/pools/5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs" target="_blank">GeckoTerminal source</a><a href="john-gta6-buys.html" target="_blank">All five buys</a></div>
+</main>
+<script>
+const files=["data/gta6-gecko-5m-early.json","data/gta6-gecko-5m-middle.json","data/gta6-gecko-5m-latest.json"];
+const start=Date.parse("2026-08-09T22:50:00Z"), end=Date.parse("2026-08-14T22:27:36Z");
+const markers=[
+  {at:"2026-08-09T22:56:06Z",value:199000,label:"First tracked buy",type:"buy",major:true,dx:12,dy:30,align:"left"},
+  {at:"2026-08-09T23:01:49Z",value:361292,label:"First @0x0papi thesis",type:"post",major:true,dx:12,dy:-26,align:"left"},
+  {at:"2026-08-10T02:06:59Z",value:493503,label:"First public thesis",type:"post",major:true,dx:12,dy:-62,align:"left"},
+  {at:"2026-08-11T12:31:26Z",value:1174859,label:"Buy 2",type:"buy"},
+  {at:"2026-08-12T18:15:00Z",value:3145400,label:"Window peak $3.15M",type:"peak",major:true,dx:10,dy:-18,align:"left"},
+  {at:"2026-08-13T23:23:21Z",value:1811361,label:"Buy 3",type:"buy"},
+  {at:"2026-08-14T04:16:52Z",value:1588257,label:"Buy 4",type:"buy"},
+  {at:"2026-08-14T15:04:51Z",value:1445801,label:"Buy 5",type:"buy"},
+  {at:"2026-08-14T22:27:36Z",value:1748299,label:"Record check $1.75M",type:"peak",major:true,dx:-16,dy:-52,align:"right"}
+];
+const colors={buy:"#ffd05e",post:"#ff4fa9",peak:"#5af09d"};
+const formatMoney=value=>value>=1e6?`$${(value/1e6).toFixed(value>=3e6?1:2)}M`:`$${Math.round(value/1e3)}K`;
+Promise.all(files.map(file=>fetch(file).then(r=>r.json()))).then(payloads=>{
+  const unique=new Map();
+  payloads.forEach(data=>data.data.attributes.ohlcv_list.forEach(candle=>unique.set(candle[0],[candle[0]*1000,candle[1]*1e9,candle[2]*1e9,candle[3]*1e9,candle[4]*1e9])));
+  const data=[...unique.values()].filter(point=>point[0]>=start&&point[0]<=end).sort((a,b)=>a[0]-b[0]);
+  draw(data);
+  addEventListener("resize",()=>draw(data));
+});
+function draw(data){
+  const canvas=document.querySelector("#chart"), rect=canvas.getBoundingClientRect(), dpr=Math.min(devicePixelRatio||1,2);
+  canvas.width=Math.round(rect.width*dpr); canvas.height=Math.round(rect.height*dpr);
+  const ctx=canvas.getContext("2d"); ctx.scale(dpr,dpr);
+  const width=rect.width,height=rect.height,pad={l:78,r:22,t:58,b:52},plotW=width-pad.l-pad.r,plotH=height-pad.t-pad.b,maxY=3500000;
+  const x=time=>pad.l+(time-start)/(end-start)*plotW, y=value=>pad.t+(1-value/maxY)*plotH;
+  ctx.clearRect(0,0,width,height); ctx.font="12px Inter, system-ui"; ctx.textBaseline="middle";
+  for(let value=0;value<=maxY;value+=500000){const py=y(value);ctx.strokeStyle="#203646";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(pad.l,py);ctx.lineTo(width-pad.r,py);ctx.stroke();ctx.fillStyle="#8fa7b8";ctx.textAlign="right";ctx.fillText(formatMoney(value),pad.l-10,py)}
+  const day=86400000; for(let time=Date.parse("2026-08-10T00:00:00Z");time<end;time+=day){const px=x(time);ctx.strokeStyle="#162a38";ctx.beginPath();ctx.moveTo(px,pad.t);ctx.lineTo(px,height-pad.b);ctx.stroke();ctx.fillStyle="#8fa7b8";ctx.textAlign="center";ctx.fillText(new Date(time).toLocaleDateString("en-US",{month:"short",day:"numeric",timeZone:"UTC"}),px,height-24)}
+  const step=Math.max(1,Math.floor(data.length/700)),points=data.filter((_,index)=>index%step===0||index===data.length-1);
+  const gradient=ctx.createLinearGradient(0,pad.t,0,height-pad.b);gradient.addColorStop(0,"#48e4ed55");gradient.addColorStop(1,"#48e4ed00");
+  ctx.beginPath();points.forEach((point,index)=>{const px=x(point[0]),py=y(point[4]);index?ctx.lineTo(px,py):ctx.moveTo(px,py)});ctx.lineTo(x(points.at(-1)[0]),height-pad.b);ctx.lineTo(x(points[0][0]),height-pad.b);ctx.closePath();ctx.fillStyle=gradient;ctx.fill();
+  ctx.beginPath();points.forEach((point,index)=>{const px=x(point[0]),py=y(point[4]);index?ctx.lineTo(px,py):ctx.moveTo(px,py)});ctx.strokeStyle="#48e4ed";ctx.lineWidth=2.3;ctx.stroke();
+  markers.forEach(marker=>{
+    const px=x(Date.parse(marker.at)),py=y(marker.value),color=colors[marker.type];
+    ctx.fillStyle=color;ctx.strokeStyle="#071018";ctx.lineWidth=3;ctx.beginPath();ctx.arc(px,py,marker.major?7:4.5,0,Math.PI*2);ctx.fill();ctx.stroke();
+    if(marker.major){
+      const align=marker.align||(px>width*.72?"right":"left"),tx=px+(marker.dx??(align==="right"?-10:10)),ty=Math.max(18,Math.min(height-pad.b-18,py+(marker.dy??-22)));
+      const stamp=new Date(marker.at).toLocaleString("en-AU",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"UTC"})+" UTC";
+      ctx.font="700 12px Inter, system-ui";const labelWidth=ctx.measureText(marker.label).width;
+      ctx.font="11px Inter, system-ui";const stampWidth=ctx.measureText(stamp).width;
+      const boxWidth=Math.max(labelWidth,stampWidth)+12,boxX=align==="right"?tx-boxWidth+6:tx-6;
+      ctx.fillStyle="rgba(7,16,24,.86)";ctx.strokeStyle="rgba(74,102,120,.42)";ctx.lineWidth=1;
+      ctx.beginPath();ctx.roundRect(boxX,ty-11,boxWidth,34,6);ctx.fill();ctx.stroke();
+      ctx.font="700 12px Inter, system-ui";ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(marker.label,tx,ty);
+      ctx.font="11px Inter, system-ui";ctx.fillStyle="#b5c5d1";ctx.fillText(stamp,tx,ty+15);
+    }
+  });
+  ctx.textAlign="left";ctx.fillStyle="#8fa7b8";ctx.font="11px Inter, system-ui";ctx.fillText("Market cap (USD)",pad.l,pad.t-35);
+}
+</script></body></html>

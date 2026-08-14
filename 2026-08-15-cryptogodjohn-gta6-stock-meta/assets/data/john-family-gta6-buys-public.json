@@ -1,0 +1,97 @@
+{
+  "schema": "rubicon.public.john-family-gta6-buys.v1",
+  "generated_at": "2026-08-14T22:33:54.664Z",
+  "exact_mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+  "counts": {
+    "all_events": 17,
+    "swap_buys": 5,
+    "tiny_inbound_transfers": 12,
+    "sells_or_outbound_transfers": 0
+  },
+  "totals_usd": {
+    "swap_buys": 3662.876216,
+    "tiny_inbound_transfers": 160.1892405076127
+  },
+  "events": [
+    {
+      "sequence": 1,
+      "event_id": "6a790587801b4d82853ee515",
+      "kind": "bought",
+      "occurred_at_utc": "2026-08-09T22:56:06.000Z",
+      "occurred_at_aest": "2026-08-10T08:56:06.000+10:00",
+      "tx_hash": "3zCVKwfLDs6oZmBvHjLRXFiZtAtaVCfjhS6qWrKSqNaKnukM5ahsTYZMU66AuuZ5qPCRn1eTHYWjET8YnTkLrNng",
+      "solscan_url": "https://solscan.io/tx/3zCVKwfLDs6oZmBvHjLRXFiZtAtaVCfjhS6qWrKSqNaKnukM5ahsTYZMU66AuuZ5qPCRn1eTHYWjET8YnTkLrNng",
+      "token_amount": 13801656.058013868,
+      "amount_usd": 3048.296908,
+      "token_price_usd": 0.00022086457561228823,
+      "market_cap_usd_at_event": 199000,
+      "market_cap_source": "Displayed as $199K in retained first-alert screenshot; not present in raw wallet event",
+      "dex": "Jupiter",
+      "telegram_message_id": "363713"
+    },
+    {
+      "sequence": 2,
+      "event_id": "6a7b161f75a91dff4ef1da6f",
+      "kind": "bought",
+      "occurred_at_utc": "2026-08-11T12:31:26.000Z",
+      "occurred_at_aest": "2026-08-11T22:31:26.000+10:00",
+      "tx_hash": "2ESC3Bg6G3K8t4YFbKvC1sLKaEP4i8gkkG8ayu5rEJJnTnsLw5JD2hgAZxon6hDhob91hTcYnXHtVTqJKaiQTbkd",
+      "solscan_url": "https://solscan.io/tx/2ESC3Bg6G3K8t4YFbKvC1sLKaEP4i8gkkG8ayu5rEJJnTnsLw5JD2hgAZxon6hDhob91hTcYnXHtVTqJKaiQTbkd",
+      "token_amount": 11315.94209684,
+      "amount_usd": 13.294647,
+      "token_price_usd": 0.0011748599353219168,
+      "market_cap_usd_at_event": null,
+      "market_cap_source": "Not stored in raw wallet event; intentionally not interpolated",
+      "dex": "DFlow Aggregator",
+      "telegram_message_id": "363713"
+    },
+    {
+      "sequence": 15,
+      "event_id": "6a7e51ea2d6f574818e13d88",
+      "kind": "bought",
+      "occurred_at_utc": "2026-08-13T23:23:21.000Z",
+      "occurred_at_aest": "2026-08-14T09:23:21.000+10:00",
+      "tx_hash": "3nWXkPYH7rJb94ejGs79t2zpKFfA38LKG91AfoWwaHU5H1j6NKDnE86t18WJVggN4jQx5Uus7nEWvWZtwdrx6k1d",
+      "solscan_url": "https://solscan.io/tx/3nWXkPYH7rJb94ejGs79t2zpKFfA38LKG91AfoWwaHU5H1j6NKDnE86t18WJVggN4jQx5Uus7nEWvWZtwdrx6k1d",
+      "token_amount": 7486.358640062,
+      "amount_usd": 13.560499,
+      "token_price_usd": 0.0018113611238757988,
+      "market_cap_usd_at_event": null,
+      "market_cap_source": "Not stored in raw wallet event; intentionally not interpolated",
+      "dex": "DFlow Aggregator",
+      "telegram_message_id": "363851"
+    },
+    {
+      "sequence": 16,
+      "event_id": "6a7e96b5bcc1684e3eccb987",
+      "kind": "bought",
+      "occurred_at_utc": "2026-08-14T04:16:52.000Z",
+      "occurred_at_aest": "2026-08-14T14:16:52.000+10:00",
+      "tx_hash": "WkesHs71sKBWM3SHJqmtcFtQ6qhACjwX1BUTehogAGtTQ2hfXy8BvJgpSQQBN8FHCN8qgDVuuugHU8HVoxQQoHF",
+      "solscan_url": "https://solscan.io/tx/WkesHs71sKBWM3SHJqmtcFtQ6qhACjwX1BUTehogAGtTQ2hfXy8BvJgpSQQBN8FHCN8qgDVuuugHU8HVoxQQoHF",
+      "token_amount": 147497.353374375,
+      "amount_usd": 234.263763,
+      "token_price_usd": 0.0015882574001541312,
+      "market_cap_usd_at_event": null,
+      "market_cap_source": "Not stored in raw wallet event; intentionally not interpolated",
+      "dex": "Jupiter",
+      "telegram_message_id": "363851"
+    },
+    {
+      "sequence": 17,
+      "event_id": "6a7f2e94bcc1684e3eccb9bb",
+      "kind": "bought",
+      "occurred_at_utc": "2026-08-14T15:04:51.000Z",
+      "occurred_at_aest": "2026-08-15T01:04:51.000+10:00",
+      "tx_hash": "KquuUbBJshnJyFYEHatK3ynyAu1PDDidh8R6wCCtVmwLBRtdpqTEhDH8W4qbmn8zfnnkXL3MS4ZVtiBcsd84WVt",
+      "solscan_url": "https://solscan.io/tx/KquuUbBJshnJyFYEHatK3ynyAu1PDDidh8R6wCCtVmwLBRtdpqTEhDH8W4qbmn8zfnnkXL3MS4ZVtiBcsd84WVt",
+      "token_amount": 244473.804124507,
+      "amount_usd": 353.460399,
+      "token_price_usd": 0.00144580070762914,
+      "market_cap_usd_at_event": null,
+      "market_cap_source": "Not stored in raw wallet event; intentionally not interpolated",
+      "dex": "Jupiter",
+      "telegram_message_id": "363851"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "rubicon.chart-data-manifest.v1",
+  "token": {
+    "chain": "solana",
+    "symbol": "GTA6",
+    "contract": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+    "pool": "5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs"
+  },
+  "provider": "GeckoTerminal",
+  "metric": "market_cap_usd",
+  "candle_interval": "5m",
+  "price_to_market_cap_method": "Base-token USD price multiplied by the approximately one-billion-token launch supply.",
+  "files": [
+    "gta6-gecko-5m-early.json",
+    "gta6-gecko-5m-middle.json",
+    "gta6-gecko-5m-latest.json"
+  ],
+  "markers": {
+    "trigger": {
+      "kind": "wallet",
+      "at": "2026-08-09T22:56:06Z",
+      "market_cap_usd": 199000,
+      "note": "Displayed market cap in the retained Rubicon wallet alert."
+    },
+    "peak": {
+      "kind": "window_peak",
+      "at": "2026-08-12T18:15:00Z",
+      "market_cap_usd": 3145400
+    },
+    "current": {
+      "at": "2026-08-14T22:27:36Z",
+      "market_cap_usd": 1748299
+    }
+  },
+  "checked_at": "2026-08-15T08:27:36+10:00"
+}

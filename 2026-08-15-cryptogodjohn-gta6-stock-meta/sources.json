@@ -1,0 +1,849 @@
+{
+  "schema": "rubicon.record-pack-sources",
+  "version": 5,
+  "generated_at": "2026-08-15T09:30:00+10:00",
+  "record_day_checked_at": "2026-08-15T09:30:00+10:00",
+  "project": {
+    "id": "2026-08-15-cryptogodjohn-gta6-stock-meta",
+    "status": "research_ready",
+    "record_date": "2026-08-15",
+    "premise_evidence_mode": "action_led",
+    "selected_title": "CryptoGodJohn just backed a GTA6 microcap before Rockstar's next reveal...",
+    "thumbnail_ref": "assets/thumbnail-gta6-stock.png",
+    "thumbnail_text": "GTA6 + STOCK?!",
+    "dashboard_overview": "CryptoGodJohn has made GTA6 his newest high-conviction meme-coin idea. Rubicon's tracker saw a John-family wallet buy before his protected @0x0papi post, then his main account took the same thesis public: GTA VI attention, an August 27 Rockstar reveal and a token paired with Backpack's onchain TTWO security. The video explains what that stock pairing actually means, shows every relevant John post and buy alert in order, then follows the exact GTA6 pool from the first alert to its later peak and today. The key distinction: this is an independent Solana meme token, not a Rockstar or Take-Two product.",
+    "packaging_review": {
+      "status": "recommended_pending_owner",
+      "youtube_safe": true,
+      "checked_at": "2026-08-15T09:15:00+10:00",
+      "reviewed_by": "Codex",
+      "policy_urls": [
+        "https://support.google.com/youtube/answer/2801973?hl=en",
+        "https://support.google.com/youtube/answer/154235?hl=en",
+        "https://support.google.com/adspolicy/answer/15936857?hl=en"
+      ],
+      "notes": "The recommended package avoids guaranteed returns, get-rich-quick language and misleading affiliation. Owner title and thumbnail approval is still pending."
+    },
+    "hosted_console_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/",
+    "subjects": ["CryptoGodJohn"],
+    "subject_aliases": ["John", "0x0papi", "Trenches MVP"],
+    "reporting_stance": {
+      "mode": "reporter",
+      "reportable_unit": "What John posted or bought, the mechanism he described, and the public market and GTA VI context around it.",
+      "truth_audit_required": false,
+      "attribution_rule": "John's forecasts and comparisons remain attributed to John. Official mechanism and catalyst details are explained from their own sources."
+    },
+    "cta_status": "record_ready",
+    "cta_ref": "BENJI-CTA-DOTPOINTS.txt"
+  },
+  "audience_orientation": {
+    "status": "required",
+    "reason": "Viewers need one fast reason traders watch John and one plain-English explanation of the unusual GTA6 plus TTWO setup.",
+    "items": [
+      {
+        "type": "subject",
+        "question": "Why do traders watch John?",
+        "answer": "John publicly frames LINK, RSR and 0x0 as his previous high-conviction calls, which explains why his newest focused thesis attracts attention.",
+        "receipt_ids": ["john-track-record"],
+        "asset_refs": []
+      },
+      {
+        "type": "framework",
+        "question": "What is the GTA6 and TTWO setup?",
+        "answer": "GTA6 is an independent Solana meme token that trades in a pool against Backpack's tokenized TTWO security; StonkFun describes TTWO rewards for eligible holders.",
+        "receipt_ids": ["gta6-intro", "stock-meta-explainer"],
+        "asset_refs": ["assets/gta6-explainer.txt", "assets/stock-meta-explainer.html"]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "section": "John context",
+      "kind": "intro",
+      "arc_label": "CONTEXT",
+      "purpose": "Explain why John's concentrated calls get attention before introducing GTA6.",
+      "cards": [
+        {
+          "id": "john-track-record",
+          "type": "influencer_feed_render",
+          "role": "subject_orientation",
+          "source_title": "Trenches MVP on X: LINK, RSR and 0x0 conviction recap",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-track-record-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2047370167223546172",
+          "source_date": "2026-04-23",
+          "quote": "I've only had mad conviction on 3 plays until now $LINK 360x $RSR 120x $0x0 40x",
+          "shows": "John's own compact summary of the three calls he says define his previous conviction record.",
+          "why": "It gives Benji the shortest useful context for why a new John thesis matters.",
+          "inspect": "Full hosted Feed render; attribute every multiple to John.",
+          "missing": "The GTA6 story begins without explaining why John's posts attract attention.",
+          "caution": "These are John's self-reported call multiples, not audited investor returns.",
+          "hosting_approved_by": "Tristan Wilson via project chat",
+          "hosting_approved_at": "2026-08-11",
+          "hosting_scope": "Rubicon recording packs",
+          "tweet_meta": {
+            "tweet_id": "2047370167223546172",
+            "canonical_url": "https://x.com/0x0papi/status/2047370167223546172",
+            "handle": "0x0papi",
+            "family_parent": "CryptoGodJohn",
+            "access": "protected_feed",
+            "render_provenance": "retained_feed_render"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "section": "Market timing",
+      "kind": "macro",
+      "arc_label": "MACRO",
+      "purpose": "Show that John is presenting GTA6 during what he calls a renewed meme-market cycle.",
+      "cards": [
+        {
+          "id": "john-supercycle",
+          "type": "influencer_feed_render",
+          "role": "macro_context",
+          "source_title": "CryptoGodJohn on X: supercycle mood",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-supercycle-feed-card.jpg",
+          "canonical_url": "https://x.com/CryptoGodJohn/status/2083923614181498968",
+          "source_date": "2026-08-02",
+          "quote": "vibes shifting + tides turning + stars aligning + balls tingling + this time is different + supercycle (real) + what if we all make it",
+          "shows": "John's concise public signal that he thinks the meme market is active again.",
+          "why": "It explains why he is putting forward a new high-conviction meme thesis now.",
+          "inspect": "Full hosted Feed card, then move directly into the GTA6 explainer.",
+          "missing": "The story has no market-regime bridge between John's history and his current activity.",
+          "tweet_meta": {
+            "tweet_id": "2083923614181498968",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2083923614181498968",
+            "handle": "CryptoGodJohn",
+            "family_parent": "CryptoGodJohn",
+            "access": "public",
+            "render_provenance": "retained_feed_render"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "section": "GTA6 case",
+      "kind": "token",
+      "arc_label": "GTA6",
+      "purpose": "Build John's full GTA6 case from the first tracked buy through his posts and the exact-token chart.",
+      "intro_card_id": "gta6-intro",
+      "cards": [
+        {
+          "id": "gta6-intro",
+          "type": "hosted_text",
+          "role": "section_intro",
+          "source_title": "GTA6 case explainer",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-explainer.txt",
+          "source_date": "2026-08-15",
+          "quote": "GTA6 is an independent Solana meme token. It is not issued, sponsored or endorsed by Rockstar Games or Take-Two.",
+          "shows": "What the token is, what John did, why traders noticed and what the following tabs establish.",
+          "why": "It prevents the first alert and tweets from arriving without token or mechanism context.",
+          "inspect": "Read the short hosted explainer from top to bottom.",
+          "missing": "The audience can mistake the token for an official Rockstar asset or miss the TTWO mechanic."
+        },
+        {
+          "id": "gta6-first-buy-alert",
+          "type": "influencer_feed_alert",
+          "role": "core_action_receipt",
+          "source_title": "Rubicon Influencer Feed: John GTA6 buy alert",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png",
+          "source_date": "2026-08-09",
+          "quote": "John - Influencer BUY Alert: GTA6",
+          "shows": "A John-family tracked wallet bought 13,801,656.06 GTA6 and the retained alert displayed a $199K market cap.",
+          "why": "It is the earliest direct action receipt in the GTA6 chronology.",
+          "inspect": "Displayed amount, $3,048 value, $199K market cap and 8:56 AM alert time.",
+          "missing": "The package has posts but no direct evidence behind the word backed.",
+          "caution": "Use this as a timestamped tracker receipt, not a promise to reproduce the later chart.",
+          "hosting_approved_by": "Tristan Wilson via project chat",
+          "hosting_approved_at": "2026-08-11",
+          "hosting_scope": "Rubicon recording packs",
+          "feed_meta": {
+            "event_kind": "BUY",
+            "created_at_utc": "2026-08-09T22:56:06Z",
+            "contract": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+            "displayed_market_cap": "$199K",
+            "tx_url": "https://solscan.io/tx/3zCVKwfLDs6oZmBvHjLRXFiZtAtaVCfjhS6qWrKSqNaKnukM5ahsTYZMU66AuuZ5qPCRn1eTHYWjET8YnTkLrNng",
+            "render_provenance": "retained_feed_render"
+          }
+        },
+        {
+          "id": "gta6-first-alt-thesis",
+          "type": "influencer_feed_render",
+          "role": "core_thesis_receipt",
+          "source_title": "Trenches MVP on X: first GTA6 thesis",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/oxo-gta6-first-thesis-feed-card.jpg",
+          "canonical_url": "https://x.com/0x0papi/status/2086588790941053328",
+          "source_date": "2026-08-09",
+          "quote": "I bought some of this it's GTA 6 - but it's paired with its stock TTWO.",
+          "shows": "John's first protected post says he bought the token and lays out the GTA VI, TTWO and August 27 thesis.",
+          "why": "It is the first complete first-person explanation of the play.",
+          "inspect": "Full hosted Feed card; source time 9 Aug 23:01:49 UTC.",
+          "missing": "The video cannot show how John originally explained the play to his protected audience.",
+          "caution": "The phrase stock is John's wording. The later mechanism tab explains the exact distinction.",
+          "hosting_approved_by": "Tristan Wilson via project chat",
+          "hosting_approved_at": "2026-08-11",
+          "hosting_scope": "Rubicon recording packs",
+          "tweet_meta": {
+            "tweet_id": "2086588790941053328",
+            "canonical_url": "https://x.com/0x0papi/status/2086588790941053328",
+            "handle": "0x0papi",
+            "created_at_utc": "2026-08-09T23:01:49Z",
+            "family_parent": "CryptoGodJohn",
+            "access": "protected_feed",
+            "render_provenance": "retained_feed_render"
+          }
+        },
+        {
+          "id": "gta6-first-public-thesis",
+          "type": "x_post",
+          "role": "public_confirmation",
+          "source_title": "CryptoGodJohn on X: first public GTA6 thesis",
+          "url": "https://x.com/CryptoGodJohn/status/2086635391302443509",
+          "source_date": "2026-08-10",
+          "quote": "The only Grand Theft Auto coin that is paired to Rockstar's stock / TTWO.",
+          "shows": "John takes the same GTA6 plus TTWO narrative from his protected account to his public account.",
+          "why": "It confirms the thesis was not confined to the protected alt account.",
+          "inspect": "Full public post; 10 Aug 02:06:59 UTC.",
+          "missing": "The chronology jumps from a protected source directly to later conviction posts.",
+          "caution": "Rockstar is a Take-Two label; the TTWO asset is issued by Backpack Securities.",
+          "tweet_meta": {
+            "tweet_id": "2086635391302443509",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2086635391302443509",
+            "handle": "CryptoGodJohn",
+            "created_at_utc": "2026-08-10T02:06:59Z",
+            "family_parent": "CryptoGodJohn",
+            "access": "public",
+            "render_provenance": "public_x_source"
+          }
+        },
+        {
+          "id": "gta6-all-buys",
+          "type": "hosted_data_view",
+          "role": "action_chronology",
+          "source_title": "Every tracked John GTA6 buy",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html",
+          "source_date": "2026-08-15",
+          "quote": "Five exact-mint swaps classified as buys in the John-family production record.",
+          "shows": "All five exact-mint tracked buys with time, amount, token quantity and Solscan receipt.",
+          "why": "It answers the request for every buy without forcing Benji through raw wallet data.",
+          "inspect": "Five-row table from 9 to 14 Aug; later market caps are deliberately left unstated.",
+          "missing": "Only the first buy is visible and the subsequent action chronology is lost.",
+          "data_ref": "assets/data/john-family-gta6-buys-public.json"
+        },
+        {
+          "id": "gta6-catalyst-thesis",
+          "type": "influencer_feed_render",
+          "role": "reaction_thesis",
+          "source_title": "CryptoGodJohn on X: full GTA6 catalyst case",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087501586893316112.jpg",
+          "canonical_url": "https://x.com/CryptoGodJohn/status/2087501586893316112",
+          "source_date": "2026-08-12",
+          "quote": "There has not been a meme coin that appeals to normies on a global scale like $GTA6 since $DOGE coin in 2021",
+          "shows": "John's longest public explanation of the normie-attention, creator, Netflix, TTWO and release catalysts.",
+          "why": "It gives Benji the clearest single source for John's full narrative rather than assembling it from fragments.",
+          "inspect": "Full hosted Feed render; attribute forecasts and comparisons to John.",
+          "missing": "The audience sees conviction but not the detailed catalyst argument behind it.",
+          "tweet_meta": {
+            "tweet_id": "2087501586893316112",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2087501586893316112",
+            "handle": "CryptoGodJohn",
+            "created_at_utc": "2026-08-12T11:28:56Z",
+            "family_parent": "CryptoGodJohn",
+            "access": "public",
+            "render_provenance": "production_feed_render"
+          }
+        },
+        {
+          "id": "gta6-stock-thesis",
+          "type": "influencer_feed_render",
+          "role": "reaction_thesis",
+          "source_title": "CryptoGodJohn on X: stock-meme thesis",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087618173885411828.jpg",
+          "canonical_url": "https://x.com/CryptoGodJohn/status/2087618173885411828",
+          "source_date": "2026-08-12",
+          "quote": "Stonk meme meta is heating up. Literally just getting paid in stocks by holding meme coins is insane",
+          "shows": "John explicitly identifies the stock-reward mechanism as a central part of his thesis.",
+          "why": "It sets up the mechanism explainer and the Backpack source later in the sequence.",
+          "inspect": "Full hosted Feed render; retain John's wording, then clarify the mechanism later.",
+          "missing": "The title's stock twist is not connected to a direct John statement.",
+          "tweet_meta": {
+            "tweet_id": "2087618173885411828",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2087618173885411828",
+            "handle": "CryptoGodJohn",
+            "created_at_utc": "2026-08-12T19:12:13Z",
+            "family_parent": "CryptoGodJohn",
+            "access": "public",
+            "render_provenance": "production_feed_render"
+          }
+        },
+        {
+          "id": "gta6-current-public",
+          "type": "x_post",
+          "role": "current_stance",
+          "source_title": "CryptoGodJohn on X: latest substantive public GTA6 stance",
+          "url": "https://x.com/CryptoGodJohn/status/2088294917365776634",
+          "source_date": "2026-08-14",
+          "quote": "It looks like people are starting to see the potential of $GTA6 being the biggest meme coin play since $DOGE in 2021",
+          "shows": "John's latest checked substantive public post still presents GTA6 as a major meme-coin thesis.",
+          "why": "It establishes that the public stance remained active at the record-day cutoff.",
+          "inspect": "Full post and exact contract; 14 Aug 16:01:21 UTC.",
+          "missing": "The video stops on older posts and cannot describe John's current public stance.",
+          "tweet_meta": {
+            "tweet_id": "2088294917365776634",
+            "canonical_url": "https://x.com/CryptoGodJohn/status/2088294917365776634",
+            "handle": "CryptoGodJohn",
+            "created_at_utc": "2026-08-14T16:01:21Z",
+            "family_parent": "CryptoGodJohn",
+            "access": "public",
+            "render_provenance": "public_x_source"
+          }
+        },
+        {
+          "id": "gta6-all-posts",
+          "type": "hosted_data_view",
+          "role": "complete_source_archive",
+          "source_title": "Every John-family GTA6 post",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html",
+          "source_date": "2026-08-15",
+          "quote": "The complete token-specific chronology from @0x0papi and @CryptoGodJohn.",
+          "shows": "All 75 token-specific originals, replies and quotes across both John accounts, searchable and ordered.",
+          "why": "It fulfills the exhaustive request while letting Benji filter by account, post type or keyword.",
+          "inspect": "Use filters for 0x0papi, CryptoGodJohn, buys or TTWO; the full exact text remains available.",
+          "missing": "The pack selects highlights but cannot prove that every mention was gathered.",
+          "data_ref": "assets/data/john-family-gta6-posts-public.json"
+        },
+        {
+          "id": "gta6-chart",
+          "type": "prepared_chart",
+          "role": "chart_aftermath",
+          "source_title": "CryptoGodJohn GTA6 timeline vs market cap",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html",
+          "source_date": "2026-08-15",
+          "quote": "Five-minute GTA6/SOL candles from the first tracked buy through the record-day check.",
+          "shows": "The first alert, first protected and public posts, all five buys, the selected-pool peak and the record-day value on one chart.",
+          "why": "It lets Benji connect the chronology to the correct GTA6 market-cap series without live-chart dragging.",
+          "inspect": "Trigger at $199K, window peak near $3.15M, record check near $1.75M.",
+          "missing": "The video either uses the wrong TTWO-base pool or forces Benji to rebuild the chart live.",
+          "caution": "These are chart values, not John's realised return.",
+          "data_ref": "assets/data/gta6-chart-data-manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "section": "Stock mechanism and Rockstar catalyst",
+      "kind": "mechanism",
+      "arc_label": "CATALYST",
+      "purpose": "Explain the TTWO reward mechanism and show the official GTA VI attention and August 27 catalyst.",
+      "cards": [
+        {
+          "id": "stock-meta-explainer",
+          "type": "hosted_visual",
+          "role": "mechanism_context",
+          "source_title": "How the GTA6 and TTWO pairing works",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/stock-meta-explainer.html",
+          "source_date": "2026-08-15",
+          "quote": "GTA6 is the meme token. TTWO is the Backpack-issued tokenized security. The pairing is a market and rewards mechanism, not Rockstar ownership.",
+          "shows": "A one-glance flow from GTA6 trading to the TTWO pool and StonkFun-described holder rewards.",
+          "why": "It translates John's stock wording into a simple, accurate mechanism before official sources.",
+          "inspect": "Read left to right; end on the no-affiliation boundary.",
+          "missing": "Viewers may hear paired with stock and assume an official or collateralized Rockstar product."
+        },
+        {
+          "id": "backpack-ttwo",
+          "type": "official_source",
+          "role": "mechanism_primary",
+          "source_title": "Backpack: Tokenized Take-Two Interactive (TTWO)",
+          "url": "https://learn.backpack.exchange/blog/tokenized-take-two-interactive-ttwo",
+          "source_date": "2026-08-06",
+          "quote": "Tokenized Take-Two Interactive (TTWO)",
+          "shows": "Backpack Securities identifies itself as the issuer of the onchain TTWO instrument and Take-Two as the underlying company.",
+          "why": "It separates the Backpack-issued tokenized security from Rockstar and the independent GTA6 meme token.",
+          "inspect": "Issuer, identical TTWO mint and redemption/eligibility wording.",
+          "missing": "The mechanism is explained only through John or StonkFun, without the TTWO issuer source."
+        },
+        {
+          "id": "rockstar-trailer-two",
+          "type": "official_youtube",
+          "role": "attention_context",
+          "source_title": "Grand Theft Auto VI Trailer 2",
+          "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+          "source_date": "2025-05-06",
+          "quote": "Grand Theft Auto VI Trailer 2",
+          "shows": "Rockstar's official second trailer and the enormous existing attention around GTA VI.",
+          "why": "It supplies the real-world cultural scale underneath John's meme narrative.",
+          "inspect": "Official Rockstar upload, title, channel and visible audience scale.",
+          "missing": "The video talks about global GTA attention without showing the official material driving it."
+        },
+        {
+          "id": "rockstar-extended-look",
+          "type": "official_source",
+          "role": "dated_catalyst",
+          "source_title": "Rockstar Games: Grand Theft Auto VI An Extended Look",
+          "url": "https://www.rockstargames.com/VI/an-extended-look",
+          "source_date": "2026-08-06",
+          "quote": "An Extended Look - August 27 - 3 PM ET",
+          "shows": "Rockstar's official page for the upcoming August 27 GTA VI Extended Look.",
+          "why": "It anchors the time-sensitive catalyst in the title and John thesis to a primary source.",
+          "inspect": "August 27, 3 PM ET and the official GTA VI presentation branding.",
+          "missing": "The August 27 catalyst relies only on John's wording and could be mislabeled as a trailer."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "section": "Inner Circle close",
+      "kind": "cta",
+      "arc_label": "CTA",
+      "purpose": "Turn the completed GTA6 chronology into a concise information-workflow invitation.",
+      "cards": [
+        {
+          "id": "gta6-cta-dotpoints",
+          "type": "hosted_text",
+          "role": "cta_prompt",
+          "source_title": "Benji GTA6 CTA dotpoints",
+          "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/BENJI-CTA-DOTPOINTS.txt",
+          "source_date": "2026-08-15",
+          "quote": "Start with the information problem: this GTA6 story produced 75 John-family posts across @0x0papi and @CryptoGodJohn in five days, plus five tracked wallet buys.",
+          "shows": "Exactly three concise prompts: the information problem, the approved alert proof and the invitation plus risk boundary.",
+          "why": "It lets Benji land the CTA naturally without turning the dashboard into a sales script.",
+          "inspect": "Read the three prompts; reopen the first-alert tab if a visual proof is needed.",
+          "missing": "The close drifts into a long readout or an unsupported performance promise."
+        }
+      ]
+    }
+  ],
+  "token_cases": [
+    {
+      "id": "gta6",
+      "section_id": "s3",
+      "explainer_card_id": "gta6-intro",
+      "receipt_ids": ["gta6-first-buy-alert", "gta6-first-alt-thesis", "gta6-first-public-thesis"],
+      "reaction_ids": ["gta6-all-buys", "gta6-catalyst-thesis", "gta6-stock-thesis", "gta6-current-public", "gta6-all-posts"],
+      "chart_card_id": "gta6-chart",
+      "setup": {
+        "what_it_is": "An independent Solana meme token built around GTA VI attention and a StonkFun market paired with Backpack's tokenized TTWO security.",
+        "influencer_action": "A tracked John-family wallet bought the exact mint, then John said he bought it on @0x0papi and promoted the thesis publicly.",
+        "why_market_noticed": "John connected a globally familiar game, a dated Rockstar reveal and a novel tokenized-stock reward story.",
+        "next_tabs_prove": "The first alert, first protected and public posts, all five tracked buys, key thesis posts, every mention and the exact-token chart."
+      },
+      "identity": {
+        "chain": "solana",
+        "contract": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+        "pool": "5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs",
+        "quote_asset": "SOL"
+      },
+      "influencer_routes": {
+        "family_parent": "CryptoGodJohn",
+        "social_urls": [
+          "https://x.com/CryptoGodJohn",
+          "https://x.com/0x0papi"
+        ],
+        "wallet_status": "tracked",
+        "wallet_urls": [
+          "https://solscan.io/tx/3zCVKwfLDs6oZmBvHjLRXFiZtAtaVCfjhS6qWrKSqNaKnukM5ahsTYZMU66AuuZ5qPCRn1eTHYWjET8YnTkLrNng",
+          "https://solscan.io/tx/2ESC3Bg6G3K8t4YFbKvC1sLKaEP4i8gkkG8ayu5rEJJnTnsLw5JD2hgAZxon6hDhob91hTcYnXHtVTqJKaiQTbkd",
+          "https://solscan.io/tx/3nWXkPYH7rJb94ejGs79t2zpKFfA38LKG91AfoWwaHU5H1j6NKDnE86t18WJVggN4jQx5Uus7nEWvWZtwdrx6k1d",
+          "https://solscan.io/tx/WkesHs71sKBWM3SHJqmtcFtQ6qhACjwX1BUTehogAGtTQ2hfXy8BvJgpSQQBN8FHCN8qgDVuuugHU8HVoxQQoHF",
+          "https://solscan.io/tx/KquuUbBJshnJyFYEHatK3ynyAu1PDDidh8R6wCCtVmwLBRtdpqTEhDH8W4qbmn8zfnnkXL3MS4ZVtiBcsd84WVt"
+        ]
+      },
+      "chart": {
+        "metric": "market_cap_usd",
+        "provider": "GeckoTerminal",
+        "source_url": "https://www.geckoterminal.com/solana/pools/5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs",
+        "data_ref": "assets/data/gta6-chart-data-manifest.json",
+        "timezone": "UTC",
+        "candle_interval": "5m",
+        "scale": "linear",
+        "theme": "dark",
+        "window_start": "2026-08-09T22:50:00Z",
+        "window_end": "2026-08-14T22:27:36Z",
+        "trigger": {"kind": "wallet", "at": "2026-08-09T22:56:06Z", "market_cap_usd": 199000},
+        "peak": {"kind": "window_peak", "at": "2026-08-12T18:15:00Z", "market_cap_usd": 3145400},
+        "current": {"at": "2026-08-14T22:27:36Z", "market_cap_usd": 1748299},
+        "checked_at": "2026-08-15T08:27:36+10:00"
+      }
+    }
+  ],
+  "claim_chronology": {
+    "subject": "CryptoGodJohn",
+    "claim": "John backed GTA6, then repeatedly framed its GTA VI attention, August 27 catalyst and TTWO token pairing as a high-conviction meme thesis.",
+    "checkpoints": [
+      {
+        "stage": "forecast",
+        "status": "evidenced",
+        "searched_window": "9 through 14 Aug 2026",
+        "searched_surfaces": ["@0x0papi timeline", "@CryptoGodJohn timeline", "Rubicon Influencer Feed"],
+        "receipt_ids": ["gta6-first-alt-thesis", "gta6-catalyst-thesis"],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "decision_day",
+        "status": "evidenced",
+        "searched_window": "9 Aug 2026 22:50 through 10 Aug 2026 02:10 UTC",
+        "searched_surfaces": ["tracked John-family wallet events", "Rubicon Influencer Feed", "both John X timelines"],
+        "receipt_ids": ["gta6-first-buy-alert", "gta6-first-alt-thesis"],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_found",
+        "counter_search_note": "No sell or outbound event was found in the checked exact-mint wallet-event window."
+      },
+      {
+        "stage": "confirmation",
+        "status": "evidenced",
+        "searched_window": "10 through 14 Aug 2026",
+        "searched_surfaces": ["@CryptoGodJohn timeline", "Rubicon TokenMentions", "public X lookup"],
+        "receipt_ids": ["gta6-first-public-thesis", "gta6-current-public"],
+        "counter_receipt_ids": [],
+        "counter_search_status": "not_found",
+        "counter_search_note": "No later public retraction of the GTA6 thesis was found through the record-day cutoff."
+      },
+      {
+        "stage": "action",
+        "status": "evidenced",
+        "searched_window": "9 through 14 Aug 2026",
+        "searched_surfaces": ["tracked John-family exact-mint wallet events", "Solscan transaction receipts"],
+        "receipt_ids": ["gta6-first-buy-alert", "gta6-all-buys"],
+        "counter_receipt_ids": []
+      },
+      {
+        "stage": "re_entry",
+        "status": "not_applicable",
+        "searched_window": "9 Aug 2026 through record day",
+        "searched_surfaces": ["tracked exact-mint wallet events", "both John X timelines"],
+        "receipt_ids": [],
+        "counter_receipt_ids": [],
+        "note": "The selected thesis does not claim an exit followed by re-entry; the record contains later adds and no tracked sell."
+      },
+      {
+        "stage": "current_stance",
+        "status": "evidenced",
+        "searched_window": "14 Aug 2026 through 22:21:46 UTC",
+        "searched_surfaces": ["latest @CryptoGodJohn timeline", "latest @0x0papi timeline", "production TokenMentions"],
+        "receipt_ids": ["gta6-current-public", "gta6-all-posts"],
+        "counter_receipt_ids": []
+      }
+    ]
+  },
+  "cta": {
+    "recording_status": "record_ready",
+    "dotpoints_ref": "BENJI-CTA-DOTPOINTS.txt",
+    "talking_points": [
+      "Start with the information problem: this GTA6 story produced 75 John-family posts across @0x0papi and @CryptoGodJohn in five days, plus five tracked wallet buys. The tracker turns that stream into one exact-token timeline.",
+      "Show the first GTA6 alert already used in the video. It recorded a John-family wallet buy and displayed a $199K market cap five minutes before his first @0x0papi thesis. Keep it as timestamped workflow proof, not a promised outcome.",
+      "Invite viewers who want the same Influencer Feed and wallet-alert research workflow to join the Inner Circle. It is information, not a buy signal or a promise of profit, and microcap tokens can lose most or all of their value."
+    ],
+    "search_result": "found_recording_ready",
+    "search_audit": [
+      {
+        "surface_id": "prior_packs",
+        "status": "searched_found",
+        "query": "GTA6 John alert 4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+        "note": "Found the approved first GTA6 buy alert and prior John GTA6 assets.",
+        "evidence_ids": ["gta6-first-buy-alert"]
+      },
+      {
+        "surface_id": "influencer_feed_prod",
+        "status": "searched_found",
+        "query": "John family exact GTA6 mint across protected and public handles",
+        "note": "Found the first buy alert, five tracked buys, 75 token-specific posts and nine production Feed cards.",
+        "evidence_ids": ["gta6-first-buy-alert", "gta6-all-buys", "gta6-all-posts"]
+      },
+      {
+        "surface_id": "adminalert_calls_returns",
+        "status": "searched_none",
+        "query": "GTA6 exact mint and John family",
+        "note": "No GTA6 call row was present in Calls and Returns at the record-day search.",
+        "evidence_ids": []
+      },
+      {
+        "surface_id": "legacy_rubicon_log_bot",
+        "status": "searched_none",
+        "query": "GTA6, John and exact mint",
+        "note": "The preserved legacy SQLite and JSON history contains no GTA6 or exact-mint row and ends before the GTA6 activity began.",
+        "evidence_ids": []
+      },
+      {
+        "surface_id": "owner_dashboard_alias",
+        "status": "unavailable",
+        "query": "Rubrigo or bot.work GTA6 dashboard",
+        "note": "The owner alias had not yet been mapped to a documented read-only service during this pack build.",
+        "evidence_ids": []
+      }
+    ],
+    "proof_assets": [
+      {
+        "id": "gta6-first-buy-alert",
+        "status": "approved",
+        "hosted_url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png",
+        "sha256": "4715f207dc464416f6194fb0ceea88ca61ea3318f59e615b60a17476c6fc207a",
+        "approved_by": "Tristan Wilson via project chat",
+        "approved_at": "2026-08-11"
+      }
+    ],
+    "performance_claims": []
+  },
+  "record_deck": [
+    {
+      "order": 1,
+      "section_id": "s1",
+      "label": "01 CONTEXT | WHY TRADERS WATCH JOHN",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-track-record-feed-card.jpg",
+      "role": "subject_orientation",
+      "source_title": "Trenches MVP on X: LINK, RSR and 0x0 conviction recap",
+      "quote": "I've only had mad conviction on 3 plays until now $LINK 360x $RSR 120x $0x0 40x",
+      "shows": "John's own compact summary of the three calls he says define his previous conviction record.",
+      "why": "It gives Benji the shortest useful context for why a new John thesis matters.",
+      "inspect": "Full hosted Feed render; attribute every multiple to John.",
+      "missing": "The GTA6 story begins without explaining why John's posts attract attention.",
+      "card_id": "john-track-record"
+    },
+    {
+      "order": 2,
+      "section_id": "s2",
+      "label": "02 MACRO | WHY JOHN IS ACTIVE NOW",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-supercycle-feed-card.jpg",
+      "role": "macro_context",
+      "source_title": "CryptoGodJohn on X: supercycle mood",
+      "quote": "vibes shifting + tides turning + stars aligning + balls tingling + this time is different + supercycle (real) + what if we all make it",
+      "shows": "John's concise public signal that he thinks the meme market is active again.",
+      "why": "It explains why he is putting forward a new high-conviction meme thesis now.",
+      "inspect": "Full hosted Feed card, then move directly into the GTA6 explainer.",
+      "missing": "The story has no market-regime bridge between John's history and his current activity.",
+      "card_id": "john-supercycle"
+    },
+    {
+      "order": 3,
+      "section_id": "s3",
+      "label": "03 GTA6 | WHAT THIS TOKEN ACTUALLY IS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-explainer.txt",
+      "role": "section_intro",
+      "source_title": "GTA6 case explainer",
+      "quote": "GTA6 is an independent Solana meme token. It is not issued, sponsored or endorsed by Rockstar Games or Take-Two.",
+      "shows": "What the token is, what John did, why traders noticed and what the following tabs establish.",
+      "why": "It prevents the first alert and tweets from arriving without token or mechanism context.",
+      "inspect": "Read the short hosted explainer from top to bottom.",
+      "missing": "The audience can mistake the token for an official Rockstar asset or miss the TTWO mechanic.",
+      "card_id": "gta6-intro",
+      "token_case_id": "gta6",
+      "case_stage": "explainer"
+    },
+    {
+      "order": 4,
+      "section_id": "s3",
+      "label": "04 GTA6 | RUBICON CATCHES THE FIRST BUY",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png",
+      "role": "core_action_receipt",
+      "source_title": "Rubicon Influencer Feed: John GTA6 buy alert",
+      "quote": "John - Influencer BUY Alert: GTA6",
+      "shows": "A John-family tracked wallet bought 13,801,656.06 GTA6 and the retained alert displayed a $199K market cap.",
+      "why": "It is the earliest direct action receipt in the GTA6 chronology.",
+      "inspect": "Displayed amount, $3,048 value, $199K market cap and 8:56 AM alert time.",
+      "missing": "The package has posts but no direct evidence behind the word backed.",
+      "card_id": "gta6-first-buy-alert",
+      "token_case_id": "gta6",
+      "case_stage": "receipt"
+    },
+    {
+      "order": 5,
+      "section_id": "s3",
+      "label": "05 GTA6 | JOHN EXPLAINS THE IDEA PRIVATELY",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/oxo-gta6-first-thesis-feed-card.jpg",
+      "role": "core_thesis_receipt",
+      "source_title": "Trenches MVP on X: first GTA6 thesis",
+      "quote": "I bought some of this it's GTA 6 - but it's paired with its stock TTWO.",
+      "shows": "John's first protected post says he bought the token and lays out the GTA VI, TTWO and August 27 thesis.",
+      "why": "It is the first complete first-person explanation of the play.",
+      "inspect": "Full hosted Feed card; source time 9 Aug 23:01:49 UTC.",
+      "missing": "The video cannot show how John originally explained the play to his protected audience.",
+      "card_id": "gta6-first-alt-thesis",
+      "token_case_id": "gta6",
+      "case_stage": "receipt"
+    },
+    {
+      "order": 6,
+      "section_id": "s3",
+      "label": "06 GTA6 | HE TAKES THE THESIS PUBLIC",
+      "url": "https://x.com/CryptoGodJohn/status/2086635391302443509",
+      "role": "public_confirmation",
+      "source_title": "CryptoGodJohn on X: first public GTA6 thesis",
+      "quote": "The only Grand Theft Auto coin that is paired to Rockstar's stock / TTWO.",
+      "shows": "John takes the same GTA6 plus TTWO narrative from his protected account to his public account.",
+      "why": "It confirms the thesis was not confined to the protected alt account.",
+      "inspect": "Full public post; 10 Aug 02:06:59 UTC.",
+      "missing": "The chronology jumps from a protected source directly to later conviction posts.",
+      "card_id": "gta6-first-public-thesis",
+      "token_case_id": "gta6",
+      "case_stage": "receipt"
+    },
+    {
+      "order": 7,
+      "section_id": "s3",
+      "label": "07 GTA6 | EVERY TRACKED WALLET BUY",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html",
+      "role": "action_chronology",
+      "source_title": "Every tracked John GTA6 buy",
+      "quote": "Five exact-mint swaps classified as buys in the John-family production record.",
+      "shows": "All five exact-mint tracked buys with time, amount, token quantity and Solscan receipt.",
+      "why": "It answers the request for every buy without forcing Benji through raw wallet data.",
+      "inspect": "Five-row table from 9 to 14 Aug; later market caps are deliberately left unstated.",
+      "missing": "Only the first buy is visible and the subsequent action chronology is lost.",
+      "card_id": "gta6-all-buys",
+      "token_case_id": "gta6",
+      "case_stage": "reaction"
+    },
+    {
+      "order": 8,
+      "section_id": "s3",
+      "label": "08 GTA6 | JOHN LAYS OUT THE CATALYST CASE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087501586893316112.jpg",
+      "role": "reaction_thesis",
+      "source_title": "CryptoGodJohn on X: full GTA6 catalyst case",
+      "quote": "There has not been a meme coin that appeals to normies on a global scale like $GTA6 since $DOGE coin in 2021",
+      "shows": "John's longest public explanation of the normie-attention, creator, Netflix, TTWO and release catalysts.",
+      "why": "It gives Benji the clearest single source for John's full narrative rather than assembling it from fragments.",
+      "inspect": "Full hosted Feed render; attribute forecasts and comparisons to John.",
+      "missing": "The audience sees conviction but not the detailed catalyst argument behind it.",
+      "card_id": "gta6-catalyst-thesis",
+      "token_case_id": "gta6",
+      "case_stage": "reaction"
+    },
+    {
+      "order": 9,
+      "section_id": "s3",
+      "label": "09 GTA6 | WHY THE STOCK TWIST MATTERS TO JOHN",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087618173885411828.jpg",
+      "role": "reaction_thesis",
+      "source_title": "CryptoGodJohn on X: stock-meme thesis",
+      "quote": "Stonk meme meta is heating up. Literally just getting paid in stocks by holding meme coins is insane",
+      "shows": "John explicitly identifies the stock-reward mechanism as a central part of his thesis.",
+      "why": "It sets up the mechanism explainer and the Backpack source later in the sequence.",
+      "inspect": "Full hosted Feed render; retain John's wording, then clarify the mechanism later.",
+      "missing": "The title's stock twist is not connected to a direct John statement.",
+      "card_id": "gta6-stock-thesis",
+      "token_case_id": "gta6",
+      "case_stage": "reaction"
+    },
+    {
+      "order": 10,
+      "section_id": "s3",
+      "label": "10 GTA6 | HIS LATEST PUBLIC CONVICTION",
+      "url": "https://x.com/CryptoGodJohn/status/2088294917365776634",
+      "role": "current_stance",
+      "source_title": "CryptoGodJohn on X: latest substantive public GTA6 stance",
+      "quote": "It looks like people are starting to see the potential of $GTA6 being the biggest meme coin play since $DOGE in 2021",
+      "shows": "John's latest checked substantive public post still presents GTA6 as a major meme-coin thesis.",
+      "why": "It establishes that the public stance remained active at the record-day cutoff.",
+      "inspect": "Full post and exact contract; 14 Aug 16:01:21 UTC.",
+      "missing": "The video stops on older posts and cannot describe John's current public stance.",
+      "card_id": "gta6-current-public",
+      "token_case_id": "gta6",
+      "case_stage": "reaction"
+    },
+    {
+      "order": 11,
+      "section_id": "s3",
+      "label": "11 GTA6 | ALL 75 POSTS IN ONE TIMELINE",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html",
+      "role": "complete_source_archive",
+      "source_title": "Every John-family GTA6 post",
+      "quote": "The complete token-specific chronology from @0x0papi and @CryptoGodJohn.",
+      "shows": "All 75 token-specific originals, replies and quotes across both John accounts, searchable and ordered.",
+      "why": "It fulfills the exhaustive request while letting Benji filter by account, post type or keyword.",
+      "inspect": "Use filters for 0x0papi, CryptoGodJohn, buys or TTWO; the full exact text remains available.",
+      "missing": "The pack selects highlights but cannot prove that every mention was gathered.",
+      "card_id": "gta6-all-posts",
+      "token_case_id": "gta6",
+      "case_stage": "reaction"
+    },
+    {
+      "order": 12,
+      "section_id": "s3",
+      "label": "12 GTA6 | WHAT THE CHART DID NEXT",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html",
+      "role": "chart_aftermath",
+      "source_title": "CryptoGodJohn GTA6 timeline vs market cap",
+      "quote": "Five-minute GTA6/SOL candles from the first tracked buy through the record-day check.",
+      "shows": "The first alert, first protected and public posts, all five buys, the selected-pool peak and the record-day value on one chart.",
+      "why": "It lets Benji connect the chronology to the correct GTA6 market-cap series without live-chart dragging.",
+      "inspect": "Trigger at $199K, window peak near $3.15M, record check near $1.75M.",
+      "missing": "The video either uses the wrong TTWO-base pool or forces Benji to rebuild the chart live.",
+      "card_id": "gta6-chart",
+      "token_case_id": "gta6",
+      "case_stage": "chart"
+    },
+    {
+      "order": 13,
+      "section_id": "s4",
+      "label": "13 CATALYST | HOW THE TTWO MECHANISM WORKS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/stock-meta-explainer.html",
+      "role": "mechanism_context",
+      "source_title": "How the GTA6 and TTWO pairing works",
+      "quote": "GTA6 is the meme token. TTWO is the Backpack-issued tokenized security. The pairing is a market and rewards mechanism, not Rockstar ownership.",
+      "shows": "A one-glance flow from GTA6 trading to the TTWO pool and StonkFun-described holder rewards.",
+      "why": "It translates John's stock wording into a simple, accurate mechanism before official sources.",
+      "inspect": "Read left to right; end on the no-affiliation boundary.",
+      "missing": "Viewers may hear paired with stock and assume an official or collateralized Rockstar product.",
+      "card_id": "stock-meta-explainer"
+    },
+    {
+      "order": 14,
+      "section_id": "s4",
+      "label": "14 CATALYST | WHO ISSUED THE TTWO TOKEN",
+      "url": "https://learn.backpack.exchange/blog/tokenized-take-two-interactive-ttwo",
+      "role": "mechanism_primary",
+      "source_title": "Backpack: Tokenized Take-Two Interactive (TTWO)",
+      "quote": "Tokenized Take-Two Interactive (TTWO)",
+      "shows": "Backpack Securities identifies itself as the issuer of the onchain TTWO instrument and Take-Two as the underlying company.",
+      "why": "It separates the Backpack-issued tokenized security from Rockstar and the independent GTA6 meme token.",
+      "inspect": "Issuer, identical TTWO mint and redemption/eligibility wording.",
+      "missing": "The mechanism is explained only through John or StonkFun, without the TTWO issuer source.",
+      "card_id": "backpack-ttwo"
+    },
+    {
+      "order": 15,
+      "section_id": "s4",
+      "label": "15 CATALYST | GTA VI ALREADY HAS GLOBAL ATTENTION",
+      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+      "role": "attention_context",
+      "source_title": "Grand Theft Auto VI Trailer 2",
+      "quote": "Grand Theft Auto VI Trailer 2",
+      "shows": "Rockstar's official second trailer and the enormous existing attention around GTA VI.",
+      "why": "It supplies the real-world cultural scale underneath John's meme narrative.",
+      "inspect": "Official Rockstar upload, title, channel and visible audience scale.",
+      "missing": "The video talks about global GTA attention without showing the official material driving it.",
+      "card_id": "rockstar-trailer-two"
+    },
+    {
+      "order": 16,
+      "section_id": "s4",
+      "label": "16 CATALYST | WHY AUGUST 27 MATTERS",
+      "url": "https://www.rockstargames.com/VI/an-extended-look",
+      "role": "dated_catalyst",
+      "source_title": "Rockstar Games: Grand Theft Auto VI An Extended Look",
+      "quote": "An Extended Look - August 27 - 3 PM ET",
+      "shows": "Rockstar's official page for the upcoming August 27 GTA VI Extended Look.",
+      "why": "It anchors the time-sensitive catalyst in the title and John thesis to a primary source.",
+      "inspect": "August 27, 3 PM ET and the official GTA VI presentation branding.",
+      "missing": "The August 27 catalyst relies only on John's wording and could be mislabeled as a trailer.",
+      "card_id": "rockstar-extended-look"
+    },
+    {
+      "order": 17,
+      "section_id": "s5",
+      "label": "17 CTA | THE THREE POINTS TO LAND",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/BENJI-CTA-DOTPOINTS.txt",
+      "role": "cta_prompt",
+      "source_title": "Benji GTA6 CTA dotpoints",
+      "quote": "Start with the information problem: this GTA6 story produced 75 John-family posts across @0x0papi and @CryptoGodJohn in five days, plus five tracked wallet buys.",
+      "shows": "Exactly three concise prompts: the information problem, the approved alert proof and the invitation plus risk boundary.",
+      "why": "It lets Benji land the CTA naturally without turning the dashboard into a sales script.",
+      "inspect": "Read the three prompts; reopen the first-alert tab if a visual proof is needed.",
+      "missing": "The close drifts into a long readout or an unsupported performance promise.",
+      "card_id": "gta6-cta-dotpoints"
+    }
+  ]
+}
