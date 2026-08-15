@@ -6,7 +6,7 @@
   <title>RECORDING CONSOLE | CryptoGodJohn GTA6</title>
   <style>
     :root{color-scheme:dark;--bg:#171b20;--panel:#20262d;--line:#34404a;--ink:#f7f9fb;--muted:#a8b3bd;--green:#5de99b;--green2:#23bd77}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 78% 8%,#183a31 0,transparent 34%),var(--bg);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:radial-gradient(circle at 78% 8%,#183a31 0,transparent 34%),var(--bg);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     main{width:min(1180px,calc(100% - 32px));margin:auto;padding:34px 0 42px}.eyebrow{color:var(--green);font-size:.72rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:13px}.hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr);gap:28px;align-items:center}.thumb{margin:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#0e1115;box-shadow:0 24px 60px #0007}.thumb img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}h1{font-size:clamp(2.35rem,4.2vw,4.2rem);line-height:.96;letter-spacing:-.055em;margin:0 0 20px}.overview{font-size:clamp(.96rem,1.1vw,1.08rem);color:#d4dce3;margin:0;max-width:720px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:23px}button,a.pill{appearance:none;border:0;border-radius:999px;padding:12px 17px;font:inherit;font-weight:850;text-decoration:none;cursor:pointer}.primary{background:var(--green);color:#07120d}.secondary,a.pill{background:var(--panel);border:1px solid var(--line);color:var(--ink)}.status{margin-top:12px;min-height:1.5em;color:var(--muted);font-size:.88rem}.utilities{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:.82rem}.links{display:flex;flex-wrap:wrap;gap:8px}.links a{color:#dce5eb;text-decoration:none}.links a:hover{text-decoration:underline}
     @media(max-width:880px){main{width:min(100% - 22px,1180px);padding-top:18px}.hero{grid-template-columns:1fr;gap:18px}.thumb{border-radius:15px}h1{font-size:clamp(2.05rem,9vw,3.35rem);margin-bottom:14px}.overview{font-size:.94rem;line-height:1.42}.actions{margin-top:18px}.utilities{align-items:flex-start;flex-direction:column}}
     @media(max-width:420px){main{width:min(100% - 16px,1180px)}.eyebrow{font-size:.62rem;margin-bottom:10px}.hero{gap:14px}h1{font-size:2.1rem}.overview{font-size:.84rem;line-height:1.38}.actions>*{width:100%;text-align:center}.status{font-size:.78rem}}
@@ -19,13 +19,13 @@
     <figure class="thumb"><img data-record-thumbnail src="assets/thumbnail-gta6-stock.png" alt="CryptoGodJohn GTA6 and TTWO thumbnail"></figure>
     <div class="copy">
       <h1 data-record-title>CryptoGodJohn just backed a GTA6 microcap before Rockstar's next reveal...</h1>
-      <p class="overview" data-record-overview>CryptoGodJohn has made GTA6 his newest high-conviction meme-coin idea. Rubicon's tracker saw a John-family wallet buy before his protected @0x0papi post, then his main account took the same thesis public: GTA VI attention, an August 27 Rockstar reveal and a token paired with Backpack's onchain TTWO security. The video explains what that stock pairing actually means, shows every relevant John post and buy alert in order, then follows the exact GTA6 pool from the first alert to its later peak and today. The key distinction: this is an independent Solana meme token, not a Rockstar or Take-Two product.</p>
+      <p class="overview" data-record-overview>CryptoGodJohn has made GTA6 his newest high-conviction meme-coin idea. Rubicon caught a John buy before he posted the thesis on @0x0papi, then he took it to his main account: GTA VI attention, Rockstar's August 27 reveal and a token that rewards holders in TTWO. John has posted about it constantly since. The three recording tabs put the whole story in order: all 75 posts across both accounts, the GTA6 chart from the first alert onward and the five buys our tracker caught. Ben can start with what John said, move straight to what the chart did and finish on the first buy alert.</p>
       <div class="actions">
         <button class="primary" id="open-tabs">Open recording tabs</button>
         <button class="secondary" id="copy-tabs">Copy URLs</button>
         <a class="pill" href="BENJI-CTA-DOTPOINTS.txt">CTA dotpoints</a>
       </div>
-      <div class="status" id="status">The launcher opens the evidence in reverse creation order so the final Arc strip reads forward. Allow popups and keep this dashboard open.</div>
+      <div class="status" id="status">The tabs open backwards so they land in the right Arc order. Keep this dashboard open and allow popups.</div>
     </div>
   </div>
   <section class="sec" id="s1" hidden></section>
@@ -34,8 +34,8 @@
   <section class="sec" id="s4" hidden></section>
   <section class="sec" id="s5" hidden></section>
   <footer class="utilities">
-    <span>Full source archive, charts and official references live in the recording tabs.</span>
-    <span class="links"><a href="sources.json">sources.json</a><a href="arc-handoff.json">arc-handoff.json</a><a href="research.md">research.md</a></span>
+    <span>The three tabs are John's posts, the chart and the first buys.</span>
+    <span class="links" hidden><a href="sources.json">sources.json</a><a href="arc-handoff.json">arc-handoff.json</a><a href="research.md">research.md</a></span>
   </footer>
 </main>
 <script>

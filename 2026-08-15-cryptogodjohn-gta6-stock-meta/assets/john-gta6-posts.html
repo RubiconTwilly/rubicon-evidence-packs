@@ -9,13 +9,13 @@
     *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 18% 0,#12344a 0,transparent 34%),var(--bg);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(980px,calc(100% - 24px));margin:auto;padding:28px 0 80px}.eyebrow{color:var(--cyan);font-weight:850;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}h1{font-size:clamp(2rem,6vw,4.7rem);line-height:.96;margin:.45rem 0 .75rem;letter-spacing:-.055em}.lede{max-width:760px;color:#bfd0dc;font-size:1.04rem}.summary{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 10px}.pill{border:1px solid var(--line);background:#0c1a25;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.84rem}.pill b{color:#fff}.tools{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;padding:12px 0 20px;background:linear-gradient(var(--bg) 72%,transparent)}button{border:1px solid var(--line);color:var(--ink);background:#0d1d2a;border-radius:999px;padding:9px 13px;font:inherit;font-weight:800;cursor:pointer}button.active{background:var(--cyan);border-color:var(--cyan);color:#031219}.day{margin:30px 0 12px;font-size:.82rem;color:var(--cyan);letter-spacing:.12em;text-transform:uppercase}.timeline{display:grid;gap:18px}.receipt{background:linear-gradient(145deg,#0d1b27,#09141e);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 14px 36px #0005}.meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:1px 3px 11px;color:var(--muted);font-size:.82rem}.meta strong{color:#fff}.meta .feed{color:var(--pink)}.feed-image{display:block;width:100%;height:auto;border-radius:12px;background:#071018}.tweet-mount{display:grid;place-items:center}.tweet-mount>iframe{margin-inline:auto!important}.embed-fallback{display:grid;gap:8px}.fallback{color:#7de7ff;text-decoration:none;font-weight:800}.open{display:inline-block;margin:10px 3px 0;color:#7de7ff;font-size:.84rem}.hidden{display:none!important}.loading{color:var(--muted);font-size:.9rem}@media(max-width:620px){main{width:min(100% - 14px,980px);padding-top:18px}.receipt{padding:8px;border-radius:14px}.feed-image{border-radius:8px}.tools{padding-bottom:14px}}
   </style>
 </head>
-<body><main>
-  <div class="eyebrow">John GTA6 source wall</div>
-  <h1>Every post, in order</h1>
-  <p class="lede">Public @CryptoGodJohn posts load as the real X embed. Every protected @0x0papi post uses an exact Influencer Feed render. Scroll straight down from the first thesis to the latest mention.</p>
-  <div class="summary"><span class="pill"><b>75</b> posts</span><span class="pill"><b>44</b> public X embeds</span><span class="pill"><b>31</b> Influencer Feed renders</span></div>
+<body><main data-reporter-surface>
+  <div class="eyebrow">John on GTA6</div>
+  <h1>John's GTA6 posts, in order</h1>
+  <p class="lede">John first pitched GTA6 on @0x0papi, then took the idea to @CryptoGodJohn and kept posting it. Here's the run from his first thesis to the latest mention.</p>
+  <div class="summary"><span class="pill"><b>75</b> posts</span><span class="pill"><b>5</b> days</span><span class="pill"><b>2</b> accounts</span></div>
   <div class="tools"><button class="active" data-filter="all">All 75</button><button data-filter="0x0papi">Influencer Feed</button><button data-filter="cryptogodjohn">Public X</button></div>
-  <div id="timeline" class="timeline" aria-live="polite"><p class="loading">Loading the chronological source wall…</p></div>
+  <div id="timeline" class="timeline" aria-live="polite"><p class="loading">Loading John's GTA6 timeline...</p></div>
 </main>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
@@ -35,7 +35,7 @@ function render(){
     const day=dayLabel(post.created_at_utc);const heading=day!==priorDay?`<h2 class="day">${escapeHtml(day)}</h2>`:"";priorDay=day;
     const isFeed=post.handle.toLowerCase()==="0x0papi";
     const body=isFeed?`<img class="feed-image" src="user/oxo-feed-gta6/mockup_${post.tweet_id}.jpg" alt="Influencer Feed render of @0x0papi GTA6 post ${post.tweet_id}" loading="lazy">`:`<div class="tweet-mount" data-tweet-id="${post.tweet_id}" data-url="${escapeHtml(post.canonical_url)}"></div><div class="embed-fallback"><img class="feed-image" src="user/john-feed-gta6/mockup_${post.tweet_id}.jpg" alt="Influencer Feed render of @CryptoGodJohn GTA6 post ${post.tweet_id}" loading="lazy"><a class="fallback" href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">Open the original post on X</a></div>`;
-    return `${heading}<article class="receipt"><div class="meta"><span><strong>${isFeed?"Influencer Feed":"X"}</strong> · <span class="${isFeed?"feed":""}">@${escapeHtml(post.handle)}</span> · ${escapeHtml(post.post_kind)}</span><time>${escapeHtml(timeLabel(post.created_at_utc))}</time></div>${body}<a class="open" href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">Original status ${post.tweet_id}</a></article>`;
+    return `${heading}<article class="receipt"><div class="meta"><span><strong>${isFeed?"Influencer Feed":"X"}</strong> · <span class="${isFeed?"feed":""}">@${escapeHtml(post.handle)}</span> · ${escapeHtml(post.post_kind)}</span><time>${escapeHtml(timeLabel(post.created_at_utc))}</time></div>${body}<a class="open" href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">View original on X</a></article>`;
   }).join("");
   observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){createEmbed(entry.target);observer.unobserve(entry.target)}}),{rootMargin:"900px 0px"});
   document.querySelectorAll(".tweet-mount").forEach(mount=>observer.observe(mount));
