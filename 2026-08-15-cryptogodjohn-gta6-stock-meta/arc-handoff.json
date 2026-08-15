@@ -1,140 +1,30 @@
 {
   "schema": "rubicon.arc-handoff",
   "version": 2,
-  "folder_name": "CryptoGodJohn GTA6 + TTWO | 15 Aug 2026",
+  "folder_name": "CryptoGodJohn GTA6",
   "snapshot_url": "",
   "shared_at": "",
   "tabs": [
     {
       "order": 1,
-      "section_id": "s1",
-      "label": "01 CONTEXT | WHY TRADERS WATCH JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-track-record-feed-card.jpg"
+      "section_id": "s3",
+      "label": "01 GTA6 | EVERY JOHN POST IN ORDER",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html"
     },
     {
       "order": 2,
-      "section_id": "s2",
-      "label": "02 MACRO | WHY JOHN IS ACTIVE NOW",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-supercycle-feed-card.jpg"
+      "section_id": "s3",
+      "label": "02 GTA6 | THE CHART AFTER HIS POSTS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html"
     },
     {
       "order": 3,
       "section_id": "s3",
-      "label": "03 GTA6 | WHAT THIS TOKEN ACTUALLY IS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-explainer.txt"
-    },
-    {
-      "order": 4,
-      "section_id": "s3",
-      "label": "04 GTA6 | RUBICON CATCHES THE FIRST BUY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png"
-    },
-    {
-      "order": 5,
-      "section_id": "s3",
-      "label": "05 GTA6 | JOHN EXPLAINS THE IDEA PRIVATELY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/oxo-gta6-first-thesis-feed-card.jpg"
-    },
-    {
-      "order": 6,
-      "section_id": "s3",
-      "label": "06 GTA6 | HE TAKES THE THESIS PUBLIC",
-      "url": "https://x.com/CryptoGodJohn/status/2086635391302443509"
-    },
-    {
-      "order": 7,
-      "section_id": "s3",
-      "label": "07 GTA6 | EVERY TRACKED WALLET BUY",
+      "label": "03 GTA6 | THE FIRST BUYS",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html"
-    },
-    {
-      "order": 8,
-      "section_id": "s3",
-      "label": "08 GTA6 | JOHN LAYS OUT THE CATALYST CASE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087501586893316112.jpg"
-    },
-    {
-      "order": 9,
-      "section_id": "s3",
-      "label": "09 GTA6 | WHY THE STOCK TWIST MATTERS TO JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087618173885411828.jpg"
-    },
-    {
-      "order": 10,
-      "section_id": "s3",
-      "label": "10 GTA6 | HIS LATEST PUBLIC CONVICTION",
-      "url": "https://x.com/CryptoGodJohn/status/2088294917365776634"
-    },
-    {
-      "order": 11,
-      "section_id": "s3",
-      "label": "11 GTA6 | ALL 75 POSTS IN ONE TIMELINE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html"
-    },
-    {
-      "order": 12,
-      "section_id": "s3",
-      "label": "12 GTA6 | WHAT THE CHART DID NEXT",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html"
-    },
-    {
-      "order": 13,
-      "section_id": "s4",
-      "label": "13 CATALYST | HOW THE TTWO MECHANISM WORKS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/stock-meta-explainer.html"
-    },
-    {
-      "order": 14,
-      "section_id": "s4",
-      "label": "14 CATALYST | WHO ISSUED THE TTWO TOKEN",
-      "url": "https://learn.backpack.exchange/blog/tokenized-take-two-interactive-ttwo"
-    },
-    {
-      "order": 15,
-      "section_id": "s4",
-      "label": "15 CATALYST | GTA VI ALREADY HAS GLOBAL ATTENTION",
-      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c"
-    },
-    {
-      "order": 16,
-      "section_id": "s4",
-      "label": "16 CATALYST | WHY AUGUST 27 MATTERS",
-      "url": "https://www.rockstargames.com/VI/an-extended-look"
-    },
-    {
-      "order": 17,
-      "section_id": "s5",
-      "label": "17 CTA | THE THREE POINTS TO LAND",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/BENJI-CTA-DOTPOINTS.txt"
     }
   ],
   "launch_tabs": [
-    {
-      "kind": "marker",
-      "section_id": "s1",
-      "label": "\ud83d\udfe2 CONTEXT",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 1,
-      "section_id": "s1",
-      "label": "01 CONTEXT | WHY TRADERS WATCH JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-track-record-feed-card.jpg"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s2",
-      "label": "\ud83d\udfe2 MACRO",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 2,
-      "section_id": "s2",
-      "label": "02 MACRO | WHY JOHN IS ACTIVE NOW",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-supercycle-feed-card.jpg"
-    },
     {
       "kind": "marker",
       "section_id": "s3",
@@ -143,120 +33,24 @@
     },
     {
       "kind": "evidence",
-      "order": 3,
+      "order": 1,
       "section_id": "s3",
-      "label": "03 GTA6 | WHAT THIS TOKEN ACTUALLY IS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-explainer.txt"
-    },
-    {
-      "kind": "evidence",
-      "order": 4,
-      "section_id": "s3",
-      "label": "04 GTA6 | RUBICON CATCHES THE FIRST BUY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png"
-    },
-    {
-      "kind": "evidence",
-      "order": 5,
-      "section_id": "s3",
-      "label": "05 GTA6 | JOHN EXPLAINS THE IDEA PRIVATELY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/oxo-gta6-first-thesis-feed-card.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 6,
-      "section_id": "s3",
-      "label": "06 GTA6 | HE TAKES THE THESIS PUBLIC",
-      "url": "https://x.com/CryptoGodJohn/status/2086635391302443509"
-    },
-    {
-      "kind": "evidence",
-      "order": 7,
-      "section_id": "s3",
-      "label": "07 GTA6 | EVERY TRACKED WALLET BUY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html"
-    },
-    {
-      "kind": "evidence",
-      "order": 8,
-      "section_id": "s3",
-      "label": "08 GTA6 | JOHN LAYS OUT THE CATALYST CASE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087501586893316112.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 9,
-      "section_id": "s3",
-      "label": "09 GTA6 | WHY THE STOCK TWIST MATTERS TO JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087618173885411828.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 10,
-      "section_id": "s3",
-      "label": "10 GTA6 | HIS LATEST PUBLIC CONVICTION",
-      "url": "https://x.com/CryptoGodJohn/status/2088294917365776634"
-    },
-    {
-      "kind": "evidence",
-      "order": 11,
-      "section_id": "s3",
-      "label": "11 GTA6 | ALL 75 POSTS IN ONE TIMELINE",
+      "label": "01 GTA6 | EVERY JOHN POST IN ORDER",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html"
     },
     {
       "kind": "evidence",
-      "order": 12,
+      "order": 2,
       "section_id": "s3",
-      "label": "12 GTA6 | WHAT THE CHART DID NEXT",
+      "label": "02 GTA6 | THE CHART AFTER HIS POSTS",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html"
     },
     {
-      "kind": "marker",
-      "section_id": "s4",
-      "label": "\ud83d\udfe2 CATALYST",
-      "url": "https://www.google.com/"
-    },
-    {
       "kind": "evidence",
-      "order": 13,
-      "section_id": "s4",
-      "label": "13 CATALYST | HOW THE TTWO MECHANISM WORKS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/stock-meta-explainer.html"
-    },
-    {
-      "kind": "evidence",
-      "order": 14,
-      "section_id": "s4",
-      "label": "14 CATALYST | WHO ISSUED THE TTWO TOKEN",
-      "url": "https://learn.backpack.exchange/blog/tokenized-take-two-interactive-ttwo"
-    },
-    {
-      "kind": "evidence",
-      "order": 15,
-      "section_id": "s4",
-      "label": "15 CATALYST | GTA VI ALREADY HAS GLOBAL ATTENTION",
-      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c"
-    },
-    {
-      "kind": "evidence",
-      "order": 16,
-      "section_id": "s4",
-      "label": "16 CATALYST | WHY AUGUST 27 MATTERS",
-      "url": "https://www.rockstargames.com/VI/an-extended-look"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s5",
-      "label": "\ud83d\udfe2 CTA",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 17,
-      "section_id": "s5",
-      "label": "17 CTA | THE THREE POINTS TO LAND",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/BENJI-CTA-DOTPOINTS.txt"
+      "order": 3,
+      "section_id": "s3",
+      "label": "03 GTA6 | THE FIRST BUYS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html"
     },
     {
       "kind": "dashboard",
@@ -268,151 +62,29 @@
   "creation_order": [
     {
       "kind": "evidence",
-      "order": 17,
-      "section_id": "s5",
-      "label": "17 CTA | THE THREE POINTS TO LAND",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/BENJI-CTA-DOTPOINTS.txt"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s5",
-      "label": "\ud83d\udfe2 CTA",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 16,
-      "section_id": "s4",
-      "label": "16 CATALYST | WHY AUGUST 27 MATTERS",
-      "url": "https://www.rockstargames.com/VI/an-extended-look"
-    },
-    {
-      "kind": "evidence",
-      "order": 15,
-      "section_id": "s4",
-      "label": "15 CATALYST | GTA VI ALREADY HAS GLOBAL ATTENTION",
-      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c"
-    },
-    {
-      "kind": "evidence",
-      "order": 14,
-      "section_id": "s4",
-      "label": "14 CATALYST | WHO ISSUED THE TTWO TOKEN",
-      "url": "https://learn.backpack.exchange/blog/tokenized-take-two-interactive-ttwo"
-    },
-    {
-      "kind": "evidence",
-      "order": 13,
-      "section_id": "s4",
-      "label": "13 CATALYST | HOW THE TTWO MECHANISM WORKS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/stock-meta-explainer.html"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s4",
-      "label": "\ud83d\udfe2 CATALYST",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 12,
+      "order": 3,
       "section_id": "s3",
-      "label": "12 GTA6 | WHAT THE CHART DID NEXT",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html"
-    },
-    {
-      "kind": "evidence",
-      "order": 11,
-      "section_id": "s3",
-      "label": "11 GTA6 | ALL 75 POSTS IN ONE TIMELINE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html"
-    },
-    {
-      "kind": "evidence",
-      "order": 10,
-      "section_id": "s3",
-      "label": "10 GTA6 | HIS LATEST PUBLIC CONVICTION",
-      "url": "https://x.com/CryptoGodJohn/status/2088294917365776634"
-    },
-    {
-      "kind": "evidence",
-      "order": 9,
-      "section_id": "s3",
-      "label": "09 GTA6 | WHY THE STOCK TWIST MATTERS TO JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087618173885411828.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 8,
-      "section_id": "s3",
-      "label": "08 GTA6 | JOHN LAYS OUT THE CATALYST CASE",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/mockup_2087501586893316112.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 7,
-      "section_id": "s3",
-      "label": "07 GTA6 | EVERY TRACKED WALLET BUY",
+      "label": "03 GTA6 | THE FIRST BUYS",
       "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-buys.html"
     },
     {
       "kind": "evidence",
-      "order": 6,
+      "order": 2,
       "section_id": "s3",
-      "label": "06 GTA6 | HE TAKES THE THESIS PUBLIC",
-      "url": "https://x.com/CryptoGodJohn/status/2086635391302443509"
+      "label": "02 GTA6 | THE CHART AFTER HIS POSTS",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-market-cap.html"
     },
     {
       "kind": "evidence",
-      "order": 5,
+      "order": 1,
       "section_id": "s3",
-      "label": "05 GTA6 | JOHN EXPLAINS THE IDEA PRIVATELY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/oxo-gta6-first-thesis-feed-card.jpg"
-    },
-    {
-      "kind": "evidence",
-      "order": 4,
-      "section_id": "s3",
-      "label": "04 GTA6 | RUBICON CATCHES THE FIRST BUY",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-gta6-first-buy-alert.png"
-    },
-    {
-      "kind": "evidence",
-      "order": 3,
-      "section_id": "s3",
-      "label": "03 GTA6 | WHAT THIS TOKEN ACTUALLY IS",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/gta6-explainer.txt"
+      "label": "01 GTA6 | EVERY JOHN POST IN ORDER",
+      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/john-gta6-posts.html"
     },
     {
       "kind": "marker",
       "section_id": "s3",
       "label": "\ud83d\udfe2 GTA6",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 2,
-      "section_id": "s2",
-      "label": "02 MACRO | WHY JOHN IS ACTIVE NOW",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-supercycle-feed-card.jpg"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s2",
-      "label": "\ud83d\udfe2 MACRO",
-      "url": "https://www.google.com/"
-    },
-    {
-      "kind": "evidence",
-      "order": 1,
-      "section_id": "s1",
-      "label": "01 CONTEXT | WHY TRADERS WATCH JOHN",
-      "url": "https://rubicontwilly.github.io/rubicon-evidence-packs/2026-08-15-cryptogodjohn-gta6-stock-meta/assets/user/john-track-record-feed-card.jpg"
-    },
-    {
-      "kind": "marker",
-      "section_id": "s1",
-      "label": "\ud83d\udfe2 CONTEXT",
       "url": "https://www.google.com/"
     }
   ],

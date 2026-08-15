@@ -5,81 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Every John GTA6 post</title>
   <style>
-    :root { color-scheme: dark; --bg:#071018; --panel:#0d1924; --line:#21374a; --ink:#f3f7fb; --muted:#92a8ba; --cyan:#40e5ef; --pink:#ff4aac; --green:#64e69a; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:radial-gradient(circle at 18% 0,#12344a 0,transparent 34%),var(--bg); color:var(--ink); font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    main { width:min(1180px,calc(100% - 28px)); margin:0 auto; padding:34px 0 80px; }
-    .eyebrow { color:var(--cyan); font-weight:850; letter-spacing:.14em; text-transform:uppercase; font-size:.76rem; }
-    h1 { font-size:clamp(2rem,6vw,4.7rem); line-height:.96; margin:.45rem 0 1rem; letter-spacing:-.055em; }
-    .lede { max-width:850px; color:#bfd0dc; font-size:1.08rem; }
-    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:25px 0; }
-    .stat { background:#0c1a25e6; border:1px solid var(--line); border-radius:16px; padding:16px; }
-    .stat b { display:block; font-size:1.9rem; color:#fff; }
-    .stat span { color:var(--muted); font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; }
-    .tools { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:9px; padding:14px 0; background:linear-gradient(var(--bg) 72%,transparent); }
-    button,input { border:1px solid var(--line); color:var(--ink); background:#0d1d2a; border-radius:999px; padding:10px 14px; font:inherit; }
-    button { cursor:pointer; font-weight:750; }
-    button.active { background:var(--cyan); color:#031219; border-color:var(--cyan); }
-    input { flex:1; min-width:210px; border-radius:12px; }
-    #list { display:grid; gap:12px; }
-    article { background:linear-gradient(145deg,#0d1b27,#09141e); border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow:0 14px 36px #0005; }
-    .meta { display:flex; gap:8px; flex-wrap:wrap; align-items:center; color:var(--muted); font-size:.84rem; }
-    .handle { color:var(--cyan); font-weight:850; }
-    .protected { color:var(--pink); }
-    .tag { border:1px solid #345066; padding:2px 8px; border-radius:999px; }
-    .text { white-space:pre-wrap; margin:13px 0; font-size:1.03rem; }
-    .foot { display:flex; flex-wrap:wrap; gap:12px; align-items:center; color:var(--muted); font-size:.86rem; }
-    a { color:#7de7ff; }
-    .mc { color:var(--green); font-weight:800; }
-    .note { margin:18px 0 28px; padding:14px 16px; border-left:3px solid var(--pink); background:#151524; color:#c8c9df; }
-    @media(max-width:720px){ .stats{grid-template-columns:repeat(2,1fr)} main{width:min(100% - 18px,1180px);padding-top:22px} article{padding:15px} .tools{top:0} }
+    :root{color-scheme:dark;--bg:#071018;--panel:#0d1924;--line:#21374a;--ink:#f3f7fb;--muted:#92a8ba;--cyan:#40e5ef;--pink:#ff4aac}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 18% 0,#12344a 0,transparent 34%),var(--bg);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(980px,calc(100% - 24px));margin:auto;padding:28px 0 80px}.eyebrow{color:var(--cyan);font-weight:850;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}h1{font-size:clamp(2rem,6vw,4.7rem);line-height:.96;margin:.45rem 0 .75rem;letter-spacing:-.055em}.lede{max-width:760px;color:#bfd0dc;font-size:1.04rem}.summary{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 10px}.pill{border:1px solid var(--line);background:#0c1a25;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.84rem}.pill b{color:#fff}.tools{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;padding:12px 0 20px;background:linear-gradient(var(--bg) 72%,transparent)}button{border:1px solid var(--line);color:var(--ink);background:#0d1d2a;border-radius:999px;padding:9px 13px;font:inherit;font-weight:800;cursor:pointer}button.active{background:var(--cyan);border-color:var(--cyan);color:#031219}.day{margin:30px 0 12px;font-size:.82rem;color:var(--cyan);letter-spacing:.12em;text-transform:uppercase}.timeline{display:grid;gap:18px}.receipt{background:linear-gradient(145deg,#0d1b27,#09141e);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 14px 36px #0005}.meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:1px 3px 11px;color:var(--muted);font-size:.82rem}.meta strong{color:#fff}.meta .feed{color:var(--pink)}.feed-image{display:block;width:100%;height:auto;border-radius:12px;background:#071018}.tweet-mount{display:grid;place-items:center}.tweet-mount>iframe{margin-inline:auto!important}.embed-fallback{display:grid;gap:8px}.fallback{color:#7de7ff;text-decoration:none;font-weight:800}.open{display:inline-block;margin:10px 3px 0;color:#7de7ff;font-size:.84rem}.hidden{display:none!important}.loading{color:var(--muted);font-size:.9rem}@media(max-width:620px){main{width:min(100% - 14px,980px);padding-top:18px}.receipt{padding:8px;border-radius:14px}.feed-image{border-radius:8px}.tools{padding-bottom:14px}}
   </style>
 </head>
-<body>
-<main>
-  <div class="eyebrow">Rubicon source archive</div>
-  <h1>Every John-family GTA6 post</h1>
-  <p class="lede">The complete token-specific chronology from @0x0papi and @CryptoGodJohn, ordered from the first protected thesis through the latest checked post. This reports what John posted. It does not treat every prediction or mechanism claim as independently verified.</p>
-  <div class="stats">
-    <div class="stat"><b id="total">75</b><span>token-specific posts</span></div>
-    <div class="stat"><b>31</b><span>@0x0papi</span></div>
-    <div class="stat"><b>44</b><span>@CryptoGodJohn</span></div>
-    <div class="stat"><b>5 days</b><span>Aug 9 to Aug 14 UTC</span></div>
-  </div>
-  <div class="note">Three rows are labelled contextual. Two do not repeat the exact mint in their own text or direct parent; the third sits under an exact-mint parent. One general GTA game quote was excluded because it was not a token mention. Protected links may require the authorised X account; their exact stored text remains visible here.</div>
-  <div class="tools">
-    <button class="active" data-filter="all">All 75</button>
-    <button data-filter="0x0papi">@0x0papi</button>
-    <button data-filter="cryptogodjohn">@CryptoGodJohn</button>
-    <button data-filter="original">Original posts</button>
-    <button data-filter="reply">Replies</button>
-    <button data-filter="quote">Quotes</button>
-    <input id="search" placeholder="Search text, status ID or date">
-  </div>
-  <div id="list" aria-live="polite"></div>
+<body><main>
+  <div class="eyebrow">John GTA6 source wall</div>
+  <h1>Every post, in order</h1>
+  <p class="lede">Public @CryptoGodJohn posts load as the real X embed. Every protected @0x0papi post uses an exact Influencer Feed render. Scroll straight down from the first thesis to the latest mention.</p>
+  <div class="summary"><span class="pill"><b>75</b> posts</span><span class="pill"><b>44</b> public X embeds</span><span class="pill"><b>31</b> Influencer Feed renders</span></div>
+  <div class="tools"><button class="active" data-filter="all">All 75</button><button data-filter="0x0papi">Influencer Feed</button><button data-filter="cryptogodjohn">Public X</button></div>
+  <div id="timeline" class="timeline" aria-live="polite"><p class="loading">Loading the chronological source wall…</p></div>
 </main>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
-const money = value => value == null ? "" : new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(value);
-const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
-let posts = [], active = "all";
-function render(){
-  const query = document.querySelector("#search").value.trim().toLowerCase();
-  const filtered = posts.filter(post => {
-    const filterHit = active === "all" || post.handle.toLowerCase() === active || post.post_kind === active;
-    const haystack = [post.text_raw,post.tweet_id,post.created_at_utc,post.handle,post.replied_to_text_raw].join(" ").toLowerCase();
-    return filterHit && (!query || haystack.includes(query));
-  });
-  document.querySelector("#total").textContent = filtered.length;
-  document.querySelector("#list").innerHTML = filtered.map(post => {
-    const access = post.account_access === "protected_alt" ? '<span class="tag protected">protected Feed source</span>' : '<span class="tag">public X</span>';
-    const parent = post.replied_to_text_raw ? `<details><summary>Quoted or replied-to context</summary><div class="text">${escapeHtml(post.replied_to_text_raw)}</div></details>` : "";
-    const mc = post.market_cap_usd_at_tweet == null ? "" : `<span class="mc">Feed snapshot ${money(post.market_cap_usd_at_tweet)} MC</span>`;
-    return `<article><div class="meta"><span>#${post.sequence}</span><span class="handle">@${escapeHtml(post.handle)}</span>${access}<span class="tag">${escapeHtml(post.post_kind)}</span><time>${escapeHtml(post.created_at_utc.replace(".000Z","Z"))}</time></div><div class="text">${escapeHtml(post.text_raw)}</div>${parent}<div class="foot">${mc}<a href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">Original status ${escapeHtml(post.tweet_id)}</a></div></article>`;
-  }).join("") || "<p>No posts match this filter.</p>";
+const escapeHtml=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+const timeline=document.querySelector("#timeline"),requestedFilter=new URLSearchParams(location.search).get("account");let posts=[],active=["0x0papi","cryptogodjohn"].includes(requestedFilter)?requestedFilter:"all",observer;
+const dayLabel=value=>new Date(value).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"Australia/Melbourne"});
+const timeLabel=value=>new Date(value).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"Australia/Melbourne",timeZoneName:"short"});
+function createEmbed(mount){
+  if(mount.dataset.loaded)return;mount.dataset.loaded="1";
+  const run=()=>window.twttr.widgets.createTweet(mount.dataset.tweetId,mount,{theme:"dark",dnt:true,conversation:"none",align:"center"}).then(result=>{if(result)mount.nextElementSibling?.classList.add("hidden")});
+  if(window.twttr&&window.twttr.widgets)run();else{const poll=setInterval(()=>{if(window.twttr&&window.twttr.widgets){clearInterval(poll);run()}},120);setTimeout(()=>clearInterval(poll),8000)}
 }
-fetch("data/john-family-gta6-posts-public.json").then(response => response.json()).then(data => { posts = data.posts; render(); });
-document.querySelectorAll("button[data-filter]").forEach(button => button.addEventListener("click",()=>{ document.querySelectorAll("button").forEach(item=>item.classList.remove("active")); button.classList.add("active"); active=button.dataset.filter; render(); }));
-document.querySelector("#search").addEventListener("input",render);
-</script>
-</body>
-</html>
+function render(){
+  if(observer)observer.disconnect();
+  const shown=posts.filter(post=>active==="all"||post.handle.toLowerCase()===active);
+  let priorDay="";timeline.innerHTML=shown.map(post=>{
+    const day=dayLabel(post.created_at_utc);const heading=day!==priorDay?`<h2 class="day">${escapeHtml(day)}</h2>`:"";priorDay=day;
+    const isFeed=post.handle.toLowerCase()==="0x0papi";
+    const body=isFeed?`<img class="feed-image" src="user/oxo-feed-gta6/mockup_${post.tweet_id}.jpg" alt="Influencer Feed render of @0x0papi GTA6 post ${post.tweet_id}" loading="lazy">`:`<div class="tweet-mount" data-tweet-id="${post.tweet_id}" data-url="${escapeHtml(post.canonical_url)}"></div><div class="embed-fallback"><img class="feed-image" src="user/john-feed-gta6/mockup_${post.tweet_id}.jpg" alt="Influencer Feed render of @CryptoGodJohn GTA6 post ${post.tweet_id}" loading="lazy"><a class="fallback" href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">Open the original post on X</a></div>`;
+    return `${heading}<article class="receipt"><div class="meta"><span><strong>${isFeed?"Influencer Feed":"X"}</strong> · <span class="${isFeed?"feed":""}">@${escapeHtml(post.handle)}</span> · ${escapeHtml(post.post_kind)}</span><time>${escapeHtml(timeLabel(post.created_at_utc))}</time></div>${body}<a class="open" href="${escapeHtml(post.canonical_url)}" target="_blank" rel="noreferrer">Original status ${post.tweet_id}</a></article>`;
+  }).join("");
+  observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){createEmbed(entry.target);observer.unobserve(entry.target)}}),{rootMargin:"900px 0px"});
+  document.querySelectorAll(".tweet-mount").forEach(mount=>observer.observe(mount));
+}
+fetch("data/john-family-gta6-posts-public.json").then(response=>response.json()).then(data=>{posts=data.posts.slice().sort((a,b)=>Date.parse(a.created_at_utc)-Date.parse(b.created_at_utc));document.querySelectorAll("button[data-filter]").forEach(item=>item.classList.toggle("active",item.dataset.filter===active));render()});
+document.querySelectorAll("button[data-filter]").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll("button[data-filter]").forEach(item=>item.classList.remove("active"));button.classList.add("active");active=button.dataset.filter;render()}));
+</script></body></html>
