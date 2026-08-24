@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EGG around Ansem's Discord post</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #081218;
+      --panel: #0d1b22;
+      --panel-2: #11262b;
+      --ink: #effffb;
+      --muted: #98b4b1;
+      --mint: #8ef1d7;
+      --mint-2: #38c8a6;
+      --line: rgba(142, 241, 215, .16);
+      --warning: #ffcf7d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; min-height: 100%; background: var(--bg); }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      padding: clamp(18px, 3vw, 42px);
+    }
+
+    main {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      gap: clamp(16px, 2vw, 24px);
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(30px, 4.4vw, 58px);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    .dek {
+      margin: 10px 0 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(14px, 1.7vw, 18px);
+      line-height: 1.45;
+    }
+
+    .contract {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      text-align: right;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .card {
+      min-height: 112px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(150deg, rgba(17, 38, 43, .96), rgba(13, 27, 34, .96));
+    }
+
+    .card .label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .card .value {
+      display: block;
+      margin-top: 8px;
+      font-size: clamp(21px, 2.5vw, 34px);
+      font-weight: 800;
+      letter-spacing: -.035em;
+    }
+
+    .card .detail {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .chart-shell {
+      position: relative;
+      min-height: 430px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(56, 200, 166, .13), transparent 34%),
+        var(--panel);
+    }
+
+    #chart { display: block; width: 100%; height: 430px; }
+
+    .axis-label, .marker-time, .marker-value {
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      paint-order: stroke;
+      stroke: var(--panel);
+      stroke-width: 5px;
+      stroke-linejoin: round;
+    }
+
+    .axis-label { fill: var(--muted); font-size: 11px; }
+    .marker-time { fill: var(--muted); font-size: 10px; font-weight: 650; }
+    .marker-value { fill: var(--ink); font-size: 12px; font-weight: 800; }
+
+    .note {
+      position: absolute;
+      right: 15px;
+      bottom: 14px;
+      padding: 7px 9px;
+      border-radius: 9px;
+      background: rgba(8, 18, 24, .84);
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    footer strong { color: var(--warning); }
+
+    @media (max-width: 760px) {
+      body { padding: 16px 14px 20px; }
+      header { display: block; }
+      h1 { max-width: 360px; }
+      .contract { margin-top: 12px; text-align: left; overflow-wrap: anywhere; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card { min-height: 96px; padding: 13px; }
+      .chart-shell { min-height: 330px; border-radius: 17px; }
+      #chart { height: 330px; }
+      .note { display: none; }
+      footer { display: block; }
+      footer span { display: block; margin-top: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Live story, checked 24 Aug 2026 AEST</p>
+        <h1>EGG around Ansem's Discord post</h1>
+        <p class="dek">Rubicon surfaced the exact contract at $4.35M. EGG later traded through the $8M range, briefly wicked higher, and then returned to roughly $5M.</p>
+      </div>
+      <div class="contract">HyperEVM<br>0xb75d...65608</div>
+    </header>
+
+    <section class="cards" aria-label="Timeline summary">
+      <article class="card">
+        <span class="label">Discord post</span>
+        <span class="value">3:42 PM</span>
+        <span class="detail">23 Aug AEST<br>"just bought this egg meme"</span>
+      </article>
+      <article class="card">
+        <span class="label">Rubicon alert</span>
+        <span class="value">$4.35M</span>
+        <span class="detail">3:44 PM AEST<br>90 seconds after the post</span>
+      </article>
+      <article class="card">
+        <span class="label">Later range</span>
+        <span class="value">$8M+</span>
+        <span class="detail">First 5m close above $8M at 7:55 PM<br>brief 5m high near $9.72M</span>
+      </article>
+      <article class="card">
+        <span class="label">Latest candle</span>
+        <span class="value" id="latest-value">$4.91M</span>
+        <span class="detail" id="latest-detail">8:25 AM AEST, 24 Aug<br>retraced near the alert level</span>
+      </article>
+    </section>
+
+    <section class="chart-shell" aria-label="EGG five-minute market-cap proxy chart">
+      <svg id="chart" role="img" aria-labelledby="chart-title chart-desc">
+        <title id="chart-title">EGG market-cap proxy around Ansem's Discord post</title>
+        <desc id="chart-desc">A five-minute chart beginning before Ansem's Discord post, marking Rubicon's alert near 4.35 million dollars, the later eight-million-dollar range, a brief high near 9.72 million dollars, and the subsequent retrace.</desc>
+      </svg>
+      <div class="note">Price x 1B supply</div>
+    </section>
+
+    <footer>
+      <div><strong>Read as chronology, not causation.</strong> The line shows market observations after the post, not Ansem's realised return or a result available to every viewer.</div>
+      <span>Source: GeckoTerminal 5m OHLCV. Exact token and alert identity verified by Rubicon Influencer Feed.</span>
+    </footer>
+  </main>
+
+  <script>
+    const AEST_OFFSET_MS = 10 * 60 * 60 * 1000;
+    const CALL_TS = Date.parse('2026-08-23T05:42:54.618Z') / 1000;
+    const ALERT_TS = Date.parse('2026-08-23T05:44:24.972Z') / 1000;
+    const ALERT_MC = 4.352717;
+
+    const money = value => `$${value.toFixed(value >= 10 ? 1 : 2)}M`;
+    const localDate = timestamp => new Date(timestamp * 1000 + AEST_OFFSET_MS);
+    const localTime = timestamp => localDate(timestamp).toLocaleTimeString('en-AU', {
+      hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'UTC'
+    });
+
+    function make(tag, attrs = {}, text = '') {
+      const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+      Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
+      if (text) el.textContent = text;
+      return el;
+    }
+
+    function draw(candles) {
+      const svg = document.querySelector('#chart');
+      svg.replaceChildren(svg.querySelector('title'), svg.querySelector('desc'));
+
+      const rect = svg.getBoundingClientRect();
+      const width = Math.max(320, Math.round(rect.width));
+      const height = Math.max(300, Math.round(rect.height));
+      svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+
+      const mobile = width < 600;
+      const margin = { top: 28, right: mobile ? 18 : 34, bottom: 38, left: mobile ? 44 : 58 };
+      const plotW = width - margin.left - margin.right;
+      const plotH = height - margin.top - margin.bottom;
+
+      const start = CALL_TS - 75 * 60;
+      const data = candles
+        .filter(c => c.ts >= start)
+        .sort((a, b) => a.ts - b.ts);
+      const xMin = data[0].ts;
+      const xMax = data[data.length - 1].ts;
+      const yMax = Math.max(...data.map(c => c.high), 10) * (mobile ? 1.22 : 1.08);
+      const yMin = 0;
+      const x = ts => margin.left + (ts - xMin) / (xMax - xMin) * plotW;
+      const y = value => margin.top + (yMax - value) / (yMax - yMin) * plotH;
+
+      const defs = make('defs');
+      const gradient = make('linearGradient', { id: 'area', x1: '0', y1: '0', x2: '0', y2: '1' });
+      gradient.append(make('stop', { offset: '0%', 'stop-color': '#38c8a6', 'stop-opacity': '.42' }));
+      gradient.append(make('stop', { offset: '100%', 'stop-color': '#38c8a6', 'stop-opacity': '.02' }));
+      defs.append(gradient);
+      svg.append(defs);
+
+      const ticks = mobile ? [0, 4, 8] : [0, 2, 4, 6, 8, 10];
+      ticks.forEach(value => {
+        if (value > yMax) return;
+        svg.append(make('line', {
+          x1: margin.left, x2: width - margin.right,
+          y1: y(value), y2: y(value),
+          stroke: 'rgba(142,241,215,.12)', 'stroke-width': 1
+        }));
+        svg.append(make('text', {
+          x: margin.left - 9, y: y(value) + 4,
+          'text-anchor': 'end', class: 'axis-label'
+        }, `$${value}M`));
+      });
+
+      const dayTicks = mobile ? 3 : 5;
+      for (let i = 0; i < dayTicks; i++) {
+        const ts = xMin + (xMax - xMin) * i / (dayTicks - 1);
+        svg.append(make('text', {
+          x: x(ts), y: height - 13,
+          'text-anchor': i === 0 ? 'start' : (i === dayTicks - 1 ? 'end' : 'middle'),
+          class: 'axis-label'
+        }, localTime(ts)));
+      }
+
+      const closePath = data.map((c, index) => `${index ? 'L' : 'M'}${x(c.ts).toFixed(1)},${y(c.close).toFixed(1)}`).join(' ');
+      const areaPath = `${closePath} L${x(data[data.length - 1].ts)},${y(0)} L${x(data[0].ts)},${y(0)} Z`;
+      svg.append(make('path', { d: areaPath, fill: 'url(#area)' }));
+      svg.append(make('path', {
+        d: closePath, fill: 'none', stroke: '#8ef1d7',
+        'stroke-width': mobile ? 2.4 : 3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round'
+      }));
+
+      const peak = data.reduce((best, c) => c.high > best.high ? c : best, data[0]);
+      const firstEight = data.find(c => c.close >= 8);
+      const latest = data[data.length - 1];
+      document.querySelector('#latest-value').textContent = money(latest.close);
+      document.querySelector('#latest-detail').innerHTML = `${localTime(latest.ts)} AEST, 24 Aug<br>retraced near the alert level`;
+
+      const callX = x(ALERT_TS);
+      svg.append(make('line', {
+        x1: callX, x2: callX, y1: margin.top, y2: height - margin.bottom,
+        stroke: '#ffcf7d', 'stroke-width': 1.5, 'stroke-dasharray': '5 5'
+      }));
+
+      const markers = [
+        { ts: ALERT_TS, value: ALERT_MC, valueText: '$4.35M alert', timeText: mobile ? '3:44 PM' : '3:44 PM, Rubicon alert', anchor: 'start', dx: 8, colour: '#ffcf7d' },
+        firstEight && { ts: firstEight.ts, value: firstEight.close, valueText: '$8M range', timeText: mobile ? '7:55 PM' : '7:55 PM, first close above $8M', anchor: mobile ? 'end' : 'start', dx: mobile ? -5 : 8, colour: '#8ef1d7' },
+        { ts: peak.ts, value: peak.high, valueText: `${money(peak.high)} brief high`, timeText: localTime(peak.ts), anchor: mobile ? 'start' : 'middle', dx: mobile ? 6 : 0, colour: '#8ef1d7' },
+        { ts: latest.ts, value: latest.close, valueText: `${money(latest.close)} latest`, timeText: localTime(latest.ts), anchor: 'end', dx: -7, colour: '#ffcf7d' }
+      ].filter(Boolean);
+
+      markers.forEach((marker, index) => {
+        const cx = x(marker.ts);
+        const cy = y(marker.value);
+        svg.append(make('circle', { cx, cy, r: mobile ? 4.5 : 5.5, fill: marker.colour, stroke: '#081218', 'stroke-width': 3 }));
+        const below = index === 0;
+        const valueY = below ? cy + 22 : cy - 14;
+        const timeY = below ? cy + 37 : cy - 28;
+        svg.append(make('text', { x: cx + marker.dx, y: valueY, 'text-anchor': marker.anchor, class: 'marker-value' }, marker.valueText));
+        svg.append(make('text', { x: cx + marker.dx, y: timeY, 'text-anchor': marker.anchor, class: 'marker-time' }, marker.timeText));
+      });
+
+      svg.append(make('text', {
+        x: callX + 8, y: margin.top + 14,
+        'text-anchor': 'start', class: 'marker-time', fill: '#ffcf7d'
+      }, mobile ? '90 sec' : 'Alert arrived 90 seconds after Discord post'));
+    }
+
+    fetch('egg-ohlcv-5m.json')
+      .then(response => response.json())
+      .then(raw => {
+        const candles = raw.data.attributes.ohlcv_list.map(row => ({
+          ts: row[0],
+          open: row[1] * 1000,
+          high: row[2] * 1000,
+          low: row[3] * 1000,
+          close: row[4] * 1000,
+          volume: row[5]
+        }));
+        draw(candles);
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => draw(candles), 100);
+        });
+      })
+      .catch(error => {
+        document.querySelector('.chart-shell').innerHTML = `<p style="padding:24px;color:#ffcf7d">Chart data could not load: ${error.message}</p>`;
+      });
+  </script>
+</body>
+</html>
