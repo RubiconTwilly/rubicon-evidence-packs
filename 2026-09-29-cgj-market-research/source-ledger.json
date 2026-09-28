@@ -1,0 +1,697 @@
+{
+  "title": "CGJ recent-market research",
+  "date": "2026-09-29",
+  "timezone": "Australia/Melbourne",
+  "source_capture_utc": "2026-09-28T23:21:39.495Z",
+  "dimensions": {
+    "assets/2097353819466121562-0.jpg": [
+      1200,
+      839
+    ],
+    "assets/2102388047597990067-0.jpg": [
+      1200,
+      851
+    ],
+    "assets/2086452389834281415-0.jpg": [
+      1200,
+      652
+    ],
+    "assets/2104568139073929644-0.jpg": [
+      1200,
+      667
+    ],
+    "assets/2099947469148655711-0.jpg": [
+      1200,
+      652
+    ],
+    "assets/2103485394817835336-0.jpg": [
+      1200,
+      652
+    ],
+    "assets/2103506133893742646-0.jpg": [
+      1199,
+      464
+    ],
+    "assets/manifest-original-alert.png": [
+      778,
+      854
+    ],
+    "assets/2104613957667275170-0.png": [
+      1199,
+      749
+    ],
+    "assets/2097308399134216202-0.jpg": [
+      1200,
+      1040
+    ],
+    "assets/2102755999128162589-0.jpg": [
+      1200,
+      663
+    ]
+  },
+  "markets": [
+    {
+      "id": "2104685846918050208",
+      "title": "Planting the garden before the next cycle",
+      "group": "Cycle & patience",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T21:33:03.000Z",
+      "excerpt": "The day you plant seeds in a garden is not the day you harvest.",
+      "reason": "John says crypto is gradually moving from a bear market toward a bull market. He uses his own account of selling FTM too early to argue for patient conviction rather than chasing coins that disappear within days.",
+      "note": "His FTM trade story is retrospective and self-reported. The new-cycle outlook is his forecast.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104685846918050208",
+      "parent": null
+    },
+    {
+      "id": "2104676452025483427",
+      "title": "SocialFi as the route for the next wave of users",
+      "group": "Onboarding",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T20:55:43.000Z",
+      "excerpt": "Onboarding into crypto has never been easier with the rise of Social Fi platforms",
+      "reason": "John links his bullish onchain outlook to easier onboarding through social-finance platforms and expects an unusually strong next 12-16 months.",
+      "note": "Public post from the same Melbourne recording morning as the garden/conviction post.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104676452025483427",
+      "parent": null
+    },
+    {
+      "id": "2103238431858127145",
+      "title": "Why is Crypto Twitter so angry?",
+      "group": "Sentiment",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-24T21:41:33.000Z",
+      "excerpt": "The bull run hasn’t even started yet but I feel like Crypto Twitter is the maddest it’s ever been",
+      "reason": "John contrasts Bitcoin being above $80k in his post with the hostile mood on Crypto Twitter. He interprets that mood as compatible with an early market phase, not evidence that the opportunity has ended.",
+      "note": "September 24 UTC, following his September dip-positioning posts.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2103238431858127145",
+      "parent": null
+    },
+    {
+      "id": "2102388047597990067",
+      "title": "Bullish overall, cautious on leverage after the move",
+      "group": "Leverage",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-22T13:22:25.000Z",
+      "excerpt": "Yearly open now tapped - good place to be a bit cautious on leverage imo",
+      "reason": "After saying Bitcoin reached the yearly open in line with his plan, John shifts to caution on leverage. He quotes his earlier September 8 roadmap rather than treating every higher price as a fresh long entry.",
+      "note": "His description of the plan succeeding is a self-assessment, not a verified trade-fill record.",
+      "image": "assets/2102388047597990067-0.jpg",
+      "imageCaption": "Original chart: the black projected path is a forecast drawing, not subsequent candles",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102388047597990067",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2097353819466121562",
+        "label": "Quoted post",
+        "type": "quote"
+      },
+      "extraLinks": [
+        {
+          "url": "assets/2097353819466121562-0.jpg",
+          "label": "Earlier roadmap chart"
+        }
+      ]
+    },
+    {
+      "id": "2102755999128162589",
+      "title": "Watching institutional flows, not just onchain attention",
+      "group": "ETF flows",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-23T13:44:32.000Z",
+      "excerpt": "We are seeing the largest $BTC ETF inflows since October 2025",
+      "reason": "John points to Bitcoin ETF inflows as a sign of renewed demand and attaches a data chart.",
+      "note": "This is John’s reading of the attached chart. The research shortlist does not independently certify the comparison.",
+      "image": "assets/2102755999128162589-0.jpg",
+      "imageCaption": "Original public post attachment",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102755999128162589",
+      "parent": null
+    },
+    {
+      "id": "2103130806936018981",
+      "title": "Scanning a cooled-off ecosystem before the next rotation",
+      "group": "Rotations",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-24T14:33:53.000Z",
+      "excerpt": "Robinhood ecosystem has cooled off a bit the last 2-3 weeks",
+      "reason": "John says a cooling period in Robinhood-chain activity is when he would scan and position for a possible next phase, rather than waiting for it to become the crowded trade again.",
+      "note": "His subsequent PONS setup later broke down; that separate receipt is available if Benji wants one specific example of timing risk.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2103130806936018981",
+      "parent": null
+    },
+    {
+      "id": "2102432532344287349",
+      "title": "A good narrative can be diluted by five clones",
+      "group": "Narrative dilution",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-22T16:19:11.000Z",
+      "excerpt": "Nothing worse than thinking you found the next big cook just to see 5 vamps spawn on every chain",
+      "reason": "John complains that copies across chains can split attention so badly that the original and its imitators all fail.",
+      "note": "Standalone September 22 public post. “Vamps” means competing copies drawing attention and liquidity from the same idea.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102432532344287349",
+      "parent": null
+    },
+    {
+      "id": "2099947469148655711",
+      "title": "The retest people wanted becomes the dip they fear",
+      "group": "Buying a retest",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-15T19:44:26.000Z",
+      "excerpt": "This is the retest everyone’s been wanting for weeks",
+      "reason": "John says he began filling longs during the September shakeout because traders had become overly bearish on the pullback they previously wanted. He argues that the macro headlines were already reflected in price.",
+      "note": "These are his views about what was priced in and his own position disclosure; no execution price is inferred.",
+      "image": "assets/2099947469148655711-0.jpg",
+      "imageCaption": "Original chart: the black projected path is a forecast drawing, not subsequent candles",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2099947469148655711",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2097353819466121562",
+        "label": "Quoted post",
+        "type": "quote"
+      },
+      "extraLinks": [
+        {
+          "url": "assets/2097353819466121562-0.jpg",
+          "label": "Earlier roadmap chart"
+        }
+      ]
+    },
+    {
+      "id": "2097356416717664714",
+      "title": "Allowing for a flush before the larger move",
+      "group": "BTC scenario",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-08T16:08:31.000Z",
+      "excerpt": "I am looking to bid $74k down towards $68k for a move back to $120k+",
+      "reason": "John anticipates a possible Bitcoin flush around CPI and rate uncertainty, naming an area where he would look to buy before a larger recovery.",
+      "note": "The price levels and prospective recovery are his scenario, not a forecast from Rubicon.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2097356416717664714",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2094219033990074756",
+        "label": "Quoted post",
+        "type": "quote"
+      }
+    },
+    {
+      "id": "2097308399134216202",
+      "title": "Spot sellers versus eager leveraged longs",
+      "group": "Spot vs perps",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-08T12:57:43.000Z",
+      "excerpt": "Spot is unloading & perps apeing heavily What could go wrong",
+      "reason": "John calls attention to a mismatch between spot selling and aggressive perpetual-futures buying, implying that leverage can make the market vulnerable.",
+      "note": "September 8 standalone post with a market-data image. Preserve the distinction between his inference and the data series shown.",
+      "image": "assets/2097308399134216202-0.jpg",
+      "imageCaption": "Original public post attachment",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2097308399134216202",
+      "parent": null
+    },
+    {
+      "id": "2098388618620366952",
+      "title": "Finding winners and holding them are different skills",
+      "group": "Holding winners",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-11T12:30:07.000Z",
+      "excerpt": "I told them I’m impressed that you’re on all these early runners",
+      "reason": "John describes a trader who identified several large runners early but kept taking tiny gains or losses. He praises the selection skill while arguing that fear from the previous bear market was preventing conviction.",
+      "note": "The other trader’s entries and outcomes are John’s anecdote; they are not newly verified calls by John.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2098388618620366952",
+      "parent": null
+    },
+    {
+      "id": "2095144675673776323",
+      "title": "Are social-trading apps changing the value of listings?",
+      "group": "Trading platforms",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-02T13:39:51.000Z",
+      "excerpt": "Pumpfun / FOMO are pretty much making exchange listings irrelevant unless your getting perps",
+      "reason": "John argues that Pumpfun and FOMO are making conventional exchange listings less important for access, while retaining an exception for derivatives.",
+      "note": "September 2 public post. Pumpfun here refers to the platform, not a disclosed PUMP-token position.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2095144675673776323",
+      "parent": null
+    },
+    {
+      "id": "2099955874315837642",
+      "title": "Enough new chains and launchpads",
+      "group": "Too many venues",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-15T20:17:50.000Z",
+      "excerpt": "We don’t need anymore new chains Sincerely, Everyone in the trenches",
+      "reason": "John says traders do not need more new chains, then replies to add launchpads to that complaint.",
+      "note": "Two days later he is enthusiastic about PAID’s creator-monetization approach; he appears to distinguish new usefulness from another generic venue.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2099955874315837642",
+      "parent": {
+        "url": "https://x.com/cryptogodjohn/status/2099956186653024280",
+        "label": "His follow-up",
+        "type": "author_follow_up_reply"
+      }
+    },
+    {
+      "id": "2104568139073929644",
+      "title": "Revenue as the next selection criterion",
+      "group": "Revenue thesis",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T13:45:19.000Z",
+      "excerpt": "Betting on protocols that will generate revenue will be the biggest winners this bull run",
+      "reason": "John uses MANIFEST and the coming Mani Markets launch to argue that protocols able to produce revenue could lead the next phase.",
+      "note": "The wording refers to revenue he expects and a coming launch, not proof that the forecast is already delivered.",
+      "image": "assets/2104568139073929644-0.jpg",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104568139073929644",
+      "parent": null
+    },
+    {
+      "id": "2100648477520711769",
+      "title": "Connecting creator income with crypto participation",
+      "group": "Creator monetisation",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-17T18:09:59.000Z",
+      "excerpt": "I think PAID has potential to be the launch pad that links content creators & monetization",
+      "reason": "John sees PAID as a possible link between content creators, token participation and payments through X Money. He quotes a response from Nikita Bier. Nikita’s response also asked for an opt-out and raised harassment and reply-spam concerns.",
+      "note": "Keep the parent visible or summarized: Nikita’s response is mixed, not an unqualified endorsement. The payment figures remain John’s claims.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2100648477520711769",
+      "parent": {
+        "url": "https://x.com/nikitabier/status/2100421095551565882",
+        "label": "Quoted post",
+        "type": "quote"
+      }
+    },
+    {
+      "id": "2102078894660542957",
+      "title": "The larger cycle horizon behind the short-term trades",
+      "group": "2027 outlook",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-21T16:53:57.000Z",
+      "excerpt": "2027 bull market going to be the biggest one yet",
+      "reason": "John reaffirms a June forecast of a macro bottom before October, followed by new Bitcoin highs in 2027 and a possible move toward $170k by 2028.",
+      "note": "This confirms his continuing view, not that the entire forecast has already come true.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102078894660542957",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2071352282252251448",
+        "label": "Quoted post",
+        "type": "quote"
+      }
+    }
+  ],
+  "tweets": [
+    {
+      "id": "2104686626458792206",
+      "title": "His three main plays, named this morning",
+      "group": "Start here",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T21:36:09.000Z",
+      "excerpt": "My main utility play right now is $MANIFEST My 2 main meme coins are $CATE $PCC",
+      "reason": "The freshest answer to what John is focused on. He gives this list in response to a direct question about conviction plays.",
+      "note": "Open the reply with the question above it. Use the separately sourced contracts below for token identity.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104686626458792206",
+      "parent": {
+        "url": "https://x.com/0xNinex/status/2104686215605977320",
+        "type": "reply"
+      }
+    },
+    {
+      "id": "2102387602401665160",
+      "title": "He calls it his biggest altcoin bag",
+      "group": "MANIFEST",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-22T13:20:39.000Z",
+      "excerpt": "Manifest is my biggest altcoin bag at this moment",
+      "reason": "A dated position disclosure with the exact Solana contract. He also says he added significantly at those levels.",
+      "note": "The post establishes what he disclosed. It does not establish his complete holdings or an exact execution price.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102387602401665160",
+      "parent": null
+    },
+    {
+      "id": "2104568139073929644",
+      "title": "The catalyst he is watching now",
+      "group": "MANIFEST",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T13:45:19.000Z",
+      "excerpt": "Betting on protocols that will generate revenue will be the biggest winners this bull run",
+      "reason": "Connects MANIFEST to the planned ManiMarkets launch and his revenue thesis. Includes a useful annotated chart.",
+      "note": "The interface is already accessible, but the post describes a forthcoming launch. Revenue and future performance remain claims.",
+      "image": "assets/2104568139073929644-0.jpg",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104568139073929644",
+      "parent": null
+    },
+    {
+      "id": "2098409313563795620",
+      "title": "The exact six-month statement from the reference video",
+      "group": "Becker connection",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-11T13:52:21.000Z",
+      "excerpt": "I really don’t think there is a better play for the next 6 months than $MANIFEST",
+      "reason": "This is the primary post behind the MANIFEST section in Benji’s Becker transcript.",
+      "note": "Use the September 28 and 29 posts to establish his latest stance; this one is dated September 11.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2098409313563795620",
+      "parent": null
+    },
+    {
+      "id": "2100964498366415201",
+      "title": "Why CATE is on his list",
+      "group": "CATE",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-18T15:05:45.000Z",
+      "excerpt": "Agree with Bluntz I think $CATE will become the #1 meme coin on Solana",
+      "reason": "John endorses Bluntz’s community and accumulation-range thesis. The quoted post gives Benji something concrete to explain.",
+      "note": "Show who wrote the underlying thesis. Bluntz’s holder counts and targets are attributed claims.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2100964498366415201",
+      "parent": {
+        "url": "https://x.com/Bluntz_Capital/status/2100839236341776801",
+        "type": "quote"
+      }
+    },
+    {
+      "id": "2103506133893742646",
+      "title": "The later chart makes the thesis visible",
+      "group": "CATE",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-25T15:25:18.000Z",
+      "excerpt": "$CATE flipping previous ATH into support",
+      "reason": "A positive follow-up to the earlier CATE thesis, with a retained chart showing the old range and subsequent move.",
+      "note": "This is John’s dated chart snapshot, not an independently calculated call return or a current live quote.",
+      "image": "assets/2103506133893742646-0.jpg",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2103506133893742646",
+      "parent": null
+    },
+    {
+      "id": "2102960468424118390",
+      "title": "The Robinhood meme he says he added to",
+      "group": "PCC",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-24T03:17:01.000Z",
+      "excerpt": "added more to my bags here at these levels",
+      "reason": "Contains the explicit Robinhood PCC contract and links back to his earlier thesis. This resolves the intended token more clearly than the ticker-only list.",
+      "note": "Do not use the same-ticker Solana token. An official relationship between those two assets has not been established.",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2102960468424118390",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2102742326875398512",
+        "type": "quote"
+      }
+    },
+    {
+      "id": "2103485394817835336",
+      "title": "The recent PONS setup",
+      "group": "PONS context",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-25T14:02:53.000Z",
+      "excerpt": "looking like it’s going to breakout soon. Strong consolidation here",
+      "reason": "A specific September 25 thesis that Robinhood tokens could move again, with PONS as a leader.",
+      "note": "Keep it paired with the September 28 follow-up. This is a Binance perpetual chart, not proof of an on-chain entry.",
+      "image": "assets/2103485394817835336-0.jpg",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2103485394817835336",
+      "parent": null
+    },
+    {
+      "id": "2104613957667275170",
+      "title": "What happened to that setup",
+      "group": "PONS follow-up",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-09-28T16:47:24.000Z",
+      "excerpt": "what an amazing trade LOL",
+      "reason": "The reply links directly to the setup. His follow-up chart shows a break below support, so the wording reads as sarcasm in context.",
+      "note": "Do not put this in the wins montage. The two displayed marks are about 16.6% apart to the downside, not evidence of his realised P&L.",
+      "image": "assets/2104613957667275170-0.png",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2104613957667275170",
+      "parent": {
+        "url": "https://x.com/CryptoGodJohn/status/2103485394817835336",
+        "type": "reply"
+      }
+    },
+    {
+      "id": "2086452389834281415",
+      "title": "The PUMP post behind the Becker mention",
+      "group": "Older reference",
+      "handle": "cryptogodjohn",
+      "publishedAtUtc": "2026-08-09T13:59:48.000Z",
+      "excerpt": "One of my core positions for this next cycle",
+      "reason": "An August 9 primary source for his PUMP position claim, useful as context for the prior video.",
+      "note": "It is an older disclosure. A later reference to a Pumpfun app portfolio does not establish a current PUMP-token holding.",
+      "image": "assets/2086452389834281415-0.jpg",
+      "canonicalUrl": "https://x.com/cryptogodjohn/status/2086452389834281415",
+      "parent": null
+    }
+  ],
+  "wins": [
+    {
+      "group": "cgj",
+      "token": "MANIFEST",
+      "caller": "CryptoGodJohn · tracked wallet",
+      "label": "Documented historical move",
+      "caution": false,
+      "callDateLabel": "18 May 2026 AEST",
+      "displayMultiple": "23.48×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "An original tracked buy with a genuine retained alert screenshot. It also connects to the position John is still discussing this week.",
+      "note": "The 23.48× starts at the tracked wallet buy, not his later public tweet. The alert’s rounded $2.2M market cap is not the calculation basis.",
+      "entryLabel": "$0.00241537",
+      "peakLabel": "$0.0567250 · 14 Jun UTC",
+      "originalUrl": "https://t.me/c/1806961307/360615/361464",
+      "priceCardUrl": null,
+      "chartUrl": "https://dexscreener.com/solana/2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
+      "callUtc": "2026-05-17T19:45:18.335Z",
+      "peakUtc": "2026-06-14T00:00:00Z to 2026-06-14T04:00:00Z",
+      "coverage": "Retained history reviewed through 2026-08-22. Documented historical 23.48× high reached in the June14 four-hour interval; no claim about latest all-time best.",
+      "basisDetail": "USD token price saved with the buy alert on 17 May 2026. The alert’s rounded purchase total independently supports this starting price.",
+      "chain": "solana",
+      "contract": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+      "evidenceNote": "High lies inside the retained four-hour candle; the exact instant within it is unknown. Candle traded $435,373.38. Historical price data was not refreshed for this pack.",
+      "image": "assets/manifest-original-alert.png",
+      "entryPriceUsd": "0.0024153744672792492",
+      "peakPriceUsd": "0.05672501403166958",
+      "multipleExact": "23.48497709159207524865939814560110690917534128942926897521100117768509",
+      "estimatedEntry": false
+    },
+    {
+      "group": "cgj",
+      "token": "PAID",
+      "caller": "CryptoGodJohn · tracked wallet",
+      "label": "Recent tracked wallet buy",
+      "caution": false,
+      "callDateLabel": "16 Sep 2026 AEST",
+      "displayMultiple": "5.93×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "A recent John-labelled wallet alert with a clear original acquisition basis and a September 26 price high.",
+      "note": "Uses the first purchase basis, about $4,996 for 528,808 tokens. Later buys folded into the alert are separate; no profitable exit is established.",
+      "entryLabel": "$0.00944738",
+      "peakLabel": "$0.0560609 · 26 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/360615/369561",
+      "priceCardUrl": null,
+      "chartUrl": "https://dexscreener.com/solana/6e3jZLtf4tQbWZm3f7A66jF8tfZn6MRQVrbDFgcNWarA",
+      "callUtc": "2026-09-16T12:52:50+00:00",
+      "peakUtc": "2026-09-26T07:25:00+00:00 to 2026-09-26T07:26:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Highest accepted retained observation after the original wallet buy/publication; not exhaustive all-pool ATH.",
+      "basisDetail": "First tracked wallet purchase: retained USD valuation of quote asset spent divided by acquired token units; excludes fees. It is not the market quote at public-alert time.",
+      "chain": "solana",
+      "contract": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $124,324.48. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.009447377101006049013221732664143281",
+      "peakPriceUsd": "0.05606093712848605",
+      "multipleExact": "5.93402131926290247346206099075425331088431320427786427905836",
+      "estimatedEntry": false
+    },
+    {
+      "group": "cgj",
+      "token": "JUBJUB",
+      "caller": "CryptoGodJohn · tracked wallet",
+      "label": "Optional: thin peak volume",
+      "caution": true,
+      "callDateLabel": "13 Sep 2026 AEST",
+      "displayMultiple": "31.23×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "A large documented move after the tracked John wallet buy. Useful only with the peak-liquidity context visible.",
+      "note": "Only $332.53 traded in the peak minute. The 31.23× price high does not establish an executable exit for a large position.",
+      "entryLabel": "$0.000148843",
+      "peakLabel": "$0.00464873 · 17 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/360615/368631",
+      "priceCardUrl": null,
+      "chartUrl": "https://dexscreener.com/solana/8myc52qh4zCDWXBnW9UxbJMs1cu6aNMcsa4VCK5Hw9R3",
+      "callUtc": "2026-09-13T02:07:44+00:00",
+      "peakUtc": "2026-09-17T17:55:00+00:00 to 2026-09-17T17:56:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Highest accepted retained observation after the original wallet buy/publication; not exhaustive all-pool ATH.",
+      "basisDetail": "First tracked wallet purchase: retained USD valuation of quote asset spent divided by acquired token units; excludes fees. It is not the market quote at public-alert time.",
+      "chain": "solana",
+      "contract": "7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $332.53. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.00014884336767766764476547037989597830540100663683345",
+      "peakPriceUsd": "0.00464872619184118",
+      "multipleExact": "31.2323368140149360550584923055032436284280151104795351742319",
+      "estimatedEntry": false
+    },
+    {
+      "group": "ic",
+      "token": "ZCAT",
+      "caller": "Hottie",
+      "label": "Original price card",
+      "caution": false,
+      "callDateLabel": "4 Sep 2026 AEST",
+      "displayMultiple": "24.85×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "The cleanest community example tied to the proxy-token discussion in Benji’s Becker video. Credit Hottie for the original call.",
+      "note": "The original unedited bot reply printed $0.007264. The later peak minute traded about $128K; this still does not establish anyone’s sale price.",
+      "entryLabel": "$0.007264",
+      "peakLabel": "$0.180514 · 6 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/16281/365876",
+      "priceCardUrl": "https://t.me/c/1806961307/16281/365877",
+      "chartUrl": "https://dexscreener.com/solana/BTccxxTFi7a9xJTE1exKn38Jgie35s6gNeRxd8DM61Rc",
+      "callUtc": "2026-09-04T07:17:04.000Z",
+      "peakUtc": "2026-09-06T23:38:00+00:00 to 2026-09-06T23:39:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Documented historical high reached after this original call; not a current quote, realized profit, or exhaustive all-pool ATH.",
+      "basisDetail": "Price printed in the original bot reply.",
+      "chain": "solana",
+      "contract": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $128,013.92. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.007264",
+      "peakPriceUsd": "0.18051397937166347",
+      "multipleExact": "24.85049275490961866740088105726872246696035242290748898678414096916300",
+      "estimatedEntry": false
+    },
+    {
+      "group": "ic",
+      "token": "SOMETHING",
+      "caller": "SC44",
+      "label": "Approximate entry",
+      "caution": true,
+      "callDateLabel": "10 Sep 2026 AEST",
+      "displayMultiple": "≈249×",
+      "multipleLabel": "Historical move from approximate entry",
+      "reason": "A large community result that connects directly to the SOMETHING example in the Becker video. SC44 is the original caller.",
+      "note": "Approximately 249× uses the owner-supplied $10K starting market cap. The original contract post did not show a price or market cap.",
+      "entryLabel": "Approx. $10K market cap",
+      "peakLabel": "$0.00248755 · 23 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/16281/367981",
+      "priceCardUrl": null,
+      "chartUrl": "https://dexscreener.com/solana/D1CbqwFX75ho4jdiU158qYJwjKGxeMiEGC5fExSNmYpH",
+      "callUtc": "2026-09-10T10:11:55.000Z",
+      "peakUtc": "2026-09-23T12:48:00+00:00 to 2026-09-23T12:49:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Documented historical high reached after this original call; not a current quote, realized profit, or exhaustive all-pool ATH.",
+      "basisDetail": "Owner supplied $10,000 market cap in a Sep21 correction. Dividing by current verified supply gives an approximate historical price equivalent, not an observed original spot or fill.",
+      "chain": "solana",
+      "contract": "6kNNgyrdvjkRC8eRGQqx5sLfZG2jTmg3NCFmkX2hYP4j",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $24,714.12. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.0000100000623593194660474846484151495085708193592",
+      "peakPriceUsd": "0.0024875523422285993",
+      "multipleExact": "248.7536830118212009932691609141999999999999995761373789129331924868888",
+      "estimatedEntry": true
+    },
+    {
+      "group": "ic",
+      "token": "ZDOG",
+      "caller": "Hottie",
+      "label": "Community result",
+      "caution": false,
+      "callDateLabel": "4 Sep 2026 AEST",
+      "displayMultiple": "217.21×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "Another large Hottie call with its original price card preserved. A useful alternative if Benji wants a second community example.",
+      "note": "Documented reached high. Original-pool history begins after the call, so this is not an exhaustive all-market ATH calculation.",
+      "entryLabel": "$0.00002931",
+      "peakLabel": "$0.00636629 · 7 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/16281/365922",
+      "priceCardUrl": "https://t.me/c/1806961307/16281/365923",
+      "chartUrl": "https://dexscreener.com/solana/9TRKbpkWfbR6dmFAX1kGx1MReZ48K1j9VPcjUBMM4Toq",
+      "callUtc": "2026-09-04T12:36:22.000Z",
+      "peakUtc": "2026-09-07T00:58:00+00:00 to 2026-09-07T00:59:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Documented historical high reached after this original call; not a current quote, realized profit, or exhaustive all-pool ATH.",
+      "basisDetail": "Price printed in the original bot reply.",
+      "chain": "solana",
+      "contract": "EbT2jpoeRJVFNWAFJE97EGfQF3iwHsEY8sh17fGbL5ER",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $53,218.70. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.00002931",
+      "peakPriceUsd": "0.006366293157120091",
+      "multipleExact": "217.2054983664309450699419993176390310474240873422040259297168201978847",
+      "estimatedEntry": false
+    },
+    {
+      "group": "ic",
+      "token": "PURR",
+      "caller": "Pump Train",
+      "label": "Community result",
+      "caution": false,
+      "callDateLabel": "5 Sep 2026 AEST",
+      "displayMultiple": "142.54×",
+      "multipleLabel": "Historical token-price move",
+      "reason": "A large named-member result with a preserved original price card. Credit Pump Train, not John or the community as a whole.",
+      "note": "The calculation uses the original $0.0001437 card price. A later saved baseline would inflate the multiple.",
+      "entryLabel": "$0.0001437",
+      "peakLabel": "$0.0204826 · 6 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/16281/366074",
+      "priceCardUrl": "https://t.me/c/1806961307/16281/366075",
+      "chartUrl": "https://dexscreener.com/solana/Ad7pbBvVRNofo96WR6eHwmU2o4naZ6Lao1J98hW8a1TQ",
+      "callUtc": "2026-09-04T22:48:21.000Z",
+      "peakUtc": "2026-09-06T17:14:00+00:00 to 2026-09-06T17:15:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Documented historical high reached after this original call; not a current quote, realized profit, or exhaustive all-pool ATH.",
+      "basisDetail": "Price printed in the original bot reply.",
+      "chain": "solana",
+      "contract": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+      "evidenceNote": "High lies inside the retained one-minute candle; the exact instant within it is unknown. Candle traded $105,491.25. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.0001437",
+      "peakPriceUsd": "0.020482600274945462",
+      "multipleExact": "142.5372322543177592205984690327070285316631871955462769659011830201809",
+      "estimatedEntry": false
+    },
+    {
+      "group": "ic",
+      "token": "EMBER",
+      "caller": "Benji Rubicon",
+      "label": "Optional: Benji’s own call",
+      "caution": true,
+      "callDateLabel": "12 Sep 2026 AEST",
+      "displayMultiple": "≈3.8×",
+      "multipleLabel": "Historical move from approximate entry",
+      "reason": "Benji’s own September 12 community post gives him a personal example if useful.",
+      "note": "About 3.8× uses a rounded screenshot price. The earlier roughly $70M spike happened before his call and is excluded.",
+      "entryLabel": "Approx. $0.0119 photo quote",
+      "peakLabel": "$0.0450728 · 13 Sep UTC",
+      "originalUrl": "https://t.me/c/1806961307/308053/368393",
+      "priceCardUrl": null,
+      "chartUrl": "https://dexscreener.com/solana/2y6PCqa4fEp3jLiFdan9jVMw7LSK8F3gwsTfy8p7traE",
+      "callUtc": "2026-09-11T23:20:22+00:00",
+      "peakUtc": "2026-09-13T13:00:00+00:00 to 2026-09-13T14:00:00+00:00",
+      "coverage": "Retained history reviewed through 2026-09-27T22:26:19Z. Documented later price move versus rounded original screenshot; not exact fill or realized profit.",
+      "basisDetail": "Rounded spot quote in the original photo.",
+      "chain": "solana",
+      "contract": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+      "evidenceNote": "High lies inside the retained one-hour candle; the exact instant within it is unknown. Candle traded $143,895.81. Historical price data was not refreshed for this pack.",
+      "entryPriceUsd": "0.0119",
+      "peakPriceUsd": "0.04507276662534392",
+      "multipleExact": "3.787627447507892436974789916",
+      "estimatedEntry": true
+    }
+  ],
+  "context": [
+    {
+      "chain": "Solana",
+      "token": "MANIFEST",
+      "observed": "Project site displays this Solana contract. Its branding centres on manifestation and the Mani character.",
+      "contract": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+      "source_url": "https://www.manifesting.meme/",
+      "limits": "John's description of it as his main utility play is his thesis. Do not substitute the unrelated MFX/Manifest Network token."
+    },
+    {
+      "name": "ManiMarkets",
+      "observed": "The public interface is accessible and displays curated prediction markets, points and a leaderboard. Feed and Copy are labelled Soon.",
+      "source_url": "https://mani.markets/",
+      "limits": "The visible interface does not establish that all planned functionality, token revenue or buybacks are live. Treat the upcoming-launch and revenue thesis as John's claim."
+    },
+    {
+      "chain": "Robinhood",
+      "token": "PCC",
+      "observed": "Project site identifies Pussy Cat Club on Robinhood, displays this contract and links to @PussyCatClubRH.",
+      "contract": "0xbf3e53713a53e9c3d5d1ddc25dd2c65669244663",
+      "source_url": "https://thepussycatclubrh.com/",
+      "limits": "Do not treat the same-ticker Solana PCC in older native records as the same asset without additional evidence."
+    },
+    {
+      "chain": "Solana",
+      "token": "CATE",
+      "observed": "The search-indexed Cate site displays this contract; the direct browser fetch timed out. Exact mint also appears in native token evidence and Solana Explorer.",
+      "contract": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "source_url": "https://www.cate.cat/",
+      "limits": "Keep distinct from the older BNB Chain CateCoin. No current price is inferred from a cached search result."
+    },
+    {
+      "chain": "Robinhood",
+      "token": "PONS",
+      "observed": "Pons documents a token launch and trading platform on Robinhood Chain, and lists this exact reference token.",
+      "contract": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "source_url": "https://docs.ponsfamily.com/",
+      "limits": "A token on Robinhood Chain is not stock in Robinhood Markets. John's September 25 post is a later trade thesis, not evidence he caught the original launch."
+    }
+  ]
+}
